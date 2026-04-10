@@ -6,7 +6,7 @@ const BASE_URL = 'https://thepeptidestack.com'
 export const metadata: Metadata = {
   title: {
     absolute:
-      'The Complete Looks Maxxing Peptide Protocol: All 10 Compounds | The Peptide Stack',
+      'The Complete Looksmaxxing Peptide Protocol — 10 Compounds Explained | The Peptide Stack',
   },
   description:
     'The 5-layer looks maxxing research protocol: GLP-3 R, BPC-157, GHK-Cu, SNAP-8, CJC-1295/Ipa, IGF-1 LR3, TB-500, Epithalon, NAD+. Complete mechanism analysis.',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      'The Complete Looks Maxxing Peptide Protocol: All 10 Compounds | The Peptide Stack',
+      'The Complete Looksmaxxing Peptide Protocol — 10 Compounds Explained | The Peptide Stack',
     description:
       'The 5-layer looks maxxing research protocol: GLP-3 R, BPC-157, GHK-Cu, SNAP-8, CJC-1295/Ipa, IGF-1 LR3, TB-500, Epithalon, NAD+. Complete mechanism analysis.',
     url: `${BASE_URL}/looksmaxxing/peptide-looksmaxxing-full-protocol`,
@@ -28,7 +28,7 @@ const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline:
-    'The Complete Looks Maxxing Peptide Protocol: All 10 Compounds',
+    'The Complete Looksmaxxing Peptide Protocol — 10 Compounds Explained',
   description:
     'The 5-layer looks maxxing research protocol: GLP-3 R, BPC-157, GHK-Cu, SNAP-8, CJC-1295/Ipa, IGF-1 LR3, TB-500, Epithalon, NAD+. Complete mechanism analysis.',
   datePublished: '2026-04-09',
@@ -355,7 +355,7 @@ export default function FullProtocolPage() {
                 marginBottom: '1rem',
               }}
             >
-              The Complete Looks Maxxing Peptide Protocol: All 10 Compounds
+              The Complete Looksmaxxing Peptide Protocol — 10 Compounds Explained
             </h1>
             <p style={{ color: '#94a3b8', fontSize: '1.05rem', lineHeight: 1.75 }}>
               The most comprehensive research framework for physical appearance optimization.

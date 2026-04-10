@@ -4,12 +4,12 @@ import Link from 'next/link'
 const BASE_URL = 'https://thepeptidestack.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'TB-500 / Thymosin Beta-4: Actin Dynamics and Systemic Tissue Repair Research | The Peptide Stack' },
+  title: { absolute: 'TB-500 Peptide — Faster Injury Recovery, Muscle Repair & Healing | The Peptide Stack' },
   description:
     'Thymosin Beta-4 (43 AA, endogenous) — G-actin sequestration, VEGF upregulation, NF-κB suppression. Tissue repair research across 8+ tissue types including skin and cardiac models.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/tb-500-thymosin-actin-repair` },
   openGraph: {
-    title: 'TB-500 / Thymosin Beta-4: Actin Dynamics and Systemic Tissue Repair Research | The Peptide Stack',
+    title: 'TB-500 Peptide — Faster Injury Recovery, Muscle Repair & Healing | The Peptide Stack',
     description:
       'Thymosin Beta-4 (43 AA, endogenous) — G-actin sequestration, VEGF upregulation, NF-κB suppression. Tissue repair research across 8+ tissue types including skin and cardiac models.',
     url: `${BASE_URL}/looksmaxxing/tb-500-thymosin-actin-repair`,
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'TB-500 / Thymosin Beta-4: Actin Dynamics and Systemic Tissue Repair Research',
+  headline: 'TB-500 Peptide — Faster Injury Recovery, Muscle Repair & Healing',
   description:
     'Thymosin Beta-4 (43 AA, endogenous) — G-actin sequestration, VEGF upregulation, NF-κB suppression. Tissue repair research across 8+ tissue types including skin and cardiac models.',
   datePublished: '2026-04-09',
@@ -40,7 +40,7 @@ const breadcrumbJsonLd = {
     {
       '@type': 'ListItem',
       position: 3,
-      name: 'TB-500 / Thymosin Beta-4: Actin Dynamics and Systemic Tissue Repair Research',
+      name: 'TB-500 Peptide — Faster Injury Recovery, Muscle Repair & Healing',
       item: `${BASE_URL}/looksmaxxing/tb-500-thymosin-actin-repair`,
     },
   ],
@@ -224,7 +224,7 @@ export default function Tb500Page() {
               className="gradient-text"
               style={{ fontSize: 'clamp(1.75rem, 4vw, 2.6rem)', fontWeight: 800, lineHeight: 1.2, marginBottom: '1rem' }}
             >
-              TB-500 / Thymosin Beta-4: Actin Dynamics and Systemic Tissue Repair Research
+              TB-500 Peptide — Faster Injury Recovery, Muscle Repair & Healing
             </h1>
             <p style={{ color: '#94a3b8', fontSize: '1.05rem', lineHeight: 1.7 }}>
               One of the most abundant intracellular peptides in mammalian biology, Thymosin Beta-4 operates at the

@@ -7,12 +7,12 @@ const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e'
 const BASE_URL = 'https://thepeptidestack.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'The Research Protocol — 5 Layers, 10 Compounds | The Peptide Stack' },
+  title: { absolute: 'Best Peptide Protocol for Weight Loss, Skin & Anti-Aging | The Peptide Stack' },
   description:
     'The complete 5-layer peptide research protocol. GLP-3 R (Retatrutide) core, BPC-157 gut recovery, GHK-Cu + SNAP-8 skin, CJC-1295/Ipamorelin lean mass, Epithalon + NAD+ longevity.',
   alternates: { canonical: `${BASE_URL}/protocol` },
   openGraph: {
-    title: 'The Research Protocol — 5 Layers, 10 Compounds | The Peptide Stack',
+    title: 'Best Peptide Protocol for Weight Loss, Skin & Anti-Aging | The Peptide Stack',
     description: 'Complete protocol breakdown: compound selection rationale, mechanism analysis, and sourcing for all 10 stack compounds.',
     url: `${BASE_URL}/protocol`,
     siteName: 'The Peptide Stack',

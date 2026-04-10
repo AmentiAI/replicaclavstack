@@ -5,12 +5,12 @@ import ProductCard from '@/components/ProductCard'
 
 const BASE_URL = 'https://thepeptidestack.com'
 export const metadata: Metadata = {
-  title: { absolute: 'All Research Compounds — 21 Peptides | The Peptide Stack' },
+  title: { absolute: 'Buy Research Peptides — Semaglutide, Retatrutide, BPC-157 & More | The Peptide Stack' },
   description:
     'Complete catalog: Retatrutide, Tirzepatide, Semaglutide, CagriSema, BPC-157, GHK-Cu, SNAP-8, CJC-1295/Ipamorelin, IGF-1 LR3, Epithalon, NAD+. >98% HPLC purity.',
   alternates: { canonical: `${BASE_URL}/products` },
   openGraph: {
-    title: 'All Research Compounds — 21 Peptides | The Peptide Stack',
+    title: 'Buy Research Peptides — Semaglutide, Retatrutide, BPC-157 & More | The Peptide Stack',
     description: '21 research peptides across 5 protocol layers. GLP agonists, gut recovery, skin, lean mass, longevity. >98% HPLC verified.',
     url: `${BASE_URL}/products`,
     siteName: 'The Peptide Stack',
@@ -79,9 +79,9 @@ export default function ProductsPage() {
       {/* Header */}
       <div className="mb-14">
         <h1 className="text-4xl sm:text-5xl font-black text-white tracking-tight mb-4">
-          All Research Compounds
+          Shop Research Peptides
         </h1>
-        <p className="text-xl text-gray-500 mb-6">21 peptides. 5 protocol layers. &gt;98% HPLC purity on every vial.</p>
+        <p className="text-xl text-gray-500 mb-6">21 peptides for weight loss, anti-aging, skin &amp; muscle. Every vial &gt;98% HPLC purity.</p>
         <div className="flex flex-wrap gap-2.5">
           {['21 Compounds', '>98% HPLC Verified', 'Third-Party Test Reports', 'Free Shipping $200+'].map(tag => (
             <span key={tag} className="px-3 py-1.5 glass border border-white/8 text-gray-500 text-xs rounded-full">{tag}</span>

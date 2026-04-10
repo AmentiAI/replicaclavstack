@@ -5,12 +5,12 @@ const BASE_URL = 'https://thepeptidestack.com'
 
 
 export const metadata: Metadata = {
-  title: { absolute: 'Retatrutide (GLP-3 R): Triple-Receptor and −28.7% Phase 2 Body Recomposition | The Peptide Stack' },
+  title: { absolute: 'Retatrutide — The Strongest Weight Loss Peptide (−28.7% in Trials) | The Peptide Stack' },
   description:
     'Retatrutide (CAS 2381089-83-2) — GLP-1R + GIPR + GcgR triple agonist. Phase 2 NEJM 2023: −28.7% at 48 weeks. Body composition, facial structure, and recomposition research.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/retatrutide-body-recomposition` },
   openGraph: {
-    title: 'Retatrutide (GLP-3 R): Triple-Receptor and −28.7% Phase 2 Body Recomposition | The Peptide Stack',
+    title: 'Retatrutide — The Strongest Weight Loss Peptide (−28.7% in Trials) | The Peptide Stack',
     description:
       'Retatrutide (CAS 2381089-83-2) — GLP-1R + GIPR + GcgR triple agonist. Phase 2 NEJM 2023: −28.7% at 48 weeks. Body composition, facial structure, and recomposition research.',
     url: `${BASE_URL}/looksmaxxing/retatrutide-body-recomposition`,
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Retatrutide (GLP-3 R): Triple-Receptor and −28.7% Phase 2 Body Recomposition',
+  headline: 'Retatrutide — The Strongest Weight Loss Peptide (−28.7% in Trials)',
   description:
     'Retatrutide (CAS 2381089-83-2) — GLP-1R + GIPR + GcgR triple agonist. Phase 2 NEJM 2023: −28.7% at 48 weeks. Body composition, facial structure, and recomposition research.',
   datePublished: '2026-04-09',
@@ -306,7 +306,7 @@ export default function RetatrutidePage() {
               className="gradient-text"
               style={{ fontSize: 'clamp(1.75rem, 4vw, 2.6rem)', fontWeight: 800, lineHeight: 1.2, marginBottom: '1rem' }}
             >
-              Retatrutide (GLP-3 R): Triple-Receptor and −28.7% Phase 2 Body Recomposition
+              Retatrutide — The Strongest Weight Loss Peptide (−28.7% in Trials)
             </h1>
             <p style={{ color: '#94a3b8', fontSize: '1.05rem', lineHeight: 1.7 }}>
               The first GLP-1R/GIPR/GcgR triple agonist to enter clinical trials, Retatrutide achieved a 28.7% mean

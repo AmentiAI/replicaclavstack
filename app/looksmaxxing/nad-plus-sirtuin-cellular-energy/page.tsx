@@ -5,12 +5,12 @@ const BASE_URL = 'https://thepeptidestack.com'
 
 
 export const metadata: Metadata = {
-  title: { absolute: 'NAD+: Sirtuins, PARP, and the Cellular Energy Decline | The Peptide Stack' },
+  title: { absolute: 'NAD+ Peptide — Anti-Aging, Energy & Skin Longevity Benefits | The Peptide Stack' },
   description:
     'NAD+ declines ~50% between ages 30-60. Research on SIRT1-7 activation, PARP1 DNA repair, CD38 accumulation, and mitochondrial function restoration.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/nad-plus-sirtuin-cellular-energy` },
   openGraph: {
-    title: 'NAD+: Sirtuins, PARP, and the Cellular Energy Decline | The Peptide Stack',
+    title: 'NAD+ Peptide — Anti-Aging, Energy & Skin Longevity Benefits | The Peptide Stack',
     description:
       'NAD+ declines ~50% between ages 30-60. Research on SIRT1-7 activation, PARP1 DNA repair, CD38 accumulation, and mitochondrial function restoration.',
     url: `${BASE_URL}/looksmaxxing/nad-plus-sirtuin-cellular-energy`,
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'NAD+: Sirtuins, PARP, and the Cellular Energy Decline',
+  headline: 'NAD+ Peptide — Anti-Aging, Energy & Skin Longevity Benefits',
   description:
     'NAD+ declines ~50% between ages 30-60. Research on SIRT1-7 activation, PARP1 DNA repair, CD38 accumulation, and mitochondrial function restoration.',
   datePublished: '2026-04-09',
@@ -41,7 +41,7 @@ const breadcrumbJsonLd = {
     {
       '@type': 'ListItem',
       position: 3,
-      name: 'NAD+: Sirtuins, PARP, and the Cellular Energy Decline',
+      name: 'NAD+ Peptide — Anti-Aging, Energy & Skin Longevity Benefits',
       item: `${BASE_URL}/looksmaxxing/nad-plus-sirtuin-cellular-energy`,
     },
   ],
@@ -305,7 +305,7 @@ export default function NadPlusPage() {
               className="gradient-text"
               style={{ fontSize: 'clamp(1.75rem, 4vw, 2.6rem)', fontWeight: 800, lineHeight: 1.2, marginBottom: '1rem' }}
             >
-              NAD+: Sirtuins, PARP, and the Cellular Energy Decline
+              NAD+ Peptide — Anti-Aging, Energy & Skin Longevity Benefits
             </h1>
             <p style={{ color: '#94a3b8', fontSize: '1.05rem', lineHeight: 1.7 }}>
               Nicotinamide adenine dinucleotide declines approximately 50% between ages 30 and 60 — driven by

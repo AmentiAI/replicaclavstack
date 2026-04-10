@@ -4,12 +4,12 @@ import Link from 'next/link'
 const BASE_URL = 'https://thepeptidestack.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'CJC-1295 / Ipamorelin: Synergistic GH Axis Research | The Peptide Stack' },
+  title: { absolute: 'CJC-1295 + Ipamorelin — Best Peptides for Growth Hormone & Muscle | The Peptide Stack' },
   description:
     'CJC-1295 (GHRH analog, ~8-day half-life via DAC) + Ipamorelin (GHS-R1a, no cortisol/prolactin). Synergistic GH pulse amplitude + frequency enhancement research.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/cjc1295-ipamorelin-gh-axis` },
   openGraph: {
-    title: 'CJC-1295 / Ipamorelin: Synergistic GH Axis Research | The Peptide Stack',
+    title: 'CJC-1295 + Ipamorelin — Best Peptides for Growth Hormone & Muscle | The Peptide Stack',
     description:
       'CJC-1295 (GHRH analog, ~8-day half-life via DAC) + Ipamorelin (GHS-R1a, no cortisol/prolactin). Synergistic GH pulse amplitude + frequency enhancement research.',
     url: `${BASE_URL}/looksmaxxing/cjc1295-ipamorelin-gh-axis`,
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'CJC-1295 / Ipamorelin: Synergistic GH Axis Research',
+  headline: 'CJC-1295 + Ipamorelin — Best Peptides for Growth Hormone & Muscle',
   description:
     'CJC-1295 (GHRH analog, ~8-day half-life via DAC) + Ipamorelin (GHS-R1a, no cortisol/prolactin). Synergistic GH pulse amplitude + frequency enhancement research.',
   datePublished: '2026-04-09',
@@ -40,7 +40,7 @@ const breadcrumbJsonLd = {
     {
       '@type': 'ListItem',
       position: 3,
-      name: 'CJC-1295 / Ipamorelin: Synergistic GH Axis Research',
+      name: 'CJC-1295 + Ipamorelin — Best Peptides for Growth Hormone & Muscle',
       item: `${BASE_URL}/looksmaxxing/cjc1295-ipamorelin-gh-axis`,
     },
   ],
@@ -253,7 +253,7 @@ export default function CjcIpamorelinPage() {
               className="gradient-text"
               style={{ fontSize: 'clamp(1.75rem, 4vw, 2.6rem)', fontWeight: 800, lineHeight: 1.2, marginBottom: '1rem' }}
             >
-              CJC-1295 / Ipamorelin: Synergistic GH Axis Research
+              CJC-1295 + Ipamorelin — Best Peptides for Growth Hormone & Muscle
             </h1>
             <p style={{ color: '#94a3b8', fontSize: '1.05rem', lineHeight: 1.7 }}>
               Two peptides, two receptors, one converging output. CJC-1295&apos;s DAC modification provides sustained

@@ -4,12 +4,12 @@ import Link from 'next/link'
 const BASE_URL = 'https://thepeptidestack.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'IGF-1 LR3: Extended Half-Life, IGFBP Evasion, and Downstream Signaling | The Peptide Stack' },
+  title: { absolute: 'IGF-1 LR3 Peptide — Muscle Growth, Body Recomposition & Looksmaxxing | The Peptide Stack' },
   description:
     'IGF-1 LR3 — 13 AA N-terminal extension reduces IGFBP binding 1000×. Half-life 20-30h vs 6-12h native. PI3K/AKT and MAPK pathway research on muscle and skin.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/igf-1-lr3-lean-mass-research` },
   openGraph: {
-    title: 'IGF-1 LR3: Extended Half-Life, IGFBP Evasion, and Downstream Signaling | The Peptide Stack',
+    title: 'IGF-1 LR3 Peptide — Muscle Growth, Body Recomposition & Looksmaxxing | The Peptide Stack',
     description:
       'IGF-1 LR3 — 13 AA N-terminal extension reduces IGFBP binding 1000×. Half-life 20-30h vs 6-12h native. PI3K/AKT and MAPK pathway research on muscle and skin.',
     url: `${BASE_URL}/looksmaxxing/igf-1-lr3-lean-mass-research`,
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'IGF-1 LR3: Extended Half-Life, IGFBP Evasion, and Downstream Signaling',
+  headline: 'IGF-1 LR3 Peptide — Muscle Growth, Body Recomposition & Looksmaxxing',
   description:
     'IGF-1 LR3 — 13 AA N-terminal extension reduces IGFBP binding 1000×. Half-life 20-30h vs 6-12h native. PI3K/AKT and MAPK pathway research on muscle and skin.',
   datePublished: '2026-04-09',
@@ -40,7 +40,7 @@ const breadcrumbJsonLd = {
     {
       '@type': 'ListItem',
       position: 3,
-      name: 'IGF-1 LR3: Extended Half-Life, IGFBP Evasion, and Downstream Signaling',
+      name: 'IGF-1 LR3 Peptide — Muscle Growth, Body Recomposition & Looksmaxxing',
       item: `${BASE_URL}/looksmaxxing/igf-1-lr3-lean-mass-research`,
     },
   ],
@@ -299,7 +299,7 @@ export default function Igf1Lr3Page() {
               className="gradient-text"
               style={{ fontSize: 'clamp(1.75rem, 4vw, 2.6rem)', fontWeight: 800, lineHeight: 1.2, marginBottom: '1rem' }}
             >
-              IGF-1 LR3: Extended Half-Life, IGFBP Evasion, and Downstream Signaling
+              IGF-1 LR3 Peptide — Muscle Growth, Body Recomposition & Looksmaxxing
             </h1>
             <p style={{ color: '#94a3b8', fontSize: '1.05rem', lineHeight: 1.7 }}>
               Native IGF-1 spends 95–99% of its time sequestered in the IGFBP-3/ALS ternary complex — biologically

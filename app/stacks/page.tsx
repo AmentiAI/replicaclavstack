@@ -6,7 +6,7 @@ import { products } from '@/lib/products'
 const BASE_URL = 'https://thepeptidestack.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Research Peptide Stacks — Curated Protocol Bundles | The Peptide Stack' },
+  title: { absolute: 'Best Peptide Stacks for Weight Loss, Skin & Anti-Aging | The Peptide Stack' },
   description:
     'Curated peptide stacks for metabolic research, skin & glow, lean mass, longevity, and recovery. Every compound sourced at >98% HPLC purity. Research use only.',
   alternates: { canonical: `${BASE_URL}/stacks` },
@@ -153,10 +153,10 @@ export default function StacksPage() {
           6 Curated Stacks
         </div>
         <h1 className="text-4xl sm:text-5xl font-black text-white tracking-tight mb-4">
-          Research Peptide Stacks
+          Peptide Stacks
         </h1>
         <p className="text-xl text-gray-500 max-w-2xl mb-8">
-          Every stack is built around a specific research goal — with each compound chosen for mechanism complementarity, not redundancy.
+          Curated peptide stacks for weight loss, skin glow, lean muscle, anti-aging, and recovery. Every compound chosen for what it does — not just what it&apos;s called.
         </p>
         <div className="flex flex-wrap gap-2.5">
           {['21 Compounds', '>98% HPLC', '6 Protocol Stacks', 'Third-Party Tested', 'Research Use Only'].map(tag => (

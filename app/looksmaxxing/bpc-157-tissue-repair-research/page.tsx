@@ -4,12 +4,12 @@ import Link from 'next/link'
 const BASE_URL = 'https://thepeptidestack.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'BPC-157: 40+ Studies on GI Mucosal Integrity and Systemic Healing | The Peptide Stack' },
+  title: { absolute: 'BPC-157 Peptide — Gut Health, Skin Healing & Full Recovery Guide | The Peptide Stack' },
   description:
     'BPC-157 (GEPPPGKPADDAGLV, 15 AA) — 40+ published studies on NO system, VEGFR2, and tissue repair mechanisms. Research on GI mucosal protection and systemic healing.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/bpc-157-tissue-repair-research` },
   openGraph: {
-    title: 'BPC-157: 40+ Studies on GI Mucosal Integrity and Systemic Healing | The Peptide Stack',
+    title: 'BPC-157 Peptide — Gut Health, Skin Healing & Full Recovery Guide | The Peptide Stack',
     description:
       'BPC-157 (GEPPPGKPADDAGLV, 15 AA) — 40+ published studies on NO system, VEGFR2, and tissue repair mechanisms. Research on GI mucosal protection and systemic healing.',
     url: `${BASE_URL}/looksmaxxing/bpc-157-tissue-repair-research`,
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'BPC-157: 40+ Studies on GI Mucosal Integrity and Systemic Healing',
+  headline: 'BPC-157 Peptide — Gut Health, Skin Healing & Full Recovery Guide',
   description:
     'BPC-157 (GEPPPGKPADDAGLV, 15 AA) — 40+ published studies on NO system, VEGFR2, and tissue repair mechanisms. Research on GI mucosal protection and systemic healing.',
   datePublished: '2026-04-09',
@@ -40,7 +40,7 @@ const breadcrumbJsonLd = {
     {
       '@type': 'ListItem',
       position: 3,
-      name: 'BPC-157: 40+ Studies on GI Mucosal Integrity and Systemic Healing',
+      name: 'BPC-157 Peptide — Gut Health, Skin Healing & Full Recovery Guide',
       item: `${BASE_URL}/looksmaxxing/bpc-157-tissue-repair-research`,
     },
   ],
@@ -265,7 +265,7 @@ export default function Bpc157Page() {
               className="gradient-text"
               style={{ fontSize: 'clamp(1.75rem, 4vw, 2.6rem)', fontWeight: 800, lineHeight: 1.2, marginBottom: '1rem' }}
             >
-              BPC-157: 40+ Studies on GI Mucosal Integrity and Systemic Healing
+              BPC-157 Peptide — Gut Health, Skin Healing & Full Recovery Guide
             </h1>
             <p style={{ color: '#94a3b8', fontSize: '1.05rem', lineHeight: 1.7 }}>
               Body Protection Compound 157 — a 15 amino acid pentadecapeptide derived from human gastric juice —

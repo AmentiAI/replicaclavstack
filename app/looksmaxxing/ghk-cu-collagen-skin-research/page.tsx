@@ -4,12 +4,12 @@ import Link from 'next/link'
 const BASE_URL = 'https://thepeptidestack.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'GHK-Cu: The Copper Tripeptide That Rewrites Skin Biology | The Peptide Stack' },
+  title: { absolute: 'GHK-Cu Copper Peptide for Skin — Anti-Aging, Collagen & Glow Guide | The Peptide Stack' },
   description:
     'GHK-Cu (CAS 72957-37-0) modulates 4,177 human genes — 31% of the transcriptome. Research on collagen, elastin, VEGF, and skin aging mechanisms.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/ghk-cu-collagen-skin-research` },
   openGraph: {
-    title: 'GHK-Cu: The Copper Tripeptide That Rewrites Skin Biology | The Peptide Stack',
+    title: 'GHK-Cu Copper Peptide for Skin — Anti-Aging, Collagen & Glow Guide | The Peptide Stack',
     description:
       'GHK-Cu (CAS 72957-37-0) modulates 4,177 human genes — 31% of the transcriptome. Research on collagen, elastin, VEGF, and skin aging mechanisms.',
     url: `${BASE_URL}/looksmaxxing/ghk-cu-collagen-skin-research`,
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'GHK-Cu: The Copper Tripeptide That Rewrites Skin Biology',
+  headline: 'GHK-Cu Copper Peptide for Skin — Anti-Aging, Collagen & Glow Guide',
   description:
     'GHK-Cu (CAS 72957-37-0) modulates 4,177 human genes — 31% of the transcriptome. Research on collagen, elastin, VEGF, and skin aging mechanisms.',
   datePublished: '2026-04-09',
@@ -40,7 +40,7 @@ const breadcrumbJsonLd = {
     {
       '@type': 'ListItem',
       position: 3,
-      name: 'GHK-Cu: The Copper Tripeptide That Rewrites Skin Biology',
+      name: 'GHK-Cu Copper Peptide for Skin — Anti-Aging, Collagen & Glow Guide',
       item: `${BASE_URL}/looksmaxxing/ghk-cu-collagen-skin-research`,
     },
   ],
@@ -201,7 +201,7 @@ export default function GhkCuPage() {
               className="gradient-text"
               style={{ fontSize: 'clamp(1.75rem, 4vw, 2.6rem)', fontWeight: 800, lineHeight: 1.2, marginBottom: '1rem' }}
             >
-              GHK-Cu: The Copper Tripeptide That Rewrites Skin Biology
+              GHK-Cu Copper Peptide for Skin — Anti-Aging, Collagen & Glow Guide
             </h1>
             <p style={{ color: '#94a3b8', fontSize: '1.05rem', lineHeight: 1.7 }}>
               A single endogenous tripeptide modulates 4,177 genes — 31% of the entire human transcriptome. Research

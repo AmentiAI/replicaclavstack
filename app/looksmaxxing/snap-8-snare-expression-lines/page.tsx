@@ -4,12 +4,12 @@ import Link from 'next/link'
 const BASE_URL = 'https://thepeptidestack.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'SNAP-8: Neuromuscular Peptide Research for Expression Lines | The Peptide Stack' },
+  title: { absolute: 'SNAP-8 Peptide — Natural Botox Alternative for Expression Lines | The Peptide Stack' },
   description:
     'SNAP-8 (Acetyl Glutamyl Heptapeptide-3) competitively inhibits SNARE complex formation, reducing acetylcholine exocytosis. 16.1% wrinkle depth reduction in research.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/snap-8-snare-expression-lines` },
   openGraph: {
-    title: 'SNAP-8: Neuromuscular Peptide Research for Expression Lines | The Peptide Stack',
+    title: 'SNAP-8 Peptide — Natural Botox Alternative for Expression Lines | The Peptide Stack',
     description:
       'SNAP-8 (Acetyl Glutamyl Heptapeptide-3) competitively inhibits SNARE complex formation, reducing acetylcholine exocytosis. 16.1% wrinkle depth reduction in research.',
     url: `${BASE_URL}/looksmaxxing/snap-8-snare-expression-lines`,
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'SNAP-8: Neuromuscular Peptide Research for Expression Lines',
+  headline: 'SNAP-8 Peptide — Natural Botox Alternative for Expression Lines',
   description:
     'SNAP-8 (Acetyl Glutamyl Heptapeptide-3) competitively inhibits SNARE complex formation, reducing acetylcholine exocytosis. 16.1% wrinkle depth reduction in research.',
   datePublished: '2026-04-09',
@@ -40,7 +40,7 @@ const breadcrumbJsonLd = {
     {
       '@type': 'ListItem',
       position: 3,
-      name: 'SNAP-8: Neuromuscular Peptide Research for Expression Lines',
+      name: 'SNAP-8 Peptide — Natural Botox Alternative for Expression Lines',
       item: `${BASE_URL}/looksmaxxing/snap-8-snare-expression-lines`,
     },
   ],
@@ -283,7 +283,7 @@ export default function Snap8Page() {
               className="gradient-text"
               style={{ fontSize: 'clamp(1.75rem, 4vw, 2.6rem)', fontWeight: 800, lineHeight: 1.2, marginBottom: '1rem' }}
             >
-              SNAP-8: Neuromuscular Peptide Research for Expression Lines
+              SNAP-8 Peptide — Natural Botox Alternative for Expression Lines
             </h1>
             <p style={{ color: '#94a3b8', fontSize: '1.05rem', lineHeight: 1.7 }}>
               The acetylated N-terminal eight amino acids of SNAP-25 protein compete with endogenous SNAP-25

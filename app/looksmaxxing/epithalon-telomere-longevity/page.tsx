@@ -5,12 +5,12 @@ const BASE_URL = 'https://thepeptidestack.com'
 
 
 export const metadata: Metadata = {
-  title: { absolute: 'Epithalon: Telomerase Activation and Tetrapeptide Anti-Aging Research | The Peptide Stack' },
+  title: { absolute: 'Epithalon Peptide — Anti-Aging, Telomere Support & Longevity Guide | The Peptide Stack' },
   description:
     'Epithalon (Ala-Glu-Asp-Gly) — telomerase (TERT) upregulation research by Khavinson et al. 24% lifespan extension in SHR mice. Cellular anti-aging mechanisms.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/epithalon-telomere-longevity` },
   openGraph: {
-    title: 'Epithalon: Telomerase Activation and Tetrapeptide Anti-Aging Research | The Peptide Stack',
+    title: 'Epithalon Peptide — Anti-Aging, Telomere Support & Longevity Guide | The Peptide Stack',
     description:
       'Epithalon (Ala-Glu-Asp-Gly) — telomerase (TERT) upregulation research by Khavinson et al. 24% lifespan extension in SHR mice. Cellular anti-aging mechanisms.',
     url: `${BASE_URL}/looksmaxxing/epithalon-telomere-longevity`,
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Epithalon: Telomerase Activation and Tetrapeptide Anti-Aging Research',
+  headline: 'Epithalon Peptide — Anti-Aging, Telomere Support & Longevity Guide',
   description:
     'Epithalon (Ala-Glu-Asp-Gly) — telomerase (TERT) upregulation research by Khavinson et al. 24% lifespan extension in SHR mice. Cellular anti-aging mechanisms.',
   datePublished: '2026-04-09',
@@ -41,7 +41,7 @@ const breadcrumbJsonLd = {
     {
       '@type': 'ListItem',
       position: 3,
-      name: 'Epithalon: Telomerase Activation and Tetrapeptide Anti-Aging Research',
+      name: 'Epithalon Peptide — Anti-Aging, Telomere Support & Longevity Guide',
       item: `${BASE_URL}/looksmaxxing/epithalon-telomere-longevity`,
     },
   ],
@@ -213,7 +213,7 @@ export default function EpithalonPage() {
               className="gradient-text"
               style={{ fontSize: 'clamp(1.75rem, 4vw, 2.6rem)', fontWeight: 800, lineHeight: 1.2, marginBottom: '1rem' }}
             >
-              Epithalon: Telomerase Activation and Tetrapeptide Anti-Aging Research
+              Epithalon Peptide — Anti-Aging, Telomere Support & Longevity Guide
             </h1>
             <p style={{ color: '#94a3b8', fontSize: '1.05rem', lineHeight: 1.7 }}>
               A four-amino-acid sequence — Ala-Glu-Asp-Gly — representing three decades of Khavinson Institute research into

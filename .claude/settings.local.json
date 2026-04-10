@@ -11,7 +11,12 @@
       "Bash(ls -la /mnt/c/Users/Wilso/replicaclavstack/lib/product-content-*.ts)",
       "Bash(grep -v \"^[0-9]*:[[:space:]]*['\\\\`]\")",
       "Bash(python3:*)",
-      "Bash(grep -n \"apollo\\\\|Apollo\\\\|apollopeptide\" /mnt/c/Users/Wilso/replicaclavstack/app/looksmaxxing/*/page.tsx)"
+      "Bash(grep -n \"apollo\\\\|Apollo\\\\|apollopeptide\" /mnt/c/Users/Wilso/replicaclavstack/app/looksmaxxing/*/page.tsx)",
+      "Bash(sed -i 's|GHK-Cu: The Copper Tripeptide That Rewrites Skin Biology|GHK-Cu Copper Peptide for Skin — Anti-Aging, Collagen \\\\& Glow Guide|g' /mnt/c/Users/Wilso/replicaclavstack/app/looksmaxxing/ghk-cu-collagen-skin-research/page.tsx)",
+      "Bash(sed -i 's|SNAP-8: Neuromuscular Peptide Research for Expression Lines|SNAP-8 Peptide — Natural Botox Alternative for Expression Lines|g' /mnt/c/Users/Wilso/replicaclavstack/app/looksmaxxing/snap-8-snare-expression-lines/page.tsx)",
+      "Bash(sed -i 's|SNAP-8: The Neuromuscular Peptide for Expression Lines|SNAP-8 Peptide — Natural Botox Alternative for Expression Lines|g' /mnt/c/Users/Wilso/replicaclavstack/app/looksmaxxing/snap-8-snare-expression-lines/page.tsx)",
+      "Bash(sed -i 's|BPC-157: 40+ Studies on GI Mucosal Integrity and Systemic Healing|BPC-157 Peptide — Gut Health, Skin Healing \\\\& Full Recovery Guide|g' /mnt/c/Users/Wilso/replicaclavstack/app/looksmaxxing/bpc-157-tissue-repair-research/page.tsx)",
+      "Bash(sed -i 's|Epithalon: Telomerase Activation and Tetrapeptide Anti-Aging Research|Epithalon Peptide — Anti-Aging, Telomere Support \\\\& Longevity Guide|g' /mnt/c/Users/Wilso/replicaclavstack/app/looksmaxxing/epithalon-telomere-longevity/page.tsx)"
     ]
   }
 }

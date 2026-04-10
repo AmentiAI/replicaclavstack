@@ -1,10 +1,22 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import { products } from '@/lib/products'
 import ProductCard from '@/components/ProductCard'
 import AnimatedCounter from '@/components/AnimatedCounter'
 
-const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e'
+export const metadata: Metadata = {
+  title: { absolute: 'Best Peptides for Weight Loss, Anti-Aging & Looksmaxxing | The Peptide Stack' },
+  description: 'The complete peptide stack: Retatrutide (−28.7%), Tirzepatide, Semaglutide, BPC-157, GHK-Cu, CJC-1295, IGF-1 LR3, Epithalon & more. Research-grade peptides for weight loss, skin, muscle & longevity.',
+  alternates: { canonical: 'https://thepeptidestack.com' },
+  openGraph: {
+    title: 'Best Peptides for Weight Loss, Anti-Aging & Looksmaxxing | The Peptide Stack',
+    description: '21 research-grade peptides for weight loss, anti-aging, skin glow, lean muscle, and longevity. Independent protocol guides for every compound.',
+    url: 'https://thepeptidestack.com',
+    siteName: 'The Peptide Stack',
+    type: 'website',
+  },
+}
 
 const coreStack = ['glp-3-r-15mg', 'bpc-157-10mg', 'ghk-cu-50mg', 'snap-8-10mg', 'cjc1295-ipamorelin']
 const coreProducts = coreStack.map(s => products.find(p => p.slug === s)!).filter(Boolean)
@@ -73,17 +85,17 @@ export default function HomePage() {
 
               {/* Main headline */}
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[0.95] tracking-tighter mb-6 animate-slide-up delay-100">
-                The Research{' '}
-                <span className="shimmer-text block sm:inline">Stack.</span>
+                Best Peptides{' '}
+                <span className="shimmer-text block sm:inline">for 2026.</span>
               </h1>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black leading-[0.95] tracking-tighter mb-8 animate-slide-up delay-200">
-                <span className="gradient-text">Every Compound.</span>
+                <span className="gradient-text">Weight Loss. Skin. Muscle.</span>
                 <br />
-                <span className="text-white/40">All The Data.</span>
+                <span className="text-white/40">All In One Stack.</span>
               </h2>
 
               <p className="text-lg text-gray-400 leading-relaxed mb-12 max-w-xl animate-slide-up delay-300">
-                5-layer peptide research protocol. GLP-3 R tri-receptor agonist core. Independent mechanism analysis across all 10 compounds.
+                21 research-grade peptides for weight loss, anti-aging, looksmaxxing, and longevity. The most complete peptide protocol guide online.
               </p>
 
               {/* CTA buttons */}
@@ -94,8 +106,8 @@ export default function HomePage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </Link>
-                <a href={AFFILIATE} target="_blank" rel="noopener noreferrer" className="btn-ghost inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold rounded-2xl">
-                  Source GLP-3 R 15mg
+                <a href="/stacks" className="btn-ghost inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold rounded-2xl">
+                  Browse All Stacks
                   <svg className="w-4 h-4 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>

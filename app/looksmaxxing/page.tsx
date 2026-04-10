@@ -6,14 +6,14 @@ const BASE_URL = 'https://thepeptidestack.com'
 export const metadata: Metadata = {
   title: {
     absolute:
-      'Looks Maxxing Research: Peptides, Science, and Physical Optimization | The Peptide Stack',
+      'Looksmaxxing with Peptides — The Ultimate Guide to Looking Your Best | The Peptide Stack',
   },
   description:
-    '10 in-depth research guides on peptides for physical optimization: GHK-Cu, SNAP-8, BPC-157, Epithalon, NAD+, Retatrutide, CJC-1295/Ipa, IGF-1 LR3, TB-500, and the full protocol.',
+    'The complete looksmaxxing peptide guide: GHK-Cu for skin, SNAP-8 for expression lines, Retatrutide for weight loss, CJC-1295 for muscle, Epithalon for anti-aging. 10 in-depth guides.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing` },
   openGraph: {
     title:
-      'Looks Maxxing Research: Peptides, Science, and Physical Optimization | The Peptide Stack',
+      'Looksmaxxing with Peptides — The Ultimate Guide to Looking Your Best | The Peptide Stack',
     description:
       '10 in-depth research guides on peptides for physical optimization: GHK-Cu, SNAP-8, BPC-157, Epithalon, NAD+, Retatrutide, CJC-1295/Ipa, IGF-1 LR3, TB-500, and the full protocol.',
     url: `${BASE_URL}/looksmaxxing`,
@@ -49,9 +49,9 @@ type ArticleCard = {
 const articles: ArticleCard[] = [
   {
     slug: 'ghk-cu-collagen-skin-research',
-    title: 'GHK-Cu: The Copper Tripeptide That Rewrites Skin Biology',
+    title: 'GHK-Cu Copper Peptide — Anti-Aging Skin, Collagen & Glow Guide',
     excerpt:
-      'How GHK-Cu modulates 4,177 genes, upregulates collagen I/III, and reverses the skin aging gene expression profile. The most research-validated cosmetic peptide.',
+      'How GHK-Cu modulates 4,177 genes to boost collagen, reduce wrinkles, and reverse skin aging. The most research-backed anti-aging peptide for skin.',
     category: 'Skin & Glow',
     accent: '#f59e0b',
     stat: '4,177 genes',
@@ -59,9 +59,9 @@ const articles: ArticleCard[] = [
   },
   {
     slug: 'snap-8-snare-expression-lines',
-    title: 'SNAP-8: The Neuromuscular Peptide for Expression Lines',
+    title: 'SNAP-8 Peptide — Natural Botox Alternative for Expression Lines',
     excerpt:
-      'SNARE complex biology and how Acetyl Glutamyl Heptapeptide-3 competitively inhibits SNAP-25 to reduce acetylcholine exocytosis and muscle contraction.',
+      'How SNAP-8 reduces facial muscle contractions by up to 16.1% — the research-backed peptide alternative to Botox for smoother skin.',
     category: 'Skin & Glow',
     accent: '#f59e0b',
     stat: '16.1% reduction',
@@ -69,9 +69,9 @@ const articles: ArticleCard[] = [
   },
   {
     slug: 'bpc-157-tissue-repair-research',
-    title: 'BPC-157: 40+ Studies on GI Mucosal Integrity and Systemic Healing',
+    title: 'BPC-157 Peptide — Gut Health, Skin Healing & Full Recovery Guide',
     excerpt:
-      'The 15 amino acid pentadecapeptide — NO system, VEGFR2, and EGFR mechanisms across GI, tendon, skin, and vascular tissue repair models.',
+      'BPC-157 has 40+ studies on gut repair, wound healing, and recovery. The go-to peptide for GI support, skin health, and injury healing.',
     category: 'Gut & Repair',
     accent: '#10b981',
     stat: '40+ studies',
@@ -79,9 +79,9 @@ const articles: ArticleCard[] = [
   },
   {
     slug: 'epithalon-telomere-longevity',
-    title: 'Epithalon: Telomerase Activation and Tetrapeptide Anti-Aging Research',
+    title: 'Epithalon Peptide — Anti-Aging, Telomere Support & Longevity Guide',
     excerpt:
-      "Khavinson's tetrapeptide — TERT upregulation, telomere elongation in somatic cells, pineal melatonin normalization, and 24% lifespan extension in SHR mice.",
+      'Epithalon activates telomerase to slow cellular aging and extend lifespan markers. The best-studied anti-aging peptide for longevity research.',
     category: 'Longevity',
     accent: '#7c3aed',
     stat: '24% lifespan ext.',
@@ -89,9 +89,9 @@ const articles: ArticleCard[] = [
   },
   {
     slug: 'nad-plus-sirtuin-cellular-energy',
-    title: 'NAD+: Sirtuins, PARP, and the Cellular Energy Decline',
+    title: 'NAD+ for Anti-Aging — Energy, Skin & Longevity Benefits',
     excerpt:
-      'The 50% NAD+ decline from age 30-60, CD38 accumulation, sirtuin substrate depletion, and why mitochondrial function is foundational to skin quality and aging.',
+      'NAD+ fuels the sirtuins and PARP enzymes that slow aging. It declines 50% by age 60 — here\'s what the research says about restoring it.',
     category: 'Longevity',
     accent: '#7c3aed',
     stat: '~50% decline by 60',
@@ -99,9 +99,9 @@ const articles: ArticleCard[] = [
   },
   {
     slug: 'retatrutide-body-recomposition',
-    title: 'Retatrutide (GLP-3 R): Triple-Receptor and −28.7% Phase 2 Data',
+    title: 'Retatrutide — The Strongest Weight Loss Peptide (−28.7% in Trials)',
     excerpt:
-      'The triple GLP-1R/GIPR/GcgR mechanism behind the Phase 2 NEJM 2023 result. Body composition DXA data, facial adipose implications, and the GcgR energy expenditure axis.',
+      'Retatrutide hit −28.7% body weight loss in Phase 2 trials — more than any other GLP peptide. Here\'s how the triple-receptor mechanism works.',
     category: 'GLP Core',
     accent: '#00d4ff',
     stat: '−28.7%',
@@ -109,9 +109,9 @@ const articles: ArticleCard[] = [
   },
   {
     slug: 'cjc1295-ipamorelin-gh-axis',
-    title: 'CJC-1295 / Ipamorelin: Synergistic GH Axis Research',
+    title: 'CJC-1295 + Ipamorelin — Best Peptides for Growth Hormone & Muscle',
     excerpt:
-      'GHRH receptor amplitude (CJC-1295 via DAC albumin binding) + GHS-R1a frequency (Ipamorelin selectivity) — the pulsatile GH secretion enhancement research stack.',
+      'The most popular growth hormone peptide stack: CJC-1295 extends GH pulses for days, Ipamorelin amplifies frequency. The research behind the combination.',
     category: 'Lean Mass',
     accent: '#ec4899',
     stat: 'GH Amp + Freq',
@@ -119,9 +119,9 @@ const articles: ArticleCard[] = [
   },
   {
     slug: 'igf-1-lr3-lean-mass-research',
-    title: 'IGF-1 LR3: Extended Half-Life, IGFBP Evasion, and Downstream Signaling',
+    title: 'IGF-1 LR3 Peptide — Muscle Growth, Body Recomposition & Looksmaxxing',
     excerpt:
-      '13 AA N-terminal extension evades IGFBP binding 1000×. PI3K/AKT/mTOR and MAPK pathway activation in muscle, skin fibroblasts, and satellite cells.',
+      'IGF-1 LR3 is the most potent peptide for lean muscle growth. Modified to stay active 20–30 hours, bypassing the binding proteins that limit native IGF-1.',
     category: 'Lean Mass',
     accent: '#ec4899',
     stat: '1000× IGFBP bypass',
@@ -129,9 +129,9 @@ const articles: ArticleCard[] = [
   },
   {
     slug: 'tb-500-thymosin-actin-repair',
-    title: 'TB-500 / Thymosin Beta-4: Actin Dynamics and Systemic Tissue Repair',
+    title: 'TB-500 Peptide — Faster Injury Recovery, Muscle Repair & Healing',
     excerpt:
-      'G-actin sequestration via LKKTET motif, VEGF upregulation, NF-κB suppression — comprehensive tissue repair research across cardiac, corneal, skin, and musculotendinous models.',
+      'TB-500 accelerates healing across 8+ tissue types including muscle, tendons, skin, and heart. The top recovery peptide used alongside training.',
     category: 'Gut & Repair',
     accent: '#10b981',
     stat: '8+ tissue types',
@@ -139,9 +139,9 @@ const articles: ArticleCard[] = [
   },
   {
     slug: 'peptide-looksmaxxing-full-protocol',
-    title: 'The Complete Looks Maxxing Peptide Protocol: All 10 Compounds',
+    title: 'The Complete Looksmaxxing Peptide Protocol — 10 Compounds Explained',
     excerpt:
-      'The 5-layer research stack — GLP core, gut repair, skin & glow, lean mass, longevity — how all 10 compounds interact, synergies, research design, and sourcing.',
+      'The full looksmaxxing stack: weight loss, gut health, skin glow, lean muscle, and anti-aging — all 10 peptides and how they work together.',
     category: 'Protocol',
     accent: '#00d4ff',
     stat: '5 layers · 10 compounds',
@@ -238,7 +238,7 @@ export default function LooksmaxxingIndexPage() {
                 marginBottom: '1.25rem',
               }}
             >
-              Looks Maxxing Research
+              Looksmaxxing with Peptides
             </h1>
 
             <p
