@@ -92,7 +92,77 @@ export const products: Product[] = [
         a: '10mg = $149.99 ($15.00/mg). 15mg = $189.99 ($12.67/mg). The 15mg offers better per-mg value for extended protocols.',
       },
     ],
-    related: ['glp-3-r-15mg', 'glp-2-t-15mg', 'bacteriostatic-water'],
+    related: ['glp-3-r-15mg', 'glp-3-r-30mg', 'glp-2-t-15mg', 'bacteriostatic-water'],
+  },
+
+  {
+    slug: 'glp-3-r-30mg',
+    name: 'GLP-3 R 30mg',
+    chemical_name: 'Retatrutide',
+    cas_number: '2381089-83-2',
+    price: 349.99,
+    in_stock: true,
+    image_url: `${A}/wp-content/uploads/2025/12/retatrutide_30mg.webp`,
+    apollo_path: '/product/glp-3-r-30mg/',
+    category: ['glp-receptor-agonists'],
+    badge: 'Best Value',
+    description:
+      'Retatrutide (GLP-3 R 30mg) — the highest-value vial for extended tri-receptor GLP research. At $11.67/mg, it is the most cost-efficient format for multi-week retatrutide protocols. Same CAS 2381089-83-2 compound, >98% HPLC purity, lyophilized powder.',
+    mechanism:
+      'Full tri-receptor agonism across GLP-1R, GIPR, and GcgR — identical mechanism to the 15mg vial. The 30mg format supports longer uninterrupted research runs and reduces per-mg cost by ~8% versus the 15mg.',
+    specs: [
+      { label: 'Vial Size',  value: '30mg'              },
+      { label: 'Form',       value: 'Lyophilized Powder' },
+      { label: 'Purity',     value: '>98% HPLC'         },
+      { label: 'CAS',        value: '2381089-83-2'       },
+      { label: 'Storage',    value: '−20°C long-term'   },
+    ],
+    faq: [
+      {
+        q: 'Is the 30mg the same compound as the 15mg?',
+        a: 'Yes. Identical compound (Retatrutide, CAS 2381089-83-2), identical purity. The 30mg offers better per-mg value at $11.67/mg vs $12.67/mg for the 15mg.',
+      },
+      {
+        q: 'Who is the 30mg vial for?',
+        a: 'Researchers running multi-week protocols who want to minimize per-mg cost and reduce the number of reconstitution events.',
+      },
+    ],
+    related: ['glp-3-r-15mg', 'glp-3-r-60mg', 'glp-2-t-30mg', 'bacteriostatic-water'],
+  },
+
+  {
+    slug: 'glp-3-r-60mg',
+    name: 'GLP-3 R 60mg',
+    chemical_name: 'Retatrutide',
+    cas_number: '2381089-83-2',
+    price: 589.99,
+    in_stock: true,
+    image_url: `${A}/wp-content/uploads/2025/12/retatrutide_60mg.webp`,
+    apollo_path: '/product/glp-3-r-60mg/',
+    category: ['glp-receptor-agonists'],
+    badge: 'Bulk',
+    description:
+      'Retatrutide (GLP-3 R 60mg) — the bulk research vial for long-duration tri-receptor GLP studies. At $9.83/mg, this is the lowest per-mg cost in the Retatrutide range. >98% HPLC purity, lyophilized powder, CAS 2381089-83-2.',
+    mechanism:
+      'Same tri-receptor mechanism (GLP-1R + GIPR + GcgR) as all Retatrutide vials. The 60mg format is designed for extended research timelines where supply continuity and cost per milligram are priorities.',
+    specs: [
+      { label: 'Vial Size',  value: '60mg'              },
+      { label: 'Form',       value: 'Lyophilized Powder' },
+      { label: 'Purity',     value: '>98% HPLC'         },
+      { label: 'CAS',        value: '2381089-83-2'       },
+      { label: 'Storage',    value: '−20°C long-term'   },
+    ],
+    faq: [
+      {
+        q: 'What is the per-mg cost for the 60mg vial?',
+        a: '$589.99 / 60mg = $9.83/mg — the best per-mg value in the entire Retatrutide line.',
+      },
+      {
+        q: 'How should a 60mg vial be stored and used?',
+        a: 'Store lyophilized at −20°C. Reconstitute as needed in bacteriostatic water. Once reconstituted, store at 4°C and use within 30 days.',
+      },
+    ],
+    related: ['glp-3-r-30mg', 'glp-3-r-15mg', 'bacteriostatic-water'],
   },
 
   // ─── GLP-2 T (Tirzepatide) ────────────────────────────────────
@@ -256,7 +326,42 @@ export const products: Product[] = [
         a: 'SURMOUNT-1 Phase 3 showed −22.5% body weight at 72 weeks at the 15mg dose — exceeding semaglutide\'s STEP-1 result (−14.9% at 68 weeks) by approximately 8 percentage points.',
       },
     ],
-    related: ['glp-2-t-30mg', 'glp-3-r-15mg', 'glp-1-s-15mg', 'bacteriostatic-water'],
+    related: ['glp-2-t-30mg', 'glp-2-t-60mg', 'glp-3-r-15mg', 'glp-1-s-15mg', 'bacteriostatic-water'],
+  },
+
+  {
+    slug: 'glp-2-t-60mg',
+    name: 'GLP-2 T 60mg',
+    chemical_name: 'Tirzepatide',
+    cas_number: '2023788-19-2',
+    price: 489.99,
+    in_stock: true,
+    image_url: `${A}/wp-content/uploads/2025/12/tirzepatide_60mg-1.webp`,
+    apollo_path: '/product/glp-2-t-60mg/',
+    category: ['glp-receptor-agonists'],
+    badge: 'Bulk',
+    description:
+      'Tirzepatide (GLP-2 T 60mg) — the bulk research vial for extended dual-receptor GLP studies. At $8.17/mg, this is the most cost-efficient Tirzepatide format available. 39-amino acid dual GIP/GLP-1 agonist with C20 fatty diacid modification. >98% HPLC purity, lyophilized powder.',
+    mechanism:
+      'Identical dual-receptor mechanism (GLP-1R + GIPR) as all Tirzepatide vials. The 60mg bulk format eliminates reconstitution frequency for long-duration studies and reduces per-mg cost significantly versus smaller vials.',
+    specs: [
+      { label: 'Vial Size',  value: '60mg'              },
+      { label: 'Form',       value: 'Lyophilized Powder' },
+      { label: 'Purity',     value: '>98% HPLC'         },
+      { label: 'CAS',        value: '2023788-19-2'       },
+      { label: 'Storage',    value: '−20°C long-term'   },
+    ],
+    faq: [
+      {
+        q: 'What is the per-mg price for the 60mg vial?',
+        a: '$489.99 / 60mg = $8.17/mg — the lowest per-mg cost in the entire Tirzepatide range.',
+      },
+      {
+        q: 'Is this the same compound as the 15mg and 30mg vials?',
+        a: 'Yes. Same Tirzepatide compound (CAS 2023788-19-2), same >98% HPLC purity specification. Only the vial quantity differs.',
+      },
+    ],
+    related: ['glp-2-t-30mg', 'glp-2-t-15mg', 'glp-3-r-15mg', 'bacteriostatic-water'],
   },
 
   // ─── GLP-1 S (Semaglutide) ────────────────────────────────────

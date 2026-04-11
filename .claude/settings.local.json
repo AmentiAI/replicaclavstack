@@ -16,7 +16,12 @@
       "Bash(sed -i 's|SNAP-8: Neuromuscular Peptide Research for Expression Lines|SNAP-8 Peptide — Natural Botox Alternative for Expression Lines|g' /mnt/c/Users/Wilso/replicaclavstack/app/looksmaxxing/snap-8-snare-expression-lines/page.tsx)",
       "Bash(sed -i 's|SNAP-8: The Neuromuscular Peptide for Expression Lines|SNAP-8 Peptide — Natural Botox Alternative for Expression Lines|g' /mnt/c/Users/Wilso/replicaclavstack/app/looksmaxxing/snap-8-snare-expression-lines/page.tsx)",
       "Bash(sed -i 's|BPC-157: 40+ Studies on GI Mucosal Integrity and Systemic Healing|BPC-157 Peptide — Gut Health, Skin Healing \\\\& Full Recovery Guide|g' /mnt/c/Users/Wilso/replicaclavstack/app/looksmaxxing/bpc-157-tissue-repair-research/page.tsx)",
-      "Bash(sed -i 's|Epithalon: Telomerase Activation and Tetrapeptide Anti-Aging Research|Epithalon Peptide — Anti-Aging, Telomere Support \\\\& Longevity Guide|g' /mnt/c/Users/Wilso/replicaclavstack/app/looksmaxxing/epithalon-telomere-longevity/page.tsx)"
+      "Bash(sed -i 's|Epithalon: Telomerase Activation and Tetrapeptide Anti-Aging Research|Epithalon Peptide — Anti-Aging, Telomere Support \\\\& Longevity Guide|g' /mnt/c/Users/Wilso/replicaclavstack/app/looksmaxxing/epithalon-telomere-longevity/page.tsx)",
+      "Bash(sed -i 's|const AFFILIATE = '\\\\''https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e'\\\\''||g' /mnt/c/Users/Wilso/replicaclavstack/app/protocol/page.tsx)",
+      "Bash(sed -i 's|All 10 protocol compounds available via Apollo Peptide Sciences\\\\.|All 10 protocol compounds. Research-grade quality.|g' /mnt/c/Users/Wilso/replicaclavstack/app/protocol/page.tsx)",
+      "Bash(sed -i 's|href={AFFILIATE}|href=\"/stacks\"|g' /mnt/c/Users/Wilso/replicaclavstack/app/protocol/page.tsx)",
+      "Bash(sed -i 's|Shop at Apollo Peptide Sciences ↗|Shop All Compounds →|g' /mnt/c/Users/Wilso/replicaclavstack/app/protocol/page.tsx)",
+      "Bash(sed -i 's|target=\"_blank\" rel=\"noopener noreferrer\"||g' /mnt/c/Users/Wilso/replicaclavstack/app/protocol/page.tsx)"
     ]
   }
 }

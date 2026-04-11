@@ -433,9 +433,9 @@ export default function HomePage() {
               <Link href="/protocol" className="btn-primary inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold rounded-2xl pulse-glow">
                 Read the Full Protocol
               </Link>
-              <a href={AFFILIATE} target="_blank" rel="noopener noreferrer" className="btn-ghost inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold rounded-2xl">
-                Shop at Apollo ↗
-              </a>
+              <Link href="/stacks" className="btn-ghost inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold rounded-2xl">
+                Shop All Stacks →
+              </Link>
             </div>
           </div>
         </div>

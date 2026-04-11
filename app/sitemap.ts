@@ -58,7 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: BASE_URL,                          lastModified: new Date('2026-04-09'), changeFrequency: 'daily',   priority: 1 },
     { url: `${BASE_URL}/protocol`,            lastModified: new Date('2026-04-09'), changeFrequency: 'weekly',  priority: 1 },
-    { url: `${BASE_URL}/products`,            lastModified: new Date('2026-04-10'), changeFrequency: 'daily',   priority: 0.9 },
+    { url: `${BASE_URL}/products`,            lastModified: new Date('2026-04-11'), changeFrequency: 'daily',   priority: 0.9 },
     { url: `${BASE_URL}/stacks`,             lastModified: new Date('2026-04-10'), changeFrequency: 'weekly',  priority: 0.95 },
     { url: `${BASE_URL}/peptides`,            lastModified: new Date('2026-04-01'), changeFrequency: 'weekly',  priority: 0.8 },
     { url: `${BASE_URL}/looksmaxxing`,        lastModified: new Date('2026-04-09'), changeFrequency: 'weekly',  priority: 0.9 },

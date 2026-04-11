@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { products } from '@/lib/products'
 
-const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e'
+
 const BASE_URL = 'https://thepeptidestack.com'
 
 export const metadata: Metadata = {
@@ -188,7 +188,7 @@ export default function ProtocolPage() {
                         Research
                       </Link>
                       <a
-                        href={`https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e`}
+                        href="/stacks"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-xs px-3 py-1.5 rounded-lg font-semibold transition-colors"
@@ -230,7 +230,7 @@ export default function ProtocolPage() {
       {/* Source CTA */}
       <div className="mt-16 bg-[#0d1526] border border-[#00d4ff]/20 rounded-2xl p-8 text-center glow-cyan-sm">
         <h2 className="text-2xl font-bold text-white mb-2">Source the Full Stack</h2>
-        <p className="text-gray-500 mb-6">All 10 protocol compounds available via Apollo Peptide Sciences. &gt;98% HPLC purity. Third-party test reports.</p>
+        <p className="text-gray-500 mb-6">All 10 protocol compounds. Research-grade quality. &gt;98% HPLC purity. Third-party test reports.</p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link
             href="/products"
@@ -239,12 +239,12 @@ export default function ProtocolPage() {
             View All Products
           </Link>
           <a
-            href={AFFILIATE}
+            href="/stacks"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 bg-[#00d4ff] text-[#080d1a] rounded-xl text-sm font-semibold hover:bg-[#00d4ff]/90 transition-colors"
           >
-            Shop at Apollo Peptide Sciences ↗
+            Shop All Compounds →
           </a>
         </div>
       </div>

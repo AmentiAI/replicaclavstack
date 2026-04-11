@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 const BASE_URL = 'https://thepeptidestack.com'
-const AFFILIATE = 'https://apollopeptidesciences.com/?rfsn=9016964.3f1b1e'
+
 
 export const metadata: Metadata = {
   title: { absolute: 'About — Independent Peptide Research | The Peptide Stack' },
   description:
-    'The Peptide Stack is an independent research resource for peptide protocol analysis. We source compounds through Apollo Peptide Sciences and earn affiliate commissions.',
+    'The Peptide Stack is an independent research resource for peptide protocol analysis. We earn affiliate commissions on qualifying purchases.',
   alternates: { canonical: `${BASE_URL}/about` },
   openGraph: {
     title: 'About | The Peptide Stack',
@@ -44,7 +44,7 @@ export default function AboutPage() {
           <h2 className="text-xl font-bold text-white mb-3">Affiliate Disclosure</h2>
           <p>
             This site contains affiliate links. When you purchase through links on The Peptide Stack, we may earn a commission from{' '}
-            <a href={AFFILIATE} target="_blank" rel="noopener noreferrer" className="text-[#00d4ff] hover:underline">
+            <a href="/products" className="text-[#00d4ff] hover:underline">
               Apollo Peptide Sciences
             </a>{' '}
             at no additional cost to you.
@@ -57,7 +57,7 @@ export default function AboutPage() {
         <div className="bg-[#0d1526] border border-white/8 rounded-2xl p-7">
           <h2 className="text-xl font-bold text-white mb-3">The Research Standard</h2>
           <p>
-            Every compound covered on this site includes CAS number identification, mechanism of action analysis, and published research citations where available. Purity specifications (&gt;98% HPLC) are sourced from Apollo Peptide Sciences' third-party test reports.
+            Every compound covered on this site includes CAS number identification, mechanism of action analysis, and published research citations where available. Purity specifications (&gt;98% HPLC) are sourced from third-party verified test reports.
           </p>
           <p className="mt-4">
             We do not make efficacy claims about research compounds for human use. All statistics cited (e.g., −28.7% weight reduction for Retatrutide) are from published clinical trial data in academic contexts — they describe trial outcomes, not guaranteed results.

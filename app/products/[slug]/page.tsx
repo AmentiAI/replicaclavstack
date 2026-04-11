@@ -20,7 +20,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const SLUG_TITLES: Record<string, string> = {
     'glp-3-r-15mg':         'Retatrutide 15mg — Strongest Weight Loss Peptide (−28.7%) | The Peptide Stack',
     'glp-3-r-10mg':         'Retatrutide 10mg — Triple GLP Receptor Weight Loss Peptide | The Peptide Stack',
+    'glp-3-r-30mg':         'Retatrutide 30mg — Best Value Triple GLP Weight Loss Peptide | The Peptide Stack',
+    'glp-3-r-60mg':         'Retatrutide 60mg — Bulk Triple GLP Weight Loss Peptide Research | The Peptide Stack',
     'glp-2-t-30mg':         'Tirzepatide 30mg — Dual GLP Weight Loss Peptide Research | The Peptide Stack',
+    'glp-2-t-60mg':         'Tirzepatide 60mg — Bulk Dual GLP Weight Loss Peptide | The Peptide Stack',
     'glp-2-t-20mg-5pack':   'Tirzepatide 20mg 5-Pack — Best Value Weight Loss Peptide Bundle | The Peptide Stack',
     'glp-2-t-15mg-4pack':   'Tirzepatide 15mg 4-Pack — Dual GLP-1 Weight Loss Peptide | The Peptide Stack',
     'glp-2-t-15mg-10pack':  'Tirzepatide 15mg 10-Pack — Extended Weight Loss Protocol Peptide | The Peptide Stack',
@@ -703,7 +706,10 @@ function BWReconstitutionGuide() {
 const COMPONENT_MAP: Record<string, React.FC> = {
   'glp-3-r-15mg':          RetaPhase2Chart,
   'glp-3-r-10mg':          RetaValueCalc,
+  'glp-3-r-30mg':          RetaPhase2Chart,
+  'glp-3-r-60mg':          RetaValueCalc,
   'glp-2-t-30mg':          TirzSurmount1Chart,
+  'glp-2-t-60mg':          TirzSurmount1Chart,
   'glp-2-t-20mg-5pack':    TirzBulkCalc,
   'glp-2-t-15mg-4pack':    TirzProtocolTimeline,
   'glp-2-t-15mg-10pack':   TirzUltraBulk,

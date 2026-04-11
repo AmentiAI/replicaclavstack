@@ -27,12 +27,12 @@ const sections = [
   {
     title: 'GLP-3 R — Retatrutide (Triple Receptor)',
     subtitle: 'GLP-1R + GIPR + GcgR agonist · Phase 2: −28.7%',
-    slugs: ['glp-3-r-15mg', 'glp-3-r-10mg'],
+    slugs: ['glp-3-r-15mg', 'glp-3-r-10mg', 'glp-3-r-30mg', 'glp-3-r-60mg'],
   },
   {
     title: 'GLP-2 T — Tirzepatide (Dual Receptor)',
     subtitle: 'GLP-1R + GIPR dual agonist · Phase 3 (SURMOUNT-1): −22.5%',
-    slugs: ['glp-2-t-15mg', 'glp-2-t-30mg', 'glp-2-t-15mg-4pack', 'glp-2-t-20mg-5pack', 'glp-2-t-15mg-10pack'],
+    slugs: ['glp-2-t-15mg', 'glp-2-t-30mg', 'glp-2-t-60mg', 'glp-2-t-15mg-4pack', 'glp-2-t-20mg-5pack', 'glp-2-t-15mg-10pack'],
   },
   {
     title: 'GLP-1 S — Semaglutide (Single Receptor)',
