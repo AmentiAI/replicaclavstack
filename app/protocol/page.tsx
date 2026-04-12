@@ -29,7 +29,7 @@ const layers = [
     cas: '2381089-83-2',
     price: 189.99,
     accent: '#00d4ff',
-    image: 'https://apollopeptidesciences.com/wp-content/uploads/2024/06/retatrutide_15mg.webp',
+    image: 'https://phiogen.is/images/products/glp-3-r-15mg.png',
     why: 'The tri-receptor mechanism (GLP-1R + GIPR + GcgR) produces synergistic effects no single-receptor compound can replicate. Phase 2 showed −28.7% at 48 weeks — the strongest signal in the GLP agonist class.',
     mechanism: 'GLP-1R: appetite suppression + insulin secretion. GIPR: potentiates insulin + attenuates GLP-1 nausea. GcgR: elevated energy expenditure through thermogenic pathway activation.',
     stats: [
@@ -46,7 +46,7 @@ const layers = [
     cas: '137525-51-0',
     price: 59.99,
     accent: '#10b981',
-    image: 'https://apollopeptidesciences.com/wp-content/uploads/2025/09/bpc157_10mg.webp',
+    image: 'https://phiogen.is/images/products/bpc-157-10mg.png',
     why: 'GLP receptor agonists reduce gastric motility. The gut recovery layer addresses GI mucosal integrity during reduced-intake research phases. BPC-157 has 40+ published studies specifically on GI mucosal mechanisms.',
     mechanism: 'Nitric oxide system modulation, VEGFR2 upregulation, direct mucosal protection effects. Paired with GLP-2 T (Teduglutide) for GLP-2R-mediated epithelial proliferation.',
     stats: [
@@ -63,7 +63,7 @@ const layers = [
     cas: '89030-95-5',
     price: 50.00,
     accent: '#f59e0b',
-    image: 'https://apollopeptidesciences.com/wp-content/uploads/2025/01/ghk-cu_50mg.webp',
+    image: 'https://phiogen.is/images/products/ghk-cu-50mg.png',
     why: 'Body composition changes affect skin architecture. GHK-Cu modulates 4,000+ human genes with a bias toward collagen, elastin, and antioxidant upregulation. SNAP-8 targets the complementary SNARE complex pathway.',
     mechanism: 'GHK-Cu: collagen I/III + elastin gene expression, NF-κB anti-inflammatory modulation. SNAP-8: competitive SNARE complex interaction, neuromuscular junction signaling research.',
     stats: [
@@ -80,7 +80,7 @@ const layers = [
     cas: '863288-34-0',
     price: 50.00,
     accent: '#7c3aed',
-    image: 'https://apollopeptidesciences.com/wp-content/uploads/2025/01/cjc1295_5-5mg.webp',
+    image: 'https://phiogen.is/images/products/cjc1295-ipamorelin.png',
     why: 'GLP protocols reduce caloric intake. The lean mass layer researches GH axis support during energetic deficit. CJC-1295/Ipamorelin produces synergistic pulsatile GH secretion; IGF-1 LR3 addresses downstream IGF-1R signaling.',
     mechanism: 'CJC-1295: GHRH receptor agonism (GH pulse amplitude). Ipamorelin: GHS-R1a selective agonism (GH pulse frequency). IGF-1 LR3: extended IGF-1R activation (~3× native half-life).',
     stats: [
@@ -97,7 +97,7 @@ const layers = [
     cas: '307297-39-8',
     price: 139.99,
     accent: '#ec4899',
-    image: 'https://apollopeptidesciences.com/wp-content/uploads/2025/09/epithalon_50mg.webp',
+    image: 'https://phiogen.is/images/products/epithalon-50mg.png',
     why: 'The longevity layer addresses cellular aging mechanisms distinct from all other layers. Epithalon targets telomere biology; NAD+ restores sirtuin and PARP substrate. Both decline approximately 50% by age 60 in human tissue studies.',
     mechanism: 'Epithalon: telomerase (TERT) activation in cellular models. NAD+: sirtuin co-substrate (SIRT1–7 deacylation), PARP-1 substrate for DNA repair, electron carrier in mitochondrial respiration.',
     stats: [

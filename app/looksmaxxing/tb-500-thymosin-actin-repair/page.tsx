@@ -110,7 +110,7 @@ function TissueRepairGrid() {
             }}
           >
             <div style={{ fontSize: '1.5rem', lineHeight: 1 }}>{card.icon}</div>
-            <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#e2e8f0', marginTop: '0.35rem' }}>
+            <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#1f2937', marginTop: '0.35rem' }}>
               {card.tissue}
             </div>
             <div style={{ fontSize: '0.72rem', color: card.ratingColor, lineHeight: 1.35 }}>
@@ -135,7 +135,7 @@ function TissueRepairGrid() {
           { color: '#f59e0b', label: 'Moderate evidence (●●○)', rating: 2 },
           { color: '#64748b', label: 'Early-stage research (●○○)', rating: 1 },
         ].map((leg) => (
-          <div key={leg.label} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.75rem', color: '#94a3b8' }}>
+          <div key={leg.label} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.75rem', color: '#4b5563' }}>
             <div style={{ display: 'flex', gap: '3px' }}>
               {[1, 2, 3].map((dot) => (
                 <div key={dot} style={{
@@ -159,7 +159,7 @@ function TissueRepairGrid() {
         borderTop: '1px solid rgba(255,255,255,0.07)',
       }}>
         {[
-          { value: '43', label: 'Amino acids (Tβ4)', color: '#00d4ff' },
+          { value: '43', label: 'Amino acids (Tβ4)', color: '#c8870a' },
           { value: 'G-actin', label: 'Primary binding target', color: '#f59e0b' },
           { value: '8+', label: 'Tissue types studied', color: '#10b981' },
           { value: 'NF-κB', label: 'Anti-inflammatory target', color: '#7c3aed' },
@@ -198,7 +198,7 @@ export default function Tb500Page() {
             <span>›</span>
             <Link href="/looksmaxxing" style={{ color: '#64748b', textDecoration: 'none' }}>Looksmaxxing</Link>
             <span>›</span>
-            <span style={{ color: '#94a3b8' }}>TB-500 / Thymosin Beta-4 Research</span>
+            <span style={{ color: '#4b5563' }}>TB-500 / Thymosin Beta-4 Research</span>
           </nav>
 
           {/* Hero */}
@@ -226,7 +226,7 @@ export default function Tb500Page() {
             >
               TB-500 Peptide — Faster Injury Recovery, Muscle Repair & Healing
             </h1>
-            <p style={{ color: '#94a3b8', fontSize: '1.05rem', lineHeight: 1.7 }}>
+            <p style={{ color: '#4b5563', fontSize: '1.05rem', lineHeight: 1.7 }}>
               One of the most abundant intracellular peptides in mammalian biology, Thymosin Beta-4 operates at the
               intersection of cytoskeletal dynamics and tissue repair. Through G-actin sequestration, VEGF
               upregulation, and NF-κB suppression, it enables coordinated cell migration, angiogenesis, and
@@ -239,7 +239,7 @@ export default function Tb500Page() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
             {[
               { value: '43 AA', label: 'Tβ4 peptide length', color: '#10b981' },
-              { value: '~4.9 kDa', label: 'Molecular weight', color: '#00d4ff' },
+              { value: '~4.9 kDa', label: 'Molecular weight', color: '#c8870a' },
               { value: '~0.5 mM', label: 'Platelet concentration', color: '#f59e0b' },
               { value: '1966', label: 'First isolated (Goldstein)', color: '#7c3aed' },
             ].map((stat) => (
@@ -552,7 +552,7 @@ export default function Tb500Page() {
               }}
             >
               <p style={{ fontSize: '0.8rem', color: '#64748b', margin: 0 }}>
-                <strong style={{ color: '#94a3b8' }}>Research Use Disclaimer:</strong> All content on this page is for
+                <strong style={{ color: '#4b5563' }}>Research Use Disclaimer:</strong> All content on this page is for
                 informational and educational purposes related to scientific research only. TB-500 / Thymosin Beta-4 as
                 described here is a research compound not approved by the FDA or any regulatory authority for the
                 treatment, prevention, or cure of any medical condition. This content does not constitute medical advice.
@@ -568,7 +568,7 @@ export default function Tb500Page() {
             <Link
               href="/looksmaxxing"
               style={{
-                color: '#00d4ff',
+                color: '#c8870a',
                 textDecoration: 'none',
                 fontSize: '0.9rem',
                 display: 'inline-flex',

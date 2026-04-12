@@ -88,7 +88,7 @@ function GeneModulationChart() {
                 fontSize: '0.8rem',
               }}
             >
-              <span style={{ color: '#e2e8f0' }}>{gene.label}</span>
+              <span style={{ color: '#1f2937' }}>{gene.label}</span>
               <span
                 style={{
                   color: gene.direction === 'UP' ? gene.color : '#ef4444',
@@ -134,15 +134,15 @@ function GeneModulationChart() {
           flexWrap: 'wrap',
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.78rem', color: '#94a3b8' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.78rem', color: '#4b5563' }}>
           <span style={{ width: 12, height: 12, borderRadius: 3, background: '#f59e0b', display: 'inline-block' }} />
           Structural upregulation (amber)
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.78rem', color: '#94a3b8' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.78rem', color: '#4b5563' }}>
           <span style={{ width: 12, height: 12, borderRadius: 3, background: '#10b981', display: 'inline-block' }} />
           Protective upregulation (green)
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.78rem', color: '#94a3b8' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.78rem', color: '#4b5563' }}>
           <span style={{ width: 12, height: 12, borderRadius: 3, background: '#ef4444', display: 'inline-block' }} />
           Pathological downregulation (red)
         </div>
@@ -175,7 +175,7 @@ export default function GhkCuPage() {
             <span>›</span>
             <Link href="/looksmaxxing" style={{ color: '#64748b', textDecoration: 'none' }}>Looksmaxxing</Link>
             <span>›</span>
-            <span style={{ color: '#94a3b8' }}>GHK-Cu Research</span>
+            <span style={{ color: '#4b5563' }}>GHK-Cu Research</span>
           </nav>
 
           {/* Hero */}
@@ -203,7 +203,7 @@ export default function GhkCuPage() {
             >
               GHK-Cu Copper Peptide for Skin — Anti-Aging, Collagen & Glow Guide
             </h1>
-            <p style={{ color: '#94a3b8', fontSize: '1.05rem', lineHeight: 1.7 }}>
+            <p style={{ color: '#4b5563', fontSize: '1.05rem', lineHeight: 1.7 }}>
               A single endogenous tripeptide modulates 4,177 genes — 31% of the entire human transcriptome. Research
               into GHK-Cu&apos;s collagen-stimulating, antioxidant, and anti-inflammatory mechanisms represents one of
               the most comprehensively characterized peptide-driven gene expression profiles in dermatology research.
@@ -214,7 +214,7 @@ export default function GhkCuPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
             {[
               { value: '4,177', label: 'Genes modulated', color: '#f59e0b' },
-              { value: '60+', label: 'Published studies', color: '#00d4ff' },
+              { value: '60+', label: 'Published studies', color: '#c8870a' },
               { value: '3', label: 'Amino acids', color: '#10b981' },
               { value: '+49%', label: 'Skin firmness improvement', color: '#7c3aed' },
             ].map((stat) => (
@@ -457,7 +457,7 @@ export default function GhkCuPage() {
               }}
             >
               <p style={{ fontSize: '0.8rem', color: '#64748b', margin: 0 }}>
-                <strong style={{ color: '#94a3b8' }}>Research Use Disclaimer:</strong> All content on this page is for
+                <strong style={{ color: '#4b5563' }}>Research Use Disclaimer:</strong> All content on this page is for
                 informational and educational purposes related to scientific research only. GHK-Cu as described here
                 is a research compound and is not approved by the FDA or any regulatory authority for the treatment,
                 prevention, or cure of any medical condition. This content does not constitute medical advice.
@@ -473,7 +473,7 @@ export default function GhkCuPage() {
             <Link
               href="/looksmaxxing"
               style={{
-                color: '#00d4ff',
+                color: '#c8870a',
                 textDecoration: 'none',
                 fontSize: '0.9rem',
                 display: 'inline-flex',

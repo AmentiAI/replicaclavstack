@@ -207,19 +207,19 @@ export default function LooksmaxxingIndexPage() {
                 Home
               </Link>
               <span>›</span>
-              <span style={{ color: '#94a3b8' }}>Looksmaxxing</span>
+              <span style={{ color: '#4b5563' }}>Looksmaxxing</span>
             </nav>
 
             {/* Category tag */}
             <div
               style={{
                 display: 'inline-block',
-                background: 'rgba(0,212,255,0.08)',
-                border: '1px solid rgba(0,212,255,0.22)',
+                background: 'rgba(200,135,10,0.1)',
+                border: '1px solid rgba(200,135,10,0.3)',
                 borderRadius: '20px',
                 padding: '0.3rem 1rem',
                 fontSize: '0.75rem',
-                color: '#00d4ff',
+                color: '#c8870a',
                 fontWeight: 600,
                 letterSpacing: '0.07em',
                 textTransform: 'uppercase',
@@ -243,7 +243,7 @@ export default function LooksmaxxingIndexPage() {
 
             <p
               style={{
-                color: '#94a3b8',
+                color: '#4b5563',
                 fontSize: 'clamp(1rem, 2vw, 1.15rem)',
                 lineHeight: 1.75,
                 maxWidth: '640px',
@@ -273,12 +273,13 @@ export default function LooksmaxxingIndexPage() {
               ].map((item) => (
                 <div
                   key={item.label}
-                  className="glass"
                   style={{
+                    background: '#f1f5f9',
+                    border: '1px solid #e2e8f0',
                     borderRadius: '10px',
                     padding: '0.5rem 1rem',
                     fontSize: '0.78rem',
-                    color: '#94a3b8',
+                    color: '#374151',
                     fontWeight: 500,
                     display: 'flex',
                     alignItems: 'center',
@@ -317,7 +318,6 @@ export default function LooksmaxxingIndexPage() {
                   style={{ textDecoration: 'none', display: 'block' }}
                 >
                   <article
-                    className="animated-border glass rounded-2xl card-hover"
                     style={{
                       padding: '1.5rem',
                       height: '100%',
@@ -325,7 +325,10 @@ export default function LooksmaxxingIndexPage() {
                       flexDirection: 'column',
                       gap: '0.75rem',
                       cursor: 'pointer',
-                      transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+                      background: '#ffffff',
+                      border: '1px solid #e2e8f0',
+                      borderRadius: '1rem',
+                      transition: 'border-color 0.2s ease, box-shadow 0.2s ease',
                     }}
                   >
                     {/* Category tag */}
@@ -351,7 +354,7 @@ export default function LooksmaxxingIndexPage() {
                     {/* Title */}
                     <h2
                       style={{
-                        color: '#f8fafc',
+                        color: '#1f2937',
                         fontSize: '1rem',
                         fontWeight: 700,
                         lineHeight: 1.45,
@@ -387,7 +390,7 @@ export default function LooksmaxxingIndexPage() {
                         justifyContent: 'space-between',
                         marginTop: 'auto',
                         paddingTop: '0.75rem',
-                        borderTop: '1px solid rgba(255,255,255,0.06)',
+                        borderTop: '1px solid #e2e8f0',
                       }}
                     >
                       <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
@@ -406,7 +409,7 @@ export default function LooksmaxxingIndexPage() {
                         <span
                           style={{
                             fontSize: '0.7rem',
-                            color: '#475569',
+                            color: '#374151',
                             display: 'flex',
                             alignItems: 'center',
                             gap: '0.25rem',
@@ -437,8 +440,9 @@ export default function LooksmaxxingIndexPage() {
 
           {/* Bottom disclaimer */}
           <div
-            className="glass"
             style={{
+              background: '#fffbeb',
+              border: '1px solid #fde68a',
               borderRadius: '14px',
               padding: '1.25rem 1.5rem',
               marginTop: '3rem',
@@ -448,7 +452,7 @@ export default function LooksmaxxingIndexPage() {
             <p
               style={{
                 fontSize: '0.78rem',
-                color: '#475569',
+                color: '#374151',
                 margin: 0,
                 lineHeight: 1.65,
               }}

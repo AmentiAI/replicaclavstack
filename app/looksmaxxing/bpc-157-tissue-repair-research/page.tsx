@@ -140,7 +140,7 @@ function MechanismCoverageMatrix() {
                     textAlign: 'center',
                     padding: '0.5rem 0.75rem',
                     background: 'rgba(0,212,255,0.06)',
-                    color: '#00d4ff',
+                    color: '#c8870a',
                     fontWeight: 600,
                     fontSize: '0.72rem',
                     letterSpacing: '0.04em',
@@ -164,7 +164,7 @@ function MechanismCoverageMatrix() {
                 <td
                   style={{
                     padding: '0.6rem 0.75rem',
-                    color: '#e2e8f0',
+                    color: '#1f2937',
                     fontWeight: 500,
                     borderBottom: '1px solid rgba(255,255,255,0.05)',
                     whiteSpace: 'nowrap',
@@ -201,13 +201,13 @@ function MechanismCoverageMatrix() {
           flexWrap: 'wrap',
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.78rem', color: '#94a3b8' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.78rem', color: '#4b5563' }}>
           <span style={{ color: '#10b981', fontSize: '1rem' }}>●</span> Strong research evidence
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.78rem', color: '#94a3b8' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.78rem', color: '#4b5563' }}>
           <span style={{ color: '#f59e0b', fontSize: '1rem' }}>◐</span> Emerging / partial evidence
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.78rem', color: '#94a3b8' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.78rem', color: '#4b5563' }}>
           <span style={{ color: '#334155', fontSize: '1rem' }}>○</span> Limited / no evidence
         </div>
       </div>
@@ -239,7 +239,7 @@ export default function Bpc157Page() {
             <span>›</span>
             <Link href="/looksmaxxing" style={{ color: '#64748b', textDecoration: 'none' }}>Looksmaxxing</Link>
             <span>›</span>
-            <span style={{ color: '#94a3b8' }}>BPC-157 Research</span>
+            <span style={{ color: '#4b5563' }}>BPC-157 Research</span>
           </nav>
 
           {/* Hero */}
@@ -267,7 +267,7 @@ export default function Bpc157Page() {
             >
               BPC-157 Peptide — Gut Health, Skin Healing & Full Recovery Guide
             </h1>
-            <p style={{ color: '#94a3b8', fontSize: '1.05rem', lineHeight: 1.7 }}>
+            <p style={{ color: '#4b5563', fontSize: '1.05rem', lineHeight: 1.7 }}>
               Body Protection Compound 157 — a 15 amino acid pentadecapeptide derived from human gastric juice —
               has accumulated one of the most extensive published research bodies of any synthetic peptide,
               spanning GI mucosal protection, tendon and ligament healing, vascular integrity, and neural recovery
@@ -280,7 +280,7 @@ export default function Bpc157Page() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
             {[
               { value: '40+', label: 'Published studies', color: '#10b981' },
-              { value: '15', label: 'Amino acids (GEPPPGKPADDAGLV)', color: '#00d4ff' },
+              { value: '15', label: 'Amino acids (GEPPPGKPADDAGLV)', color: '#c8870a' },
               { value: '3+', label: 'Primary mechanisms', color: '#f59e0b' },
               { value: '30+', label: 'Years of research', color: '#7c3aed' },
             ].map((stat) => (
@@ -559,7 +559,7 @@ export default function Bpc157Page() {
               }}
             >
               <p style={{ fontSize: '0.8rem', color: '#64748b', margin: 0 }}>
-                <strong style={{ color: '#94a3b8' }}>Research Use Disclaimer:</strong> All content on this page is for
+                <strong style={{ color: '#4b5563' }}>Research Use Disclaimer:</strong> All content on this page is for
                 informational and educational purposes related to scientific research only. BPC-157 as described here
                 is a research compound and is not approved by the FDA or any regulatory authority for the treatment,
                 prevention, or cure of any medical condition. This content does not constitute medical advice.
@@ -575,7 +575,7 @@ export default function Bpc157Page() {
             <Link
               href="/looksmaxxing"
               style={{
-                color: '#00d4ff',
+                color: '#c8870a',
                 textDecoration: 'none',
                 fontSize: '0.9rem',
                 display: 'inline-flex',

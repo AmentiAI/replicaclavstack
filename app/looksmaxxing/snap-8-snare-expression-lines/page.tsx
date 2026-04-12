@@ -61,7 +61,7 @@ function SNAREMechanismDiagram() {
     borderRadius: '8px',
     padding: '0.6rem 0.85rem',
     fontSize: '0.8rem',
-    color: '#e2e8f0',
+    color: '#1f2937',
     textAlign: 'center',
   }
 
@@ -118,7 +118,7 @@ function SNAREMechanismDiagram() {
           <div style={innerBox}>
             <div style={{ fontSize: '0.7rem', color: '#64748b', marginBottom: '0.25rem' }}>Nerve Terminal</div>
             <div style={{ color: '#10b981', fontWeight: 600 }}>SNAP-25 ✓</div>
-            <div style={{ fontSize: '0.72rem', color: '#94a3b8', marginTop: '0.2rem' }}>SNARE complex assembles freely</div>
+            <div style={{ fontSize: '0.72rem', color: '#4b5563', marginTop: '0.2rem' }}>SNARE complex assembles freely</div>
           </div>
 
           <div style={synapseGap}>— Synapse gap —</div>
@@ -257,7 +257,7 @@ export default function Snap8Page() {
             <span>›</span>
             <Link href="/looksmaxxing" style={{ color: '#64748b', textDecoration: 'none' }}>Looksmaxxing</Link>
             <span>›</span>
-            <span style={{ color: '#94a3b8' }}>SNAP-8 Research</span>
+            <span style={{ color: '#4b5563' }}>SNAP-8 Research</span>
           </nav>
 
           {/* Hero */}
@@ -270,7 +270,7 @@ export default function Snap8Page() {
                 borderRadius: '20px',
                 padding: '0.25rem 0.85rem',
                 fontSize: '0.75rem',
-                color: '#00d4ff',
+                color: '#c8870a',
                 fontWeight: 600,
                 letterSpacing: '0.06em',
                 textTransform: 'uppercase',
@@ -285,7 +285,7 @@ export default function Snap8Page() {
             >
               SNAP-8 Peptide — Natural Botox Alternative for Expression Lines
             </h1>
-            <p style={{ color: '#94a3b8', fontSize: '1.05rem', lineHeight: 1.7 }}>
+            <p style={{ color: '#4b5563', fontSize: '1.05rem', lineHeight: 1.7 }}>
               The acetylated N-terminal eight amino acids of SNAP-25 protein compete with endogenous SNAP-25
               at the SNARE complex assembly interface, partially inhibiting acetylcholine exocytosis at the
               neuromuscular junction. Research data shows 16.1% reduction in wrinkle depth at maximum
@@ -296,7 +296,7 @@ export default function Snap8Page() {
           {/* Stats row */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
             {[
-              { value: '16.1%', label: 'Wrinkle depth reduction', color: '#00d4ff' },
+              { value: '16.1%', label: 'Wrinkle depth reduction', color: '#c8870a' },
               { value: '8', label: 'Amino acids', color: '#f59e0b' },
               { value: 'SNAP-25', label: 'Target protein', color: '#10b981' },
               { value: 'NMJ', label: 'Mechanism site', color: '#7c3aed' },
@@ -544,7 +544,7 @@ export default function Snap8Page() {
               }}
             >
               <p style={{ fontSize: '0.8rem', color: '#64748b', margin: 0 }}>
-                <strong style={{ color: '#94a3b8' }}>Research Use Disclaimer:</strong> All content on this page is for
+                <strong style={{ color: '#4b5563' }}>Research Use Disclaimer:</strong> All content on this page is for
                 informational and educational purposes related to scientific research only. SNAP-8 as described here
                 is a research compound and is not approved by the FDA or any regulatory authority for the treatment,
                 prevention, or cure of any medical condition. This content does not constitute medical advice.
@@ -560,7 +560,7 @@ export default function Snap8Page() {
             <Link
               href="/looksmaxxing"
               style={{
-                color: '#00d4ff',
+                color: '#c8870a',
                 textDecoration: 'none',
                 fontSize: '0.9rem',
                 display: 'inline-flex',

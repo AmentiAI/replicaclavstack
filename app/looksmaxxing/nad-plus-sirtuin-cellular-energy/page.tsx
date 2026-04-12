@@ -100,7 +100,7 @@ function NADPathwayDiagram() {
             textAlign: 'center',
           }}
         >
-          <span style={{ fontSize: '1.5rem', fontWeight: 900, color: '#00d4ff', letterSpacing: '0.04em' }}>NAD+</span>
+          <span style={{ fontSize: '1.5rem', fontWeight: 900, color: '#c8870a', letterSpacing: '0.04em' }}>NAD+</span>
           <div style={{ fontSize: '0.7rem', color: '#64748b', marginTop: '0.15rem' }}>Nicotinamide Adenine Dinucleotide</div>
         </div>
       </div>
@@ -121,7 +121,7 @@ function NADPathwayDiagram() {
             style={{ width: '100%', padding: '0.75rem', borderRadius: '10px', border: '1px solid rgba(124,58,237,0.35)', textAlign: 'center' }}
           >
             <div style={{ fontWeight: 800, fontSize: '0.85rem', color: '#7c3aed', marginBottom: '0.5rem' }}>SIRT1-7</div>
-            <div style={{ fontSize: '0.72rem', color: '#94a3b8', marginBottom: '0.25rem' }}>Sirtuins</div>
+            <div style={{ fontSize: '0.72rem', color: '#4b5563', marginBottom: '0.25rem' }}>Sirtuins</div>
           </div>
           {[
             'SIRT1 → PGC-1α (mitochondria)',
@@ -169,7 +169,7 @@ function NADPathwayDiagram() {
             style={{ width: '100%', padding: '0.75rem', borderRadius: '10px', border: '1px solid rgba(245,158,11,0.35)', textAlign: 'center' }}
           >
             <div style={{ fontWeight: 800, fontSize: '0.85rem', color: '#f59e0b', marginBottom: '0.5rem' }}>PARP1/2</div>
-            <div style={{ fontSize: '0.72rem', color: '#94a3b8', marginBottom: '0.25rem' }}>DNA Repair</div>
+            <div style={{ fontSize: '0.72rem', color: '#4b5563', marginBottom: '0.25rem' }}>DNA Repair</div>
           </div>
           <div
             style={{
@@ -210,7 +210,7 @@ function NADPathwayDiagram() {
             style={{ width: '100%', padding: '0.75rem', borderRadius: '10px', border: '1px solid rgba(239,68,68,0.35)', textAlign: 'center' }}
           >
             <div style={{ fontWeight: 800, fontSize: '0.85rem', color: '#ef4444', marginBottom: '0.5rem' }}>CD38</div>
-            <div style={{ fontSize: '0.72rem', color: '#94a3b8', marginBottom: '0.25rem' }}>NADase</div>
+            <div style={{ fontSize: '0.72rem', color: '#4b5563', marginBottom: '0.25rem' }}>NADase</div>
           </div>
           {[
             'Pro-inflammatory enzyme',
@@ -279,7 +279,7 @@ export default function NadPlusPage() {
             <span>›</span>
             <Link href="/looksmaxxing" style={{ color: '#64748b', textDecoration: 'none' }}>Looksmaxxing</Link>
             <span>›</span>
-            <span style={{ color: '#94a3b8' }}>NAD+ Sirtuin Research</span>
+            <span style={{ color: '#4b5563' }}>NAD+ Sirtuin Research</span>
           </nav>
 
           {/* Hero */}
@@ -307,7 +307,7 @@ export default function NadPlusPage() {
             >
               NAD+ Peptide — Anti-Aging, Energy & Skin Longevity Benefits
             </h1>
-            <p style={{ color: '#94a3b8', fontSize: '1.05rem', lineHeight: 1.7 }}>
+            <p style={{ color: '#4b5563', fontSize: '1.05rem', lineHeight: 1.7 }}>
               Nicotinamide adenine dinucleotide declines approximately 50% between ages 30 and 60 — driven by
               accumulating senescent cells, rising CD38 expression, and increased DNA damage repair demand. The
               downstream consequences — sirtuin suppression, mitochondrial decline, and chronic inflammation — are
@@ -518,7 +518,7 @@ export default function NadPlusPage() {
               showing safe NAD+ elevation in blood and target tissues.
             </p>
             <p>
-              <a href="/stacks" target="_blank" rel="noopener noreferrer" style={{ color: '#00d4ff', textDecoration: 'none' }}>
+              <a href="/stacks" target="_blank" rel="noopener noreferrer" style={{ color: '#c8870a', textDecoration: 'none' }}>
                 our research partner&apos; NAD+ (500 mg vials)
               </a>{' '}
               provides direct NAD+ for laboratory research applications — relevant for in vitro cell culture studies
@@ -577,7 +577,7 @@ export default function NadPlusPage() {
               targets the sirtuin/mitochondrial axis — cellular metabolic and epigenetic regulatory capacity.
               The two axes are mechanistically independent with no molecular overlap, meaning their research
               combination addresses aging comprehensively rather than redundantly. our research partner&apos;{' '}
-              <a href="/stacks" target="_blank" rel="noopener noreferrer" style={{ color: '#00d4ff', textDecoration: 'none' }}>
+              <a href="/stacks" target="_blank" rel="noopener noreferrer" style={{ color: '#c8870a', textDecoration: 'none' }}>
                 NAD+ 500 mg research vials
               </a>{' '}
               represent the longevity substrate layer of the research protocol — the foundation on which
@@ -595,7 +595,7 @@ export default function NadPlusPage() {
               }}
             >
               <p style={{ fontSize: '0.8rem', color: '#64748b', margin: 0 }}>
-                <strong style={{ color: '#94a3b8' }}>Research Use Disclaimer:</strong> All content on this page is
+                <strong style={{ color: '#4b5563' }}>Research Use Disclaimer:</strong> All content on this page is
                 for informational and educational purposes related to scientific research only. NAD+ and related
                 compounds as described here are research compounds not approved by the FDA or any regulatory authority
                 for the treatment, prevention, or cure of any medical condition. This content does not constitute
@@ -611,7 +611,7 @@ export default function NadPlusPage() {
             <Link
               href="/looksmaxxing"
               style={{
-                color: '#00d4ff',
+                color: '#c8870a',
                 textDecoration: 'none',
                 fontSize: '0.9rem',
                 display: 'inline-flex',

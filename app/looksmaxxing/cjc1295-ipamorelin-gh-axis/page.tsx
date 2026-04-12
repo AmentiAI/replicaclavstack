@@ -76,7 +76,7 @@ function GHPulseDiagram() {
       {/* Row 1: Baseline */}
       <div style={{ marginBottom: '2.5rem' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
-          <span style={{ fontSize: '0.8rem', fontWeight: 700, color: '#94a3b8', letterSpacing: '0.04em', textTransform: 'uppercase' }}>
+          <span style={{ fontSize: '0.8rem', fontWeight: 700, color: '#4b5563', letterSpacing: '0.04em', textTransform: 'uppercase' }}>
             Baseline GH Secretion
           </span>
           <span style={{ fontSize: '0.75rem', color: '#64748b' }}>Low amplitude, normal frequency</span>
@@ -115,7 +115,7 @@ function GHPulseDiagram() {
       {/* Row 2: CJC + Ipamorelin */}
       <div style={{ marginBottom: '1.5rem' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
-          <span style={{ fontSize: '0.8rem', fontWeight: 700, color: '#00d4ff', letterSpacing: '0.04em', textTransform: 'uppercase' }}>
+          <span style={{ fontSize: '0.8rem', fontWeight: 700, color: '#c8870a', letterSpacing: '0.04em', textTransform: 'uppercase' }}>
             CJC-1295 + Ipamorelin Research
           </span>
           <span style={{ fontSize: '0.75rem', color: '#64748b' }}>Increased amplitude (CJC-1295) + increased frequency (Ipamorelin)</span>
@@ -160,13 +160,13 @@ function GHPulseDiagram() {
             alignItems: 'center',
             height: '60px',
           }}>
-            <span style={{ fontSize: '0.65rem', color: '#00d4ff', lineHeight: 1, marginBottom: '2px' }}>▲</span>
+            <span style={{ fontSize: '0.65rem', color: '#c8870a', lineHeight: 1, marginBottom: '2px' }}>▲</span>
             <div style={{ flex: 1, width: '1px', background: 'rgba(0,212,255,0.5)' }} />
-            <span style={{ fontSize: '0.55rem', color: '#00d4ff', whiteSpace: 'nowrap', transform: 'rotate(-90deg) translateX(22px)', transformOrigin: 'center', position: 'absolute', right: '10px', bottom: '24px' }}>
+            <span style={{ fontSize: '0.55rem', color: '#c8870a', whiteSpace: 'nowrap', transform: 'rotate(-90deg) translateX(22px)', transformOrigin: 'center', position: 'absolute', right: '10px', bottom: '24px' }}>
               ~3–5× amplitude
             </span>
             <div style={{ flex: 1, width: '1px', background: 'rgba(0,212,255,0.5)' }} />
-            <span style={{ fontSize: '0.65rem', color: '#00d4ff', lineHeight: 1, marginTop: '2px' }}>▼</span>
+            <span style={{ fontSize: '0.65rem', color: '#c8870a', lineHeight: 1, marginTop: '2px' }}>▼</span>
           </div>
         </div>
 
@@ -188,8 +188,8 @@ function GHPulseDiagram() {
         borderTop: '1px solid rgba(255,255,255,0.07)',
       }}>
         {[
-          { value: '~8 days', label: 'CJC-1295 half-life (DAC)', color: '#00d4ff' },
-          { value: '~20 min', label: 'Native GH half-life', color: '#94a3b8' },
+          { value: '~8 days', label: 'CJC-1295 half-life (DAC)', color: '#c8870a' },
+          { value: '~20 min', label: 'Native GH half-life', color: '#4b5563' },
           { value: 'GHS-R1a', label: 'Ipamorelin receptor target', color: '#7c3aed' },
           { value: '0', label: 'Cortisol/prolactin stimulation (Ipa)', color: '#10b981' },
         ].map((s) => (
@@ -227,7 +227,7 @@ export default function CjcIpamorelinPage() {
             <span>›</span>
             <Link href="/looksmaxxing" style={{ color: '#64748b', textDecoration: 'none' }}>Looksmaxxing</Link>
             <span>›</span>
-            <span style={{ color: '#94a3b8' }}>CJC-1295 / Ipamorelin Research</span>
+            <span style={{ color: '#4b5563' }}>CJC-1295 / Ipamorelin Research</span>
           </nav>
 
           {/* Hero */}
@@ -240,7 +240,7 @@ export default function CjcIpamorelinPage() {
                 borderRadius: '20px',
                 padding: '0.25rem 0.85rem',
                 fontSize: '0.75rem',
-                color: '#00d4ff',
+                color: '#c8870a',
                 fontWeight: 600,
                 letterSpacing: '0.06em',
                 textTransform: 'uppercase',
@@ -255,7 +255,7 @@ export default function CjcIpamorelinPage() {
             >
               CJC-1295 + Ipamorelin — Best Peptides for Growth Hormone & Muscle
             </h1>
-            <p style={{ color: '#94a3b8', fontSize: '1.05rem', lineHeight: 1.7 }}>
+            <p style={{ color: '#4b5563', fontSize: '1.05rem', lineHeight: 1.7 }}>
               Two peptides, two receptors, one converging output. CJC-1295&apos;s DAC modification provides sustained
               GHRH-R stimulation — increasing GH pulse amplitude over days. Ipamorelin&apos;s GHS-R1a selectivity
               increases pulse frequency without stimulating cortisol or prolactin. Together, they represent the most
@@ -266,7 +266,7 @@ export default function CjcIpamorelinPage() {
           {/* Stats row */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
             {[
-              { value: '~8 days', label: 'CJC-1295 half-life (DAC)', color: '#00d4ff' },
+              { value: '~8 days', label: 'CJC-1295 half-life (DAC)', color: '#c8870a' },
               { value: '191 AA', label: 'GH protein size', color: '#7c3aed' },
               { value: '6–12', label: 'Daily GH pulses (normal)', color: '#f59e0b' },
               { value: '~3–5×', label: 'Amplitude increase (research)', color: '#10b981' },
@@ -521,7 +521,7 @@ export default function CjcIpamorelinPage() {
               }}
             >
               <p style={{ fontSize: '0.8rem', color: '#64748b', margin: 0 }}>
-                <strong style={{ color: '#94a3b8' }}>Research Use Disclaimer:</strong> All content on this page is for
+                <strong style={{ color: '#4b5563' }}>Research Use Disclaimer:</strong> All content on this page is for
                 informational and educational purposes related to scientific research only. CJC-1295 and Ipamorelin are
                 research compounds not approved by the FDA or any regulatory authority for the treatment, prevention, or
                 cure of any medical condition. This content does not constitute medical advice. Do not use research
@@ -537,7 +537,7 @@ export default function CjcIpamorelinPage() {
             <Link
               href="/looksmaxxing"
               style={{
-                color: '#00d4ff',
+                color: '#c8870a',
                 textDecoration: 'none',
                 fontSize: '0.9rem',
                 display: 'inline-flex',

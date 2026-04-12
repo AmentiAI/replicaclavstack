@@ -137,7 +137,7 @@ function TelomereVisualization() {
               />
             </div>
             {/* Label */}
-            <span style={{ fontSize: '0.78rem', color: '#94a3b8', fontWeight: 600, textAlign: 'center' }}>{col.label}</span>
+            <span style={{ fontSize: '0.78rem', color: '#4b5563', fontWeight: 600, textAlign: 'center' }}>{col.label}</span>
             {/* Telomere length */}
             <div style={{ textAlign: 'center' }}>
               <div style={{ fontSize: '0.7rem', color: '#64748b', marginBottom: '0.15rem' }}>Telomere Length</div>
@@ -187,7 +187,7 @@ export default function EpithalonPage() {
             <span>›</span>
             <Link href="/looksmaxxing" style={{ color: '#64748b', textDecoration: 'none' }}>Looksmaxxing</Link>
             <span>›</span>
-            <span style={{ color: '#94a3b8' }}>Epithalon Telomere Research</span>
+            <span style={{ color: '#4b5563' }}>Epithalon Telomere Research</span>
           </nav>
 
           {/* Hero */}
@@ -215,7 +215,7 @@ export default function EpithalonPage() {
             >
               Epithalon Peptide — Anti-Aging, Telomere Support & Longevity Guide
             </h1>
-            <p style={{ color: '#94a3b8', fontSize: '1.05rem', lineHeight: 1.7 }}>
+            <p style={{ color: '#4b5563', fontSize: '1.05rem', lineHeight: 1.7 }}>
               A four-amino-acid sequence — Ala-Glu-Asp-Gly — representing three decades of Khavinson Institute research into
               telomerase upregulation, pineal regulation, and cellular longevity. The most extensively studied anti-aging tetrapeptide
               in the scientific literature.
@@ -226,7 +226,7 @@ export default function EpithalonPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
             {[
               { value: '4', label: 'Amino acids', color: '#7c3aed' },
-              { value: '30+', label: 'Khavinson research years', color: '#00d4ff' },
+              { value: '30+', label: 'Khavinson research years', color: '#c8870a' },
               { value: '24%', label: 'Lifespan extension (SHR mice)', color: '#10b981' },
               { value: 'TERT', label: 'Primary target', color: '#f59e0b' },
             ].map((stat) => (
@@ -512,7 +512,7 @@ export default function EpithalonPage() {
               a pattern that may relate to the epigenetic mechanism proposed, where chromatin modifications
               established during a treatment cycle are maintained for a period before reapplication. Apollo
               Peptide Sciences supplies{' '}
-              <a href="/stacks" target="_blank" rel="noopener noreferrer" style={{ color: '#00d4ff', textDecoration: 'none' }}>
+              <a href="/stacks" target="_blank" rel="noopener noreferrer" style={{ color: '#c8870a', textDecoration: 'none' }}>
                 50 mg vials of lyophilized Epithalon
               </a>{' '}
               for laboratory research applications.
@@ -543,7 +543,7 @@ export default function EpithalonPage() {
               }}
             >
               <p style={{ fontSize: '0.8rem', color: '#64748b', margin: 0 }}>
-                <strong style={{ color: '#94a3b8' }}>Research Use Disclaimer:</strong> All content on this page is
+                <strong style={{ color: '#4b5563' }}>Research Use Disclaimer:</strong> All content on this page is
                 for informational and educational purposes related to scientific research only. Epithalon as described
                 here is a research compound not approved by the FDA or any regulatory authority for the treatment,
                 prevention, or cure of any medical condition. This content does not constitute medical advice.
@@ -559,7 +559,7 @@ export default function EpithalonPage() {
             <Link
               href="/looksmaxxing"
               style={{
-                color: '#00d4ff',
+                color: '#c8870a',
                 textDecoration: 'none',
                 fontSize: '0.9rem',
                 display: 'inline-flex',

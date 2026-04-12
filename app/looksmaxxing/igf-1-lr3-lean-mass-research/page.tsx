@@ -104,8 +104,8 @@ function IGFSignalingDiagram() {
             padding: '0.75rem 1.25rem',
             textAlign: 'center',
           }}>
-            <div style={{ fontSize: '0.72rem', fontWeight: 800, color: '#00d4ff', letterSpacing: '0.05em' }}>IGF-1 LR3</div>
-            <div style={{ fontSize: '0.65rem', color: '#94a3b8', marginTop: '0.2rem', maxWidth: '180px' }}>LR3 extension = 1000× lower IGFBP binding</div>
+            <div style={{ fontSize: '0.72rem', fontWeight: 800, color: '#c8870a', letterSpacing: '0.05em' }}>IGF-1 LR3</div>
+            <div style={{ fontSize: '0.65rem', color: '#4b5563', marginTop: '0.2rem', maxWidth: '180px' }}>LR3 extension = 1000× lower IGFBP binding</div>
           </div>
         </div>
 
@@ -128,7 +128,7 @@ function IGFSignalingDiagram() {
               pointerEvents: 'none',
             }} />
             <div style={{ fontSize: '0.7rem', fontWeight: 700, color: '#ef4444', textDecoration: 'line-through' }}>IGFBP-3/ALS complex</div>
-            <div style={{ fontSize: '0.62rem', color: '#94a3b8', marginTop: '0.15rem' }}>Evaded by LR3 extension</div>
+            <div style={{ fontSize: '0.62rem', color: '#4b5563', marginTop: '0.15rem' }}>Evaded by LR3 extension</div>
           </div>
         </div>
       </div>
@@ -144,7 +144,7 @@ function IGFSignalingDiagram() {
           padding: '0.5rem 1.5rem',
           fontSize: '0.78rem',
           fontWeight: 600,
-          color: '#00d4ff',
+          color: '#c8870a',
           textAlign: 'center',
         }}>
           Binds IGF-1R (Tyrosine Kinase Receptor)
@@ -166,7 +166,7 @@ function IGFSignalingDiagram() {
           textAlign: 'center',
         }}>
           IGF-1R Auto-phosphorylation
-          <div style={{ fontSize: '0.65rem', color: '#94a3b8', fontWeight: 400, marginTop: '0.15rem' }}>Tyr1158 / Tyr1162 / Tyr1163</div>
+          <div style={{ fontSize: '0.65rem', color: '#4b5563', fontWeight: 400, marginTop: '0.15rem' }}>Tyr1158 / Tyr1162 / Tyr1163</div>
         </div>
       </div>
 
@@ -217,7 +217,7 @@ function IGFSignalingDiagram() {
           padding: '0.65rem 1.5rem',
           fontSize: '0.82rem',
           fontWeight: 700,
-          color: '#e2e8f0',
+          color: '#1f2937',
           textAlign: 'center',
         }}>
           Lean Mass Accretion + Tissue Quality
@@ -234,7 +234,7 @@ function IGFSignalingDiagram() {
         borderTop: '1px solid rgba(255,255,255,0.07)',
       }}>
         {[
-          { value: '~3×', label: 'Half-life vs native IGF-1', color: '#00d4ff' },
+          { value: '~3×', label: 'Half-life vs native IGF-1', color: '#c8870a' },
           { value: '1000×', label: 'IGFBP binding reduction', color: '#f59e0b' },
           { value: '13 AA', label: 'N-terminal extension', color: '#7c3aed' },
           { value: '2', label: 'Primary signal cascades', color: '#10b981' },
@@ -273,7 +273,7 @@ export default function Igf1Lr3Page() {
             <span>›</span>
             <Link href="/looksmaxxing" style={{ color: '#64748b', textDecoration: 'none' }}>Looksmaxxing</Link>
             <span>›</span>
-            <span style={{ color: '#94a3b8' }}>IGF-1 LR3 Research</span>
+            <span style={{ color: '#4b5563' }}>IGF-1 LR3 Research</span>
           </nav>
 
           {/* Hero */}
@@ -301,7 +301,7 @@ export default function Igf1Lr3Page() {
             >
               IGF-1 LR3 Peptide — Muscle Growth, Body Recomposition & Looksmaxxing
             </h1>
-            <p style={{ color: '#94a3b8', fontSize: '1.05rem', lineHeight: 1.7 }}>
+            <p style={{ color: '#4b5563', fontSize: '1.05rem', lineHeight: 1.7 }}>
               Native IGF-1 spends 95–99% of its time sequestered in the IGFBP-3/ALS ternary complex — biologically
               inactive. The LR3 modification breaks this limitation: a 13 amino acid N-terminal extension reduces
               IGFBP-3 binding affinity by over 1000-fold while preserving full IGF-1R potency. The result is a
@@ -312,7 +312,7 @@ export default function Igf1Lr3Page() {
           {/* Stats row */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
             {[
-              { value: '70 AA', label: 'Native IGF-1 length', color: '#00d4ff' },
+              { value: '70 AA', label: 'Native IGF-1 length', color: '#c8870a' },
               { value: '20–30h', label: 'IGF-1 LR3 half-life', color: '#7c3aed' },
               { value: '1–5%', label: 'Free native IGF-1 in plasma', color: '#f59e0b' },
               { value: 'IGF-1R', label: 'Target receptor (RTK)', color: '#10b981' },
@@ -573,7 +573,7 @@ export default function Igf1Lr3Page() {
               }}
             >
               <p style={{ fontSize: '0.8rem', color: '#64748b', margin: 0 }}>
-                <strong style={{ color: '#94a3b8' }}>Research Use Disclaimer:</strong> All content on this page is for
+                <strong style={{ color: '#4b5563' }}>Research Use Disclaimer:</strong> All content on this page is for
                 informational and educational purposes related to scientific research only. IGF-1 LR3 is a research
                 compound not approved by the FDA or any regulatory authority for the treatment, prevention, or cure of
                 any medical condition. This content does not constitute medical advice. Do not use research peptides on
@@ -589,7 +589,7 @@ export default function Igf1Lr3Page() {
             <Link
               href="/looksmaxxing"
               style={{
-                color: '#00d4ff',
+                color: '#c8870a',
                 textDecoration: 'none',
                 fontSize: '0.9rem',
                 display: 'inline-flex',

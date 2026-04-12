@@ -174,7 +174,7 @@ function ProtocolStackDiagram() {
               </span>
               <span
                 style={{
-                  color: '#f8fafc',
+                  color: '#1f2937',
                   fontWeight: 700,
                   fontSize: '0.95rem',
                 }}
@@ -219,7 +219,7 @@ function ProtocolStackDiagram() {
               style={{
                 textAlign: 'right',
                 fontSize: '0.75rem',
-                color: '#94a3b8',
+                color: '#4b5563',
                 lineHeight: 1.5,
               }}
             >
@@ -239,7 +239,7 @@ function ProtocolStackDiagram() {
         }}
       >
         {[
-          { value: '5', label: 'Protocol layers', color: '#00d4ff' },
+          { value: '5', label: 'Protocol layers', color: '#c8870a' },
           { value: '10', label: 'Core compounds', color: '#7c3aed' },
           { value: '8+', label: 'Distinct pathways', color: '#10b981' },
           { value: '−28.7%', label: 'GLP-3 R Phase 2', color: '#f59e0b' },
@@ -324,7 +324,7 @@ export default function FullProtocolPage() {
               Looksmaxxing
             </Link>
             <span>›</span>
-            <span style={{ color: '#94a3b8' }}>Full Protocol</span>
+            <span style={{ color: '#4b5563' }}>Full Protocol</span>
           </nav>
 
           {/* Hero */}
@@ -337,7 +337,7 @@ export default function FullProtocolPage() {
                 borderRadius: '20px',
                 padding: '0.25rem 0.85rem',
                 fontSize: '0.75rem',
-                color: '#00d4ff',
+                color: '#c8870a',
                 fontWeight: 600,
                 letterSpacing: '0.06em',
                 textTransform: 'uppercase',
@@ -357,7 +357,7 @@ export default function FullProtocolPage() {
             >
               The Complete Looksmaxxing Peptide Protocol — 10 Compounds Explained
             </h1>
-            <p style={{ color: '#94a3b8', fontSize: '1.05rem', lineHeight: 1.75 }}>
+            <p style={{ color: '#4b5563', fontSize: '1.05rem', lineHeight: 1.75 }}>
               The most comprehensive research framework for physical appearance optimization.
               Five mechanistically distinct layers — GLP core, gut &amp; repair, skin &amp; glow,
               lean mass, longevity — each compound targeting a separate pathway, zero mechanistic
@@ -889,7 +889,7 @@ export default function FullProtocolPage() {
               }}
             >
               <p style={{ fontSize: '0.8rem', color: '#64748b', margin: 0 }}>
-                <strong style={{ color: '#94a3b8' }}>Research Use Disclaimer:</strong> All compounds
+                <strong style={{ color: '#4b5563' }}>Research Use Disclaimer:</strong> All compounds
                 described in this protocol are for laboratory research use only. Not for human
                 consumption. These compounds are not approved by the FDA or any regulatory authority
                 for the treatment, prevention, or cure of any medical condition. Research should be
@@ -914,7 +914,7 @@ export default function FullProtocolPage() {
             <Link
               href="/looksmaxxing"
               style={{
-                color: '#00d4ff',
+                color: '#c8870a',
                 textDecoration: 'none',
                 fontSize: '0.9rem',
                 display: 'inline-flex',

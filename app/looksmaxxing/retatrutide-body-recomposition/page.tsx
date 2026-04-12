@@ -79,7 +79,7 @@ const glpData = [
     reduction: '−28.7%',
     subLabel: 'Phase 2, 48 weeks',
     barHeightPct: 100,
-    color: '#00d4ff',
+    color: '#c8870a',
     glowColor: '#00d4ff',
     star: '★ Triple Receptor',
     receptors: 'GLP-1R + GIPR + GcgR',
@@ -124,7 +124,7 @@ function PhaseDataComparison() {
                   paddingRight: '6px',
                   top: '-8px',
                   fontSize: '0.65rem',
-                  color: '#475569',
+                  color: '#374151',
                   whiteSpace: 'nowrap',
                 }}
               >
@@ -169,7 +169,7 @@ function PhaseDataComparison() {
                       borderRadius: '20px',
                       padding: '0.15rem 0.6rem',
                       fontSize: '0.68rem',
-                      color: '#00d4ff',
+                      color: '#c8870a',
                       fontWeight: 700,
                       whiteSpace: 'nowrap',
                     }}
@@ -212,7 +212,7 @@ function PhaseDataComparison() {
         {glpData.map((item) => (
           <div key={item.name} style={{ flex: 1, maxWidth: '140px', textAlign: 'center' }}>
             <div style={{ fontSize: '0.78rem', fontWeight: 700, color: item.color, marginBottom: '0.15rem' }}>{item.name}</div>
-            <div style={{ fontSize: '0.7rem', color: '#94a3b8' }}>{item.fullName}</div>
+            <div style={{ fontSize: '0.7rem', color: '#4b5563' }}>{item.fullName}</div>
             <div style={{ fontSize: '0.65rem', color: '#64748b', marginTop: '0.15rem' }}>{item.subLabel}</div>
           </div>
         ))}
@@ -280,7 +280,7 @@ export default function RetatrutidePage() {
             <span>›</span>
             <Link href="/looksmaxxing" style={{ color: '#64748b', textDecoration: 'none' }}>Looksmaxxing</Link>
             <span>›</span>
-            <span style={{ color: '#94a3b8' }}>Retatrutide Recomposition Research</span>
+            <span style={{ color: '#4b5563' }}>Retatrutide Recomposition Research</span>
           </nav>
 
           {/* Hero */}
@@ -293,7 +293,7 @@ export default function RetatrutidePage() {
                 borderRadius: '20px',
                 padding: '0.25rem 0.85rem',
                 fontSize: '0.75rem',
-                color: '#00d4ff',
+                color: '#c8870a',
                 fontWeight: 600,
                 letterSpacing: '0.06em',
                 textTransform: 'uppercase',
@@ -308,7 +308,7 @@ export default function RetatrutidePage() {
             >
               Retatrutide — The Strongest Weight Loss Peptide (−28.7% in Trials)
             </h1>
-            <p style={{ color: '#94a3b8', fontSize: '1.05rem', lineHeight: 1.7 }}>
+            <p style={{ color: '#4b5563', fontSize: '1.05rem', lineHeight: 1.7 }}>
               The first GLP-1R/GIPR/GcgR triple agonist to enter clinical trials, Retatrutide achieved a 28.7% mean
               body weight reduction at 48 weeks in Phase 2 — a result that exceeded all prior metabolic research
               compounds and established a new benchmark for body recomposition research.
@@ -318,7 +318,7 @@ export default function RetatrutidePage() {
           {/* Stats row */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
             {[
-              { value: '−28.7%', label: 'Phase 2 weight reduction', color: '#00d4ff' },
+              { value: '−28.7%', label: 'Phase 2 weight reduction', color: '#c8870a' },
               { value: '48 wks', label: 'Trial duration', color: '#7c3aed' },
               { value: '3', label: 'Receptor targets', color: '#f59e0b' },
               { value: '+13.8pp', label: 'vs Semaglutide', color: '#10b981' },
@@ -578,7 +578,7 @@ export default function RetatrutidePage() {
 
             <h2>Research Protocol Positioning</h2>
             <p>
-              <a href="/stacks" target="_blank" rel="noopener noreferrer" style={{ color: '#00d4ff', textDecoration: 'none' }}>
+              <a href="/stacks" target="_blank" rel="noopener noreferrer" style={{ color: '#c8870a', textDecoration: 'none' }}>
                 our research partner&apos; GLP-3 R (Retatrutide, 15 mg)
               </a>{' '}
               is the primary metabolic research compound of the Peptide Stack protocol — the Layer 1 driver that
@@ -616,7 +616,7 @@ export default function RetatrutidePage() {
               }}
             >
               <p style={{ fontSize: '0.8rem', color: '#64748b', margin: 0 }}>
-                <strong style={{ color: '#94a3b8' }}>Research Use Disclaimer:</strong> All content on this page is
+                <strong style={{ color: '#4b5563' }}>Research Use Disclaimer:</strong> All content on this page is
                 for informational and educational purposes related to scientific research only. Retatrutide is an
                 investigational compound that has not received FDA approval for any indication. Clinical trial data
                 cited reflects published research and does not constitute an endorsement of safety or efficacy for
@@ -633,7 +633,7 @@ export default function RetatrutidePage() {
             <Link
               href="/looksmaxxing"
               style={{
-                color: '#00d4ff',
+                color: '#c8870a',
                 textDecoration: 'none',
                 fontSize: '0.9rem',
                 display: 'inline-flex',
