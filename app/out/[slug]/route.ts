@@ -1,9 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getProductBySlug } from '@/lib/products'
 
-const REF = 'rfsn=9016964.3f1b1e'
-const APOLLO_BASE = 'https://apollopeptidesciences.com'
-const FALLBACK = `${APOLLO_BASE}/?${REF}`
+const PHIOGEN = 'https://phiogen.is'
+const FALLBACK = `${PHIOGEN}/products`
 
 export async function GET(
   _req: NextRequest,
@@ -12,7 +11,7 @@ export async function GET(
   const { slug } = await params
   const product = getProductBySlug(slug)
   const destination = product
-    ? `${APOLLO_BASE}${product.apollo_path}?${REF}`
+    ? `${PHIOGEN}/products/${product.apollo_path}`
     : FALLBACK
 
   return NextResponse.redirect(destination, { status: 302 })

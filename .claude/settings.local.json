@@ -21,7 +21,15 @@
       "Bash(sed -i 's|All 10 protocol compounds available via Apollo Peptide Sciences\\\\.|All 10 protocol compounds. Research-grade quality.|g' /mnt/c/Users/Wilso/replicaclavstack/app/protocol/page.tsx)",
       "Bash(sed -i 's|href={AFFILIATE}|href=\"/stacks\"|g' /mnt/c/Users/Wilso/replicaclavstack/app/protocol/page.tsx)",
       "Bash(sed -i 's|Shop at Apollo Peptide Sciences ↗|Shop All Compounds →|g' /mnt/c/Users/Wilso/replicaclavstack/app/protocol/page.tsx)",
-      "Bash(sed -i 's|target=\"_blank\" rel=\"noopener noreferrer\"||g' /mnt/c/Users/Wilso/replicaclavstack/app/protocol/page.tsx)"
+      "Bash(sed -i 's|target=\"_blank\" rel=\"noopener noreferrer\"||g' /mnt/c/Users/Wilso/replicaclavstack/app/protocol/page.tsx)",
+      "WebFetch(domain:phiogen.is)",
+      "Bash(node -e \"require\\('./lib/products.ts'\\)\")",
+      "Bash(npx tsc:*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001/)",
+      "Bash(curl -s http://localhost:3001/)",
+      "Bash(curl -s http://localhost:3002/)",
+      "Bash(curl -v http://localhost:3002/)",
+      "Bash(awk '{print $2}')"
     ]
   }
 }
