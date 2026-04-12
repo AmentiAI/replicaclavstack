@@ -25,18 +25,18 @@ const heroProductSlugs = ['glp-3-r-15mg', 'glp-2-t-15mg', 'bpc-157-10mg', 'ghk-c
 const heroProducts = heroProductSlugs.map(s => products.find(p => p.slug === s)!).filter(Boolean)
 
 const heroStats = [
-  { value: '−28.7%', label: 'GLP-3 R Phase 2', color: '#00d4ff' },
+  { value: '−28.7%', label: 'GLP-3 R Phase 2', color: '#c8870a' },
   { value: '10', label: 'Core Compounds', color: '#7c3aed' },
   { value: '>98%', label: 'HPLC Purity', color: '#10b981' },
-  { value: '5', label: 'Protocol Layers', color: '#f59e0b' },
+  { value: '5', label: 'Protocol Layers', color: '#d97706' },
 ]
 
 const layers = [
-  { n: '01', name: 'GLP Core', compound: 'Retatrutide (GLP-3 R)', stat: '−28.7%', statLabel: 'Phase 2', accent: '#00d4ff', slug: 'glp-receptor-agonists', desc: 'Triple-receptor agonist. GLP-1R + GIPR + GcgR. The most data-rich compound in its class.' },
+  { n: '01', name: 'GLP Core', compound: 'Retatrutide (GLP-3 R)', stat: '−28.7%', statLabel: 'Phase 2', accent: '#c8870a', slug: 'glp-receptor-agonists', desc: 'Triple-receptor agonist. GLP-1R + GIPR + GcgR. The most data-rich compound in its class.' },
   { n: '02', name: 'Gut Recovery', compound: 'BPC-157', stat: '40+', statLabel: 'studies', accent: '#10b981', slug: 'gut-recovery', desc: 'GI mucosal integrity during reduced-intake GLP protocols. BPC-157: NO system, VEGFR2, 40+ published studies.' },
-  { n: '03', name: 'Skin & Glow', compound: 'GHK-Cu + SNAP-8', stat: '4,000+', statLabel: 'genes', accent: '#f59e0b', slug: 'skin-and-glow', desc: 'GHK-Cu modulates 4,000+ human genes toward repair. SNAP-8 targets SNARE complex NMJ signaling.' },
+  { n: '03', name: 'Skin & Glow', compound: 'GHK-Cu + SNAP-8', stat: '4,000+', statLabel: 'genes', accent: '#d97706', slug: 'skin-and-glow', desc: 'GHK-Cu modulates 4,000+ human genes toward repair. SNAP-8 targets SNARE complex NMJ signaling.' },
   { n: '04', name: 'Lean Mass', compound: 'CJC-1295 / Ipamorelin + IGF-1 LR3', stat: '~3×', statLabel: 'IGF-1 t½', accent: '#7c3aed', slug: 'lean-mass-longevity', desc: 'GH axis: GHRH receptor amplitude + GHS-R1a frequency. Synergistic pulsatile secretion pattern.' },
-  { n: '05', name: 'Longevity', compound: 'Epithalon + NAD+', stat: '7', statLabel: 'sirtuins', accent: '#ec4899', slug: 'lean-mass-longevity', desc: 'Telomerase activation (Epithalon) and sirtuin/PARP substrate restoration (NAD+).' },
+  { n: '05', name: 'Longevity', compound: 'Epithalon + NAD+', stat: '7', statLabel: 'sirtuins', accent: '#db2777', slug: 'lean-mass-longevity', desc: 'Telomerase activation (Epithalon) and sirtuin/PARP substrate restoration (NAD+).' },
 ]
 
 const comparison = [
@@ -70,7 +70,7 @@ export default function HomePage() {
         <div className="aurora-orb aurora-orb-3" />
 
         {/* Bottom fade */}
-        <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-[#050810] to-transparent pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-white to-transparent pointer-events-none" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-32 w-full">
           <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-center">
@@ -78,23 +78,23 @@ export default function HomePage() {
             {/* ── LEFT: headline content ── */}
             <div>
               {/* Live badge */}
-              <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass border border-[#00d4ff]/20 text-sm font-medium mb-10 animate-slide-up">
-                <span className="cyan-dot" />
-                <span className="text-[#00d4ff]/90">Independent Research Protocols · 2026</span>
+              <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-amber-50 border border-amber-200 text-sm font-medium mb-10 animate-slide-up">
+                <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
+                <span className="text-amber-700">Independent Research Protocols · 2026</span>
               </div>
 
               {/* Main headline */}
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[0.95] tracking-tighter mb-6 animate-slide-up delay-100">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-gray-900 leading-[0.95] tracking-tighter mb-6 animate-slide-up delay-100">
                 Best Peptides{' '}
                 <span className="shimmer-text block sm:inline">for 2026.</span>
               </h1>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black leading-[0.95] tracking-tighter mb-8 animate-slide-up delay-200">
                 <span className="gradient-text">Weight Loss. Skin. Muscle.</span>
                 <br />
-                <span className="text-white/40">All In One Stack.</span>
+                <span className="text-gray-400">All In One Stack.</span>
               </h2>
 
-              <p className="text-lg text-gray-400 leading-relaxed mb-12 max-w-xl animate-slide-up delay-300">
+              <p className="text-lg text-gray-500 leading-relaxed mb-12 max-w-xl animate-slide-up delay-300">
                 21 research-grade peptides for weight loss, anti-aging, looksmaxxing, and longevity. The most complete peptide protocol guide online.
               </p>
 
@@ -129,22 +129,20 @@ export default function HomePage() {
 
             {/* ── RIGHT: product image grid ── */}
             <div className="hidden lg:block relative">
-              {/* Glow behind grid */}
-              <div className="absolute inset-0 bg-[#00d4ff]/5 rounded-3xl blur-3xl scale-110 pointer-events-none" />
               <div className="relative grid grid-cols-3 gap-3">
                 {heroProducts.map((product, i) => {
-                  const accents = ['#00d4ff', '#7c3aed', '#10b981', '#f59e0b', '#ec4899', '#00d4ff']
+                  const accents = ['#c8870a', '#7c3aed', '#10b981', '#d97706', '#db2777', '#c8870a']
                   const accent = accents[i % accents.length]
                   const delays = ['0s', '0.08s', '0.16s', '0.24s', '0.32s', '0.40s']
                   return (
                     <Link
                       key={product.slug}
                       href={`/products/${product.slug}`}
-                      className="group animated-border glass rounded-2xl overflow-hidden card-hover animate-scale-in"
+                      className="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:border-amber-300 hover:shadow-md transition-all duration-300 animate-scale-in"
                       style={{ animationDelay: delays[i] }}
                     >
                       {/* Image */}
-                      <div className="relative aspect-square overflow-hidden bg-white/[0.02]">
+                      <div className="relative aspect-square overflow-hidden bg-gray-50">
                         <Image
                           src={product.image_url}
                           alt={product.name}
@@ -155,15 +153,15 @@ export default function HomePage() {
                         {product.badge && (
                           <span
                             className="absolute top-2 left-2 text-[9px] font-bold px-1.5 py-0.5 rounded-full"
-                            style={{ background: `${accent}20`, color: accent, border: `1px solid ${accent}30` }}
+                            style={{ background: `${accent}20`, color: accent, border: `1px solid ${accent}40` }}
                           >
                             {product.badge}
                           </span>
                         )}
                       </div>
                       {/* Label */}
-                      <div className="px-3 py-2.5 border-t border-white/5">
-                        <p className="text-white text-[11px] font-bold leading-tight truncate">{product.name}</p>
+                      <div className="px-3 py-2.5 border-t border-gray-100">
+                        <p className="text-gray-900 text-[11px] font-bold leading-tight truncate">{product.name}</p>
                         <p className="text-[10px] mt-0.5 font-semibold" style={{ color: accent }}>${product.price}</p>
                       </div>
                     </Link>
@@ -174,7 +172,7 @@ export default function HomePage() {
               <div className="mt-5 text-center">
                 <Link
                   href="/products"
-                  className="inline-flex items-center gap-1.5 text-xs text-gray-600 hover:text-[#00d4ff] transition-colors font-medium"
+                  className="inline-flex items-center gap-1.5 text-xs text-gray-600 hover:text-amber-700 transition-colors font-medium"
                 >
                   View all 21 compounds
                   <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
@@ -187,12 +185,12 @@ export default function HomePage() {
       </section>
 
       {/* ── MARQUEE TAPE ─────────────────────────────────────── */}
-      <div className="border-y border-[#00d4ff]/10 bg-[#00d4ff]/3 overflow-hidden py-3">
+      <div className="border-y border-amber-200 bg-amber-50 overflow-hidden py-3">
         <div className="marquee-track gap-16 items-center">
           {[...marqueeItems, ...marqueeItems].map((item, i) => (
-            <span key={i} className="flex items-center gap-4 whitespace-nowrap text-sm text-[#00d4ff]/70 font-medium">
+            <span key={i} className="flex items-center gap-4 whitespace-nowrap text-sm text-amber-700 font-medium">
               {item}
-              <span className="w-1 h-1 rounded-full bg-[#00d4ff]/30" />
+              <span className="w-1 h-1 rounded-full bg-amber-400" />
             </span>
           ))}
         </div>
@@ -203,10 +201,10 @@ export default function HomePage() {
         {/* Section label */}
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-8 h-px bg-[#00d4ff]/60" />
-            <span className="text-[#00d4ff] text-xs font-bold uppercase tracking-[0.2em]">The Protocol</span>
+            <div className="w-8 h-px bg-amber-500" />
+            <span className="text-amber-700 text-xs font-bold uppercase tracking-[0.2em]">The Protocol</span>
           </div>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight mb-4">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight leading-tight mb-4">
             5-Layer Research<br />
             <span className="gradient-text">Architecture</span>
           </h2>
@@ -219,7 +217,7 @@ export default function HomePage() {
             <Link
               key={layer.n}
               href={`/peptides/${layer.slug}`}
-              className="group animated-border flex items-start gap-5 sm:gap-8 glass rounded-2xl p-5 sm:p-7 card-hover animate-slide-up-sm"
+              className="group flex items-start gap-5 sm:gap-8 bg-white border border-gray-200 rounded-2xl p-5 sm:p-7 hover:border-amber-300 hover:shadow-md transition-all duration-300 animate-slide-up-sm"
               style={{ animationDelay: `${i * 0.07}s` }}
             >
               {/* Layer number */}
@@ -228,8 +226,7 @@ export default function HomePage() {
                 style={{
                   background: `${layer.accent}12`,
                   color: layer.accent,
-                  border: `1px solid ${layer.accent}25`,
-                  boxShadow: `0 0 20px ${layer.accent}10`,
+                  border: `1px solid ${layer.accent}30`,
                 }}
               >
                 {layer.n}
@@ -239,7 +236,7 @@ export default function HomePage() {
               <div className="flex-1 min-w-0">
                 <div className="flex items-start justify-between gap-4 mb-1.5">
                   <div>
-                    <h3 className="text-white font-bold text-lg sm:text-xl group-hover:text-[#00d4ff] transition-colors">
+                    <h3 className="text-gray-900 font-bold text-lg sm:text-xl group-hover:text-amber-700 transition-colors">
                       {layer.name}
                     </h3>
                     <p className="text-sm font-mono mt-0.5" style={{ color: layer.accent }}>{layer.compound}</p>
@@ -248,13 +245,13 @@ export default function HomePage() {
                     <span className="text-2xl font-black" style={{ color: layer.accent }}>
                       <AnimatedCounter value={layer.stat} />
                     </span>
-                    <span className="text-xs text-gray-600">{layer.statLabel}</span>
+                    <span className="text-xs text-gray-500">{layer.statLabel}</span>
                   </div>
                 </div>
                 <p className="text-sm text-gray-500 leading-relaxed">{layer.desc}</p>
               </div>
 
-              <svg className="w-5 h-5 flex-shrink-0 text-gray-700 group-hover:text-[#00d4ff] group-hover:translate-x-1 transition-all mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="w-5 h-5 flex-shrink-0 text-gray-400 group-hover:text-amber-600 group-hover:translate-x-1 transition-all mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </Link>
@@ -263,24 +260,20 @@ export default function HomePage() {
       </section>
 
       {/* ── FEATURED PRODUCTS ────────────────────────────────── */}
-      <section className="relative py-28 overflow-hidden">
-        {/* Background accent */}
-        <div className="absolute inset-0 dot-grid opacity-30 pointer-events-none" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-[#7c3aed]/5 rounded-full blur-3xl pointer-events-none" />
-
+      <section className="relative py-28 overflow-hidden bg-gray-50">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-14 flex items-end justify-between">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-8 h-px bg-[#00d4ff]/60" />
-                <span className="text-[#00d4ff] text-xs font-bold uppercase tracking-[0.2em]">Source the Stack</span>
+                <div className="w-8 h-px bg-amber-500" />
+                <span className="text-amber-700 text-xs font-bold uppercase tracking-[0.2em]">Source the Stack</span>
               </div>
-              <h2 className="text-4xl sm:text-5xl font-black text-white tracking-tight mb-3">
+              <h2 className="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight mb-3">
                 5 Core Compounds
               </h2>
               <p className="text-gray-500 text-lg">&gt;98% HPLC verified · Third-party tested</p>
             </div>
-            <Link href="/products" className="hidden md:flex items-center gap-1.5 text-sm text-gray-600 hover:text-[#00d4ff] transition-colors group whitespace-nowrap">
+            <Link href="/products" className="hidden md:flex items-center gap-1.5 text-sm text-gray-600 hover:text-amber-700 transition-colors group whitespace-nowrap">
               All 21 compounds
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
             </Link>
@@ -307,59 +300,57 @@ export default function HomePage() {
       <section className="py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="mb-14">
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-8 h-px bg-[#00d4ff]/60" />
-            <span className="text-[#00d4ff] text-xs font-bold uppercase tracking-[0.2em]">The Science</span>
+            <div className="w-8 h-px bg-amber-500" />
+            <span className="text-amber-700 text-xs font-bold uppercase tracking-[0.2em]">The Science</span>
           </div>
-          <h2 className="text-4xl sm:text-5xl font-black text-white tracking-tight mb-4">
+          <h2 className="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight mb-4">
             GLP-1 S vs GLP-2 T vs{' '}
             <span className="gradient-text">GLP-3 R</span>
           </h2>
           <p className="text-gray-500 text-lg max-w-xl">Three receptor pathways. The data explains the 2× outcome gap.</p>
         </div>
 
-        <div className="animated-border-always rounded-2xl overflow-hidden">
-          <div className="glass rounded-2xl overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead>
-                  <tr className="border-b border-white/6">
-                    <th className="px-6 py-5 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider w-44">Metric</th>
-                    <th className="px-6 py-5 text-left">
-                      <span className="text-xs font-bold text-gray-500 uppercase tracking-wider">GLP-1 S</span>
-                      <br /><span className="text-[11px] text-gray-700 font-normal normal-case">Semaglutide</span>
-                    </th>
-                    <th className="px-6 py-5 text-left">
-                      <span className="text-xs font-bold text-emerald-600 uppercase tracking-wider">GLP-2 T</span>
-                      <br /><span className="text-[11px] text-gray-700 font-normal normal-case">Tirzepatide</span>
-                    </th>
-                    <th className="px-6 py-5 text-left bg-[#00d4ff]/4">
-                      <span className="flex items-center gap-1.5">
-                        <span className="text-xs font-bold text-[#00d4ff] uppercase tracking-wider">GLP-3 R</span>
-                        <span className="text-[10px] px-1.5 py-0.5 rounded bg-[#00d4ff]/15 text-[#00d4ff] font-bold">★ Best</span>
-                      </span>
-                      <span className="text-[11px] text-[#00d4ff]/50 font-normal normal-case">Retatrutide</span>
-                    </th>
+        <div className="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+          <div className="overflow-x-auto">
+            <table className="w-full">
+              <thead>
+                <tr className="border-b border-gray-200 bg-gray-50">
+                  <th className="px-6 py-5 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider w-44">Metric</th>
+                  <th className="px-6 py-5 text-left">
+                    <span className="text-xs font-bold text-gray-500 uppercase tracking-wider">GLP-1 S</span>
+                    <br /><span className="text-[11px] text-gray-400 font-normal normal-case">Semaglutide</span>
+                  </th>
+                  <th className="px-6 py-5 text-left">
+                    <span className="text-xs font-bold text-emerald-600 uppercase tracking-wider">GLP-2 T</span>
+                    <br /><span className="text-[11px] text-gray-400 font-normal normal-case">Tirzepatide</span>
+                  </th>
+                  <th className="px-6 py-5 text-left bg-amber-50">
+                    <span className="flex items-center gap-1.5">
+                      <span className="text-xs font-bold text-amber-700 uppercase tracking-wider">GLP-3 R</span>
+                      <span className="text-[10px] px-1.5 py-0.5 rounded bg-amber-100 text-amber-700 font-bold">★ Best</span>
+                    </span>
+                    <span className="text-[11px] text-amber-600/70 font-normal normal-case">Retatrutide</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {comparison.map((row, i) => (
+                  <tr key={row.metric} className="border-b border-gray-100 last:border-0 hover:bg-gray-50 transition-colors">
+                    <td className="px-6 py-4 text-sm text-gray-700 font-medium">{row.metric}</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">{row.glp1s}</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">{row.glp2t}</td>
+                    <td className="px-6 py-4 bg-amber-50/50">
+                      <span className="text-sm font-bold text-amber-700">{row.glp3r}</span>
+                    </td>
                   </tr>
-                </thead>
-                <tbody>
-                  {comparison.map((row, i) => (
-                    <tr key={row.metric} className="border-b border-white/4 last:border-0 hover:bg-white/[0.02] transition-colors">
-                      <td className="px-6 py-4 text-sm text-gray-600 font-medium">{row.metric}</td>
-                      <td className="px-6 py-4 text-sm text-gray-500">{row.glp1s}</td>
-                      <td className="px-6 py-4 text-sm text-gray-500">{row.glp2t}</td>
-                      <td className="px-6 py-4 bg-[#00d4ff]/3">
-                        <span className="text-sm font-bold text-[#00d4ff]">{row.glp3r}</span>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
 
         <p className="mt-5 text-center">
-          <Link href="/blog/retatrutide-vs-semaglutide-phase-2-data" className="text-sm text-gray-600 hover:text-[#00d4ff] transition-colors">
+          <Link href="/blog/retatrutide-vs-semaglutide-phase-2-data" className="text-sm text-gray-600 hover:text-amber-700 transition-colors">
             Read the full Phase 2 data breakdown →
           </Link>
         </p>
@@ -369,38 +360,38 @@ export default function HomePage() {
       <section className="py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="mb-14">
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-8 h-px bg-[#00d4ff]/60" />
-            <span className="text-[#00d4ff] text-xs font-bold uppercase tracking-[0.2em]">Research Categories</span>
+            <div className="w-8 h-px bg-amber-500" />
+            <span className="text-amber-700 text-xs font-bold uppercase tracking-[0.2em]">Research Categories</span>
           </div>
-          <h2 className="text-4xl sm:text-5xl font-black text-white tracking-tight">Browse by Peptide Class</h2>
+          <h2 className="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight">Browse by Peptide Class</h2>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {[
-            { slug: 'glp-receptor-agonists', name: 'GLP Receptor Agonists', desc: 'GLP-1 S, GLP-2 T, GLP-3 R. Mono, dual, and tri-receptor research.', count: 7, accent: '#00d4ff', icon: '⚗️', stat: '−28.7%', statLabel: 'GLP-3 R Phase 2' },
+            { slug: 'glp-receptor-agonists', name: 'GLP Receptor Agonists', desc: 'GLP-1 S, GLP-2 T, GLP-3 R. Mono, dual, and tri-receptor research.', count: 7, accent: '#c8870a', icon: '⚗️', stat: '−28.7%', statLabel: 'GLP-3 R Phase 2' },
             { slug: 'gut-recovery', name: 'Gut Recovery', desc: 'BPC-157 and Teduglutide — mucosal integrity and GI repair.', count: 3, accent: '#10b981', icon: '🔬', stat: '40+', statLabel: 'BPC-157 studies' },
-            { slug: 'skin-and-glow', name: 'Skin & Glow', desc: 'GHK-Cu (4,000+ gene interactions) and SNAP-8 cosmetic research.', count: 3, accent: '#f59e0b', icon: '✨', stat: '4,000+', statLabel: 'gene targets' },
+            { slug: 'skin-and-glow', name: 'Skin & Glow', desc: 'GHK-Cu (4,000+ gene interactions) and SNAP-8 cosmetic research.', count: 3, accent: '#d97706', icon: '✨', stat: '4,000+', statLabel: 'gene targets' },
             { slug: 'lean-mass-longevity', name: 'Lean Mass & Longevity', desc: 'GH axis, IGF-1, telomere biology, and cellular energy.', count: 5, accent: '#7c3aed', icon: '⚡', stat: '~3×', statLabel: 'IGF-1 LR3 t½' },
-            { slug: 'core-protocol', name: 'Core Protocol Stack', desc: 'The complete 5-layer 10-compound research stack.', count: 10, accent: '#00d4ff', icon: '🧬', stat: '5', statLabel: 'layers' },
+            { slug: 'core-protocol', name: 'Core Protocol Stack', desc: 'The complete 5-layer 10-compound research stack.', count: 10, accent: '#c8870a', icon: '🧬', stat: '5', statLabel: 'layers' },
           ].map((cat, i) => (
             <Link
               key={cat.slug}
               href={`/peptides/${cat.slug}`}
-              className="group animated-border glass rounded-2xl p-7 card-hover animate-slide-up-sm"
+              className="group bg-white border border-gray-200 rounded-2xl p-7 hover:border-amber-300 hover:shadow-md transition-all duration-300 animate-slide-up-sm"
               style={{ animationDelay: `${i * 0.08}s` }}
             >
               <div className="flex items-start justify-between mb-5">
                 <span className="text-3xl">{cat.icon}</span>
-                <span className="text-xs px-2.5 py-1 rounded-full glass border border-white/10 text-gray-600">{cat.count} compounds</span>
+                <span className="text-xs px-2.5 py-1 rounded-full bg-gray-100 border border-gray-200 text-gray-600">{cat.count} compounds</span>
               </div>
               <div className="mb-1.5">
                 <span className="text-xl font-bold mr-2" style={{ color: cat.accent }}>
                   <AnimatedCounter value={cat.stat} />
                 </span>
-                <span className="text-xs text-gray-600">{cat.statLabel}</span>
+                <span className="text-xs text-gray-500">{cat.statLabel}</span>
               </div>
-              <h3 className="text-white font-bold text-base mb-2 group-hover:text-[#00d4ff] transition-colors">{cat.name}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">{cat.desc}</p>
+              <h3 className="text-gray-900 font-bold text-base mb-2 group-hover:text-amber-700 transition-colors">{cat.name}</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">{cat.desc}</p>
             </Link>
           ))}
         </div>
@@ -408,29 +399,20 @@ export default function HomePage() {
 
       {/* ── CTA ──────────────────────────────────────────────── */}
       <section className="py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="relative rounded-3xl overflow-hidden animate-border-glow">
-          {/* Background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#00d4ff]/8 via-[#050810] to-[#7c3aed]/8" />
-          <div className="absolute inset-0 grid-pattern opacity-50" />
-          <div className="absolute inset-0 border border-[#00d4ff]/20 rounded-3xl" />
-
-          {/* Glow orbs */}
-          <div className="absolute -top-20 -left-20 w-64 h-64 bg-[#00d4ff]/10 rounded-full blur-3xl animate-float" />
-          <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-[#7c3aed]/10 rounded-full blur-3xl animate-float-slow" />
-
+        <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-amber-50 via-white to-amber-50 border border-amber-200">
           <div className="relative py-20 px-8 sm:px-16 text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-cyan text-[#00d4ff] text-xs font-bold uppercase tracking-widest mb-6">
-              <span className="cyan-dot" /> Ready to Source
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-100 border border-amber-200 text-amber-700 text-xs font-bold uppercase tracking-widest mb-6">
+              <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" /> Ready to Source
             </div>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight mb-4">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight mb-4">
               Build the Stack.{' '}
-              <span className="shimmer-text">Run the Protocol.</span>
+              <span className="gradient-text">Run the Protocol.</span>
             </h2>
             <p className="text-gray-500 text-xl mb-10 max-w-lg mx-auto">
               All 10 compounds. &gt;98% HPLC purity. Third-party test reports.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/protocol" className="btn-primary inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold rounded-2xl pulse-glow">
+              <Link href="/protocol" className="btn-primary inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold rounded-2xl">
                 Read the Full Protocol
               </Link>
               <Link href="/stacks" className="btn-ghost inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold rounded-2xl">

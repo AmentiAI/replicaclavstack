@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Space_Grotesk } from 'next/font/google'
+import { Inter, Space_Grotesk, Montserrat } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -13,6 +13,11 @@ const inter = Inter({
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   variable: '--font-space',
+  display: 'swap',
+})
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat',
   display: 'swap',
 })
 
@@ -49,13 +54,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
+    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} ${montserrat.variable}`}>
       <body
         className="min-h-screen flex flex-col"
         style={{
-          background: '#050810',
-          color: '#f8fafc',
-          fontFamily: 'var(--font-inter), system-ui, sans-serif',
+          background: '#ffffff',
+          color: '#1f2937',
+          fontFamily: 'var(--font-montserrat), var(--font-inter), system-ui, sans-serif',
         }}
       >
         <Header />

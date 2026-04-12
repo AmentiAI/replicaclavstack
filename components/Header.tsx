@@ -27,16 +27,16 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-[#050810]/80 backdrop-blur-2xl border-b border-white/6 shadow-[0_4px_30px_rgba(0,0,0,0.5)]'
-          : 'bg-transparent'
+          ? 'bg-white/95 backdrop-blur-2xl border-b border-gray-200 shadow-sm'
+          : 'bg-white border-b border-gray-100'
       }`}
     >
       {/* Top ticker */}
-      <div className="bg-[#00d4ff]/6 border-b border-[#00d4ff]/10 overflow-hidden">
+      <div className="bg-amber-50 border-b border-amber-100 overflow-hidden">
         <div className="marquee-track py-1.5 gap-12">
           {[
             'GLP-3 R Phase 2: −28.7%',
-            '10 Compounds · 5 Layers',
+            '143 Compounds · 5 Layers',
             '>98% HPLC All Vials',
             'Free Shipping $200+',
             'Third-Party Test Reports',
@@ -44,7 +44,7 @@ export default function Header() {
             'CAS Numbers Verified',
             'GHK-Cu: 4,000+ Genes',
             'GLP-3 R Phase 2: −28.7%',
-            '10 Compounds · 5 Layers',
+            '143 Compounds · 5 Layers',
             '>98% HPLC All Vials',
             'Free Shipping $200+',
             'Third-Party Test Reports',
@@ -52,9 +52,9 @@ export default function Header() {
             'CAS Numbers Verified',
             'GHK-Cu: 4,000+ Genes',
           ].map((item, i) => (
-            <span key={i} className="flex items-center gap-3 text-[11px] text-[#00d4ff]/60 font-semibold uppercase tracking-widest whitespace-nowrap">
+            <span key={i} className="flex items-center gap-3 text-[11px] text-amber-700 font-semibold uppercase tracking-widest whitespace-nowrap">
               {item}
-              <span className="w-0.5 h-0.5 rounded-full bg-[#00d4ff]/30 flex-shrink-0" />
+              <span className="w-0.5 h-0.5 rounded-full bg-amber-400 flex-shrink-0" />
             </span>
           ))}
         </div>
@@ -65,11 +65,10 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="group flex items-center gap-2.5">
           <div className="relative w-8 h-8 rounded-xl overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#00d4ff] to-[#7c3aed] opacity-90" />
+            <div className="absolute inset-0 bg-gradient-to-br from-amber-500 to-amber-700" />
             <div className="absolute inset-0 flex items-center justify-center text-white font-black text-xs">PS</div>
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-gradient-to-br from-[#00d4ff]/50 to-[#7c3aed]/50" style={{ boxShadow: '0 0 15px rgba(0,212,255,0.6)' }} />
           </div>
-          <span className="font-black text-white text-base tracking-tight group-hover:text-[#00d4ff] transition-colors">
+          <span className="font-black text-gray-900 text-base tracking-tight group-hover:text-amber-700 transition-colors">
             The Peptide Stack
           </span>
         </Link>
@@ -80,10 +79,10 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="relative px-3.5 py-2 text-sm text-gray-500 hover:text-white transition-colors rounded-xl hover:bg-white/5 group"
+              className="relative px-3.5 py-2 text-sm text-gray-600 hover:text-amber-700 transition-colors rounded-xl hover:bg-amber-50 group"
             >
               {item.label}
-              <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-px bg-[#00d4ff] group-hover:w-4 transition-all duration-300" />
+              <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-px bg-amber-500 group-hover:w-4 transition-all duration-300" />
             </Link>
           ))}
         </div>
@@ -101,11 +100,11 @@ export default function Header() {
           </a>
 
           <button
-            className="md:hidden w-9 h-9 glass rounded-xl flex items-center justify-center text-gray-400 hover:text-white transition-colors"
+            className="md:hidden w-9 h-9 border border-gray-200 rounded-xl flex items-center justify-center text-gray-600 hover:text-amber-700 transition-colors"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
-            <svg className="w-4.5 h-4.5 w-[18px] h-[18px]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg className="w-[18px] h-[18px]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               {menuOpen
                 ? <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 : <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />}
@@ -120,12 +119,12 @@ export default function Header() {
           menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="glass border-t border-white/6 px-4 py-4 flex flex-col gap-1">
+        <div className="bg-white border-t border-gray-100 px-4 py-4 flex flex-col gap-1">
           {navLinks.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="px-4 py-3 text-sm text-gray-400 hover:text-white rounded-xl hover:bg-white/5 transition-all"
+              className="px-4 py-3 text-sm text-gray-600 hover:text-amber-700 rounded-xl hover:bg-amber-50 transition-all"
               onClick={() => setMenuOpen(false)}
             >
               {item.label}

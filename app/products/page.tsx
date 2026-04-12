@@ -70,21 +70,21 @@ export default function ProductsPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       {/* Breadcrumb */}
-      <nav className="flex items-center gap-2 text-sm text-gray-600 mb-10" aria-label="Breadcrumb">
-        <Link href="/" className="hover:text-[#00d4ff] transition-colors">Home</Link>
+      <nav className="flex items-center gap-2 text-sm text-gray-500 mb-10" aria-label="Breadcrumb">
+        <Link href="/" className="hover:text-amber-700 transition-colors">Home</Link>
         <span>/</span>
         <span className="text-gray-400">Products</span>
       </nav>
 
       {/* Header */}
       <div className="mb-14">
-        <h1 className="text-4xl sm:text-5xl font-black text-white tracking-tight mb-4">
+        <h1 className="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight mb-4">
           Shop Research Peptides
         </h1>
         <p className="text-xl text-gray-500 mb-6">21 peptides for weight loss, anti-aging, skin &amp; muscle. Every vial &gt;98% HPLC purity.</p>
         <div className="flex flex-wrap gap-2.5">
           {['21 Compounds', '>98% HPLC Verified', 'Third-Party Test Reports', 'Free Shipping $200+'].map(tag => (
-            <span key={tag} className="px-3 py-1.5 glass border border-white/8 text-gray-500 text-xs rounded-full">{tag}</span>
+            <span key={tag} className="px-3 py-1.5 bg-gray-100 border border-gray-200 text-gray-600 text-xs rounded-full">{tag}</span>
           ))}
         </div>
       </div>
@@ -97,9 +97,9 @@ export default function ProductsPage() {
         if (!sectionProducts.length) return null
         return (
           <div key={section.title} className="mb-16">
-            <div className="mb-6 pb-4 border-b border-white/6">
-              <h2 className="text-2xl font-bold text-white mb-1">{section.title}</h2>
-              <p className="text-gray-600 text-sm">{section.subtitle}</p>
+            <div className="mb-6 pb-4 border-b border-gray-200">
+              <h2 className="text-2xl font-bold text-gray-900 mb-1">{section.title}</h2>
+              <p className="text-gray-500 text-sm">{section.subtitle}</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
               {sectionProducts.map((product) => (
@@ -111,9 +111,9 @@ export default function ProductsPage() {
       })}
 
       {/* CTA Banner */}
-      <div className="mt-8 p-6 glass border border-[#00d4ff]/15 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="mt-8 p-6 bg-amber-50 border border-amber-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
-          <p className="text-white font-bold mb-1">Ready to build your stack?</p>
+          <p className="text-gray-900 font-bold mb-1">Ready to build your stack?</p>
           <p className="text-sm text-gray-500">Browse curated protocol stacks — all 21 compounds organized by research goal.</p>
         </div>
         <a href="/stacks" className="btn-primary px-6 py-3 rounded-xl text-sm font-bold whitespace-nowrap">
@@ -122,8 +122,8 @@ export default function ProductsPage() {
       </div>
 
       {/* Affiliate disclaimer */}
-      <div className="mt-4 p-5 glass border border-amber-500/15 rounded-2xl text-xs text-amber-400/60 leading-relaxed">
-        <strong className="text-amber-400/80">Affiliate Disclosure:</strong> Product links on this site go through our own redirect and may earn a commission at no additional cost to you. All products are for laboratory research use only — not for human consumption.
+      <div className="mt-4 p-5 bg-amber-50 border border-amber-200 rounded-2xl text-xs text-amber-800 leading-relaxed">
+        <strong className="text-amber-900">Affiliate Disclosure:</strong> Product links on this site go through our own redirect and may earn a commission at no additional cost to you. All products are for laboratory research use only — not for human consumption.
       </div>
     </div>
   )

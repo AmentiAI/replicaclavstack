@@ -77,15 +77,15 @@ function RetaPhase2Chart() {
   ]
   return (
     <div className="glass rounded-2xl p-6 mb-10">
-      <h2 className="text-white font-bold text-xl mb-1">Phase 2 Dose-Response Data (48 Weeks)</h2>
+      <h2 className="text-gray-900 font-bold text-xl mb-1">Phase 2 Dose-Response Data (48 Weeks)</h2>
       <p className="text-gray-500 text-sm mb-6">Mean % body weight reduction by weekly dose — Phase 2 RCT, NEJM 2023</p>
       <div className="space-y-3">
         {data.map((d) => (
           <div key={d.dose} className="flex items-center gap-3">
             <span className="text-xs text-gray-500 w-16 text-right font-mono">{d.dose}</span>
             <div className="flex-1 bg-white/5 rounded-full h-8 overflow-hidden">
-              <div className="h-full rounded-full flex items-center px-3" style={{ width: `${d.w}%`, background: d.highlight ? 'linear-gradient(90deg,#00d4ff,#0099cc)' : 'rgba(0,212,255,0.22)' }}>
-                <span className="text-xs font-bold" style={{ color: d.highlight ? '#050810' : '#00d4ff' }}>−{d.pct}%</span>
+              <div className="h-full rounded-full flex items-center px-3" style={{ width: `${d.w}%`, background: d.highlight ? 'linear-gradient(90deg,#c8870a,#9e6b07)' : 'rgba(200,135,10,0.15)' }}>
+                <span className="text-xs font-bold" style={{ color: d.highlight ? '#ffffff' : '#c8870a' }}>−{d.pct}%</span>
               </div>
             </div>
           </div>
@@ -103,18 +103,18 @@ function RetaValueCalc() {
   ]
   return (
     <div className="glass rounded-2xl p-6 mb-10">
-      <h2 className="text-white font-bold text-xl mb-1">Per-mg Value Comparison</h2>
+      <h2 className="text-gray-900 font-bold text-xl mb-1">Per-mg Value Comparison</h2>
       <p className="text-gray-500 text-sm mb-6">Same compound (Retatrutide, CAS 2381089-83-2) — different vial quantities</p>
       <div className="grid grid-cols-2 gap-4">
         {options.map((o) => (
           <div key={o.label} className="rounded-xl p-5 text-center" style={{ background: o.best ? 'rgba(0,212,255,0.07)' : 'rgba(255,255,255,0.03)', border: o.best ? '1px solid rgba(0,212,255,0.25)' : '1px solid rgba(255,255,255,0.07)' }}>
-            {o.best && <span className="text-[10px] font-bold text-[#00d4ff] uppercase tracking-widest block mb-2">Best Value</span>}
-            <p className="text-white font-bold text-base mb-1">{o.label}</p>
-            <p className="text-3xl font-black mb-1" style={{ color: o.best ? '#00d4ff' : '#fff' }}>${o.price}</p>
+            {o.best && <span className="text-[10px] font-bold text-amber-700 uppercase tracking-widest block mb-2">Best Value</span>}
+            <p className="text-gray-900 font-bold text-base mb-1">{o.label}</p>
+            <p className="text-3xl font-black mb-1" style={{ color: o.best ? '#c8870a' : '#1f2937' }}>${o.price}</p>
             <p className="text-gray-500 text-sm">{o.mg}mg vial</p>
             <div className="mt-3 pt-3 border-t border-white/8">
               <p className="text-xs text-gray-500">Per mg</p>
-              <p className="font-bold text-lg" style={{ color: o.best ? '#00d4ff' : '#e2e8f0' }}>${o.per.toFixed(2)}</p>
+              <p className="font-bold text-lg" style={{ color: o.best ? '#c8870a' : '#374151' }}>${o.per.toFixed(2)}</p>
             </div>
           </div>
         ))}
@@ -131,7 +131,7 @@ function TirzSurmount1Chart() {
   ]
   return (
     <div className="glass rounded-2xl p-6 mb-10">
-      <h2 className="text-white font-bold text-xl mb-1">SURMOUNT-1 Phase 3 Results (72 Weeks)</h2>
+      <h2 className="text-gray-900 font-bold text-xl mb-1">SURMOUNT-1 Phase 3 Results (72 Weeks)</h2>
       <p className="text-gray-500 text-sm mb-6">Mean % body weight reduction by dose — 2,539 participants</p>
       <div className="space-y-3 mb-5">
         {data.map((d) => (
@@ -164,18 +164,18 @@ function TirzBulkCalc() {
   ]
   return (
     <div className="glass rounded-2xl p-6 mb-10">
-      <h2 className="text-white font-bold text-xl mb-1">5-Pack Bulk Value Breakdown</h2>
+      <h2 className="text-gray-900 font-bold text-xl mb-1">5-Pack Bulk Value Breakdown</h2>
       <p className="text-gray-500 text-sm mb-6">Tirzepatide (CAS 2023788-19-2) — 20mg configuration</p>
       <div className="overflow-x-auto">
         <table className="w-full">
           <thead><tr className="border-b border-white/8">{['Configuration','Total mg','Total Price','Per mg'].map(h => <th key={h} className="px-4 py-3 text-left text-xs text-gray-500 uppercase tracking-wider">{h}</th>)}</tr></thead>
           <tbody>
             {rows.map(r => (
-              <tr key={r.config} className="border-b border-white/5" style={{ background: r.best ? 'rgba(0,212,255,0.04)' : '' }}>
-                <td className="px-4 py-3 text-sm font-bold" style={{ color: r.best ? '#00d4ff' : '#fff' }}>{r.config}{r.best && <span className="ml-2 text-[10px] bg-[#00d4ff]/15 text-[#00d4ff] px-1.5 py-0.5 rounded-full">Best Value</span>}</td>
+              <tr key={r.config} className="border-b border-gray-100" style={{ background: r.best ? 'rgba(200,135,10,0.05)' : '' }}>
+                <td className="px-4 py-3 text-sm font-bold" style={{ color: r.best ? '#c8870a' : '#1f2937' }}>{r.config}{r.best && <span className="ml-2 text-[10px] bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded-full">Best Value</span>}</td>
                 <td className="px-4 py-3 text-sm text-gray-400">{r.total}mg</td>
                 <td className="px-4 py-3 text-sm text-gray-400">${r.price}</td>
-                <td className="px-4 py-3 text-sm font-bold" style={{ color: r.best ? '#00d4ff' : '#e2e8f0' }}>${r.perMg.toFixed(2)}</td>
+                <td className="px-4 py-3 text-sm font-bold" style={{ color: r.best ? '#c8870a' : '#374151' }}>${r.perMg.toFixed(2)}</td>
               </tr>
             ))}
           </tbody>
@@ -190,17 +190,17 @@ function TirzProtocolTimeline() {
   const phases = [
     { weeks: 'Wks 1–4',   dose: '5mg',  note: 'Titration phase',   color: '#10b981' },
     { weeks: 'Wks 5–8',   dose: '10mg', note: 'Escalation',         color: '#10b981' },
-    { weeks: 'Wks 9–72',  dose: '15mg', note: 'Maintenance (target)', color: '#00d4ff' },
+    { weeks: 'Wks 9–72',  dose: '15mg', note: 'Maintenance (target)', color: '#c8870a' },
   ]
   return (
     <div className="glass rounded-2xl p-6 mb-10">
-      <h2 className="text-white font-bold text-xl mb-1">SURMOUNT-1 Protocol Timeline</h2>
+      <h2 className="text-gray-900 font-bold text-xl mb-1">SURMOUNT-1 Protocol Timeline</h2>
       <p className="text-gray-500 text-sm mb-6">72-week research design · 4-pack = ~12 weeks at 15mg maintenance</p>
       <div className="flex gap-2 items-stretch">
         {phases.map((p, i) => (
           <div key={p.weeks} className="flex-1 rounded-xl p-4 text-center" style={{ background: `${p.color}10`, border: `1px solid ${p.color}25` }}>
             <p className="text-xs font-bold mb-2 font-mono" style={{ color: p.color }}>{p.weeks}</p>
-            <p className="text-2xl font-black text-white mb-1">{p.dose}</p>
+            <p className="text-2xl font-black text-gray-900 mb-1">{p.dose}</p>
             <p className="text-gray-500 text-xs">{p.note}</p>
             {i < phases.length - 1 && <div className="absolute right-0 top-1/2 text-gray-600">→</div>}
           </div>
@@ -214,18 +214,18 @@ function TirzProtocolTimeline() {
 function TirzUltraBulk() {
   return (
     <div className="glass rounded-2xl p-6 mb-10">
-      <h2 className="text-white font-bold text-xl mb-1">10-Pack Ultra Bulk Analysis</h2>
+      <h2 className="text-gray-900 font-bold text-xl mb-1">10-Pack Ultra Bulk Analysis</h2>
       <p className="text-gray-500 text-sm mb-6">Maximum supply efficiency — 150mg total Tirzepatide</p>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-5">
         {[['150mg','Total compound'],['10 vials','Vial count'],['~30 wks','At 5mg/wk'],['Best/mg','Per-unit cost']].map(([v,l]) => (
           <div key={l} className="bg-white/3 rounded-xl p-4 text-center border border-white/6">
-            <p className="text-[#00d4ff] font-black text-xl mb-1">{v}</p>
+            <p className="text-amber-700 font-black text-xl mb-1">{v}</p>
             <p className="text-gray-500 text-xs">{l}</p>
           </div>
         ))}
       </div>
-      <div className="bg-[#00d4ff]/5 border border-[#00d4ff]/15 rounded-xl p-4">
-        <p className="text-[#00d4ff] font-semibold text-sm mb-1">Research Planning Note</p>
+      <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
+        <p className="text-amber-700 font-semibold text-sm mb-1">Research Planning Note</p>
         <p className="text-gray-400 text-sm">The 10-pack provides the lowest per-mg cost and eliminates resupply interruptions for research protocols exceeding 20 weeks. 150mg total provides substantial headroom for dose escalation, titration adjustments, and any reconstitution overhead.</p>
       </div>
     </div>
@@ -235,11 +235,11 @@ function TirzUltraBulk() {
 function TirzDualReceptor() {
   return (
     <div className="glass rounded-2xl p-6 mb-10">
-      <h2 className="text-white font-bold text-xl mb-2">Dual Receptor Mechanism</h2>
+      <h2 className="text-gray-900 font-bold text-xl mb-2">Dual Receptor Mechanism</h2>
       <p className="text-gray-500 text-sm mb-6">GLP-1R + GIPR simultaneous agonism — additive, non-overlapping pathways</p>
       <div className="grid grid-cols-2 gap-4 mb-5">
         {[
-          { r: 'GLP-1R', color: '#00d4ff', effects: ['Appetite suppression (hypothalamus)','Glucose-dependent insulin secretion','Gastric emptying delay','Glucagon suppression'] },
+          { r: 'GLP-1R', color: '#c8870a', effects: ['Appetite suppression (hypothalamus)','Glucose-dependent insulin secretion','Gastric emptying delay','Glucagon suppression'] },
           { r: 'GIPR', color: '#10b981', effects: ['Potentiates GLP-1R insulin effect','Reduces GLP-1 nausea signaling','Bone turnover modulation','Adipose tissue signaling'] },
         ].map(({ r, color, effects }) => (
           <div key={r} className="rounded-xl p-4" style={{ background: `${color}08`, border: `1px solid ${color}20` }}>
@@ -251,7 +251,7 @@ function TirzDualReceptor() {
         ))}
       </div>
       <div className="bg-white/3 rounded-xl p-3 text-center border border-white/6">
-        <p className="text-white font-semibold text-sm">Combined Effect</p>
+        <p className="text-gray-900 font-semibold text-sm">Combined Effect</p>
         <p className="text-gray-400 text-xs mt-1">−22.5% mean body weight at 72 weeks (SURMOUNT-1) — vs −14.9% for GLP-1R mono-agonist</p>
       </div>
     </div>
@@ -261,13 +261,13 @@ function TirzDualReceptor() {
 function SemaStep1Chart() {
   return (
     <div className="glass rounded-2xl p-6 mb-10">
-      <h2 className="text-white font-bold text-xl mb-1">STEP-1 Phase 3 Results vs Compound Class</h2>
+      <h2 className="text-gray-900 font-bold text-xl mb-1">STEP-1 Phase 3 Results vs Compound Class</h2>
       <p className="text-gray-500 text-sm mb-6">Semaglutide 2.4mg/wk — 68 weeks · 1,961 participants (STEP-1)</p>
       <div className="space-y-4 mb-5">
         {[
           { label: 'GLP-1 S (Semaglutide)', sub: 'STEP-1 · 68wk · 1 receptor', pct: 14.9, w: 52, color: '#94a3b8' },
           { label: 'GLP-2 T (Tirzepatide)', sub: 'SURMOUNT-1 · 72wk · 2 receptors', pct: 22.5, w: 78, color: '#10b981' },
-          { label: 'GLP-3 R (Retatrutide)', sub: 'Phase 2 · 48wk · 3 receptors', pct: 28.7, w: 100, color: '#00d4ff' },
+          { label: 'GLP-3 R (Retatrutide)', sub: 'Phase 2 · 48wk · 3 receptors', pct: 28.7, w: 100, color: '#c8870a' },
         ].map(d => (
           <div key={d.label}>
             <div className="flex justify-between mb-1">
@@ -297,13 +297,13 @@ function SemaDoseTitration() {
   ]
   return (
     <div className="glass rounded-2xl p-6 mb-10">
-      <h2 className="text-white font-bold text-xl mb-1">STEP-1 Dose Titration Schedule</h2>
+      <h2 className="text-gray-900 font-bold text-xl mb-1">STEP-1 Dose Titration Schedule</h2>
       <p className="text-gray-500 text-sm mb-6">Standard 16-week titration to 2.4mg/wk maintenance</p>
       <div className="space-y-2">
         {schedule.map(s => (
           <div key={s.week} className="flex items-center gap-3 rounded-xl px-4 py-3" style={{ background: s.highlight ? 'rgba(0,212,255,0.07)' : 'rgba(255,255,255,0.02)', border: s.highlight ? '1px solid rgba(0,212,255,0.2)' : '1px solid rgba(255,255,255,0.05)' }}>
             <span className="text-xs font-mono text-gray-500 w-20">{s.week}</span>
-            <span className="text-base font-black flex-1" style={{ color: s.highlight ? '#00d4ff' : '#fff' }}>{s.dose}</span>
+            <span className="text-base font-black flex-1" style={{ color: s.highlight ? '#c8870a' : '#1f2937' }}>{s.dose}</span>
             <span className="text-xs text-gray-500">{s.note}</span>
           </div>
         ))}
@@ -315,12 +315,12 @@ function SemaDoseTitration() {
 function SemaEntryGuide() {
   return (
     <div className="glass rounded-2xl p-6 mb-10">
-      <h2 className="text-white font-bold text-xl mb-1">GLP-1 S — Entry Research Profile</h2>
+      <h2 className="text-gray-900 font-bold text-xl mb-1">GLP-1 S — Entry Research Profile</h2>
       <p className="text-gray-500 text-sm mb-6">Semaglutide 5mg — lowest commitment entry point for GLP class research</p>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-5">
         {[
           { label: 'Receptor class', value: 'GLP-1R mono', color: '#94a3b8' },
-          { label: 'Phase 3 outcome', value: '−14.9%', color: '#00d4ff' },
+          { label: 'Phase 3 outcome', value: '−14.9%', color: '#c8870a' },
           { label: 'Trial duration', value: '68 weeks', color: '#7c3aed' },
         ].map(s => (
           <div key={s.label} className="bg-white/3 rounded-xl p-4 text-center border border-white/6">
@@ -336,7 +336,7 @@ function SemaEntryGuide() {
           ['Protocol position','Layer 1, mono-receptor arm of multi-compound study'],
         ].map(([k,v]) => (
           <div key={k} className="flex gap-3 text-sm py-1.5 border-b border-white/5 last:border-0">
-            <span className="text-[#00d4ff] font-semibold w-32 flex-shrink-0">{k}</span>
+            <span className="text-amber-700 font-semibold w-32 flex-shrink-0">{k}</span>
             <span className="text-gray-400">{v}</span>
           </div>
         ))}
@@ -348,12 +348,12 @@ function SemaEntryGuide() {
 function CagriDualPathway() {
   return (
     <div className="glass rounded-2xl p-6 mb-10">
-      <h2 className="text-white font-bold text-xl mb-2">Dual Satiety Pathway — Amylin + GLP-1</h2>
+      <h2 className="text-gray-900 font-bold text-xl mb-2">Dual Satiety Pathway — Amylin + GLP-1</h2>
       <p className="text-gray-500 text-sm mb-6">Two independent, non-overlapping satiety receptor systems engaged simultaneously</p>
       <div className="grid grid-cols-2 gap-4 mb-5">
         {[
           { name: 'Cagrilintide (GLP-1 C)', receptor: 'CALCR/RAMP', location: 'Brainstem, hypothalamus', pathway: 'Amylin receptor pathway', color: '#7c3aed', effects: ['Satiety signaling (NTS, AP)','Gastric emptying delay','Body weight regulation','Non-GLP-1R mechanism'] },
-          { name: 'Semaglutide (GLP-1 S)', receptor: 'GLP-1R', location: 'Hypothalamus, pancreas', pathway: 'GLP-1 receptor pathway', color: '#00d4ff', effects: ['Appetite suppression','Glucose-dependent insulin','Glucagon suppression','Caloric intake reduction'] },
+          { name: 'Semaglutide (GLP-1 S)', receptor: 'GLP-1R', location: 'Hypothalamus, pancreas', pathway: 'GLP-1 receptor pathway', color: '#c8870a', effects: ['Appetite suppression','Glucose-dependent insulin','Glucagon suppression','Caloric intake reduction'] },
         ].map(c => (
           <div key={c.name} className="rounded-xl p-4" style={{ background: `${c.color}08`, border: `1px solid ${c.color}20` }}>
             <p className="font-bold text-sm mb-0.5" style={{ color: c.color }}>{c.name}</p>
@@ -380,7 +380,7 @@ function BPCMechanismMatrix() {
   }
   return (
     <div className="glass rounded-2xl p-6 mb-10 overflow-x-auto">
-      <h2 className="text-white font-bold text-xl mb-1">BPC-157 Research Coverage Matrix</h2>
+      <h2 className="text-gray-900 font-bold text-xl mb-1">BPC-157 Research Coverage Matrix</h2>
       <p className="text-gray-500 text-sm mb-5">40+ published studies across tissue types and mechanisms (Sikiric et al., Zagreb)</p>
       <table className="w-full text-sm min-w-[400px]">
         <thead>
@@ -422,7 +422,7 @@ function GHKGeneChart() {
   ]
   return (
     <div className="glass rounded-2xl p-6 mb-10">
-      <h2 className="text-white font-bold text-xl mb-1">GHK-Cu Gene Modulation Profile</h2>
+      <h2 className="text-gray-900 font-bold text-xl mb-1">GHK-Cu Gene Modulation Profile</h2>
       <p className="text-gray-500 text-sm mb-5">4,177 genes — 31% of transcriptome (Pickart et al., 2010 genomic analysis)</p>
       <div className="space-y-2.5">
         {genes.map(g => (
@@ -443,7 +443,7 @@ function GHKGeneChart() {
 function SNAP8SnareDiagram() {
   return (
     <div className="glass rounded-2xl p-6 mb-10">
-      <h2 className="text-white font-bold text-xl mb-2">SNARE Complex Mechanism Research</h2>
+      <h2 className="text-gray-900 font-bold text-xl mb-2">SNARE Complex Mechanism Research</h2>
       <p className="text-gray-500 text-sm mb-6">Competitive inhibition at the NMJ — SNAP-8 vs endogenous SNAP-25</p>
       <div className="grid grid-cols-2 gap-4">
         {[
@@ -469,7 +469,7 @@ function SNAP8SnareDiagram() {
 function SNAP8CombinationCard() {
   return (
     <div className="glass rounded-2xl p-6 mb-10">
-      <h2 className="text-white font-bold text-xl mb-1">GHK-Cu + SNAP-8 Combination Research</h2>
+      <h2 className="text-gray-900 font-bold text-xl mb-1">GHK-Cu + SNAP-8 Combination Research</h2>
       <p className="text-gray-500 text-sm mb-6">Orthogonal mechanisms — structural aging vs neuromuscular dynamic aging</p>
       <div className="grid grid-cols-2 gap-4 mb-5">
         <div className="rounded-xl p-4" style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.2)' }}>
@@ -488,7 +488,7 @@ function SNAP8CombinationCard() {
         </div>
       </div>
       <div className="bg-white/3 rounded-xl p-3 text-center border border-white/6">
-        <p className="text-white font-semibold text-sm">2-Pack Value</p>
+        <p className="text-gray-900 font-semibold text-sm">2-Pack Value</p>
         <p className="text-gray-400 text-xs mt-1">Both mechanisms simultaneously — full skin research stack Layer 3 in one order</p>
       </div>
     </div>
@@ -498,7 +498,7 @@ function SNAP8CombinationCard() {
 function CJCGHPulse() {
   return (
     <div className="glass rounded-2xl p-6 mb-10">
-      <h2 className="text-white font-bold text-xl mb-2">GH Pulsatile Secretion Research Model</h2>
+      <h2 className="text-gray-900 font-bold text-xl mb-2">GH Pulsatile Secretion Research Model</h2>
       <p className="text-gray-500 text-sm mb-6">CJC-1295 (amplitude) + Ipamorelin (frequency) — synergistic GH pulse enhancement</p>
       <div className="space-y-6">
         {[
@@ -533,11 +533,11 @@ function CJCGHPulse() {
 function IGFCascade() {
   return (
     <div className="glass rounded-2xl p-6 mb-10">
-      <h2 className="text-white font-bold text-xl mb-2">IGF-1 LR3 Signaling Cascade</h2>
+      <h2 className="text-gray-900 font-bold text-xl mb-2">IGF-1 LR3 Signaling Cascade</h2>
       <p className="text-gray-500 text-sm mb-6">1000× lower IGFBP binding · 3× extended half-life · Dual pathway activation</p>
       <div className="flex flex-col items-center gap-2 mb-5">
         <div className="rounded-xl px-6 py-3 text-center" style={{ background: 'rgba(0,212,255,0.08)', border: '1px solid rgba(0,212,255,0.25)' }}>
-          <p className="text-[#00d4ff] font-bold">IGF-1 LR3</p>
+          <p className="text-amber-700 font-bold">IGF-1 LR3</p>
           <p className="text-xs text-gray-500 mt-0.5">LR3 extension evades IGFBP-3/ALS complex (1000×)</p>
         </div>
         <div className="w-px h-5 bg-white/20" />
@@ -574,13 +574,13 @@ function TBTissueGrid() {
   ]
   return (
     <div className="glass rounded-2xl p-6 mb-10">
-      <h2 className="text-white font-bold text-xl mb-1">TB-500 Tissue Research Coverage</h2>
+      <h2 className="text-gray-900 font-bold text-xl mb-1">TB-500 Tissue Research Coverage</h2>
       <p className="text-gray-500 text-sm mb-5">G-actin sequestration · VEGF upregulation · NF-κB suppression</p>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         {tissues.map(t => (
           <div key={t.name} className="bg-white/3 rounded-xl p-3 border border-white/6">
             <p className="text-xl mb-1.5">{t.icon}</p>
-            <p className="text-white font-semibold text-xs mb-1">{t.name}</p>
+            <p className="text-gray-900 font-semibold text-xs mb-1">{t.name}</p>
             <p className="text-gray-500 text-[10px] mb-2 leading-tight">{t.mech}</p>
             <div className="flex gap-0.5">{[1,2,3].map(i => <span key={i} className="w-2 h-2 rounded-full" style={{ background: i <= t.dots ? t.color : 'rgba(255,255,255,0.1)' }} />)}</div>
           </div>
@@ -597,11 +597,11 @@ function EpithTelomere() {
   const cells = [
     { label: 'Young Cell (20s)', telomere: 100, capH: 60, capColor: '#7c3aed', pct: '100%' },
     { label: 'Aged Cell (60s)',  telomere: 33,  capH: 20, capColor: '#4b5563', pct: '~33%' },
-    { label: 'Epithalon Research', telomere: 75, capH: 46, capColor: '#00d4ff', pct: '~75%', glow: true },
+    { label: 'Epithalon Research', telomere: 75, capH: 46, capColor: '#c8870a', pct: '~75%', glow: true },
   ]
   return (
     <div className="glass rounded-2xl p-6 mb-10">
-      <h2 className="text-white font-bold text-xl mb-1">Telomere Length Research Model</h2>
+      <h2 className="text-gray-900 font-bold text-xl mb-1">Telomere Length Research Model</h2>
       <p className="text-gray-500 text-sm mb-6">Epithalon → TERT upregulation → telomere elongation (Khavinson et al., 2003–2004)</p>
       <div className="flex gap-6 justify-center items-end mb-6">
         {cells.map(c => (
@@ -617,7 +617,7 @@ function EpithTelomere() {
         ))}
       </div>
       <div className="bg-white/3 rounded-xl p-3 text-center border border-white/6">
-        <p className="text-white text-sm font-semibold">Telomerase (TERT)</p>
+        <p className="text-gray-900 text-sm font-semibold">Telomerase (TERT)</p>
         <p className="text-gray-500 text-xs mt-1">Adds TTAGGG repeats · Epithalon upregulates TERT mRNA 1.4–1.8× in human somatic cells</p>
       </div>
     </div>
@@ -627,11 +627,11 @@ function EpithTelomere() {
 function NADPathway() {
   return (
     <div className="glass rounded-2xl p-6 mb-10">
-      <h2 className="text-white font-bold text-xl mb-2">NAD+ Consumption Pathways</h2>
+      <h2 className="text-gray-900 font-bold text-xl mb-2">NAD+ Consumption Pathways</h2>
       <p className="text-gray-500 text-sm mb-5">~50% NAD+ decline between ages 30–60 starves all three pathways</p>
       <div className="flex items-center gap-2 mb-6">
         <div className="flex-1 h-5 rounded-full" style={{ background: 'linear-gradient(90deg, #10b981, #ef4444)' }} />
-        <div className="flex justify-between w-full absolute px-2 text-[10px] text-white font-bold" style={{ maxWidth: '100%' }}>
+        <div className="flex justify-between w-full absolute px-2 text-[10px] text-gray-900 font-bold" style={{ maxWidth: '100%' }}>
         </div>
       </div>
       <div className="mb-4 text-center">
@@ -674,14 +674,14 @@ function BWReconstitutionGuide() {
   return (
     <div className="mb-10 space-y-5">
       <div className="glass rounded-2xl p-6">
-        <h2 className="text-white font-bold text-xl mb-1">Reconstitution Protocol</h2>
+        <h2 className="text-gray-900 font-bold text-xl mb-1">Reconstitution Protocol</h2>
         <p className="text-gray-500 text-sm mb-5">Step-by-step guide for lyophilized peptide reconstitution with bacteriostatic water</p>
         <div className="space-y-3">
           {steps.map(s => (
             <div key={s.n} className="flex items-start gap-4">
-              <span className="text-xs font-black text-[#00d4ff] w-6 flex-shrink-0 mt-0.5">{s.n}</span>
+              <span className="text-xs font-black text-amber-700 w-6 flex-shrink-0 mt-0.5">{s.n}</span>
               <div>
-                <p className="text-white font-semibold text-sm">{s.title}</p>
+                <p className="text-gray-900 font-semibold text-sm">{s.title}</p>
                 <p className="text-gray-500 text-xs mt-0.5">{s.detail}</p>
               </div>
             </div>
@@ -689,10 +689,10 @@ function BWReconstitutionGuide() {
         </div>
       </div>
       <div className="glass rounded-2xl p-6">
-        <h2 className="text-white font-bold text-lg mb-4">Concentration Calculator Examples</h2>
+        <h2 className="text-gray-900 font-bold text-lg mb-4">Concentration Calculator Examples</h2>
         <table className="w-full text-sm">
           <thead><tr className="border-b border-white/8">{['BW Added','Peptide Amount','Resulting Conc.'].map(h => <th key={h} className="px-3 py-2 text-left text-xs text-gray-500">{h}</th>)}</tr></thead>
-          <tbody>{concentrations.map((c,i) => <tr key={i} className="border-b border-white/4"><td className="px-3 py-2 text-gray-300 font-mono text-xs">{c.bw}</td><td className="px-3 py-2 text-gray-300 font-mono text-xs">{c.mg}</td><td className="px-3 py-2 text-[#00d4ff] font-bold font-mono text-xs">{c.conc}</td></tr>)}</tbody>
+          <tbody>{concentrations.map((c,i) => <tr key={i} className="border-b border-white/4"><td className="px-3 py-2 text-gray-300 font-mono text-xs">{c.bw}</td><td className="px-3 py-2 text-gray-300 font-mono text-xs">{c.mg}</td><td className="px-3 py-2 text-amber-700 font-bold font-mono text-xs">{c.conc}</td></tr>)}</tbody>
         </table>
       </div>
     </div>
@@ -785,9 +785,9 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-sm text-gray-500 mb-10" aria-label="Breadcrumb">
-          <Link href="/" className="hover:text-[#00d4ff] transition-colors">Home</Link>
+          <Link href="/" className="hover:text-amber-700 transition-colors">Home</Link>
           <span>/</span>
-          <Link href="/products" className="hover:text-[#00d4ff] transition-colors">Products</Link>
+          <Link href="/products" className="hover:text-amber-700 transition-colors">Products</Link>
           <span>/</span>
           <span className="text-gray-400">{product.name}</span>
         </nav>
@@ -795,10 +795,10 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         {/* Hero grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-14">
           {/* Image */}
-          <div className="bg-[#0d1526] border border-white/8 rounded-2xl overflow-hidden aspect-square relative">
+          <div className="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden aspect-square relative">
             <Image src={product.image_url} alt={product.name} fill className="object-contain p-12" unoptimized priority />
             {product.badge && (
-              <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#00d4ff]/15 text-[#00d4ff] border border-[#00d4ff]/30 text-sm font-semibold">
+              <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-amber-100 text-amber-700 border border-amber-300 text-sm font-semibold">
                 {product.badge}
               </div>
             )}
@@ -806,12 +806,12 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
           {/* Product info — H1 is first heading in DOM */}
           <div>
-            <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2 leading-tight">{product.name}</h1>
-            <p className="text-[#00d4ff] font-mono text-base mb-1">{product.chemical_name}</p>
+            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2 leading-tight">{product.name}</h1>
+            <p className="text-amber-700 font-mono text-base mb-1">{product.chemical_name}</p>
             <p className="text-gray-500 text-sm font-mono mb-6">CAS: {product.cas_number}</p>
 
             <div className="flex items-center gap-4 mb-6">
-              <span className="text-4xl font-bold text-white">${product.price.toFixed(2)}</span>
+              <span className="text-4xl font-bold text-gray-900">${product.price.toFixed(2)}</span>
               <span className={`px-3 py-1 rounded-full text-sm font-medium ${product.in_stock ? 'bg-emerald-500/15 text-emerald-400' : 'bg-red-500/10 text-red-400'}`}>
                 {product.in_stock ? 'In Stock' : 'Out of Stock'}
               </span>
@@ -820,20 +820,20 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             <p className="text-gray-400 leading-relaxed mb-8">{product.description}</p>
 
             {/* Specs */}
-            <div className="bg-[#0d1526] border border-white/8 rounded-xl p-5 mb-6">
+            <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 mb-6">
               <p className="text-xs text-gray-500 uppercase tracking-wider font-semibold mb-3">Specifications</p>
               <div className="space-y-2">
                 {product.specs.map((spec) => (
                   <div key={spec.label} className="flex justify-between items-center py-1.5 border-b border-white/5 last:border-0">
                     <span className="text-sm text-gray-500">{spec.label}</span>
-                    <span className="text-sm text-white font-medium">{spec.value}</span>
+                    <span className="text-sm text-gray-900 font-medium">{spec.value}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             <a href={shopLink} rel="noopener noreferrer nofollow"
-              className="flex w-full py-4 bg-[#00d4ff] text-[#080d1a] font-bold text-base rounded-xl text-center hover:bg-[#00d4ff]/90 transition-colors items-center justify-center gap-2">
+              className="flex w-full py-4 btn-primary font-bold text-base rounded-xl text-center transition-colors items-center justify-center gap-2">
               Shop This Compound
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
@@ -847,8 +847,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         {UniqueComponent && <UniqueComponent />}
 
         {/* Mechanism */}
-        <div className="bg-[#0d1526] border border-white/8 rounded-2xl p-8 mb-10">
-          <h2 className="text-xl font-bold text-white mb-4">Mechanism of Action</h2>
+        <div className="bg-white border border-gray-200 rounded-2xl p-8 mb-10">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">Mechanism of Action</h2>
           <p className="text-gray-400 leading-relaxed">{product.mechanism}</p>
         </div>
 
@@ -869,11 +869,11 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         {/* FAQ */}
         {product.faq?.length > 0 && (
           <div className="mb-12">
-            <h2 className="text-2xl font-bold text-white mb-6">Research FAQ</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Research FAQ</h2>
             <div className="space-y-4">
               {product.faq.map((item) => (
-                <div key={item.q} className="bg-[#0d1526] border border-white/8 rounded-xl p-6">
-                  <h3 className="text-white font-semibold mb-3">{item.q}</h3>
+                <div key={item.q} className="bg-white border border-gray-200 rounded-xl p-6">
+                  <h3 className="text-gray-900 font-semibold mb-3">{item.q}</h3>
                   <p className="text-gray-400 text-sm leading-relaxed">{item.a}</p>
                 </div>
               ))}
@@ -884,7 +884,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         {/* Related products */}
         {related.length > 0 && (
           <div>
-            <h2 className="text-2xl font-bold text-white mb-6">Related Compounds</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Compounds</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
               {related.map((p) => <ProductCard key={p.slug} product={p} />)}
             </div>
