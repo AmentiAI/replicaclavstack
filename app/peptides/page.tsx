@@ -36,7 +36,7 @@ export default function PeptidesPage() {
       </nav>
 
       <div className="mb-12">
-        <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">Peptide Research Classes</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Peptide Research Classes</h1>
         <p className="text-xl text-gray-400 max-w-2xl">
           5 research categories. Each targets distinct receptor pathways with non-overlapping mechanisms.
         </p>
@@ -49,7 +49,7 @@ export default function PeptidesPage() {
             <Link
               key={cat.slug}
               href={`/peptides/${cat.slug}`}
-              className="group bg-[#0d1526] border border-white/8 rounded-2xl p-7 hover:border-white/15 transition-all"
+              className="group bg-white border border-gray-200 rounded-2xl p-7 hover:border-amber-300 transition-all"
               style={{ borderTopColor: `${accent}30`, borderTopWidth: 2 }}
             >
               <div className="flex items-start justify-between mb-4">
@@ -59,7 +59,7 @@ export default function PeptidesPage() {
                 </svg>
               </div>
 
-              <h2 className="text-xl font-bold text-white mb-2 group-hover:text-[#00d4ff] transition-colors">
+              <h2 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-amber-700 transition-colors">
                 {cat.name}
               </h2>
               <p className="text-gray-500 text-sm leading-relaxed mb-5">{cat.content.slice(0, 160)}…</p>

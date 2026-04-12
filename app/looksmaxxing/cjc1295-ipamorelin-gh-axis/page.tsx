@@ -68,7 +68,7 @@ const enhancedPeaks = [
 function GHPulseDiagram() {
   return (
     <div className="glass rounded-2xl p-6 my-10" style={{ border: '1px solid rgba(0,212,255,0.18)' }}>
-      <h3 className="text-white font-bold text-lg mb-1">GH Pulsatile Secretion Model</h3>
+      <h3 className="text-gray-900 font-bold text-lg mb-1">GH Pulsatile Secretion Model</h3>
       <p style={{ color: '#64748b', fontSize: '0.85rem', marginBottom: '2rem' }}>
         Simplified mechanistic illustration — not to scale
       </p>
@@ -215,7 +215,7 @@ export default function CjcIpamorelinPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
-      <main style={{ background: '#050810', minHeight: '100vh' }}>
+      <main style={{ background: '#ffffff', minHeight: '100vh' }}>
         <div style={{ maxWidth: '860px', margin: '0 auto', padding: '2rem 1.5rem 4rem' }}>
 
           {/* Breadcrumb */}

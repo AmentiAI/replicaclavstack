@@ -120,10 +120,10 @@ export default function ProtocolPage() {
 
       {/* Header */}
       <div className="mb-16">
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#00d4ff]/10 border border-[#00d4ff]/25 text-[#00d4ff] text-xs font-semibold mb-6 uppercase tracking-widest">
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-100 border border-amber-300 text-amber-700 text-xs font-semibold mb-6 uppercase tracking-widest">
           5-Layer Research Architecture
         </div>
-        <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4 leading-tight">
+        <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4 leading-tight">
           The Full Research Protocol
         </h1>
         <p className="text-xl text-gray-400 leading-relaxed max-w-2xl">
@@ -138,7 +138,7 @@ export default function ProtocolPage() {
             { v: '8+', l: 'Distinct Pathways' },
             { v: '>98%', l: 'HPLC Purity All' },
           ].map(s => (
-            <div key={s.l} className="bg-[#0d1526] border border-white/8 rounded-xl p-4 text-center">
+            <div key={s.l} className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
               <div className="text-2xl font-bold text-[#00d4ff] mb-1">{s.v}</div>
               <div className="text-xs text-gray-600">{s.l}</div>
             </div>
@@ -151,13 +151,13 @@ export default function ProtocolPage() {
         {layers.map((layer) => (
           <div
             key={layer.number}
-            className="bg-[#0d1526] border border-white/8 rounded-2xl overflow-hidden"
+            className="bg-white border border-gray-200 rounded-2xl overflow-hidden"
             style={{ borderTopColor: `${layer.accent}40`, borderTopWidth: 2 }}
           >
             <div className="p-6 sm:p-8">
               <div className="flex flex-col sm:flex-row gap-6">
                 {/* Image */}
-                <div className="flex-shrink-0 w-full sm:w-32 h-32 rounded-xl overflow-hidden bg-[#111d35] relative">
+                <div className="flex-shrink-0 w-full sm:w-32 h-32 rounded-xl overflow-hidden bg-gray-100 relative">
                   <Image
                     src={layer.image}
                     alt={layer.chemical}
@@ -175,7 +175,7 @@ export default function ProtocolPage() {
                         <span className="text-xs font-bold px-2 py-0.5 rounded" style={{ background: `${layer.accent}18`, color: layer.accent }}>
                           Layer {layer.number}
                         </span>
-                        <h2 className="text-xl font-bold text-white">{layer.name}</h2>
+                        <h2 className="text-xl font-bold text-gray-900">{layer.name}</h2>
                       </div>
                       <p className="font-mono text-sm" style={{ color: layer.accent }}>{layer.chemical}</p>
                       <p className="text-xs text-gray-700 mt-0.5 font-mono">CAS: {layer.cas}</p>
@@ -183,7 +183,7 @@ export default function ProtocolPage() {
                     <div className="flex items-center gap-2">
                       <Link
                         href={`/products/${layer.slug}`}
-                        className="text-xs px-3 py-1.5 border border-white/15 text-gray-400 rounded-lg hover:border-white/30 hover:text-white transition-all"
+                        className="text-xs px-3 py-1.5 border border-gray-200 text-gray-600 rounded-lg hover:border-gray-300 hover:text-gray-900 transition-all"
                       >
                         Research
                       </Link>
@@ -228,13 +228,13 @@ export default function ProtocolPage() {
       </div>
 
       {/* Source CTA */}
-      <div className="mt-16 bg-[#0d1526] border border-[#00d4ff]/20 rounded-2xl p-8 text-center glow-cyan-sm">
-        <h2 className="text-2xl font-bold text-white mb-2">Source the Full Stack</h2>
+      <div className="mt-16 bg-amber-50 border border-amber-200 rounded-2xl p-8 text-center">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2">Source the Full Stack</h2>
         <p className="text-gray-500 mb-6">All 10 protocol compounds. Research-grade quality. &gt;98% HPLC purity. Third-party test reports.</p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link
             href="/products"
-            className="px-6 py-3 border border-white/15 text-gray-300 rounded-xl text-sm font-medium hover:border-[#00d4ff]/30 hover:text-white transition-all"
+            className="px-6 py-3 border border-gray-200 text-gray-600 rounded-xl text-sm font-medium hover:border-amber-300 hover:text-gray-900 transition-all"
           >
             View All Products
           </Link>
@@ -242,7 +242,7 @@ export default function ProtocolPage() {
             href="/stacks"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-[#00d4ff] text-[#080d1a] rounded-xl text-sm font-semibold hover:bg-[#00d4ff]/90 transition-colors"
+            className="px-6 py-3 btn-primary rounded-xl text-sm font-semibold transition-colors"
           >
             Shop All Compounds →
           </a>

@@ -102,7 +102,7 @@ function MechanismCoverageMatrix() {
       className="glass rounded-2xl p-6 my-10"
       style={{ border: '1px solid rgba(0,212,255,0.18)', overflowX: 'auto' }}
     >
-      <h3 className="text-white font-bold text-lg mb-1">BPC-157 Research Coverage Matrix</h3>
+      <h3 className="text-gray-900 font-bold text-lg mb-1">BPC-157 Research Coverage Matrix</h3>
       <p style={{ color: '#64748b', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
         Evidence density across tissue types and primary mechanisms from published literature
       </p>
@@ -227,7 +227,7 @@ export default function Bpc157Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
-      <main style={{ background: '#050810', minHeight: '100vh' }}>
+      <main style={{ background: '#ffffff', minHeight: '100vh' }}>
         <div style={{ maxWidth: '860px', margin: '0 auto', padding: '2rem 1.5rem 4rem' }}>
 
           {/* Breadcrumb */}

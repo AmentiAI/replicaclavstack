@@ -28,7 +28,7 @@ export default function GuidesPage() {
       </nav>
 
       <div className="mb-12">
-        <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">Research Guides</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Research Guides</h1>
         <p className="text-xl text-gray-400">From first principles to protocol design. Everything you need to understand the stack.</p>
       </div>
 
@@ -37,16 +37,16 @@ export default function GuidesPage() {
           <Link
             key={guide.slug}
             href={`/guides/${guide.slug}`}
-            className="group block bg-[#0d1526] border border-white/8 rounded-2xl p-7 hover:border-white/15 transition-all"
+            className="group block bg-white border border-gray-200 rounded-2xl p-7 hover:border-amber-300 transition-all"
           >
             <div className="flex items-start justify-between gap-4">
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="px-2.5 py-1 rounded-full bg-[#7c3aed]/15 text-purple-400 text-xs font-semibold">Guide</span>
+                  <span className="px-2.5 py-1 rounded-full bg-violet-100 text-violet-700 text-xs font-semibold">Guide</span>
                   <span className="text-gray-600 text-xs">{guide.readTime} read</span>
                   <span className="text-gray-700 text-xs">{guide.date}</span>
                 </div>
-                <h2 className="text-xl font-bold text-white mb-2 group-hover:text-[#00d4ff] transition-colors">{guide.title}</h2>
+                <h2 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-amber-700 transition-colors">{guide.title}</h2>
                 <p className="text-gray-500 text-sm leading-relaxed">{guide.excerpt}</p>
               </div>
               <svg className="w-5 h-5 text-gray-700 group-hover:text-[#00d4ff] transition-colors flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">

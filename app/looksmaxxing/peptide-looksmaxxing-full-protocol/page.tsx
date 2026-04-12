@@ -292,7 +292,7 @@ export default function FullProtocolPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
-      <main style={{ background: '#050810', minHeight: '100vh' }}>
+      <main style={{ background: '#ffffff', minHeight: '100vh' }}>
         <div
           style={{
             maxWidth: '900px',

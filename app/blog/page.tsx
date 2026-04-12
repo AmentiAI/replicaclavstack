@@ -28,7 +28,7 @@ export default function BlogPage() {
       </nav>
 
       <div className="mb-12">
-        <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">Research Blog</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Research Blog</h1>
         <p className="text-xl text-gray-400">Data-driven analysis of peptide research. Phase 2 breakdowns, mechanism studies, protocol design.</p>
       </div>
 
@@ -37,18 +37,18 @@ export default function BlogPage() {
           <Link
             key={post.slug}
             href={`/blog/${post.slug}`}
-            className="group block bg-[#0d1526] border border-white/8 rounded-2xl p-7 hover:border-white/15 transition-all"
+            className="group block bg-white border border-gray-200 rounded-2xl p-7 hover:border-amber-300 transition-all"
           >
             <div className="flex items-start justify-between gap-4">
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="px-2.5 py-1 rounded-full bg-[#00d4ff]/10 text-[#00d4ff] text-xs font-semibold">
+                  <span className="px-2.5 py-1 rounded-full bg-amber-100 text-amber-700 text-xs font-semibold">
                     {post.category}
                   </span>
                   <span className="text-gray-600 text-xs">{post.readTime} read</span>
                   <span className="text-gray-700 text-xs">{post.date}</span>
                 </div>
-                <h2 className="text-xl font-bold text-white mb-2 group-hover:text-[#00d4ff] transition-colors leading-tight">
+                <h2 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-amber-700 transition-colors leading-tight">
                   {post.title}
                 </h2>
                 <p className="text-gray-500 text-sm leading-relaxed line-clamp-2">{post.excerpt}</p>

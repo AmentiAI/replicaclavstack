@@ -79,11 +79,11 @@ export default async function GuidePage({
 
         <div className="mb-10">
           <div className="flex items-center gap-3 mb-5">
-            <span className="px-2.5 py-1 rounded-full bg-[#7c3aed]/15 text-purple-400 text-xs font-semibold">Guide</span>
+            <span className="px-2.5 py-1 rounded-full bg-violet-100 text-violet-700 text-xs font-semibold">Guide</span>
             <span className="text-gray-600 text-sm">{guide.readTime} read</span>
             <span className="text-gray-700 text-sm">{guide.date}</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4 leading-tight">{guide.title}</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 leading-tight">{guide.title}</h1>
           <p className="text-gray-400 text-lg leading-relaxed">{guide.excerpt}</p>
         </div>
 

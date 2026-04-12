@@ -104,11 +104,11 @@ export default async function BlogPostPage({
         {/* Article header */}
         <div className="mb-10">
           <div className="flex items-center gap-3 mb-5">
-            <span className="px-2.5 py-1 rounded-full bg-[#00d4ff]/10 text-[#00d4ff] text-xs font-semibold">{post.category}</span>
+            <span className="px-2.5 py-1 rounded-full bg-amber-100 text-amber-700 text-xs font-semibold">{post.category}</span>
             <span className="text-gray-600 text-sm">{post.readTime} read</span>
             <span className="text-gray-700 text-sm">{post.date}</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4 leading-tight">{post.title}</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 leading-tight">{post.title}</h1>
           <p className="text-gray-400 text-lg leading-relaxed">{post.excerpt}</p>
         </div>
 

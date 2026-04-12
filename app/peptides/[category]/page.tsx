@@ -89,7 +89,7 @@ export default async function CategoryPage({
               Research Category
             </div>
           </div>
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-3">{cat.name}</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-3">{cat.name}</h1>
           <p className="text-gray-400 text-lg italic mb-6" style={{ color: cat.accentColor }}>{cat.headline}</p>
           <p className="text-gray-400 text-lg max-w-3xl leading-relaxed">{cat.content}</p>
         </div>
@@ -97,7 +97,7 @@ export default async function CategoryPage({
         {/* Stats */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12">
           {cat.stats.map((s) => (
-            <div key={s.label} className="bg-[#0d1526] border border-white/8 rounded-xl p-4 text-center">
+            <div key={s.label} className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
               <div className="text-2xl font-bold mb-1" style={{ color: cat.accentColor }}>{s.value}</div>
               <div className="text-xs text-gray-600">{s.label}</div>
             </div>
@@ -106,7 +106,7 @@ export default async function CategoryPage({
 
         {/* Products */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">{cat.name} — Research Compounds</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">{cat.name} — Research Compounds</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
             {catProducts.map((product) => (
               <ProductCard key={product.slug} product={product} />
@@ -116,11 +116,11 @@ export default async function CategoryPage({
 
         {/* FAQ */}
         <div>
-          <h2 className="text-2xl font-bold text-white mb-6">Research FAQ — {cat.shortName}</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Research FAQ — {cat.shortName}</h2>
           <div className="space-y-4">
             {cat.faq.map((item) => (
-              <div key={item.q} className="bg-[#0d1526] border border-white/8 rounded-xl p-6">
-                <h3 className="text-white font-semibold mb-3">{item.q}</h3>
+              <div key={item.q} className="bg-white border border-gray-200 rounded-xl p-6">
+                <h3 className="text-gray-900 font-semibold mb-3">{item.q}</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">{item.a}</p>
               </div>
             ))}

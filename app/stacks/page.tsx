@@ -120,11 +120,11 @@ function ProductMiniCard({ slug, accent }: { slug: string; accent: string }) {
         <p className="text-[10px] font-bold uppercase tracking-wider mb-0.5" style={{ color: accent }}>
           {product.chemical_name}
         </p>
-        <p className="text-white text-xs font-semibold leading-tight">{product.name}</p>
+        <p className="text-gray-900 text-xs font-semibold leading-tight">{product.name}</p>
         <p className="text-gray-600 text-[10px] font-mono">CAS {product.cas_number.split('/')[0].trim()}</p>
       </div>
       <div className="flex items-center justify-between mt-auto pt-1 border-t border-white/5">
-        <span className="text-white text-sm font-bold">${product.price.toFixed(0)}</span>
+        <span className="text-gray-900 text-sm font-bold">${product.price.toFixed(0)}</span>
         <span
           className="text-[10px] font-bold px-2 py-0.5 rounded-full"
           style={{ background: `${accent}18`, color: accent, border: `1px solid ${accent}30` }}
@@ -149,10 +149,10 @@ export default function StacksPage() {
       {/* Header */}
       <div className="mb-14">
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass border border-[#00d4ff]/20 text-[#00d4ff] text-xs font-bold uppercase tracking-widest mb-5">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#00d4ff] animate-pulse" />
+          <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" />
           6 Curated Stacks
         </div>
-        <h1 className="text-4xl sm:text-5xl font-black text-white tracking-tight mb-4">
+        <h1 className="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight mb-4">
           Peptide Stacks
         </h1>
         <p className="text-xl text-gray-500 max-w-2xl mb-8">
@@ -182,17 +182,17 @@ export default function StacksPage() {
                     <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: stack.accent }}>
                       {stack.tagline}
                     </p>
-                    <h2 className="text-2xl sm:text-3xl font-black text-white mb-3">{stack.name}</h2>
+                    <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3">{stack.name}</h2>
                     <p className="text-gray-400 text-sm leading-relaxed max-w-2xl">{stack.description}</p>
                   </div>
                   <div className="flex-shrink-0 text-right">
                     <p className="text-xs text-gray-600 mb-1">Stack total</p>
-                    <p className="text-3xl font-black text-white">${totalPrice.toFixed(0)}</p>
+                    <p className="text-3xl font-black text-gray-900">${totalPrice.toFixed(0)}</p>
                     <a
                       href={`/out/${stack.slugs[0]}`}
                       rel="noopener noreferrer nofollow"
                       className="mt-3 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold transition-all"
-                      style={{ background: stack.accent, color: '#080d1a' }}
+                      style={{ background: stack.accent, color: '#ffffff' }}
                     >
                       Shop Stack
                       <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -249,7 +249,7 @@ export default function StacksPage() {
                   <div className="flex gap-3">
                     <Link
                       href={`/protocol`}
-                      className="px-4 py-2 rounded-xl text-sm font-medium glass border border-white/10 text-gray-400 hover:text-white hover:border-white/20 transition-all"
+                      className="px-4 py-2 rounded-xl text-sm font-medium bg-gray-100 border border-gray-200 text-gray-600 hover:text-gray-900 hover:border-gray-300 transition-all"
                     >
                       View Protocol
                     </Link>
@@ -257,7 +257,7 @@ export default function StacksPage() {
                       href={`/out/${stack.slugs[0]}`}
                       rel="noopener noreferrer nofollow"
                       className="px-5 py-2 rounded-xl text-sm font-bold inline-flex items-center gap-1.5 transition-all"
-                      style={{ background: stack.accent, color: '#080d1a' }}
+                      style={{ background: stack.accent, color: '#ffffff' }}
                     >
                       Shop This Stack
                       <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -274,7 +274,7 @@ export default function StacksPage() {
 
       {/* Bottom CTA */}
       <div className="mt-16 p-8 glass border border-[#00d4ff]/15 rounded-3xl text-center">
-        <h2 className="text-2xl font-black text-white mb-3">Need a specific compound?</h2>
+        <h2 className="text-2xl font-black text-gray-900 mb-3">Need a specific compound?</h2>
         <p className="text-gray-500 mb-6 max-w-md mx-auto">
           Browse the full catalog of 21 research compounds — searchable by protocol layer, mechanism, or category.
         </p>
@@ -282,7 +282,7 @@ export default function StacksPage() {
           <Link href="/products" className="btn-primary px-8 py-3.5 rounded-xl text-base font-bold">
             Browse All 21 Compounds
           </Link>
-          <Link href="/protocol" className="px-8 py-3.5 rounded-xl text-base font-medium glass border border-white/10 text-gray-400 hover:text-white hover:border-white/20 transition-all">
+          <Link href="/protocol" className="px-8 py-3.5 rounded-xl text-base font-medium bg-gray-100 border border-gray-200 text-gray-600 hover:text-gray-900 hover:border-gray-300 transition-all">
             Read the Protocol
           </Link>
         </div>
