@@ -29,7 +29,7 @@ const layers = [
     cas: '2381089-83-2',
     price: 189.99,
     accent: '#00d4ff',
-    image: 'https://phiogen.is/images/products/glp-3-r-15mg.png',
+    image: 'https://phiogen.is/images/products/retatrutide-15mg.png',
     why: 'The tri-receptor mechanism (GLP-1R + GIPR + GcgR) produces synergistic effects no single-receptor compound can replicate. Phase 2 showed −28.7% at 48 weeks — the strongest signal in the GLP agonist class.',
     mechanism: 'GLP-1R: appetite suppression + insulin secretion. GIPR: potentiates insulin + attenuates GLP-1 nausea. GcgR: elevated energy expenditure through thermogenic pathway activation.',
     stats: [
@@ -80,7 +80,7 @@ const layers = [
     cas: '863288-34-0',
     price: 50.00,
     accent: '#7c3aed',
-    image: 'https://phiogen.is/images/products/cjc1295-ipamorelin.png',
+    image: 'https://phiogen.is/images/products/ipamorelin-cjc-1295-blend-cjc-1295-5mg-ipa-5mg.png',
     why: 'GLP protocols reduce caloric intake. The lean mass layer researches GH axis support during energetic deficit. CJC-1295/Ipamorelin produces synergistic pulsatile GH secretion; IGF-1 LR3 addresses downstream IGF-1R signaling.',
     mechanism: 'CJC-1295: GHRH receptor agonism (GH pulse amplitude). Ipamorelin: GHS-R1a selective agonism (GH pulse frequency). IGF-1 LR3: extended IGF-1R activation (~3× native half-life).',
     stats: [
@@ -97,7 +97,7 @@ const layers = [
     cas: '307297-39-8',
     price: 139.99,
     accent: '#ec4899',
-    image: 'https://phiogen.is/images/products/epithalon-50mg.png',
+    image: 'https://phiogen.is/images/products/epitalon-50mg.png',
     why: 'The longevity layer addresses cellular aging mechanisms distinct from all other layers. Epithalon targets telomere biology; NAD+ restores sirtuin and PARP substrate. Both decline approximately 50% by age 60 in human tissue studies.',
     mechanism: 'Epithalon: telomerase (TERT) activation in cellular models. NAD+: sirtuin co-substrate (SIRT1–7 deacylation), PARP-1 substrate for DNA repair, electron carrier in mitochondrial respiration.',
     stats: [

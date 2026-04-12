@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
+import SearchBar from './SearchBar'
 
 const navLinks = [
   { href: '/protocol',      label: 'Protocol'       },
@@ -87,6 +88,11 @@ export default function Header() {
           ))}
         </div>
 
+        {/* Search */}
+        <div className="hidden md:block">
+          <SearchBar />
+        </div>
+
         {/* Right CTA */}
         <div className="flex items-center gap-3">
           <a
@@ -120,6 +126,9 @@ export default function Header() {
         }`}
       >
         <div className="bg-white border-t border-gray-100 px-4 py-4 flex flex-col gap-1">
+          <div className="mb-2">
+            <SearchBar />
+          </div>
           {navLinks.map((item) => (
             <Link
               key={item.href}
