@@ -129,7 +129,7 @@ export default function HomePage() {
 
             {/* ── RIGHT: product image grid ── */}
             <div className="hidden lg:block relative">
-              <div className="relative grid grid-cols-3 gap-3">
+              <div className="relative grid grid-cols-2 sm:grid-cols-3 gap-4">
                 {heroProducts.map((product, i) => {
                   const accents = ['#c8870a', '#7c3aed', '#10b981', '#d97706', '#db2777', '#c8870a']
                   const accent = accents[i % accents.length]
@@ -138,7 +138,7 @@ export default function HomePage() {
                     <Link
                       key={product.slug}
                       href={`/products/${product.slug}`}
-                      className="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:border-amber-300 hover:shadow-md transition-all duration-300 animate-scale-in"
+                      className="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:border-amber-300 hover:shadow-lg hover:shadow-amber-100/50 transition-all duration-300 animate-scale-in"
                       style={{ animationDelay: delays[i] }}
                     >
                       {/* Image */}
@@ -147,12 +147,13 @@ export default function HomePage() {
                           src={product.image_url}
                           alt={product.name}
                           fill
-                          sizes="(max-width: 1280px) 120px, 150px"
-                          className="object-contain p-3 group-hover:scale-110 transition-transform duration-700"
+                          sizes="(max-width: 1280px) 180px, 220px"
+                          className="object-contain p-5 group-hover:scale-110 transition-transform duration-700"
+                          unoptimized
                         />
                         {product.badge && (
                           <span
-                            className="absolute top-2 left-2 text-[9px] font-bold px-1.5 py-0.5 rounded-full"
+                            className="absolute top-2 left-2 text-[10px] font-bold px-2 py-0.5 rounded-full"
                             style={{ background: `${accent}20`, color: accent, border: `1px solid ${accent}40` }}
                           >
                             {product.badge}
@@ -160,9 +161,9 @@ export default function HomePage() {
                         )}
                       </div>
                       {/* Label */}
-                      <div className="px-3 py-2.5 border-t border-gray-100">
-                        <p className="text-gray-900 text-[11px] font-bold leading-tight truncate">{product.name}</p>
-                        <p className="text-[10px] mt-0.5 font-semibold" style={{ color: accent }}>${product.price}</p>
+                      <div className="px-3.5 py-3 border-t border-gray-100">
+                        <p className="text-gray-900 text-[12px] font-bold leading-tight truncate">{product.name}</p>
+                        <p className="text-[11px] mt-0.5 font-semibold" style={{ color: accent }}>${product.price}</p>
                       </div>
                     </Link>
                   )
