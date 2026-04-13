@@ -1,20 +1,20 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 
 
 export const metadata: Metadata = {
-  title: { absolute: 'NAD+ Peptide — Anti-Aging, Energy & Skin Longevity Benefits | The Peptide Stack' },
+  title: { absolute: 'NAD+ Peptide — Anti-Aging, Energy & Skin Longevity Benefits | Claviculars Peptides' },
   description:
     'NAD+ declines ~50% between ages 30-60. Research on SIRT1-7 activation, PARP1 DNA repair, CD38 accumulation, and mitochondrial function restoration.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/nad-plus-sirtuin-cellular-energy` },
   openGraph: {
-    title: 'NAD+ Peptide — Anti-Aging, Energy & Skin Longevity Benefits | The Peptide Stack',
+    title: 'NAD+ Peptide — Anti-Aging, Energy & Skin Longevity Benefits | Claviculars Peptides',
     description:
       'NAD+ declines ~50% between ages 30-60. Research on SIRT1-7 activation, PARP1 DNA repair, CD38 accumulation, and mitochondrial function restoration.',
     url: `${BASE_URL}/looksmaxxing/nad-plus-sirtuin-cellular-energy`,
-    siteName: 'The Peptide Stack',
+    siteName: 'Claviculars Peptides',
     type: 'article',
   },
 }
@@ -27,8 +27,8 @@ const articleJsonLd = {
     'NAD+ declines ~50% between ages 30-60. Research on SIRT1-7 activation, PARP1 DNA repair, CD38 accumulation, and mitochondrial function restoration.',
   datePublished: '2026-04-09',
   dateModified: '2026-04-09',
-  author: { '@type': 'Organization', name: 'The Peptide Stack' },
-  publisher: { '@type': 'Organization', name: 'The Peptide Stack', url: BASE_URL },
+  author: { '@type': 'Organization', name: 'Claviculars Peptides' },
+  publisher: { '@type': 'Organization', name: 'Claviculars Peptides', url: BASE_URL },
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE_URL}/looksmaxxing/nad-plus-sirtuin-cellular-energy` },
 }
 

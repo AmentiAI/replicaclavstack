@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Terms of Use | The Peptide Stack' },
-  description: 'Terms of use for The Peptide Stack. Research-only disclaimer, affiliate disclosure, and site usage terms.',
+  title: { absolute: 'Terms of Use | Claviculars Peptides' },
+  description: 'Terms of use for Claviculars Peptides. Research-only disclaimer, affiliate disclosure, and site usage terms.',
   alternates: { canonical: `${BASE_URL}/terms` },
   robots: { index: false, follow: false },
 }
@@ -32,7 +32,7 @@ export default function TermsPage() {
 
         <section>
           <h2>1. Acceptance of Terms</h2>
-          <p>By accessing The Peptide Stack ("the Site"), you agree to be bound by these Terms of Use. If you do not agree, do not use this Site.</p>
+          <p>By accessing Claviculars Peptides ("the Site"), you agree to be bound by these Terms of Use. If you do not agree, do not use this Site.</p>
         </section>
 
         <section>
@@ -42,7 +42,7 @@ export default function TermsPage() {
 
         <section>
           <h2>3. Affiliate Relationships</h2>
-          <p>The Peptide Stack participates in affiliate programs. When you click product links and make purchases, we may earn a commission. This does not affect the price you pay. Affiliate relationships do not influence our editorial content or compound analysis.</p>
+          <p>Claviculars Peptides participates in affiliate programs. When you click product links and make purchases, we may earn a commission. This does not affect the price you pay. Affiliate relationships do not influence our editorial content or compound analysis.</p>
         </section>
 
         <section>
@@ -52,7 +52,7 @@ export default function TermsPage() {
 
         <section>
           <h2>5. Limitation of Liability</h2>
-          <p>The Peptide Stack provides information "as is" without warranty of any kind. We are not liable for any damages arising from use of information on this Site or from purchases made through affiliate links.</p>
+          <p>Claviculars Peptides provides information "as is" without warranty of any kind. We are not liable for any damages arising from use of information on this Site or from purchases made through affiliate links.</p>
         </section>
 
         <section>

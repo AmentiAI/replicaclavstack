@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { getAllBlogSlugs, getBlogPostBySlug } from '@/lib/blog'
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 
 export function generateStaticParams() {
   return getAllBlogSlugs().map((slug) => ({ slug }))
@@ -25,7 +25,7 @@ export async function generateMetadata({
       title: post.seoTitle,
       description: post.seoDescription,
       url: `${BASE_URL}/blog/${slug}`,
-      siteName: 'The Peptide Stack',
+      siteName: 'Claviculars Peptides',
       type: 'article',
     },
     twitter: {
@@ -70,8 +70,8 @@ export default async function BlogPostPage({
     description: post.seoDescription,
     datePublished: post.date,
     dateModified: post.date,
-    author: { '@type': 'Organization', name: 'The Peptide Stack' },
-    publisher: { '@type': 'Organization', name: 'The Peptide Stack', url: BASE_URL },
+    author: { '@type': 'Organization', name: 'Claviculars Peptides' },
+    publisher: { '@type': 'Organization', name: 'Claviculars Peptides', url: BASE_URL },
   }
 
   const breadcrumbJsonLd = {

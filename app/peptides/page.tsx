@@ -2,18 +2,18 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { categories } from '@/lib/categories'
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Peptide Research Classes — GLP, Gut Recovery, Skin, Lean Mass, Longevity | The Peptide Stack' },
+  title: { absolute: 'Peptide Research Classes — GLP, Gut Recovery, Skin, Lean Mass, Longevity | Claviculars Peptides' },
   description:
     'Browse research peptides by class: GLP receptor agonists, gut recovery compounds, skin peptides, lean mass and longevity. 5 categories, 17 compounds, full mechanism analysis.',
   alternates: { canonical: `${BASE_URL}/peptides` },
   openGraph: {
-    title: 'Peptide Research Classes | The Peptide Stack',
+    title: 'Peptide Research Classes | Claviculars Peptides',
     description: '5 peptide research categories. GLP agonists, gut recovery, skin & glow, lean mass, longevity. Mechanism analysis for every compound.',
     url: `${BASE_URL}/peptides`,
-    siteName: 'The Peptide Stack',
+    siteName: 'Claviculars Peptides',
     type: 'website',
   },
 }

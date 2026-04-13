@@ -5,7 +5,7 @@ import { getAllCategorySlugs, getCategoryBySlug } from '@/lib/categories'
 import { getProductsByCategory } from '@/lib/products'
 import ProductCard from '@/components/ProductCard'
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 
 export function generateStaticParams() {
   return getAllCategorySlugs().map((slug) => ({ category: slug }))
@@ -27,7 +27,7 @@ export async function generateMetadata({
       title: cat.seoTitle,
       description: cat.seoDescription,
       url: `${BASE_URL}/peptides/${category}`,
-      siteName: 'The Peptide Stack',
+      siteName: 'Claviculars Peptides',
       type: 'website',
     },
   }

@@ -1,19 +1,19 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'IGF-1 LR3 Peptide — Muscle Growth, Body Recomposition & Looksmaxxing | The Peptide Stack' },
+  title: { absolute: 'IGF-1 LR3 Peptide — Muscle Growth, Body Recomposition & Looksmaxxing | Claviculars Peptides' },
   description:
     'IGF-1 LR3 — 13 AA N-terminal extension reduces IGFBP binding 1000×. Half-life 20-30h vs 6-12h native. PI3K/AKT and MAPK pathway research on muscle and skin.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/igf-1-lr3-lean-mass-research` },
   openGraph: {
-    title: 'IGF-1 LR3 Peptide — Muscle Growth, Body Recomposition & Looksmaxxing | The Peptide Stack',
+    title: 'IGF-1 LR3 Peptide — Muscle Growth, Body Recomposition & Looksmaxxing | Claviculars Peptides',
     description:
       'IGF-1 LR3 — 13 AA N-terminal extension reduces IGFBP binding 1000×. Half-life 20-30h vs 6-12h native. PI3K/AKT and MAPK pathway research on muscle and skin.',
     url: `${BASE_URL}/looksmaxxing/igf-1-lr3-lean-mass-research`,
-    siteName: 'The Peptide Stack',
+    siteName: 'Claviculars Peptides',
     type: 'article',
   },
 }
@@ -26,8 +26,8 @@ const articleJsonLd = {
     'IGF-1 LR3 — 13 AA N-terminal extension reduces IGFBP binding 1000×. Half-life 20-30h vs 6-12h native. PI3K/AKT and MAPK pathway research on muscle and skin.',
   datePublished: '2026-04-09',
   dateModified: '2026-04-09',
-  author: { '@type': 'Organization', name: 'The Peptide Stack' },
-  publisher: { '@type': 'Organization', name: 'The Peptide Stack', url: BASE_URL },
+  author: { '@type': 'Organization', name: 'Claviculars Peptides' },
+  publisher: { '@type': 'Organization', name: 'Claviculars Peptides', url: BASE_URL },
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE_URL}/looksmaxxing/igf-1-lr3-lean-mass-research` },
 }
 

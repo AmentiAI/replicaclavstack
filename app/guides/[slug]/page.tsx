@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { getAllGuideSlugs, getGuideBySlug } from '@/lib/guides'
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 
 export function generateStaticParams() {
   return getAllGuideSlugs().map((slug) => ({ slug }))
@@ -25,7 +25,7 @@ export async function generateMetadata({
       title: guide.seoTitle,
       description: guide.seoDescription,
       url: `${BASE_URL}/guides/${slug}`,
-      siteName: 'The Peptide Stack',
+      siteName: 'Claviculars Peptides',
       type: 'article',
     },
   }
@@ -47,8 +47,8 @@ export default async function GuidePage({
     description: guide.seoDescription,
     datePublished: guide.date,
     dateModified: guide.date,
-    author: { '@type': 'Organization', name: 'The Peptide Stack' },
-    publisher: { '@type': 'Organization', name: 'The Peptide Stack', url: BASE_URL },
+    author: { '@type': 'Organization', name: 'Claviculars Peptides' },
+    publisher: { '@type': 'Organization', name: 'Claviculars Peptides', url: BASE_URL },
   }
 
   const breadcrumbJsonLd = {

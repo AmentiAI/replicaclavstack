@@ -1,20 +1,20 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 
 
 export const metadata: Metadata = {
-  title: { absolute: 'Retatrutide — The Strongest Weight Loss Peptide (−28.7% in Trials) | The Peptide Stack' },
+  title: { absolute: 'Retatrutide — The Strongest Weight Loss Peptide (−28.7% in Trials) | Claviculars Peptides' },
   description:
     'Retatrutide (CAS 2381089-83-2) — GLP-1R + GIPR + GcgR triple agonist. Phase 2 NEJM 2023: −28.7% at 48 weeks. Body composition, facial structure, and recomposition research.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/retatrutide-body-recomposition` },
   openGraph: {
-    title: 'Retatrutide — The Strongest Weight Loss Peptide (−28.7% in Trials) | The Peptide Stack',
+    title: 'Retatrutide — The Strongest Weight Loss Peptide (−28.7% in Trials) | Claviculars Peptides',
     description:
       'Retatrutide (CAS 2381089-83-2) — GLP-1R + GIPR + GcgR triple agonist. Phase 2 NEJM 2023: −28.7% at 48 weeks. Body composition, facial structure, and recomposition research.',
     url: `${BASE_URL}/looksmaxxing/retatrutide-body-recomposition`,
-    siteName: 'The Peptide Stack',
+    siteName: 'Claviculars Peptides',
     type: 'article',
   },
 }
@@ -27,8 +27,8 @@ const articleJsonLd = {
     'Retatrutide (CAS 2381089-83-2) — GLP-1R + GIPR + GcgR triple agonist. Phase 2 NEJM 2023: −28.7% at 48 weeks. Body composition, facial structure, and recomposition research.',
   datePublished: '2026-04-09',
   dateModified: '2026-04-09',
-  author: { '@type': 'Organization', name: 'The Peptide Stack' },
-  publisher: { '@type': 'Organization', name: 'The Peptide Stack', url: BASE_URL },
+  author: { '@type': 'Organization', name: 'Claviculars Peptides' },
+  publisher: { '@type': 'Organization', name: 'Claviculars Peptides', url: BASE_URL },
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE_URL}/looksmaxxing/retatrutide-body-recomposition` },
 }
 

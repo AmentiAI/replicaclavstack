@@ -2,18 +2,18 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { guides } from '@/lib/guides'
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Research Guides — Peptide Protocols & Education | The Peptide Stack' },
+  title: { absolute: 'Research Guides — Peptide Protocols & Education | Claviculars Peptides' },
   description:
     'Research guides for peptide protocols: beginner introduction, GLP-1 vs GLP-2 vs GLP-3 explained, protocol design, and reconstitution guides.',
   alternates: { canonical: `${BASE_URL}/guides` },
   openGraph: {
-    title: 'Research Guides | The Peptide Stack',
+    title: 'Research Guides | Claviculars Peptides',
     description: 'Complete peptide research education: beginner guides, GLP comparison, protocol design, reconstitution.',
     url: `${BASE_URL}/guides`,
-    siteName: 'The Peptide Stack',
+    siteName: 'Claviculars Peptides',
     type: 'website',
   },
 }

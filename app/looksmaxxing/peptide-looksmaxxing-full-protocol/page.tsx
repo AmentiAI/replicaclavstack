@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 
 export const metadata: Metadata = {
   title: {
     absolute:
-      'The Complete Looksmaxxing Peptide Protocol — 10 Compounds Explained | The Peptide Stack',
+      'The Complete Looksmaxxing Peptide Protocol — 10 Compounds Explained | Claviculars Peptides',
   },
   description:
     'The 5-layer looks maxxing research protocol: GLP-3 R, BPC-157, GHK-Cu, SNAP-8, CJC-1295/Ipa, IGF-1 LR3, TB-500, Epithalon, NAD+. Complete mechanism analysis.',
@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      'The Complete Looksmaxxing Peptide Protocol — 10 Compounds Explained | The Peptide Stack',
+      'The Complete Looksmaxxing Peptide Protocol — 10 Compounds Explained | Claviculars Peptides',
     description:
       'The 5-layer looks maxxing research protocol: GLP-3 R, BPC-157, GHK-Cu, SNAP-8, CJC-1295/Ipa, IGF-1 LR3, TB-500, Epithalon, NAD+. Complete mechanism analysis.',
     url: `${BASE_URL}/looksmaxxing/peptide-looksmaxxing-full-protocol`,
-    siteName: 'The Peptide Stack',
+    siteName: 'Claviculars Peptides',
     type: 'article',
   },
 }
@@ -33,10 +33,10 @@ const articleJsonLd = {
     'The 5-layer looks maxxing research protocol: GLP-3 R, BPC-157, GHK-Cu, SNAP-8, CJC-1295/Ipa, IGF-1 LR3, TB-500, Epithalon, NAD+. Complete mechanism analysis.',
   datePublished: '2026-04-09',
   dateModified: '2026-04-09',
-  author: { '@type': 'Organization', name: 'The Peptide Stack' },
+  author: { '@type': 'Organization', name: 'Claviculars Peptides' },
   publisher: {
     '@type': 'Organization',
-    name: 'The Peptide Stack',
+    name: 'Claviculars Peptides',
     url: BASE_URL,
   },
   mainEntityOfPage: {
@@ -894,7 +894,7 @@ export default function FullProtocolPage() {
                 consumption. These compounds are not approved by the FDA or any regulatory authority
                 for the treatment, prevention, or cure of any medical condition. Research should be
                 conducted in appropriate laboratory settings with appropriate institutional oversight
-                and regulatory approvals. The Peptide Stack provides mechanism analysis and research
+                and regulatory approvals. Claviculars Peptides provides mechanism analysis and research
                 context only — not medical advice or treatment recommendations. Consult a qualified
                 healthcare professional before making any decisions about your health or research
                 activities.

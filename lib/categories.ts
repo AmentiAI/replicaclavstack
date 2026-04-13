@@ -17,7 +17,7 @@ export const categories: Category[] = [
     slug: 'glp-receptor-agonists',
     name: 'GLP Receptor Agonists',
     shortName: 'GLP Agonists',
-    seoTitle: 'GLP Receptor Agonist Peptides — Semaglutide, Tirzepatide, Retatrutide Research | The Peptide Stack',
+    seoTitle: 'GLP Receptor Agonist Peptides — Semaglutide, Tirzepatide, Retatrutide Research | Claviculars Peptides',
     seoDescription:
       'Research-grade GLP agonist peptides: GLP-1 S (Semaglutide), GLP-2 T (Tirzepatide), GLP-3 R (Retatrutide). Phase 2 data: −28.7% for the tri-receptor compound. Full mechanism analysis.',
     icon: '⚗️',
@@ -50,7 +50,7 @@ export const categories: Category[] = [
     slug: 'gut-recovery',
     name: 'Gut Recovery Peptides',
     shortName: 'Gut Recovery',
-    seoTitle: 'Gut Recovery Peptides — BPC-157 GI Mucosal Research | The Peptide Stack',
+    seoTitle: 'Gut Recovery Peptides — BPC-157 GI Mucosal Research | Claviculars Peptides',
     seoDescription:
       'Research-grade gut recovery peptides: BPC-157 (40+ published studies, NO system and VEGFR2 interactions). Mucosal protection and GI repair research compounds.',
     icon: '🔬',
@@ -79,7 +79,7 @@ export const categories: Category[] = [
     slug: 'skin-and-glow',
     name: 'Skin & Glow Peptides',
     shortName: 'Skin & Glow',
-    seoTitle: 'Skin Research Peptides — GHK-Cu & SNAP-8 | The Peptide Stack',
+    seoTitle: 'Skin Research Peptides — GHK-Cu & SNAP-8 | Claviculars Peptides',
     seoDescription:
       'Research-grade skin peptides: GHK-Cu (copper tripeptide, 4,177 gene interactions) and SNAP-8 (SNARE complex octapeptide). >98% HPLC. Full mechanism analysis.',
     icon: '✨',
@@ -108,7 +108,7 @@ export const categories: Category[] = [
     slug: 'lean-mass-longevity',
     name: 'Lean Mass & Longevity',
     shortName: 'Lean Mass',
-    seoTitle: 'Lean Mass & Longevity Peptides — CJC-1295, IGF-1 LR3, Epithalon, NAD+ | The Peptide Stack',
+    seoTitle: 'Lean Mass & Longevity Peptides — CJC-1295, IGF-1 LR3, Epithalon, NAD+ | Claviculars Peptides',
     seoDescription:
       'Research compounds for lean mass and longevity: CJC-1295/Ipamorelin, IGF-1 LR3, TB-500, Epithalon, NAD+. GH axis, telomere biology, and cellular energy research.',
     icon: '⚡',
@@ -141,7 +141,7 @@ export const categories: Category[] = [
     slug: 'core-protocol',
     name: 'Core Protocol Stack',
     shortName: 'Core Protocol',
-    seoTitle: 'Core Protocol Peptide Stack — 5 Layers, 10 Compounds | The Peptide Stack',
+    seoTitle: 'Core Protocol Peptide Stack — 5 Layers, 10 Compounds | Claviculars Peptides',
     seoDescription:
       'The complete 5-layer research stack: GLP-3 R (Retatrutide), BPC-157, GHK-Cu, SNAP-8, CJC-1295/Ipamorelin, Epithalon, NAD+. All layers, all mechanisms, full compound analysis.',
     icon: '🧬',

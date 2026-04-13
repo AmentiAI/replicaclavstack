@@ -1,19 +1,19 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'TB-500 Peptide — Faster Injury Recovery, Muscle Repair & Healing | The Peptide Stack' },
+  title: { absolute: 'TB-500 Peptide — Faster Injury Recovery, Muscle Repair & Healing | Claviculars Peptides' },
   description:
     'Thymosin Beta-4 (43 AA, endogenous) — G-actin sequestration, VEGF upregulation, NF-κB suppression. Tissue repair research across 8+ tissue types including skin and cardiac models.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/tb-500-thymosin-actin-repair` },
   openGraph: {
-    title: 'TB-500 Peptide — Faster Injury Recovery, Muscle Repair & Healing | The Peptide Stack',
+    title: 'TB-500 Peptide — Faster Injury Recovery, Muscle Repair & Healing | Claviculars Peptides',
     description:
       'Thymosin Beta-4 (43 AA, endogenous) — G-actin sequestration, VEGF upregulation, NF-κB suppression. Tissue repair research across 8+ tissue types including skin and cardiac models.',
     url: `${BASE_URL}/looksmaxxing/tb-500-thymosin-actin-repair`,
-    siteName: 'The Peptide Stack',
+    siteName: 'Claviculars Peptides',
     type: 'article',
   },
 }
@@ -26,8 +26,8 @@ const articleJsonLd = {
     'Thymosin Beta-4 (43 AA, endogenous) — G-actin sequestration, VEGF upregulation, NF-κB suppression. Tissue repair research across 8+ tissue types including skin and cardiac models.',
   datePublished: '2026-04-09',
   dateModified: '2026-04-09',
-  author: { '@type': 'Organization', name: 'The Peptide Stack' },
-  publisher: { '@type': 'Organization', name: 'The Peptide Stack', url: BASE_URL },
+  author: { '@type': 'Organization', name: 'Claviculars Peptides' },
+  publisher: { '@type': 'Organization', name: 'Claviculars Peptides', url: BASE_URL },
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE_URL}/looksmaxxing/tb-500-thymosin-actin-repair` },
 }
 

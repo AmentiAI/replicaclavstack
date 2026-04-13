@@ -1,19 +1,19 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'GHK-Cu Copper Peptide for Skin — Anti-Aging, Collagen & Glow Guide | The Peptide Stack' },
+  title: { absolute: 'GHK-Cu Copper Peptide for Skin — Anti-Aging, Collagen & Glow Guide | Claviculars Peptides' },
   description:
     'GHK-Cu (CAS 72957-37-0) modulates 4,177 human genes — 31% of the transcriptome. Research on collagen, elastin, VEGF, and skin aging mechanisms.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/ghk-cu-collagen-skin-research` },
   openGraph: {
-    title: 'GHK-Cu Copper Peptide for Skin — Anti-Aging, Collagen & Glow Guide | The Peptide Stack',
+    title: 'GHK-Cu Copper Peptide for Skin — Anti-Aging, Collagen & Glow Guide | Claviculars Peptides',
     description:
       'GHK-Cu (CAS 72957-37-0) modulates 4,177 human genes — 31% of the transcriptome. Research on collagen, elastin, VEGF, and skin aging mechanisms.',
     url: `${BASE_URL}/looksmaxxing/ghk-cu-collagen-skin-research`,
-    siteName: 'The Peptide Stack',
+    siteName: 'Claviculars Peptides',
     type: 'article',
   },
 }
@@ -26,8 +26,8 @@ const articleJsonLd = {
     'GHK-Cu (CAS 72957-37-0) modulates 4,177 human genes — 31% of the transcriptome. Research on collagen, elastin, VEGF, and skin aging mechanisms.',
   datePublished: '2026-04-09',
   dateModified: '2026-04-09',
-  author: { '@type': 'Organization', name: 'The Peptide Stack' },
-  publisher: { '@type': 'Organization', name: 'The Peptide Stack', url: BASE_URL },
+  author: { '@type': 'Organization', name: 'Claviculars Peptides' },
+  publisher: { '@type': 'Organization', name: 'Claviculars Peptides', url: BASE_URL },
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE_URL}/looksmaxxing/ghk-cu-collagen-skin-research` },
 }
 

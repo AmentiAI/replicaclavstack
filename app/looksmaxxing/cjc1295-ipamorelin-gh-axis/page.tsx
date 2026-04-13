@@ -1,19 +1,19 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'CJC-1295 + Ipamorelin — Best Peptides for Growth Hormone & Muscle | The Peptide Stack' },
+  title: { absolute: 'CJC-1295 + Ipamorelin — Best Peptides for Growth Hormone & Muscle | Claviculars Peptides' },
   description:
     'CJC-1295 (GHRH analog, ~8-day half-life via DAC) + Ipamorelin (GHS-R1a, no cortisol/prolactin). Synergistic GH pulse amplitude + frequency enhancement research.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/cjc1295-ipamorelin-gh-axis` },
   openGraph: {
-    title: 'CJC-1295 + Ipamorelin — Best Peptides for Growth Hormone & Muscle | The Peptide Stack',
+    title: 'CJC-1295 + Ipamorelin — Best Peptides for Growth Hormone & Muscle | Claviculars Peptides',
     description:
       'CJC-1295 (GHRH analog, ~8-day half-life via DAC) + Ipamorelin (GHS-R1a, no cortisol/prolactin). Synergistic GH pulse amplitude + frequency enhancement research.',
     url: `${BASE_URL}/looksmaxxing/cjc1295-ipamorelin-gh-axis`,
-    siteName: 'The Peptide Stack',
+    siteName: 'Claviculars Peptides',
     type: 'article',
   },
 }
@@ -26,8 +26,8 @@ const articleJsonLd = {
     'CJC-1295 (GHRH analog, ~8-day half-life via DAC) + Ipamorelin (GHS-R1a, no cortisol/prolactin). Synergistic GH pulse amplitude + frequency enhancement research.',
   datePublished: '2026-04-09',
   dateModified: '2026-04-09',
-  author: { '@type': 'Organization', name: 'The Peptide Stack' },
-  publisher: { '@type': 'Organization', name: 'The Peptide Stack', url: BASE_URL },
+  author: { '@type': 'Organization', name: 'Claviculars Peptides' },
+  publisher: { '@type': 'Organization', name: 'Claviculars Peptides', url: BASE_URL },
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE_URL}/looksmaxxing/cjc1295-ipamorelin-gh-axis` },
 }
 

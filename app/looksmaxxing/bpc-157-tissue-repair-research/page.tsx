@@ -1,19 +1,19 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'BPC-157 Peptide — Gut Health, Skin Healing & Full Recovery Guide | The Peptide Stack' },
+  title: { absolute: 'BPC-157 Peptide — Gut Health, Skin Healing & Full Recovery Guide | Claviculars Peptides' },
   description:
     'BPC-157 (GEPPPGKPADDAGLV, 15 AA) — 40+ published studies on NO system, VEGFR2, and tissue repair mechanisms. Research on GI mucosal protection and systemic healing.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/bpc-157-tissue-repair-research` },
   openGraph: {
-    title: 'BPC-157 Peptide — Gut Health, Skin Healing & Full Recovery Guide | The Peptide Stack',
+    title: 'BPC-157 Peptide — Gut Health, Skin Healing & Full Recovery Guide | Claviculars Peptides',
     description:
       'BPC-157 (GEPPPGKPADDAGLV, 15 AA) — 40+ published studies on NO system, VEGFR2, and tissue repair mechanisms. Research on GI mucosal protection and systemic healing.',
     url: `${BASE_URL}/looksmaxxing/bpc-157-tissue-repair-research`,
-    siteName: 'The Peptide Stack',
+    siteName: 'Claviculars Peptides',
     type: 'article',
   },
 }
@@ -26,8 +26,8 @@ const articleJsonLd = {
     'BPC-157 (GEPPPGKPADDAGLV, 15 AA) — 40+ published studies on NO system, VEGFR2, and tissue repair mechanisms. Research on GI mucosal protection and systemic healing.',
   datePublished: '2026-04-09',
   dateModified: '2026-04-09',
-  author: { '@type': 'Organization', name: 'The Peptide Stack' },
-  publisher: { '@type': 'Organization', name: 'The Peptide Stack', url: BASE_URL },
+  author: { '@type': 'Organization', name: 'Claviculars Peptides' },
+  publisher: { '@type': 'Organization', name: 'Claviculars Peptides', url: BASE_URL },
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE_URL}/looksmaxxing/bpc-157-tissue-repair-research` },
 }
 

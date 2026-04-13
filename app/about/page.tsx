@@ -1,19 +1,19 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 
 
 export const metadata: Metadata = {
-  title: { absolute: 'About — Independent Peptide Research | The Peptide Stack' },
+  title: { absolute: 'About — Independent Peptide Research | Claviculars Peptides' },
   description:
-    'The Peptide Stack is an independent research resource for peptide protocol analysis. We earn affiliate commissions on qualifying purchases.',
+    'Claviculars Peptides is an independent research resource for peptide protocol analysis. We earn affiliate commissions on qualifying purchases.',
   alternates: { canonical: `${BASE_URL}/about` },
   openGraph: {
-    title: 'About | The Peptide Stack',
+    title: 'About | Claviculars Peptides',
     description: 'Independent peptide research protocols. Affiliate disclosure and site mission.',
     url: `${BASE_URL}/about`,
-    siteName: 'The Peptide Stack',
+    siteName: 'Claviculars Peptides',
     type: 'website',
   },
 }
@@ -27,13 +27,13 @@ export default function AboutPage() {
         <span className="text-gray-400">About</span>
       </nav>
 
-      <h1 className="text-4xl font-bold text-gray-900 mb-6">About The Peptide Stack</h1>
+      <h1 className="text-4xl font-bold text-gray-900 mb-6">About Claviculars Peptides</h1>
 
       <div className="space-y-8 text-gray-400 leading-relaxed">
         <div className="bg-white border border-gray-200 rounded-2xl p-7">
           <h2 className="text-xl font-bold text-gray-900 mb-3">What This Site Is</h2>
           <p>
-            The Peptide Stack is an independent research resource dedicated to analyzing peptide research protocols. We provide compound-level mechanism analysis, protocol design rationale, and sourcing information for laboratory research compounds.
+            Claviculars Peptides is an independent research resource dedicated to analyzing peptide research protocols. We provide compound-level mechanism analysis, protocol design rationale, and sourcing information for laboratory research compounds.
           </p>
           <p className="mt-4">
             All content is created for educational and research reference purposes. Nothing on this site constitutes medical advice. All compounds covered are intended strictly for laboratory research use only — not for human or animal consumption.
@@ -43,7 +43,7 @@ export default function AboutPage() {
         <div className="bg-white border border-gray-200 rounded-2xl p-7">
           <h2 className="text-xl font-bold text-gray-900 mb-3">Affiliate Disclosure</h2>
           <p>
-            This site contains affiliate links. When you purchase through links on The Peptide Stack, we may earn a commission from{' '}
+            This site contains affiliate links. When you purchase through links on Claviculars Peptides, we may earn a commission from{' '}
             <a href="/products" className="text-[#00d4ff] hover:underline">
               Apollo Peptide Sciences
             </a>{' '}

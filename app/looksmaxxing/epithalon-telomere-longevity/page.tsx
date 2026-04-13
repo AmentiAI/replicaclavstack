@@ -1,20 +1,20 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 
 
 export const metadata: Metadata = {
-  title: { absolute: 'Epithalon Peptide — Anti-Aging, Telomere Support & Longevity Guide | The Peptide Stack' },
+  title: { absolute: 'Epithalon Peptide — Anti-Aging, Telomere Support & Longevity Guide | Claviculars Peptides' },
   description:
     'Epithalon (Ala-Glu-Asp-Gly) — telomerase (TERT) upregulation research by Khavinson et al. 24% lifespan extension in SHR mice. Cellular anti-aging mechanisms.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/epithalon-telomere-longevity` },
   openGraph: {
-    title: 'Epithalon Peptide — Anti-Aging, Telomere Support & Longevity Guide | The Peptide Stack',
+    title: 'Epithalon Peptide — Anti-Aging, Telomere Support & Longevity Guide | Claviculars Peptides',
     description:
       'Epithalon (Ala-Glu-Asp-Gly) — telomerase (TERT) upregulation research by Khavinson et al. 24% lifespan extension in SHR mice. Cellular anti-aging mechanisms.',
     url: `${BASE_URL}/looksmaxxing/epithalon-telomere-longevity`,
-    siteName: 'The Peptide Stack',
+    siteName: 'Claviculars Peptides',
     type: 'article',
   },
 }
@@ -27,8 +27,8 @@ const articleJsonLd = {
     'Epithalon (Ala-Glu-Asp-Gly) — telomerase (TERT) upregulation research by Khavinson et al. 24% lifespan extension in SHR mice. Cellular anti-aging mechanisms.',
   datePublished: '2026-04-09',
   dateModified: '2026-04-09',
-  author: { '@type': 'Organization', name: 'The Peptide Stack' },
-  publisher: { '@type': 'Organization', name: 'The Peptide Stack', url: BASE_URL },
+  author: { '@type': 'Organization', name: 'Claviculars Peptides' },
+  publisher: { '@type': 'Organization', name: 'Claviculars Peptides', url: BASE_URL },
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE_URL}/looksmaxxing/epithalon-telomere-longevity` },
 }
 

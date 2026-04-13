@@ -6,7 +6,7 @@ import { getAllProductSlugs, getProductBySlug, getRelatedProducts } from '@/lib/
 import { productBodies } from '@/lib/product-content'
 import ProductCard from '@/components/ProductCard'
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 
 
 export function generateStaticParams() {
@@ -18,35 +18,35 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const product = getProductBySlug(slug)
   if (!product) return {}
   const SLUG_TITLES: Record<string, string> = {
-    'glp-3-r-15mg':         'Retatrutide 15mg — Strongest Weight Loss Peptide (−28.7%) | The Peptide Stack',
-    'glp-3-r-10mg':         'Retatrutide 10mg — Triple GLP Receptor Weight Loss Peptide | The Peptide Stack',
-    'glp-3-r-30mg':         'Retatrutide 30mg — Best Value Triple GLP Weight Loss Peptide | The Peptide Stack',
-    'glp-3-r-60mg':         'Retatrutide 60mg — Bulk Triple GLP Weight Loss Peptide Research | The Peptide Stack',
-    'glp-2-t-30mg':         'Tirzepatide 30mg — Dual GLP Weight Loss Peptide Research | The Peptide Stack',
-    'glp-2-t-60mg':         'Tirzepatide 60mg — Bulk Dual GLP Weight Loss Peptide | The Peptide Stack',
-    'glp-2-t-20mg-5pack':   'Tirzepatide 20mg 5-Pack — Best Value Weight Loss Peptide Bundle | The Peptide Stack',
-    'glp-2-t-15mg-4pack':   'Tirzepatide 15mg 4-Pack — Dual GLP-1 Weight Loss Peptide | The Peptide Stack',
-    'glp-2-t-15mg-10pack':  'Tirzepatide 15mg 10-Pack — Extended Weight Loss Protocol Peptide | The Peptide Stack',
-    'glp-2-t-15mg':         'Tirzepatide 15mg — Dual Receptor Weight Loss Peptide (−22.5%) | The Peptide Stack',
-    'glp-1-s-15mg':         'Semaglutide 15mg — GLP-1 Weight Loss Peptide Research | The Peptide Stack',
-    'glp-1-s-10mg':         'Semaglutide 10mg — GLP-1 Receptor Agonist Peptide | The Peptide Stack',
-    'glp-1-s-5mg':          'Semaglutide 5mg — Starter GLP-1 Weight Loss Peptide | The Peptide Stack',
-    'glp-1-c-glp-1-s-5mg':  'CagriSema — Amylin + GLP-1 Dual Weight Loss Peptide (−22.7%) | The Peptide Stack',
-    'bpc-157-10mg':         'BPC-157 Peptide 10mg — Gut Repair, Healing & Recovery | The Peptide Stack',
-    'ghk-cu-50mg':          'GHK-Cu Copper Peptide 50mg — Anti-Aging Skin & Hair Benefits | The Peptide Stack',
-    'snap-8-10mg':          'SNAP-8 Peptide 10mg — Natural Botox Alternative for Expression Lines | The Peptide Stack',
-    'snap-8-2pack':         'SNAP-8 Peptide 2-Pack — Expression Line Peptide Value Bundle | The Peptide Stack',
-    'cjc1295-ipamorelin':   'CJC-1295 + Ipamorelin — Growth Hormone Peptide Stack for Muscle | The Peptide Stack',
-    'igf-1lr3-1mg':         'IGF-1 LR3 1mg — Muscle Growth & Body Recomposition Peptide | The Peptide Stack',
-    'tb-500-10mg':          'TB-500 Peptide 10mg — Recovery, Injury Healing & Repair | The Peptide Stack',
-    'epithalon-50mg':       'Epithalon Peptide 50mg — Anti-Aging, Telomere & Longevity Research | The Peptide Stack',
-    'nad-500mg':            'NAD+ 500mg — Anti-Aging, Energy & Skin Longevity Peptide | The Peptide Stack',
-    'bacteriostatic-water': 'Bacteriostatic Water — Peptide Reconstitution Guide & How-To | The Peptide Stack',
+    'glp-3-r-15mg':         'Retatrutide 15mg — Strongest Weight Loss Peptide (−28.7%) | Claviculars Peptides',
+    'glp-3-r-10mg':         'Retatrutide 10mg — Triple GLP Receptor Weight Loss Peptide | Claviculars Peptides',
+    'glp-3-r-30mg':         'Retatrutide 30mg — Best Value Triple GLP Weight Loss Peptide | Claviculars Peptides',
+    'glp-3-r-60mg':         'Retatrutide 60mg — Bulk Triple GLP Weight Loss Peptide Research | Claviculars Peptides',
+    'glp-2-t-30mg':         'Tirzepatide 30mg — Dual GLP Weight Loss Peptide Research | Claviculars Peptides',
+    'glp-2-t-60mg':         'Tirzepatide 60mg — Bulk Dual GLP Weight Loss Peptide | Claviculars Peptides',
+    'glp-2-t-20mg-5pack':   'Tirzepatide 20mg 5-Pack — Best Value Weight Loss Peptide Bundle | Claviculars Peptides',
+    'glp-2-t-15mg-4pack':   'Tirzepatide 15mg 4-Pack — Dual GLP-1 Weight Loss Peptide | Claviculars Peptides',
+    'glp-2-t-15mg-10pack':  'Tirzepatide 15mg 10-Pack — Extended Weight Loss Protocol Peptide | Claviculars Peptides',
+    'glp-2-t-15mg':         'Tirzepatide 15mg — Dual Receptor Weight Loss Peptide (−22.5%) | Claviculars Peptides',
+    'glp-1-s-15mg':         'Semaglutide 15mg — GLP-1 Weight Loss Peptide Research | Claviculars Peptides',
+    'glp-1-s-10mg':         'Semaglutide 10mg — GLP-1 Receptor Agonist Peptide | Claviculars Peptides',
+    'glp-1-s-5mg':          'Semaglutide 5mg — Starter GLP-1 Weight Loss Peptide | Claviculars Peptides',
+    'glp-1-c-glp-1-s-5mg':  'CagriSema — Amylin + GLP-1 Dual Weight Loss Peptide (−22.7%) | Claviculars Peptides',
+    'bpc-157-10mg':         'BPC-157 Peptide 10mg — Gut Repair, Healing & Recovery | Claviculars Peptides',
+    'ghk-cu-50mg':          'GHK-Cu Copper Peptide 50mg — Anti-Aging Skin & Hair Benefits | Claviculars Peptides',
+    'snap-8-10mg':          'SNAP-8 Peptide 10mg — Natural Botox Alternative for Expression Lines | Claviculars Peptides',
+    'snap-8-2pack':         'SNAP-8 Peptide 2-Pack — Expression Line Peptide Value Bundle | Claviculars Peptides',
+    'cjc1295-ipamorelin':   'CJC-1295 + Ipamorelin — Growth Hormone Peptide Stack for Muscle | Claviculars Peptides',
+    'igf-1lr3-1mg':         'IGF-1 LR3 1mg — Muscle Growth & Body Recomposition Peptide | Claviculars Peptides',
+    'tb-500-10mg':          'TB-500 Peptide 10mg — Recovery, Injury Healing & Repair | Claviculars Peptides',
+    'epithalon-50mg':       'Epithalon Peptide 50mg — Anti-Aging, Telomere & Longevity Research | Claviculars Peptides',
+    'nad-500mg':            'NAD+ 500mg — Anti-Aging, Energy & Skin Longevity Peptide | Claviculars Peptides',
+    'bacteriostatic-water': 'Bacteriostatic Water — Peptide Reconstitution Guide & How-To | Claviculars Peptides',
   }
   const titleStr = SLUG_TITLES[slug] ?? (
     product.chemical_name && product.chemical_name !== product.name
-      ? `${product.chemical_name} ${product.name} — Peptide Benefits & Guide | The Peptide Stack`
-      : `${product.name} — Research Peptide Guide | The Peptide Stack`
+      ? `${product.chemical_name} ${product.name} — Peptide Benefits & Guide | Claviculars Peptides`
+      : `${product.name} — Research Peptide Guide | Claviculars Peptides`
   )
   return {
     title: { absolute: titleStr },
@@ -56,7 +56,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: titleStr,
       description: product.description.slice(0, 155),
       url: `${BASE_URL}/products/${slug}`,
-      siteName: 'The Peptide Stack',
+      siteName: 'Claviculars Peptides',
       type: 'website',
       images: [{ url: product.image_url, alt: product.name }],
     },
@@ -751,13 +751,13 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
     description: product.description,
     image: product.image_url,
     sku: product.slug,
-    brand: { '@type': 'Brand', name: 'The Peptide Stack' },
+    brand: { '@type': 'Brand', name: 'Claviculars Peptides' },
     offers: {
       '@type': 'Offer',
       price: product.price.toString(),
       priceCurrency: 'USD',
       availability: product.in_stock ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
-      seller: { '@type': 'Organization', name: 'The Peptide Stack' },
+      seller: { '@type': 'Organization', name: 'Claviculars Peptides' },
       url: `${BASE_URL}/products/${slug}`,
     },
   }

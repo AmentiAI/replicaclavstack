@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import SearchBar from './SearchBar'
 
@@ -65,12 +66,19 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[60px] flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="group flex items-center gap-2.5">
-          <div className="relative w-8 h-8 rounded-xl overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-amber-500 to-amber-700" />
-            <div className="absolute inset-0 flex items-center justify-center text-white font-black text-xs">PS</div>
+          <div className="relative w-9 h-9 rounded-xl overflow-hidden flex-shrink-0">
+            <Image
+              src="/logo.png"
+              alt="Claviculars Peptides"
+              width={36}
+              height={36}
+              className="object-contain w-full h-full"
+              priority
+              unoptimized
+            />
           </div>
           <span className="font-black text-gray-900 text-base tracking-tight group-hover:text-amber-700 transition-colors">
-            The Peptide Stack
+            Claviculars Peptides
           </span>
         </Link>
 

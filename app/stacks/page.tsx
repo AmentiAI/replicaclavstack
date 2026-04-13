@@ -3,18 +3,18 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { products } from '@/lib/products'
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Best Peptide Stacks for Weight Loss, Skin & Anti-Aging | The Peptide Stack' },
+  title: { absolute: 'Best Peptide Stacks for Weight Loss, Skin & Anti-Aging | Claviculars Peptides' },
   description:
     'Curated peptide stacks for metabolic research, skin & glow, lean mass, longevity, and recovery. Every compound sourced at >98% HPLC purity. Research use only.',
   alternates: { canonical: `${BASE_URL}/stacks` },
   openGraph: {
-    title: 'Research Peptide Stacks | The Peptide Stack',
+    title: 'Research Peptide Stacks | Claviculars Peptides',
     description: '6 curated research stacks covering metabolic, skin, lean mass, longevity, and recovery protocols. All 143 compounds with images and links.',
     url: `${BASE_URL}/stacks`,
-    siteName: 'The Peptide Stack',
+    siteName: 'Claviculars Peptides',
     type: 'website',
   },
 }

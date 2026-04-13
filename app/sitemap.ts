@@ -4,7 +4,7 @@ import { getAllCategorySlugs } from '@/lib/categories'
 import { getAllBlogSlugs } from '@/lib/blog'
 import { getAllGuideSlugs } from '@/lib/guides'
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 
 const looksmaxxingSlugs = [
   'ghk-cu-collagen-skin-research',

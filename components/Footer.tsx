@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const stackLinks = [
   { href: '/products/glp-3-r-15mg',       label: 'GLP-3 R — Retatrutide'   },
@@ -35,11 +36,17 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2.5 mb-5">
-              <div className="relative w-9 h-9 rounded-xl overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-500 to-amber-700" />
-                <div className="absolute inset-0 flex items-center justify-center text-white font-black text-xs">PS</div>
+              <div className="relative w-9 h-9 rounded-xl overflow-hidden flex-shrink-0">
+                <Image
+                  src="/logo.png"
+                  alt="Claviculars Peptides"
+                  width={36}
+                  height={36}
+                  className="object-contain w-full h-full"
+                  unoptimized
+                />
               </div>
-              <span className="text-gray-900 font-black tracking-tight">The Peptide Stack</span>
+              <span className="text-gray-900 font-black tracking-tight">Claviculars Peptides</span>
             </div>
             <p className="text-sm text-gray-500 leading-relaxed mb-5">
               Independent peptide research protocols. Every compound analyzed. For laboratory research use only.
@@ -110,7 +117,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-gray-400">&copy; {new Date().getFullYear()} The Peptide Stack. All rights reserved.</p>
+          <p className="text-xs text-gray-400">&copy; {new Date().getFullYear()} Claviculars Peptides. All rights reserved.</p>
           <div className="flex items-center gap-6">
             {[{ href: '/terms', label: 'Terms' }, { href: '/privacy', label: 'Privacy' }, { href: '/about', label: 'About' }].map(item => (
               <Link key={item.href} href={item.href} className="text-xs text-gray-400 hover:text-gray-600 transition-colors">

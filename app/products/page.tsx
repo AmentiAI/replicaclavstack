@@ -3,17 +3,17 @@ import Link from 'next/link'
 import { products } from '@/lib/products'
 import ProductCard from '@/components/ProductCard'
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 export const metadata: Metadata = {
-  title: { absolute: 'Buy Research Peptides — Semaglutide, Retatrutide, BPC-157 & More | The Peptide Stack' },
+  title: { absolute: 'Buy Research Peptides — Semaglutide, Retatrutide, BPC-157 & More | Claviculars Peptides' },
   description:
     'Complete catalog: Retatrutide, Tirzepatide, Semaglutide, CagriSema, BPC-157, GHK-Cu, SNAP-8, CJC-1295/Ipamorelin, IGF-1 LR3, Epithalon, NAD+. >98% HPLC purity.',
   alternates: { canonical: `${BASE_URL}/products` },
   openGraph: {
-    title: 'Buy Research Peptides — Semaglutide, Retatrutide, BPC-157 & More | The Peptide Stack',
+    title: 'Buy Research Peptides — Semaglutide, Retatrutide, BPC-157 & More | Claviculars Peptides',
     description: '143 research peptides across 5 protocol layers. GLP agonists, gut recovery, skin, lean mass, longevity. >98% HPLC verified.',
     url: `${BASE_URL}/products`,
-    siteName: 'The Peptide Stack',
+    siteName: 'Claviculars Peptides',
     type: 'website',
   },
 }

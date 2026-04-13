@@ -1,23 +1,23 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 
 export const metadata: Metadata = {
   title: {
     absolute:
-      'Looksmaxxing with Peptides — The Ultimate Guide to Looking Your Best | The Peptide Stack',
+      'Looksmaxxing with Peptides — The Ultimate Guide to Looking Your Best | Claviculars Peptides',
   },
   description:
     'The complete looksmaxxing peptide guide: GHK-Cu for skin, SNAP-8 for expression lines, Retatrutide for weight loss, CJC-1295 for muscle, Epithalon for anti-aging. 10 in-depth guides.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing` },
   openGraph: {
     title:
-      'Looksmaxxing with Peptides — The Ultimate Guide to Looking Your Best | The Peptide Stack',
+      'Looksmaxxing with Peptides — The Ultimate Guide to Looking Your Best | Claviculars Peptides',
     description:
       '10 in-depth research guides on peptides for physical optimization: GHK-Cu, SNAP-8, BPC-157, Epithalon, NAD+, Retatrutide, CJC-1295/Ipa, IGF-1 LR3, TB-500, and the full protocol.',
     url: `${BASE_URL}/looksmaxxing`,
-    siteName: 'The Peptide Stack',
+    siteName: 'Claviculars Peptides',
     type: 'website',
   },
 }
@@ -458,7 +458,7 @@ export default function LooksmaxxingIndexPage() {
               }}
             >
               <strong style={{ color: '#64748b' }}>Research Use Only.</strong>{' '}
-              All compounds and protocols discussed on The Peptide Stack are for laboratory research
+              All compounds and protocols discussed on Claviculars Peptides are for laboratory research
               purposes only. Not for human consumption. No content on this site constitutes medical
               advice. Consult a qualified healthcare professional regarding any health-related
               decisions.

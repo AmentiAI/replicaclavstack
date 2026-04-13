@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Privacy Policy | The Peptide Stack' },
-  description: 'Privacy policy for The Peptide Stack. How we collect, use, and protect your information.',
+  title: { absolute: 'Privacy Policy | Claviculars Peptides' },
+  description: 'Privacy policy for Claviculars Peptides. How we collect, use, and protect your information.',
   alternates: { canonical: `${BASE_URL}/privacy` },
   robots: { index: false, follow: false },
 }
@@ -25,7 +25,7 @@ export default function PrivacyPage() {
       <div className="prose-peptide space-y-8">
         <section>
           <h2>1. Information We Collect</h2>
-          <p>The Peptide Stack uses Vercel Analytics to collect anonymous, aggregated usage data including page views, referral sources, and device types. No personally identifiable information is collected through our analytics.</p>
+          <p>Claviculars Peptides uses Vercel Analytics to collect anonymous, aggregated usage data including page views, referral sources, and device types. No personally identifiable information is collected through our analytics.</p>
         </section>
 
         <section>

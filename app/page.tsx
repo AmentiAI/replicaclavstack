@@ -6,14 +6,14 @@ import ProductCard from '@/components/ProductCard'
 import AnimatedCounter from '@/components/AnimatedCounter'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Best Peptides for Weight Loss, Anti-Aging & Looksmaxxing | The Peptide Stack' },
+  title: { absolute: 'Best Peptides for Weight Loss, Anti-Aging & Looksmaxxing | Claviculars Peptides' },
   description: 'The complete peptide stack: Retatrutide (−28.7%), Tirzepatide, Semaglutide, BPC-157, GHK-Cu, CJC-1295, IGF-1 LR3, Epithalon & more. Research-grade peptides for weight loss, skin, muscle & longevity.',
-  alternates: { canonical: 'https://thepeptidestack.com' },
+  alternates: { canonical: 'https://clavicularspeptides.com' },
   openGraph: {
-    title: 'Best Peptides for Weight Loss, Anti-Aging & Looksmaxxing | The Peptide Stack',
+    title: 'Best Peptides for Weight Loss, Anti-Aging & Looksmaxxing | Claviculars Peptides',
     description: '143 research-grade peptides for weight loss, anti-aging, skin glow, lean muscle, and longevity. Independent protocol guides for every compound.',
-    url: 'https://thepeptidestack.com',
-    siteName: 'The Peptide Stack',
+    url: 'https://clavicularspeptides.com',
+    siteName: 'Claviculars Peptides',
     type: 'website',
   },
 }

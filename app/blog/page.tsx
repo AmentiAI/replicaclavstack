@@ -2,18 +2,18 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { blogPosts } from '@/lib/blog'
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Research Blog — Peptide Science Analysis | The Peptide Stack' },
+  title: { absolute: 'Research Blog — Peptide Science Analysis | Claviculars Peptides' },
   description:
     'Independent peptide research analysis. Retatrutide Phase 2 data, BPC-157 mechanism studies, GHK-Cu genomics, GLP-1 vs GLP-3 comparisons.',
   alternates: { canonical: `${BASE_URL}/blog` },
   openGraph: {
-    title: 'Research Blog | The Peptide Stack',
+    title: 'Research Blog | Claviculars Peptides',
     description: 'Data-driven peptide research analysis. Phase 2 breakdowns, mechanism deep dives, protocol design.',
     url: `${BASE_URL}/blog`,
-    siteName: 'The Peptide Stack',
+    siteName: 'Claviculars Peptides',
     type: 'website',
   },
 }

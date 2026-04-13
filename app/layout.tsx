@@ -21,12 +21,12 @@ const montserrat = Montserrat({
   display: 'swap',
 })
 
-const BASE_URL = 'https://thepeptidestack.com'
+const BASE_URL = 'https://clavicularspeptides.com'
 
 export const metadata: Metadata = {
   title: {
-    default: 'The Peptide Stack — Research-Grade Peptide Protocol 2026',
-    template: '%s | The Peptide Stack',
+    default: 'Claviculars Peptides — Research-Grade Peptide Protocol 2026',
+    template: '%s | Claviculars Peptides',
   },
   description:
     'Independent peptide research protocols. 10 compounds. 5 layers. GLP-3 R (Retatrutide) Phase 2: −28.7%. >98% HPLC purity. Full compound analysis and sourcing.',
@@ -38,16 +38,18 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL(BASE_URL),
   openGraph: {
-    title: 'The Peptide Stack — Research-Grade Peptide Protocol 2026',
+    title: 'Claviculars Peptides — Research-Grade Peptide Protocol 2026',
     description: '10 compounds. 5 layers. GLP-3 R Phase 2: −28.7%. Independent research protocols with full compound analysis.',
     type: 'website',
-    siteName: 'The Peptide Stack',
+    siteName: 'Claviculars Peptides',
     url: BASE_URL,
+    images: [{ url: `${BASE_URL}/logo-512.png`, width: 512, height: 512, alt: 'Claviculars Peptides' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'The Peptide Stack — Research-Grade Peptide Protocol 2026',
+    title: 'Claviculars Peptides — Research-Grade Peptide Protocol 2026',
     description: '10 compounds. 5 layers. GLP-3 R Phase 2: −28.7%. Independent research protocols with full compound analysis.',
+    images: [`${BASE_URL}/logo-512.png`],
   },
   robots: { index: true, follow: true },
 }
