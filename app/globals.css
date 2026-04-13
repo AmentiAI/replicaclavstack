@@ -48,6 +48,16 @@ nav a, .text-xs a, footer a { min-height: unset; min-width: unset; }
   body { font-size: 0.9375rem; }
   h1 { line-height: 1.1; }
   .prose-peptide { font-size: 0.9375rem; }
+
+  /* Prevent horizontal overflow globally */
+  main, section, article, .glass { max-width: 100vw; overflow-x: hidden; }
+
+  /* Tighten large section padding on mobile */
+  .py-28 { padding-top: 4rem !important; padding-bottom: 4rem !important; }
+  .py-20 { padding-top: 3rem !important; padding-bottom: 3rem !important; }
+
+  /* Allow tables to scroll on mobile */
+  table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 }
 
 /* ─── Global color overrides — force light theme ─────────────── */

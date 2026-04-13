@@ -217,7 +217,7 @@ export default function StacksPage() {
               </div>
 
               {/* Product grid */}
-              <div className="p-8">
+              <div className="p-4 sm:p-8">
                 <p className="text-xs font-bold text-gray-600 uppercase tracking-widest mb-4">
                   {stack.slugs.length} compounds in this stack
                 </p>

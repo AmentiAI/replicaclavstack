@@ -105,7 +105,7 @@ function RetaValueCalc() {
     <div className="glass rounded-2xl p-6 mb-10">
       <h2 className="text-gray-900 font-bold text-xl mb-1">Per-mg Value Comparison</h2>
       <p className="text-gray-500 text-sm mb-6">Same compound (Retatrutide, CAS 2381089-83-2) — different vial quantities</p>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {options.map((o) => (
           <div key={o.label} className="rounded-xl p-5 text-center" style={{ background: o.best ? 'rgba(0,212,255,0.07)' : 'rgba(255,255,255,0.03)', border: o.best ? '1px solid rgba(0,212,255,0.25)' : '1px solid rgba(255,255,255,0.07)' }}>
             {o.best && <span className="text-[10px] font-bold text-amber-700 uppercase tracking-widest block mb-2">Best Value</span>}
@@ -237,7 +237,7 @@ function TirzDualReceptor() {
     <div className="glass rounded-2xl p-6 mb-10">
       <h2 className="text-gray-900 font-bold text-xl mb-2">Dual Receptor Mechanism</h2>
       <p className="text-gray-500 text-sm mb-6">GLP-1R + GIPR simultaneous agonism — additive, non-overlapping pathways</p>
-      <div className="grid grid-cols-2 gap-4 mb-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
         {[
           { r: 'GLP-1R', color: '#c8870a', effects: ['Appetite suppression (hypothalamus)','Glucose-dependent insulin secretion','Gastric emptying delay','Glucagon suppression'] },
           { r: 'GIPR', color: '#10b981', effects: ['Potentiates GLP-1R insulin effect','Reduces GLP-1 nausea signaling','Bone turnover modulation','Adipose tissue signaling'] },
@@ -350,7 +350,7 @@ function CagriDualPathway() {
     <div className="glass rounded-2xl p-6 mb-10">
       <h2 className="text-gray-900 font-bold text-xl mb-2">Dual Satiety Pathway — Amylin + GLP-1</h2>
       <p className="text-gray-500 text-sm mb-6">Two independent, non-overlapping satiety receptor systems engaged simultaneously</p>
-      <div className="grid grid-cols-2 gap-4 mb-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
         {[
           { name: 'Cagrilintide (GLP-1 C)', receptor: 'CALCR/RAMP', location: 'Brainstem, hypothalamus', pathway: 'Amylin receptor pathway', color: '#7c3aed', effects: ['Satiety signaling (NTS, AP)','Gastric emptying delay','Body weight regulation','Non-GLP-1R mechanism'] },
           { name: 'Semaglutide (GLP-1 S)', receptor: 'GLP-1R', location: 'Hypothalamus, pancreas', pathway: 'GLP-1 receptor pathway', color: '#c8870a', effects: ['Appetite suppression','Glucose-dependent insulin','Glucagon suppression','Caloric intake reduction'] },
@@ -445,7 +445,7 @@ function SNAP8SnareDiagram() {
     <div className="glass rounded-2xl p-6 mb-10">
       <h2 className="text-gray-900 font-bold text-xl mb-2">SNARE Complex Mechanism Research</h2>
       <p className="text-gray-500 text-sm mb-6">Competitive inhibition at the NMJ — SNAP-8 vs endogenous SNAP-25</p>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {[
           { label: 'Without SNAP-8', border: '#10b981', icon: '✓', desc: 'SNAP-25 assembles normally', outcome: 'Full SNARE complex → ACh release → muscle contraction', outcomeColor: '#10b981' },
           { label: 'With SNAP-8 (Research)', border: '#f59e0b', icon: '⟳', desc: 'SNAP-8 occupies SNAP-25 binding site', outcome: '16.1% reduction in wrinkle depth at max contraction', outcomeColor: '#f59e0b' },
@@ -471,7 +471,7 @@ function SNAP8CombinationCard() {
     <div className="glass rounded-2xl p-6 mb-10">
       <h2 className="text-gray-900 font-bold text-xl mb-1">GHK-Cu + SNAP-8 Combination Research</h2>
       <p className="text-gray-500 text-sm mb-6">Orthogonal mechanisms — structural aging vs neuromuscular dynamic aging</p>
-      <div className="grid grid-cols-2 gap-4 mb-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
         <div className="rounded-xl p-4" style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.2)' }}>
           <p className="text-[#f59e0b] font-bold text-sm mb-2">GHK-Cu (Layer A)</p>
           <p className="text-xs text-gray-400 mb-3">Structural skin mechanism</p>
@@ -516,7 +516,7 @@ function CJCGHPulse() {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-2 gap-3 mt-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-5">
         <div className="rounded-xl p-3 text-center" style={{ background: 'rgba(236,72,153,0.07)', border: '1px solid rgba(236,72,153,0.2)' }}>
           <p className="text-[#ec4899] font-bold text-sm">CJC-1295</p>
           <p className="text-gray-500 text-xs mt-1">GHRH-R → Amplitude ↑<br />~8-day half-life (DAC)</p>
@@ -545,7 +545,7 @@ function IGFCascade() {
           <p className="text-[#f59e0b] font-semibold text-sm">IGF-1R Autophosphorylation</p>
         </div>
         <div className="w-px h-5 bg-white/20" />
-        <div className="grid grid-cols-2 gap-6 w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
           {[
             { title: 'PI3K / AKT / mTOR', color: '#7c3aed', items: ['mTORC1 → Protein synthesis','FOXO1 → Anti-apoptosis','GSK3β → Glycogen synthesis'] },
             { title: 'MAPK / ERK', color: '#10b981', items: ['Cell proliferation','Satellite cell activation','Differentiation signals'] },
@@ -639,7 +639,7 @@ function NADPathway() {
         <span className="text-[10px] text-gray-600 mx-2">→</span>
         <span className="text-[10px] text-gray-500">Age 60 (~50%)</span>
       </div>
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         {[
           { name: 'SIRT1-7', sub: 'Sirtuins', color: '#7c3aed', note: 'PGC-1α → Mitochondria\nDNA repair\nAnti-aging gene regulation', uses: 'Epigenetic regulation' },
           { name: 'PARP1/2', sub: 'DNA Repair', color: '#f59e0b', note: '100–200 NAD+\nper repair event\nCompetes with sirtuins', uses: 'DNA damage response' },
@@ -796,7 +796,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-14">
           {/* Image */}
           <div className="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden aspect-square relative">
-            <Image src={product.image_url} alt={product.name} fill className="object-contain p-12" unoptimized priority />
+            <Image src={product.image_url} alt={product.name} fill className="object-contain p-6 sm:p-12" unoptimized priority />
             {product.badge && (
               <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-amber-100 text-amber-700 border border-amber-300 text-sm font-semibold">
                 {product.badge}

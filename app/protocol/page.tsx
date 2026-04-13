@@ -169,7 +169,7 @@ export default function ProtocolPage() {
 
                 <div className="flex-1">
                   {/* Layer header */}
-                  <div className="flex items-start justify-between gap-4 mb-4">
+                  <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
                     <div>
                       <div className="flex items-center gap-3 mb-1">
                         <span className="text-xs font-bold px-2 py-0.5 rounded" style={{ background: `${layer.accent}18`, color: layer.accent }}>
