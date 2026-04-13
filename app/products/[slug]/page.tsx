@@ -83,7 +83,7 @@ function RetaPhase2Chart() {
         {data.map((d) => (
           <div key={d.dose} className="flex items-center gap-3">
             <span className="text-xs text-gray-500 w-16 text-right font-mono">{d.dose}</span>
-            <div className="flex-1 bg-white/5 rounded-full h-8 overflow-hidden">
+            <div className="flex-1 bg-gray-100 rounded-full h-8 overflow-hidden">
               <div className="h-full rounded-full flex items-center px-3" style={{ width: `${d.w}%`, background: d.highlight ? 'linear-gradient(90deg,#c8870a,#9e6b07)' : 'rgba(200,135,10,0.15)' }}>
                 <span className="text-xs font-bold" style={{ color: d.highlight ? '#ffffff' : '#c8870a' }}>−{d.pct}%</span>
               </div>
@@ -137,7 +137,7 @@ function TirzSurmount1Chart() {
         {data.map((d) => (
           <div key={d.dose} className="flex items-center gap-3">
             <span className="text-xs text-gray-500 w-10 text-right font-mono">{d.dose}</span>
-            <div className="flex-1 bg-white/5 rounded-full h-8 overflow-hidden">
+            <div className="flex-1 bg-gray-100 rounded-full h-8 overflow-hidden">
               <div className="h-full rounded-full flex items-center px-3" style={{ width: `${d.w}%`, background: d.highlight ? 'linear-gradient(90deg,#10b981,#059669)' : 'rgba(16,185,129,0.22)' }}>
                 <span className="text-xs font-bold" style={{ color: d.highlight ? '#fff' : '#10b981' }}>−{d.pct}%</span>
               </div>
@@ -148,7 +148,7 @@ function TirzSurmount1Chart() {
       <div className="grid grid-cols-3 gap-3 mt-4">
         {[['GLP-1R','Appetite & insulin'],['GIPR','Potentiates insulin'],['Dual axis','Additive effect']].map(([t,d]) => (
           <div key={t} className="bg-white/3 rounded-xl p-3 text-center">
-            <p className="text-emerald-400 font-bold text-sm">{t}</p>
+            <p className="text-emerald-700 font-bold text-sm">{t}</p>
             <p className="text-gray-500 text-xs mt-1">{d}</p>
           </div>
         ))}
@@ -274,7 +274,7 @@ function SemaStep1Chart() {
               <span className="text-xs text-gray-400 font-medium">{d.label}</span>
               <span className="text-xs text-gray-500">{d.sub}</span>
             </div>
-            <div className="bg-white/5 rounded-full h-7 overflow-hidden">
+            <div className="bg-gray-100 rounded-full h-7 overflow-hidden">
               <div className="h-full rounded-full flex items-center px-3" style={{ width: `${d.w}%`, background: `${d.color}35` }}>
                 <span className="text-xs font-bold" style={{ color: d.color }}>−{d.pct}%</span>
               </div>
@@ -335,7 +335,7 @@ function SemaEntryGuide() {
           ['Comparison value','Direct −14.9% benchmark for class comparisons'],
           ['Protocol position','Layer 1, mono-receptor arm of multi-compound study'],
         ].map(([k,v]) => (
-          <div key={k} className="flex gap-3 text-sm py-1.5 border-b border-white/5 last:border-0">
+          <div key={k} className="flex gap-3 text-sm py-1.5 border-b border-gray-100 last:border-0">
             <span className="text-amber-700 font-semibold w-32 flex-shrink-0">{k}</span>
             <span className="text-gray-400">{v}</span>
           </div>
@@ -429,7 +429,7 @@ function GHKGeneChart() {
           <div key={g.cat} className="flex items-center gap-3">
             <span className="text-[10px] font-bold w-12 text-center py-0.5 rounded" style={{ background: g.dir === 'UP' ? 'rgba(16,185,129,0.15)' : 'rgba(239,68,68,0.15)', color: g.dir === 'UP' ? '#10b981' : '#ef4444' }}>{g.dir}</span>
             <span className="text-xs text-gray-400 w-40 truncate">{g.cat}</span>
-            <div className="flex-1 bg-white/5 rounded-full h-5 overflow-hidden">
+            <div className="flex-1 bg-gray-100 rounded-full h-5 overflow-hidden">
               <div className="h-full rounded-full" style={{ width: `${g.w}%`, background: `${g.color}40` }} />
             </div>
           </div>
@@ -812,19 +812,19 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
             <div className="flex items-center gap-4 mb-6">
               <span className="text-4xl font-bold text-gray-900">${product.price.toFixed(2)}</span>
-              <span className={`px-3 py-1 rounded-full text-sm font-medium ${product.in_stock ? 'bg-emerald-500/15 text-emerald-400' : 'bg-red-500/10 text-red-400'}`}>
+              <span className={`px-3 py-1 rounded-full text-sm font-medium ${product.in_stock ? 'bg-emerald-500/15 text-emerald-700' : 'bg-red-500/10 text-red-600'}`}>
                 {product.in_stock ? 'In Stock' : 'Out of Stock'}
               </span>
             </div>
 
-            <p className="text-gray-400 leading-relaxed mb-8">{product.description}</p>
+            <p className="text-gray-600 leading-relaxed mb-8">{product.description}</p>
 
             {/* Specs */}
             <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 mb-6">
               <p className="text-xs text-gray-500 uppercase tracking-wider font-semibold mb-3">Specifications</p>
               <div className="space-y-2">
                 {product.specs.map((spec) => (
-                  <div key={spec.label} className="flex justify-between items-center py-1.5 border-b border-white/5 last:border-0">
+                  <div key={spec.label} className="flex justify-between items-center py-1.5 border-b border-gray-100 last:border-0">
                     <span className="text-sm text-gray-500">{spec.label}</span>
                     <span className="text-sm text-gray-900 font-medium">{spec.value}</span>
                   </div>
@@ -849,7 +849,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         {/* Mechanism */}
         <div className="bg-white border border-gray-200 rounded-2xl p-8 mb-10">
           <h2 className="text-xl font-bold text-gray-900 mb-4">Mechanism of Action</h2>
-          <p className="text-gray-400 leading-relaxed">{product.mechanism}</p>
+          <p className="text-gray-600 leading-relaxed">{product.mechanism}</p>
         </div>
 
         {/* Long-form body content from product-content */}
@@ -874,7 +874,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               {product.faq.map((item) => (
                 <div key={item.q} className="bg-white border border-gray-200 rounded-xl p-6">
                   <h3 className="text-gray-900 font-semibold mb-3">{item.q}</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed">{item.a}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">{item.a}</p>
                 </div>
               ))}
             </div>

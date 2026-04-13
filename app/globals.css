@@ -30,6 +30,26 @@ body {
   overflow-x: hidden;
 }
 
+/* ─── Mobile UX ──────────────────────────────────────────────── */
+/* Remove tap highlight on mobile */
+* { -webkit-tap-highlight-color: transparent; }
+
+/* Ensure all interactive elements have minimum touch target */
+a, button, [role="button"] {
+  min-height: 44px;
+  min-width: 44px;
+  touch-action: manipulation;
+}
+/* Override for purely inline elements */
+nav a, .text-xs a, footer a { min-height: unset; min-width: unset; }
+
+/* Better text sizing on mobile */
+@media (max-width: 640px) {
+  body { font-size: 0.9375rem; }
+  h1 { line-height: 1.1; }
+  .prose-peptide { font-size: 0.9375rem; }
+}
+
 /* ─── Global color overrides — force light theme ─────────────── */
 .text-white   { color: #1f2937 !important; }
 .text-gray-100 { color: #374151 !important; }

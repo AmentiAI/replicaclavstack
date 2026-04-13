@@ -105,9 +105,9 @@ function ProductMiniCard({ slug, accent }: { slug: string; accent: string }) {
   return (
     <Link
       href={`/products/${slug}`}
-      className="group flex flex-col gap-2 p-3 glass border border-white/6 rounded-xl hover:border-white/20 transition-all"
+      className="group flex flex-col gap-2 p-3 bg-white border border-gray-200 rounded-xl hover:border-amber-300 transition-all"
     >
-      <div className="relative aspect-square w-full rounded-lg overflow-hidden bg-white/[0.03]">
+      <div className="relative aspect-square w-full rounded-lg overflow-hidden bg-gray-50">
         <Image
           src={product.image_url}
           alt={product.name}
@@ -123,7 +123,7 @@ function ProductMiniCard({ slug, accent }: { slug: string; accent: string }) {
         <p className="text-gray-900 text-xs font-semibold leading-tight">{product.name}</p>
         <p className="text-gray-600 text-[10px] font-mono">CAS {product.cas_number.split('/')[0].trim()}</p>
       </div>
-      <div className="flex items-center justify-between mt-auto pt-1 border-t border-white/5">
+      <div className="flex items-center justify-between mt-auto pt-1 border-t border-gray-100">
         <span className="text-gray-900 text-sm font-bold">${product.price.toFixed(0)}</span>
         <span
           className="text-[10px] font-bold px-2 py-0.5 rounded-full"
@@ -141,14 +141,14 @@ export default function StacksPage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       {/* Breadcrumb */}
       <nav className="flex items-center gap-2 text-sm text-gray-600 mb-10" aria-label="Breadcrumb">
-        <Link href="/" className="hover:text-[#00d4ff] transition-colors">Home</Link>
+        <Link href="/" className="hover:text-amber-700 transition-colors">Home</Link>
         <span>/</span>
         <span className="text-gray-400">Stacks</span>
       </nav>
 
       {/* Header */}
       <div className="mb-14">
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass border border-[#00d4ff]/20 text-[#00d4ff] text-xs font-bold uppercase tracking-widest mb-5">
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass border border-amber-200 text-amber-700 text-xs font-bold uppercase tracking-widest mb-5">
           <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" />
           6 Curated Stacks
         </div>
@@ -159,8 +159,8 @@ export default function StacksPage() {
           Curated peptide stacks for weight loss, skin glow, lean muscle, anti-aging, and recovery. Every compound chosen for what it does — not just what it&apos;s called.
         </p>
         <div className="flex flex-wrap gap-2.5">
-          {['21 Compounds', '>98% HPLC', '6 Protocol Stacks', 'Third-Party Tested', 'Research Use Only'].map(tag => (
-            <span key={tag} className="px-3 py-1.5 glass border border-white/8 text-gray-500 text-xs rounded-full">{tag}</span>
+          {['143 Compounds', '>98% HPLC', '6 Protocol Stacks', 'Third-Party Tested', 'Research Use Only'].map(tag => (
+            <span key={tag} className="px-3 py-1.5 bg-gray-100 border border-gray-200 text-gray-600 text-xs rounded-full">{tag}</span>
           ))}
         </div>
       </div>
@@ -174,16 +174,16 @@ export default function StacksPage() {
           const totalPrice = stackProducts.reduce((sum, p) => sum + p.price, 0)
 
           return (
-            <div key={stack.id} className={`relative rounded-3xl border border-white/8 overflow-hidden bg-gradient-to-br ${stack.color}`}>
+            <div key={stack.id} className={`relative rounded-3xl border border-gray-200 overflow-hidden bg-gradient-to-br ${stack.color}`}>
               {/* Stack header */}
-              <div className="px-8 pt-8 pb-6 border-b border-white/6">
+              <div className="px-4 sm:px-8 pt-6 sm:pt-8 pb-5 sm:pb-6 border-b border-gray-100">
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
                   <div>
                     <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: stack.accent }}>
                       {stack.tagline}
                     </p>
                     <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3">{stack.name}</h2>
-                    <p className="text-gray-400 text-sm leading-relaxed max-w-2xl">{stack.description}</p>
+                    <p className="text-gray-600 text-sm leading-relaxed max-w-2xl">{stack.description}</p>
                   </div>
                   <div className="flex-shrink-0 text-right">
                     <p className="text-xs text-gray-600 mb-1">Stack total</p>
@@ -234,12 +234,12 @@ export default function StacksPage() {
                 </div>
 
                 {/* Bottom CTA row */}
-                <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-white/6">
+                <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-gray-100">
                   <div className="flex items-center gap-4">
                     {stackProducts.filter(p => p.in_stock).length === stackProducts.length ? (
-                      <span className="text-sm text-emerald-400 font-medium">✓ All compounds in stock</span>
+                      <span className="text-sm text-emerald-700 font-medium">✓ All compounds in stock</span>
                     ) : (
-                      <span className="text-sm text-amber-400/80 font-medium">
+                      <span className="text-sm text-amber-700 font-medium">
                         {stackProducts.filter(p => p.in_stock).length}/{stackProducts.length} compounds in stock
                       </span>
                     )}
@@ -273,7 +273,7 @@ export default function StacksPage() {
       </div>
 
       {/* Bottom CTA */}
-      <div className="mt-16 p-8 glass border border-[#00d4ff]/15 rounded-3xl text-center">
+      <div className="mt-16 p-8 glass border border-amber-200 rounded-3xl text-center">
         <h2 className="text-2xl font-black text-gray-900 mb-3">Need a specific compound?</h2>
         <p className="text-gray-500 mb-6 max-w-md mx-auto">
           Browse the full catalog of 143 research compounds — searchable by protocol layer, mechanism, or category.
