@@ -63,9 +63,9 @@ export default function Header() {
       </div>
 
       {/* Main nav */}
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[60px] flex items-center justify-between">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center gap-4">
         {/* Logo */}
-        <Link href="/" className="group flex items-center gap-2.5">
+        <Link href="/" className="group flex items-center gap-2.5 flex-shrink-0">
           <div className="relative w-9 h-9 rounded-xl overflow-hidden flex-shrink-0">
             <Image
               src="/logo.png"
@@ -77,18 +77,18 @@ export default function Header() {
               unoptimized
             />
           </div>
-          <span className="font-black text-gray-900 text-base tracking-tight group-hover:text-amber-700 transition-colors">
+          <span className="font-black text-gray-900 text-[15px] tracking-tight group-hover:text-amber-700 transition-colors whitespace-nowrap">
             Claviculars Peptides
           </span>
         </Link>
 
-        {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-0.5">
+        {/* Desktop links — centered, fills remaining space */}
+        <div className="hidden lg:flex items-center justify-center flex-1 gap-1">
           {navLinks.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="relative px-3.5 py-2 text-sm text-gray-600 hover:text-amber-700 transition-colors rounded-xl hover:bg-amber-50 group"
+              className="relative px-3 py-2 text-[13px] font-medium text-gray-600 hover:text-amber-700 transition-colors rounded-lg hover:bg-amber-50 group whitespace-nowrap"
             >
               {item.label}
               <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-px bg-amber-500 group-hover:w-4 transition-all duration-300" />
@@ -96,25 +96,22 @@ export default function Header() {
           ))}
         </div>
 
-        {/* Search */}
-        <div className="hidden md:block">
-          <SearchBar />
-        </div>
-
-        {/* Right CTA */}
-        <div className="flex items-center gap-3">
+        {/* Right: Search + CTA + mobile hamburger */}
+        <div className="flex items-center gap-2.5 ml-auto">
+          <div className="hidden md:block">
+            <SearchBar />
+          </div>
           <a
             href="/stacks"
-            className="hidden md:inline-flex btn-primary items-center gap-1.5 px-4 py-2 text-sm font-bold rounded-xl"
+            className="hidden lg:inline-flex btn-primary items-center gap-1.5 px-4 py-2 text-sm font-bold rounded-xl whitespace-nowrap"
           >
             Shop Stacks
             <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
             </svg>
           </a>
-
           <button
-            className="md:hidden w-9 h-9 border border-gray-200 rounded-xl flex items-center justify-center text-gray-600 hover:text-amber-700 transition-colors"
+            className="lg:hidden w-9 h-9 border border-gray-200 rounded-xl flex items-center justify-center text-gray-600 hover:text-amber-700 transition-colors"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >

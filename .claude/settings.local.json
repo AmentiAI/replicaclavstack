@@ -46,7 +46,8 @@
       "Bash(ls /mnt/c/Users/Wilso/replicaclavstack/app/icon*)",
       "Bash(ls app/favicon.ico app/icon*)",
       "Bash(npx next:*)",
-      "Bash(echo \"Exit: $?\")"
+      "Bash(echo \"Exit: $?\")",
+      "Bash(wait %1)"
     ]
   }
 }
