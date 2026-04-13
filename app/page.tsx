@@ -163,7 +163,10 @@ export default function HomePage() {
                       {/* Label */}
                       <div className="px-3.5 py-3 border-t border-gray-100">
                         <p className="text-gray-900 text-[12px] font-bold leading-tight truncate">{product.name}</p>
-                        <p className="text-[11px] mt-0.5 font-semibold" style={{ color: accent }}>${product.price}</p>
+                        <div className="flex items-baseline gap-1.5 mt-0.5">
+                          <p className="text-[11px] font-semibold" style={{ color: accent }}>${(product.price * 0.9).toFixed(2)}</p>
+                          <p className="text-[10px] text-gray-400 line-through">${product.price.toFixed(2)}</p>
+                        </div>
                       </div>
                     </Link>
                   )

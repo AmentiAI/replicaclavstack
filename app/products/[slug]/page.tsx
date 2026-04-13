@@ -810,8 +810,10 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             <p className="text-amber-700 font-mono text-base mb-1">{product.chemical_name}</p>
             <p className="text-gray-500 text-sm font-mono mb-6">CAS: {product.cas_number}</p>
 
-            <div className="flex items-center gap-4 mb-6">
-              <span className="text-4xl font-bold text-gray-900">${product.price.toFixed(2)}</span>
+            <div className="flex items-center gap-4 mb-6 flex-wrap">
+              <span className="text-4xl font-bold text-gray-900">${(product.price * 0.9).toFixed(2)}</span>
+              <span className="text-xl text-gray-400 line-through">${product.price.toFixed(2)}</span>
+              <span className="text-sm font-bold text-emerald-600 bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-full">10% OFF</span>
               <span className={`px-3 py-1 rounded-full text-sm font-medium ${product.in_stock ? 'bg-emerald-500/15 text-emerald-700' : 'bg-red-500/10 text-red-600'}`}>
                 {product.in_stock ? 'In Stock' : 'Out of Stock'}
               </span>

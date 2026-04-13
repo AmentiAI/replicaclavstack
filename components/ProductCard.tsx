@@ -78,8 +78,10 @@ export default function ProductCard({ product }: { product: Product }) {
           </span>
         </div>
 
-        <div className="flex items-baseline gap-1 mb-3 sm:mb-4">
-          <span className="text-[22px] sm:text-[26px] font-black text-gray-900 leading-none">${product.price.toFixed(2)}</span>
+        <div className="flex items-baseline gap-2 mb-3 sm:mb-4">
+          <span className="text-[22px] sm:text-[26px] font-black text-gray-900 leading-none">${(product.price * 0.9).toFixed(2)}</span>
+          <span className="text-[13px] text-gray-400 line-through leading-none">${product.price.toFixed(2)}</span>
+          <span className="text-[10px] font-bold text-emerald-600 bg-emerald-50 border border-emerald-200 px-1.5 py-0.5 rounded-full leading-none">10% OFF</span>
         </div>
 
         {/* Buttons — stop propagation so Shop button doesn't double-navigate */}
