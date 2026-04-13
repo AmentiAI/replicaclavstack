@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: `${BASE_URL}/stacks` },
   openGraph: {
     title: 'Research Peptide Stacks | The Peptide Stack',
-    description: '6 curated research stacks covering metabolic, skin, lean mass, longevity, and recovery protocols. All 21 compounds with images and links.',
+    description: '6 curated research stacks covering metabolic, skin, lean mass, longevity, and recovery protocols. All 143 compounds with images and links.',
     url: `${BASE_URL}/stacks`,
     siteName: 'The Peptide Stack',
     type: 'website',
@@ -276,11 +276,11 @@ export default function StacksPage() {
       <div className="mt-16 p-8 glass border border-[#00d4ff]/15 rounded-3xl text-center">
         <h2 className="text-2xl font-black text-gray-900 mb-3">Need a specific compound?</h2>
         <p className="text-gray-500 mb-6 max-w-md mx-auto">
-          Browse the full catalog of 21 research compounds — searchable by protocol layer, mechanism, or category.
+          Browse the full catalog of 143 research compounds — searchable by protocol layer, mechanism, or category.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link href="/products" className="btn-primary px-8 py-3.5 rounded-xl text-base font-bold">
-            Browse All 21 Compounds
+            Browse All 143 Compounds
           </Link>
           <Link href="/protocol" className="px-8 py-3.5 rounded-xl text-base font-medium bg-gray-100 border border-gray-200 text-gray-600 hover:text-gray-900 hover:border-gray-300 transition-all">
             Read the Protocol

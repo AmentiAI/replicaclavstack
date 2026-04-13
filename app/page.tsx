@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://thepeptidestack.com' },
   openGraph: {
     title: 'Best Peptides for Weight Loss, Anti-Aging & Looksmaxxing | The Peptide Stack',
-    description: '21 research-grade peptides for weight loss, anti-aging, skin glow, lean muscle, and longevity. Independent protocol guides for every compound.',
+    description: '143 research-grade peptides for weight loss, anti-aging, skin glow, lean muscle, and longevity. Independent protocol guides for every compound.',
     url: 'https://thepeptidestack.com',
     siteName: 'The Peptide Stack',
     type: 'website',
@@ -95,7 +95,7 @@ export default function HomePage() {
               </h2>
 
               <p className="text-lg text-gray-500 leading-relaxed mb-12 max-w-xl animate-slide-up delay-300">
-                21 research-grade peptides for weight loss, anti-aging, looksmaxxing, and longevity. The most complete peptide protocol guide online.
+                143 research-grade peptides for weight loss, anti-aging, looksmaxxing, and longevity. The most complete peptide protocol guide online.
               </p>
 
               {/* CTA buttons */}
@@ -174,7 +174,7 @@ export default function HomePage() {
                   href="/products"
                   className="inline-flex items-center gap-1.5 text-xs text-gray-600 hover:text-amber-700 transition-colors font-medium"
                 >
-                  View all 21 compounds
+                  View all 143 compounds
                   <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                 </Link>
               </div>
@@ -274,7 +274,7 @@ export default function HomePage() {
               <p className="text-gray-500 text-lg">&gt;98% HPLC verified · Third-party tested</p>
             </div>
             <Link href="/products" className="hidden md:flex items-center gap-1.5 text-sm text-gray-600 hover:text-amber-700 transition-colors group whitespace-nowrap">
-              All 21 compounds
+              All 143 compounds
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
             </Link>
           </div>
@@ -289,7 +289,7 @@ export default function HomePage() {
 
           <div className="mt-8 text-center">
             <Link href="/products" className="btn-ghost inline-flex items-center gap-2 px-6 py-3 text-sm font-medium rounded-2xl">
-              View All 21 Research Compounds
+              View All 143 Research Compounds
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
             </Link>
           </div>
