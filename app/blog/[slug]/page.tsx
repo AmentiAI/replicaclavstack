@@ -5,6 +5,9 @@ import { getAllBlogSlugs, getBlogPostBySlug } from '@/lib/blog'
 
 const BASE_URL = 'https://clavicularspeptides.com'
 
+export const dynamic = 'force-static'
+export const revalidate = 86400
+
 export function generateStaticParams() {
   return getAllBlogSlugs().map((slug) => ({ slug }))
 }

@@ -47,7 +47,8 @@
       "Bash(ls app/favicon.ico app/icon*)",
       "Bash(npx next:*)",
       "Bash(echo \"Exit: $?\")",
-      "Bash(wait %1)"
+      "Bash(wait %1)",
+      "Bash(wc *)"
     ]
   }
 }
