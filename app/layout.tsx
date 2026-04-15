@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, Space_Grotesk, Montserrat } from 'next/font/google'
+import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -69,6 +70,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1 pt-[calc(1.875rem+60px)]">{children}</main>
         <Footer />
         <Analytics />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-2NN87ED1MM" strategy="afterInteractive" />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-2NN87ED1MM');`}
+        </Script>
       </body>
     </html>
   )
