@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import React from 'react'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -69,7 +70,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 // UNIQUE COMPONENTS — one per product slug
 // ─────────────────────────────────────────────────────────────────────────────
 
-function RetaPhase2Chart() {
+function RetaPhase2Chart({ title = 'Phase 2 Dose-Response Data (48 Weeks)' }: { title?: string } = {}) {
   const data = [
     { dose: '1mg/wk',  pct: 8.7,  w: 30 },
     { dose: '4mg/wk',  pct: 17.3, w: 60 },
@@ -79,7 +80,7 @@ function RetaPhase2Chart() {
   ]
   return (
     <div className="glass rounded-2xl p-6 mb-10">
-      <h2 className="text-gray-900 font-bold text-xl mb-1">Phase 2 Dose-Response Data (48 Weeks)</h2>
+      <h2 className="text-gray-900 font-bold text-xl mb-1">{title}</h2>
       <p className="text-gray-500 text-sm mb-6">Mean % body weight reduction by weekly dose — Phase 2 RCT, NEJM 2023</p>
       <div className="space-y-3">
         {data.map((d) => (
@@ -98,14 +99,14 @@ function RetaPhase2Chart() {
   )
 }
 
-function RetaValueCalc() {
+function RetaValueCalc({ title = 'Per-mg Value Comparison' }: { title?: string } = {}) {
   const options = [
     { label: 'GLP-3 R 10mg', price: 149.99, mg: 10, per: 15.00 },
     { label: 'GLP-3 R 15mg', price: 189.99, mg: 15, per: 12.67, best: true },
   ]
   return (
     <div className="glass rounded-2xl p-6 mb-10">
-      <h2 className="text-gray-900 font-bold text-xl mb-1">Per-mg Value Comparison</h2>
+      <h2 className="text-gray-900 font-bold text-xl mb-1">{title}</h2>
       <p className="text-gray-500 text-sm mb-6">Same compound (Retatrutide, CAS 2381089-83-2) — different vial quantities</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {options.map((o) => (
@@ -125,7 +126,7 @@ function RetaValueCalc() {
   )
 }
 
-function TirzSurmount1Chart() {
+function TirzSurmount1Chart({ title = 'SURMOUNT-1 Phase 3 Results (72 Weeks)' }: { title?: string } = {}) {
   const data = [
     { dose: '5mg',  pct: 15.0, w: 52 },
     { dose: '10mg', pct: 19.5, w: 68 },
@@ -133,7 +134,7 @@ function TirzSurmount1Chart() {
   ]
   return (
     <div className="glass rounded-2xl p-6 mb-10">
-      <h2 className="text-gray-900 font-bold text-xl mb-1">SURMOUNT-1 Phase 3 Results (72 Weeks)</h2>
+      <h2 className="text-gray-900 font-bold text-xl mb-1">{title}</h2>
       <p className="text-gray-500 text-sm mb-6">Mean % body weight reduction by dose — 2,539 participants</p>
       <div className="space-y-3 mb-5">
         {data.map((d) => (
@@ -705,31 +706,200 @@ function BWReconstitutionGuide() {
 // COMPONENT MAP — slug → unique component
 // ─────────────────────────────────────────────────────────────────────────────
 
-const COMPONENT_MAP: Record<string, React.FC> = {
-  'glp-3-r-15mg':          RetaPhase2Chart,
-  'glp-3-r-10mg':          RetaValueCalc,
-  'glp-3-r-30mg':          RetaPhase2Chart,
-  'glp-3-r-60mg':          RetaValueCalc,
-  'glp-2-t-30mg':          TirzSurmount1Chart,
-  'glp-2-t-60mg':          TirzSurmount1Chart,
-  'glp-2-t-20mg-5pack':    TirzBulkCalc,
-  'glp-2-t-15mg-4pack':    TirzProtocolTimeline,
-  'glp-2-t-15mg-10pack':   TirzUltraBulk,
-  'glp-2-t-15mg':          TirzDualReceptor,
-  'glp-1-s-15mg':          SemaStep1Chart,
-  'glp-1-s-10mg':          SemaDoseTitration,
-  'glp-1-s-5mg':           SemaEntryGuide,
-  'glp-1-c-glp-1-s-5mg':  CagriDualPathway,
-  'bpc-157-10mg':          BPCMechanismMatrix,
-  'ghk-cu-50mg':           GHKGeneChart,
-  'snap-8-10mg':           SNAP8SnareDiagram,
-  'snap-8-2pack':          SNAP8CombinationCard,
-  'cjc1295-ipamorelin':    CJCGHPulse,
-  'igf-1lr3-1mg':          IGFCascade,
-  'tb-500-10mg':           TBTissueGrid,
-  'epithalon-50mg':        EpithTelomere,
-  'nad-500mg':             NADPathway,
-  'bacteriostatic-water':  BWReconstitutionGuide,
+const COMPONENT_MAP: Record<string, () => React.ReactElement> = {
+  'glp-3-r-15mg':          () => <RetaPhase2Chart title="Phase 2 Dose-Response — 15mg Research Focus (48 Weeks)" />,
+  'glp-3-r-30mg':          () => <RetaPhase2Chart title="Retatrutide Phase 2 Benchmarks — 30mg Bulk Configuration" />,
+  'glp-3-r-10mg':          () => <RetaValueCalc title="Per-mg Value — 10mg vs 15mg Vial Formats" />,
+  'glp-3-r-60mg':          () => <RetaValueCalc title="Per-mg Value Analysis — 60mg Ultra-Bulk Tier" />,
+  'glp-2-t-30mg':          () => <TirzSurmount1Chart title="SURMOUNT-1 Dose-Response — 30mg Research Context" />,
+  'glp-2-t-60mg':          () => <TirzSurmount1Chart title="SURMOUNT-1 Efficacy Review — 60mg Bulk Configuration" />,
+  'glp-2-t-20mg-5pack':    () => <TirzBulkCalc />,
+  'glp-2-t-15mg-4pack':    () => <TirzProtocolTimeline />,
+  'glp-2-t-15mg-10pack':   () => <TirzUltraBulk />,
+  'glp-2-t-15mg':          () => <TirzDualReceptor />,
+  'glp-1-s-15mg':          () => <SemaStep1Chart />,
+  'glp-1-s-10mg':          () => <SemaDoseTitration />,
+  'glp-1-s-5mg':           () => <SemaEntryGuide />,
+  'glp-1-c-glp-1-s-5mg':   () => <CagriDualPathway />,
+  'bpc-157-10mg':          () => <BPCMechanismMatrix />,
+  'ghk-cu-50mg':           () => <GHKGeneChart />,
+  'snap-8-10mg':           () => <SNAP8SnareDiagram />,
+  'snap-8-2pack':          () => <SNAP8CombinationCard />,
+  'cjc1295-ipamorelin':    () => <CJCGHPulse />,
+  'igf-1lr3-1mg':          () => <IGFCascade />,
+  'tb-500-10mg':           () => <TBTissueGrid />,
+  'epithalon-50mg':        () => <EpithTelomere />,
+  'nad-500mg':             () => <NADPathway />,
+  'bacteriostatic-water':  () => <BWReconstitutionGuide />,
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// PAGE LAYOUT — unique per-slug heading text + section ordering
+// Each slug ships handwritten H2 strings and a distinct section order so that
+// no two product pages share the same heading at the same DOM position.
+// ─────────────────────────────────────────────────────────────────────────────
+
+type SectionKey = 'chart' | 'mechanism' | 'body' | 'faq' | 'related'
+
+interface PageLayout {
+  mechanismTitle: string
+  faqTitle: string
+  relatedTitle: string
+  order: SectionKey[]
+}
+
+const PAGE_LAYOUTS: Record<string, PageLayout> = {
+  'glp-3-r-15mg': {
+    mechanismTitle: 'Triple-Agonist Pharmacology at the 15mg Research Dose',
+    faqTitle: '15mg Retatrutide — Protocol Questions from Recent Trial Discussion',
+    relatedTitle: 'Compounds That Extend the Retatrutide Phase 2 Research Arc',
+    order: ['chart', 'mechanism', 'body', 'faq', 'related'],
+  },
+  'glp-3-r-10mg': {
+    mechanismTitle: 'GcgR Engagement at Lower Retatrutide Plasma Concentrations',
+    faqTitle: 'Entering Retatrutide Research at 10mg — Common Protocol Points',
+    relatedTitle: 'Adjacent Research Tiers: GLP Benchmarks Beside Retatrutide 10mg',
+    order: ['mechanism', 'chart', 'body', 'faq', 'related'],
+  },
+  'glp-3-r-30mg': {
+    mechanismTitle: 'Receptor Saturation and Thermogenic Signaling in 30mg Protocols',
+    faqTitle: 'Running 30mg Bulk Retatrutide Studies — Dose-Escalation Questions',
+    relatedTitle: 'Parallel Retatrutide Formats and Class-Matching Controls',
+    order: ['body', 'chart', 'mechanism', 'faq', 'related'],
+  },
+  'glp-3-r-60mg': {
+    mechanismTitle: 'Extended-Protocol Pharmacology of Bulk Retatrutide Inventory',
+    faqTitle: '60mg Ultra-Bulk Retatrutide — Storage, Titration, and Study Duration',
+    relatedTitle: 'Other High-Volume GLP Research Tiers Worth Benchmarking',
+    order: ['chart', 'body', 'mechanism', 'faq', 'related'],
+  },
+  'glp-2-t-30mg': {
+    mechanismTitle: 'GIPR + GLP-1R Co-Agonism Through the 30mg Research Window',
+    faqTitle: 'Tirzepatide 30mg Protocol Questions Covered in SURMOUNT Reviews',
+    relatedTitle: 'Adjacent Tirzepatide Formats for 30mg Research Planning',
+    order: ['mechanism', 'body', 'chart', 'faq', 'related'],
+  },
+  'glp-2-t-60mg': {
+    mechanismTitle: 'Dual Incretin Pharmacology Scaled to 60mg Research Inventory',
+    faqTitle: '60mg Bulk Tirzepatide — Longitudinal Study Setup Questions',
+    relatedTitle: 'Companion Compounds for Extended Tirzepatide Research Arcs',
+    order: ['body', 'mechanism', 'chart', 'faq', 'related'],
+  },
+  'glp-2-t-20mg-5pack': {
+    mechanismTitle: 'Why 20mg Vials Map Cleanly to Dose-Escalation Research Design',
+    faqTitle: 'Tirzepatide 5-Pack Format — Reconstitution and Inventory Questions',
+    relatedTitle: 'Other Multi-Vial Tirzepatide Bundles and Class Comparators',
+    order: ['chart', 'mechanism', 'faq', 'body', 'related'],
+  },
+  'glp-2-t-15mg-4pack': {
+    mechanismTitle: 'SURMOUNT-1 Maintenance-Dose Biology Packaged for 12-Week Arcs',
+    faqTitle: '4-Pack Tirzepatide Research — Dosing-Rhythm Questions',
+    relatedTitle: 'Tirzepatide Formats That Neighbor the 4-Pack Research Window',
+    order: ['mechanism', 'chart', 'faq', 'body', 'related'],
+  },
+  'glp-2-t-15mg-10pack': {
+    mechanismTitle: 'Steady-State Tirzepatide Signaling Across 30-Week Research Supply',
+    faqTitle: '10-Pack Tirzepatide — Long-Horizon Study Planning Questions',
+    relatedTitle: 'Complementary Research Compounds for Multi-Month Tirzepatide Protocols',
+    order: ['body', 'faq', 'chart', 'mechanism', 'related'],
+  },
+  'glp-2-t-15mg': {
+    mechanismTitle: 'Dual-Receptor Biology at the 15mg SURMOUNT-1 Target Dose',
+    faqTitle: 'Single-Vial Tirzepatide 15mg — Entry-Point Research Questions',
+    relatedTitle: 'Research Peers of Standard-Dose Tirzepatide 15mg',
+    order: ['chart', 'faq', 'mechanism', 'body', 'related'],
+  },
+  'glp-1-s-15mg': {
+    mechanismTitle: 'GLP-1R Mono-Agonist Signaling at High-Vial Semaglutide Inventory',
+    faqTitle: '15mg Semaglutide Research — Bulk-Format Protocol Questions',
+    relatedTitle: 'Compounds That Sit Alongside Semaglutide 15mg in GLP Studies',
+    order: ['mechanism', 'faq', 'body', 'chart', 'related'],
+  },
+  'glp-1-s-10mg': {
+    mechanismTitle: 'Semaglutide Receptor Kinetics in the 10mg Research Tier',
+    faqTitle: 'Semaglutide 10mg — Mid-Volume Research Questions',
+    relatedTitle: 'Adjacent Tiers for Building a Semaglutide Dose-Response Library',
+    order: ['body', 'chart', 'faq', 'mechanism', 'related'],
+  },
+  'glp-1-s-5mg': {
+    mechanismTitle: 'Low-Dose GLP-1R Characterization with 5mg Semaglutide',
+    faqTitle: 'Starter-Vial Semaglutide Research — 5mg Entry-Point Questions',
+    relatedTitle: 'Research Compounds That Pair With Semaglutide 5mg as Class Baseline',
+    order: ['chart', 'body', 'faq', 'mechanism', 'related'],
+  },
+  'glp-1-c-glp-1-s-5mg': {
+    mechanismTitle: 'Orthogonal Amylin and GLP-1 Receptor Engagement in the Cagrilintide + Semaglutide Stack',
+    faqTitle: 'CagriSema Dual-Compound Research — Pairing and Reconstitution Questions',
+    relatedTitle: 'Parallel GLP and Amylin Research Tools for CagriSema Study Arcs',
+    order: ['faq', 'chart', 'mechanism', 'body', 'related'],
+  },
+  'bpc-157-10mg': {
+    mechanismTitle: 'Nitric Oxide, VEGFR2, and Tissue-Repair Signaling Behind BPC-157',
+    faqTitle: 'BPC-157 Research Protocol Questions Drawn from the Sikiric Literature',
+    relatedTitle: 'Repair and Recovery Compounds That Compound With BPC-157 Research',
+    order: ['mechanism', 'body', 'faq', 'chart', 'related'],
+  },
+  'ghk-cu-50mg': {
+    mechanismTitle: 'Copper Tripeptide Gene Modulation Across 4,177 Transcriptome Targets',
+    faqTitle: 'GHK-Cu Topical and Subcutaneous Research Questions',
+    relatedTitle: 'Skin, Hair, and Longevity Peptides That Layer With GHK-Cu',
+    order: ['body', 'mechanism', 'faq', 'chart', 'related'],
+  },
+  'snap-8-10mg': {
+    mechanismTitle: 'SNARE Complex Competitive Inhibition at the Neuromuscular Junction',
+    faqTitle: 'SNAP-8 Topical Research Questions — Expression-Line Protocols',
+    relatedTitle: 'Cosmetic Peptide Research Tools That Accompany SNAP-8',
+    order: ['chart', 'faq', 'body', 'mechanism', 'related'],
+  },
+  'snap-8-2pack': {
+    mechanismTitle: 'Why Duplicate SNAP-8 Inventory Supports Longitudinal Topical Studies',
+    faqTitle: 'SNAP-8 2-Pack — Extended-Protocol Research Questions',
+    relatedTitle: 'Companion Cosmetic Peptides for Multi-Vial SNAP-8 Research',
+    order: ['faq', 'mechanism', 'body', 'chart', 'related'],
+  },
+  'cjc1295-ipamorelin': {
+    mechanismTitle: 'GHRH-R Amplitude and GHS-R1a Frequency — The Paired GH Pulse Model',
+    faqTitle: 'CJC-1295 and Ipamorelin Stack Research — Common Pulsatility Questions',
+    relatedTitle: 'GH Axis and Recovery Compounds Beside the CJC/Ipamorelin Stack',
+    order: ['mechanism', 'faq', 'chart', 'body', 'related'],
+  },
+  'igf-1lr3-1mg': {
+    mechanismTitle: 'IGFBP-Resistant Signaling and IGF-1R Cascade Activation by LR3',
+    faqTitle: 'IGF-1 LR3 Research — Half-Life and Protocol-Design Questions',
+    relatedTitle: 'Anabolic and GH-Axis Compounds Commonly Compared to IGF-1 LR3',
+    order: ['body', 'faq', 'mechanism', 'chart', 'related'],
+  },
+  'tb-500-10mg': {
+    mechanismTitle: 'Thymosin Beta-4 Fragment Biology: G-Actin, VEGF, and NF-κB',
+    faqTitle: 'TB-500 Research Protocol Questions Across Tissue Systems',
+    relatedTitle: 'Systemic Repair Peptides Studied Alongside TB-500',
+    order: ['faq', 'body', 'chart', 'mechanism', 'related'],
+  },
+  'epithalon-50mg': {
+    mechanismTitle: 'Epithalon and Telomerase Upregulation in Somatic Cell Research',
+    faqTitle: 'Epithalon Longevity Research — Khavinson-Era Protocol Questions',
+    relatedTitle: 'Longevity-Axis Research Peptides That Frame Epithalon Studies',
+    order: ['chart', 'mechanism', 'body', 'related', 'faq'],
+  },
+  'nad-500mg': {
+    mechanismTitle: 'Sirtuin, PARP, and CD38 Consumption Pathways That NAD+ Supplies',
+    faqTitle: 'NAD+ 500mg Research — Reconstitution, Stability, and Delivery Questions',
+    relatedTitle: 'Cellular Energy and Longevity Compounds Commonly Studied With NAD+',
+    order: ['mechanism', 'chart', 'body', 'related', 'faq'],
+  },
+  'bacteriostatic-water': {
+    mechanismTitle: 'How Benzyl Alcohol Preserves Lyophilized Peptides During Reconstitution',
+    faqTitle: 'Bacteriostatic Water Use — Practical Reconstitution Questions',
+    relatedTitle: 'Peptides That Require Bacteriostatic Water for Research Protocols',
+    order: ['body', 'chart', 'mechanism', 'related', 'faq'],
+  },
+}
+
+const DEFAULT_LAYOUT: PageLayout = {
+  mechanismTitle: 'Mechanism of Action',
+  faqTitle: 'Research FAQ',
+  relatedTitle: 'Related Compounds',
+  order: ['chart', 'mechanism', 'body', 'faq', 'related'],
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -743,8 +913,52 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
   const related = getRelatedProducts(product.related)
   const shopLink = `/out/${slug}`
-  const UniqueComponent = COMPONENT_MAP[slug] ?? null
+  const renderUnique = COMPONENT_MAP[slug] ?? null
   const bodyData = productBodies[slug] ?? null
+  const layout = PAGE_LAYOUTS[slug] ?? DEFAULT_LAYOUT
+
+  const sections: Record<SectionKey, React.ReactNode> = {
+    chart: renderUnique ? renderUnique() : null,
+    mechanism: (
+      <div className="bg-white border border-gray-200 rounded-2xl p-8 mb-10">
+        <h2 className="text-xl font-bold text-gray-900 mb-4">{layout.mechanismTitle}</h2>
+        <p className="text-gray-600 leading-relaxed">{product.mechanism}</p>
+      </div>
+    ),
+    body: bodyData && bodyData.sections.length > 0 ? (
+      <article className="prose-peptide mb-12">
+        {bodyData.sections.map((section, i) => (
+          <div key={i}>
+            {section.heading && <h2>{section.heading}</h2>}
+            {section.text.split('\n\n').map((para, pi) => (
+              <p key={pi}>{para}</p>
+            ))}
+          </div>
+        ))}
+      </article>
+    ) : null,
+    faq: product.faq?.length > 0 ? (
+      <div className="mb-12">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">{layout.faqTitle}</h2>
+        <div className="space-y-4">
+          {product.faq.map((item) => (
+            <div key={item.q} className="bg-white border border-gray-200 rounded-xl p-6">
+              <h3 className="text-gray-900 font-semibold mb-3">{item.q}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{item.a}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    ) : null,
+    related: related.length > 0 ? (
+      <div>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">{layout.relatedTitle}</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {related.map((p) => <ProductCard key={p.slug} product={p} />)}
+        </div>
+      </div>
+    ) : null,
+  }
 
   const productJsonLd = {
     '@context': 'https://schema.org',
@@ -847,53 +1061,9 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           </div>
         </div>
 
-        {/* Unique component */}
-        {UniqueComponent && <UniqueComponent />}
-
-        {/* Mechanism */}
-        <div className="bg-white border border-gray-200 rounded-2xl p-8 mb-10">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">Mechanism of Action</h2>
-          <p className="text-gray-600 leading-relaxed">{product.mechanism}</p>
-        </div>
-
-        {/* Long-form body content from product-content */}
-        {bodyData && bodyData.sections.length > 0 && (
-          <article className="prose-peptide mb-12">
-            {bodyData.sections.map((section, i) => (
-              <div key={i}>
-                {section.heading && <h2>{section.heading}</h2>}
-                {section.text.split('\n\n').map((para, pi) => (
-                  <p key={pi}>{para}</p>
-                ))}
-              </div>
-            ))}
-          </article>
-        )}
-
-        {/* FAQ */}
-        {product.faq?.length > 0 && (
-          <div className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Research FAQ</h2>
-            <div className="space-y-4">
-              {product.faq.map((item) => (
-                <div key={item.q} className="bg-white border border-gray-200 rounded-xl p-6">
-                  <h3 className="text-gray-900 font-semibold mb-3">{item.q}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{item.a}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Related products */}
-        {related.length > 0 && (
-          <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Compounds</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-              {related.map((p) => <ProductCard key={p.slug} product={p} />)}
-            </div>
-          </div>
-        )}
+        {layout.order.map((key) => (
+          <React.Fragment key={key}>{sections[key]}</React.Fragment>
+        ))}
       </div>
     </>
   )
