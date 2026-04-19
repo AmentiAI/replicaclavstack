@@ -120,7 +120,7 @@ function ProductMiniCard({ slug, accent }: { slug: string; accent: string }) {
         <p className="text-[10px] font-bold uppercase tracking-wider mb-0.5" style={{ color: accent }}>
           {product.chemical_name}
         </p>
-        <p className="text-gray-900 text-xs font-semibold leading-tight">{product.name}</p>
+        <p className="text-gray-900 text-xs font-semibold leading-tight">Buy {product.name}</p>
         <p className="text-gray-600 text-[10px] font-mono">CAS {product.cas_number.split('/')[0].trim()}</p>
       </div>
       <div className="flex items-center justify-between mt-auto pt-1 border-t border-gray-100">

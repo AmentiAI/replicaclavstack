@@ -59,7 +59,7 @@ export default function ProductCard({ product }: { product: Product }) {
           <p className="text-[10px] font-bold text-amber-600 uppercase tracking-[0.12em] mb-0.5 truncate">
             {product.chemical_name}
           </p>
-          <h3 className="text-gray-900 font-bold text-[13px] sm:text-[15px] leading-snug mb-1">{product.name}</h3>
+          <h3 className="text-gray-900 font-bold text-[13px] sm:text-[15px] leading-snug mb-1">Buy {product.name}</h3>
           <p className="text-[10px] text-gray-400 font-mono hidden sm:block">
             CAS {product.cas_number.split('/')[0].trim()}
           </p>
