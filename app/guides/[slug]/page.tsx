@@ -65,6 +65,13 @@ export default async function GuidePage({
   }
 
   const paragraphs = guide.body.split('\n\n')
+  const inline = (s: string) =>
+    s
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(
+        /\[([^\]]+)\]\(([^)]+)\)/g,
+        '<a href="$2" class="text-amber-700 font-semibold underline hover:text-amber-800">$1</a>',
+      )
 
   return (
     <>
@@ -129,7 +136,7 @@ export default async function GuidePage({
                   {items.map((item, ii) => (
                     <li key={ii}
                       dangerouslySetInnerHTML={{
-                        __html: item.replace(/^[-\d]+[\.\s]+/, '').replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>'),
+                        __html: inline(item.replace(/^[-\d]+[\.\s]+/, '')),
                       }}
                     />
                   ))}
@@ -139,9 +146,7 @@ export default async function GuidePage({
 
             return (
               <p key={i}
-                dangerouslySetInnerHTML={{
-                  __html: trimmed.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>'),
-                }}
+                dangerouslySetInnerHTML={{ __html: inline(trimmed) }}
               />
             )
           })}

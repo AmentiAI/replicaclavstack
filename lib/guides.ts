@@ -223,6 +223,582 @@ Epithalon and NAD+ address cellular aging from two angles: telomere biology and 
 4. **HPLC purity standardization:** Use >98% HPLC purity compounds across all layers. Variable purity across compounds introduces impurity confounders that make multi-compound data harder to interpret.
     `.trim(),
   },
+  {
+    slug: 'retatrutide-research-guide',
+    title: 'Retatrutide: The Triple-Receptor Research Compound',
+    seoTitle: 'Retatrutide Research Guide — Triple GLP Agonist Mechanism & Phase 2 Data',
+    seoDescription:
+      'Retatrutide explained: triple GLP-1R/GIPR/GcgR agonism, Phase 2 NEJM 2023 outcomes, dose-response data, and research protocol placement.',
+    date: '2026-03-22',
+    excerpt:
+      'Retatrutide produces the strongest Phase 2 weight signal in current literature — a breakdown of the receptor architecture, dose-response data, and how researchers stage it.',
+    readTime: '8 min',
+    body: `
+## Why Retatrutide Draws Disproportionate Research Attention
+
+Across published GLP-class compounds, Retatrutide currently produces the highest single-agent weight effect in Phase 2 data — −28.7% at 48 weeks at the top dose. That number is not incremental over the dual-agonist class; it is a meaningful step up that has shifted research attention.
+
+The compound is available as [GLP-3 R 15mg Retatrutide](/products/glp-3-r-15mg) for standard research protocols and in larger formats for extended study designs.
+
+## Triple-Receptor Architecture
+
+Retatrutide engages three receptors simultaneously, each contributing a distinct pathway:
+
+- **GLP-1R:** Hypothalamic appetite suppression, glucose-dependent insulin secretion, gastric emptying delay
+- **GIPR:** Potentiates GLP-1R insulin signaling, reduces nausea axis overlap, modulates adipose signaling
+- **GcgR:** Hepatic glucose modulation and thermogenic energy expenditure — the axis not present in tirzepatide
+
+The GcgR contribution is what structurally separates Retatrutide from the dual-agonist class. Phase 2 attributed roughly 6–8 percentage points of additional weight effect to the glucagon axis above tirzepatide's baseline.
+
+## Phase 2 Dose-Response Summary
+
+| Weekly Dose | Mean % Weight Change | Duration |
+|---|---|---|
+| 1mg | −8.7% | 48 wks |
+| 4mg | −17.3% | 48 wks |
+| 8mg | −22.8% | 48 wks |
+| 12mg | −24.2% | 48 wks |
+| 24mg | −28.7% | 48 wks |
+
+The curve shows clear dose-dependence without obvious plateau within the studied range.
+
+## How Protocols Typically Stage Retatrutide
+
+Researchers generally follow the trial titration rhythm: begin low, escalate every 4 weeks, and hold at the target dose for the remaining protocol window. Dose escalation is the primary lever for reducing GI tolerability issues during initiation.
+
+## Purchasing and Handling Notes
+
+Research-grade Retatrutide should carry >98% HPLC purity certification with third-party test reports available. The lyophilized powder is stable at −20°C long-term; reconstituted solutions should be held at 2–8°C and used within 28 days.
+
+To start a Retatrutide research protocol, browse [GLP-3 R 15mg Retatrutide](/products/glp-3-r-15mg).
+    `.trim(),
+  },
+  {
+    slug: 'tirzepatide-research-guide',
+    title: 'Tirzepatide: Dual Incretin Research Compound',
+    seoTitle: 'Tirzepatide Research Guide — GLP-1R + GIPR Dual Agonist | SURMOUNT-1',
+    seoDescription:
+      'Tirzepatide explained: GLP-1R and GIPR co-agonism, SURMOUNT-1 outcomes at −22.5%, titration schedule, and research protocol positioning.',
+    date: '2026-03-25',
+    excerpt:
+      'The dual-incretin research compound behind the SURMOUNT-1 trial. Mechanism, trial data, titration rhythm, and where tirzepatide sits between semaglutide and retatrutide.',
+    readTime: '7 min',
+    body: `
+## Tirzepatide in the Dual-Receptor Tier
+
+Tirzepatide sits between the mono-receptor (Semaglutide) and tri-receptor (Retatrutide) classes. Its GLP-1R + GIPR co-agonism produced −22.5% weight change over 72 weeks in SURMOUNT-1 — a strong signal that validated dual-receptor research as a distinct research direction.
+
+The research-grade compound is available as [GLP-2 T 15mg Tirzepatide](/products/glp-2-t-15mg) at the SURMOUNT-1 maintenance dose.
+
+## How GLP-1R and GIPR Combine
+
+The dual-receptor mechanism is additive rather than redundant:
+
+- **GLP-1R:** Appetite suppression and glucose-dependent insulinotropic effect
+- **GIPR:** Potentiates insulin secretion and attenuates the GLP-1 nausea signaling axis
+- **Combined:** Greater insulinotropic response and improved tolerability vs mono-agonist GLP-1R
+
+Research suggests GIPR's role in nausea attenuation explains part of why dual-agonists are typically tolerated at higher effective GLP-1R activation.
+
+## SURMOUNT-1 Dose-Response at a Glance
+
+- 5mg maintenance: −15.0% at 72 wks
+- 10mg maintenance: −19.5%
+- 15mg maintenance: −22.5%
+
+All three doses showed dose-dependence with a relatively linear response — useful for dose-comparison research.
+
+## Titration Rhythm Matching Trial Design
+
+The SURMOUNT-1 titration:
+
+1. Weeks 1–4: 2.5mg (initiation)
+2. Weeks 5–8: 5mg
+3. Weeks 9–12: 7.5mg
+4. Weeks 13–16: 10mg
+5. Weeks 17+: 15mg (target maintenance)
+
+Most research protocols follow this rhythm exactly, since it is the best-characterized tolerability curve in the literature.
+
+## Research Contexts Tirzepatide Addresses
+
+- **Dual vs mono comparison research** — alongside semaglutide for side-by-side receptor comparisons
+- **Dual vs triple comparison research** — alongside retatrutide to isolate the GcgR contribution
+- **Glycemic research** — where the GIPR axis adds beyond pure GLP-1R action
+
+## Sourcing for Extended Protocols
+
+The SURMOUNT-1 design runs 72 weeks. For multi-month research, bulk formats or multi-vial packs reduce resupply risk. See [GLP-2 T 15mg Tirzepatide](/products/glp-2-t-15mg) for the single-vial option.
+    `.trim(),
+  },
+  {
+    slug: 'semaglutide-research-guide',
+    title: 'Semaglutide: The Mono-Receptor GLP-1 Reference',
+    seoTitle: 'Semaglutide Research Guide — GLP-1R Agonist | STEP-1 & Half-Life',
+    seoDescription:
+      'Semaglutide explained: C18 fatty acid modification, STEP-1 outcomes, 7-day half-life, and research positioning as the GLP-1R reference compound.',
+    date: '2026-03-28',
+    excerpt:
+      'Semaglutide is the mono-receptor GLP-1 reference compound — the baseline every dual and triple agonist is measured against. Here is why.',
+    readTime: '7 min',
+    body: `
+## The Reference Compound for GLP Research
+
+When new GLP-class compounds are published, their effect size is almost always reported relative to semaglutide. That makes semaglutide the practical reference point for the entire class — and the starting point for most receptor-comparison research.
+
+For comparison studies, [GLP-1 S 10mg Semaglutide](/products/glp-1-s-10mg) is the standard research format.
+
+## The C18 Fatty Acid Modification
+
+Native GLP-1 has a half-life measured in minutes. Semaglutide extends this to approximately 7 days through a C18 fatty diacid side chain attached via a short linker. The fatty acid binds circulating albumin, which:
+
+1. Shields the peptide from DPP-IV cleavage
+2. Reduces renal clearance
+3. Provides a long-lived albumin-peptide complex that slowly releases active compound
+
+The result is a research compound with once-weekly dosing kinetics — which in turn shapes protocol design.
+
+## STEP-1 Summary
+
+The STEP-1 trial (NEJM 2021):
+
+- **Duration:** 68 weeks
+- **Dose:** 2.4mg/week maintenance
+- **Mean weight change:** −14.9%
+- **Placebo-adjusted:** −12.4 percentage points
+
+This result established semaglutide as the effective ceiling for mono-receptor GLP-1R research until dual- and triple-receptor compounds extended the ceiling further.
+
+## Research Positioning
+
+Semaglutide earns its research utility specifically through its mono-receptor profile — not despite it:
+
+- Single-variable receptor research requires single-receptor engagement
+- Dose-response studies at GLP-1R benefit from a compound with minimal off-target activity
+- Comparative research against dual/triple agonists requires a validated mono-agonist baseline
+
+## Handling and Stability
+
+Lyophilized semaglutide is stable at −20°C for 12+ months. Reconstituted solution at 2–8°C is typically used within 28 days. All research-grade semaglutide should carry >98% HPLC certification.
+
+## Research Window Design
+
+Semaglutide's 7-day half-life means weekly dosing is protocol-native. Steady state is reached at approximately 4–5 weeks, so research windows need to account for this ramp-up period. Most protocols discard the first 4–6 weeks from primary analysis for this reason.
+
+Start a semaglutide research protocol at [GLP-1 S 10mg Semaglutide](/products/glp-1-s-10mg).
+    `.trim(),
+  },
+  {
+    slug: 'bpc-157-research-guide',
+    title: 'BPC-157: Pentadecapeptide Research Overview',
+    seoTitle: 'BPC-157 Research Guide — Sikiric Literature, NO System, VEGFR2',
+    seoDescription:
+      'BPC-157 research background: the Sikiric laboratory literature, pentadecapeptide structure, nitric oxide and VEGFR2 signaling, and research protocols.',
+    date: '2026-04-01',
+    excerpt:
+      'BPC-157 is one of the most-studied research peptides outside the GLP class. A grounded look at the Sikiric literature, the mechanism, and the tissue systems researched.',
+    readTime: '9 min',
+    body: `
+## A Compound Defined by a Single Research Lab
+
+BPC-157 research originates almost entirely from the Sikiric laboratory at the University of Zagreb, which has published hundreds of papers spanning multiple tissue systems over roughly three decades. No other research peptide of comparable duration has such a concentrated literature origin — which is both its strength and a factor worth understanding.
+
+The research-grade compound is available as [BPC-157 10mg](/products/bpc-157-10mg).
+
+## Structure: A Pentadecapeptide From Gastric Juice
+
+BPC-157 is a 15-amino-acid fragment isolated from a larger gastric protective protein in human gastric juice. The synthetic pentadecapeptide reproduces this sequence and shows stability in gastric fluid — an unusual property for a research peptide and the reason oral delivery has been studied at all.
+
+## Key Mechanistic Findings
+
+1. **Nitric oxide system engagement:** Interaction with endothelial nitric oxide synthase, modulating vascular responses
+2. **VEGFR2 signaling:** Involvement in angiogenic tissue repair — forming new vasculature during wound healing research
+3. **Growth hormone receptor upregulation:** Secondary effect that may support the compound's broader repair profile
+4. **Dopaminergic and serotonergic modulation:** CNS effects studied in the Sikiric inflammation models
+
+## Tissue Systems Studied
+
+The Sikiric literature spans:
+
+- **GI mucosa** — the originally published system
+- **Tendon and ligament** — rat Achilles transection research
+- **Bone** — fracture healing studies
+- **Skin** — wound closure models
+- **CNS** — neuroprotection research in stroke models
+- **Cardiovascular** — endothelial response studies
+
+The breadth is notable — and is the reason BPC-157 shows up in so many adjunct-research contexts.
+
+## Oral vs Subcutaneous Delivery Research
+
+BPC-157's gastric stability has enabled oral research protocols — unusual for a peptide. The comparative literature suggests the subcutaneous route produces more predictable systemic exposure; the oral route produces effects more concentrated in the GI system. Research design should select based on the target tissue.
+
+## Pairing With Other Research Compounds
+
+BPC-157 is frequently paired with TB-500 in broader tissue-repair protocols. The mechanisms are non-overlapping — BPC-157 engages the NO and VEGFR2 systems while TB-500 targets G-actin dynamics and has its own VEGF interactions — so co-study covers a wider repair pathway set.
+
+## Research Sourcing
+
+Quality controls that matter for BPC-157 specifically: >98% HPLC purity, third-party test reports, lyophilized form, and stability-validated handling. See [BPC-157 10mg](/products/bpc-157-10mg) for the standard research vial.
+    `.trim(),
+  },
+  {
+    slug: 'ghk-cu-research-guide',
+    title: 'GHK-Cu: The Copper Tripeptide Research Compound',
+    seoTitle: 'GHK-Cu Research Guide — Copper Peptide, Gene Expression, Collagen',
+    seoDescription:
+      'GHK-Cu explained: the copper tripeptide structure, gene expression research across 4,000+ targets, collagen and elastin pathways, and topical research protocols.',
+    date: '2026-04-03',
+    excerpt:
+      'GHK-Cu is one of the most studied copper peptides — three amino acids, one copper ion, and a surprisingly broad gene expression profile. Here is the research picture.',
+    readTime: '8 min',
+    body: `
+## Three Amino Acids and One Copper Ion
+
+GHK-Cu (glycyl-histidyl-lysyl-copper) is a tripeptide-copper complex. The copper ion coordinates with the imidazole of histidine and the amino terminus of glycine — the resulting complex is the biologically active species.
+
+The research-grade compound is available as [GHK-Cu 50mg](/products/ghk-cu-50mg) for topical and injectable research.
+
+## Gene Expression Research at Scale
+
+The most striking characteristic of GHK-Cu is the breadth of its transcriptomic footprint. Published microarray data shows modulation across approximately 4,000 human genes — upregulating roughly one-third and downregulating another third from baseline.
+
+Key upregulated gene families:
+
+- **Collagen types I, III, IV** — dermal matrix proteins
+- **Elastin and fibrillin** — dermal elasticity architecture
+- **Decorin** — collagen fiber organization
+- **Glycosaminoglycan synthesis enzymes** — hyaluronic acid and related GAGs
+
+Key downregulated:
+
+- **Matrix metalloproteinases (MMP-1, MMP-3)** — collagen-degrading enzymes
+- **TGF-β1 inhibitory pathways** under some conditions
+
+## Dermal Matrix Research Implications
+
+The gene expression data translates to a research picture where GHK-Cu supports collagen synthesis while suppressing collagen degradation — a net positive shift in matrix turnover. The integrated research literature spans:
+
+- Dermal thickness studies
+- Wound closure kinetics
+- Photoaging response models
+- Hair follicle research — a secondary but actively studied application
+
+## Topical vs Injectable Research
+
+Both routes have their own literature:
+
+- **Topical:** Most cosmetic research uses aqueous or serum formulations. Penetration depends on formulation vehicle and skin condition.
+- **Injectable:** Subcutaneous or intradermal — produces more consistent systemic exposure and bypasses skin barrier variables.
+
+Research design should select based on the target tissue depth and the variables to control.
+
+## Pairing With Other Cosmetic Peptides
+
+GHK-Cu pairs cleanly with SNAP-8 in cosmetic research stacks — the two compounds target entirely different mechanisms (gene expression vs SNARE complex inhibition), so no mechanism overlap occurs.
+
+## Sourcing Research-Grade GHK-Cu
+
+Copper peptide purity is particularly important because the copper coordination is the active form. Third-party HPLC certification should confirm both peptide purity and copper content. Browse [GHK-Cu 50mg](/products/ghk-cu-50mg) for the standard research vial.
+    `.trim(),
+  },
+  {
+    slug: 'snap-8-research-guide',
+    title: 'SNAP-8: SNARE Complex Research Peptide',
+    seoTitle: 'SNAP-8 Research Guide — Acetyl Octapeptide-3, SNARE Complex, Topical Use',
+    seoDescription:
+      'SNAP-8 (Acetyl Octapeptide-3) research overview: SNARE complex competitive inhibition, expression line research, and topical formulation considerations.',
+    date: '2026-04-05',
+    excerpt:
+      'SNAP-8 targets the same SNARE complex that botulinum toxin acts on — through a completely different mechanism. A look at the octapeptide and its research.',
+    readTime: '7 min',
+    body: `
+## A Mechanistic Cousin to Botulinum — Without Being a Toxin
+
+SNAP-8 (acetyl octapeptide-3) and botulinum toxin converge on the same cellular target — the SNARE complex at the neuromuscular junction — through fundamentally different mechanisms. Botulinum cleaves SNARE proteins enzymatically. SNAP-8 competes for SNARE assembly without proteolysis. That mechanistic difference is the reason SNAP-8 exists as a research peptide at all.
+
+The compound is available as [SNAP-8 10mg](/products/snap-8-10mg) for topical research protocols.
+
+## Structure: Acetyl Octapeptide-3
+
+SNAP-8 is an eight-amino-acid N-terminal acetylated peptide patterned on a portion of the SNAP-25 protein — one of the three core SNARE complex components. The acetylation improves stability; the sequence provides the competitive binding motif.
+
+## The SNARE Complex Research Context
+
+At the neuromuscular junction, acetylcholine release requires the SNARE complex — a three-protein assembly (SNAP-25, syntaxin, synaptobrevin) that mediates synaptic vesicle fusion. The SNARE complex is the final common pathway for essentially all regulated neurotransmitter release.
+
+SNAP-8 research suggests the peptide:
+
+1. Competes with endogenous SNAP-25 for complex assembly
+2. Reduces SNARE complex formation efficiency
+3. Produces a dose-dependent reduction in acetylcholine release at the NMJ
+
+The result is a research compound that modulates muscular contraction without the proteolytic mechanism of botulinum.
+
+## Why Expression Lines Are Receptor-Level
+
+Expression lines are formed in part by repeated contraction of facial mimetic muscles. The muscle contraction is driven by acetylcholine release at the NMJ. Research that modulates acetylcholine release therefore modulates the upstream driver of expression line formation — which is why SNAP-8 research is typically framed in cosmetic contexts.
+
+## Topical Formulation Research
+
+Most SNAP-8 research is topical. Key formulation variables:
+
+- **Vehicle:** aqueous serums, cream bases, or delivery-enhanced systems
+- **Concentration:** varies widely in the published literature
+- **Application frequency:** dose-response research is ongoing
+
+Injectable research exists but is less common — the topical route matches the typical target (facial mimetic muscles) better.
+
+## Pairing With Other Cosmetic Compounds
+
+SNAP-8 pairs cleanly with GHK-Cu — NMJ-level mechanism vs gene-expression mechanism. Non-overlapping pathways cover the cosmetic research space more broadly than either compound alone.
+
+## Sourcing
+
+SNAP-8 research requires standard peptide QA: >98% HPLC purity, test reports, lyophilized form. See [SNAP-8 10mg](/products/snap-8-10mg) for the standard research vial.
+    `.trim(),
+  },
+  {
+    slug: 'cjc-1295-ipamorelin-research-guide',
+    title: 'CJC-1295 + Ipamorelin: The GH Pulse Stack',
+    seoTitle: 'CJC-1295 + Ipamorelin Research Guide — GHRH-R + Ghrelin Receptor Stack',
+    seoDescription:
+      'CJC-1295 and Ipamorelin research stack: GHRH-R amplitude + GHS-R1a pulsatility, non-overlapping mechanism, and GH axis research design.',
+    date: '2026-04-07',
+    excerpt:
+      'CJC-1295 and Ipamorelin engage the GH axis through two different receptors. Here is why they are almost always studied together rather than alone.',
+    readTime: '8 min',
+    body: `
+## Two Receptors, One Stack
+
+The CJC-1295 + Ipamorelin stack is the most-studied GH axis research pair because it engages two orthogonal receptors simultaneously — amplifying GH pulse amplitude (CJC-1295) while preserving or enhancing pulsatility (Ipamorelin).
+
+Both compounds ship together as [CJC-1295 + Ipamorelin](/products/cjc1295-ipamorelin) for paired research protocols.
+
+## CJC-1295: GHRH Receptor Research
+
+CJC-1295 is a modified GHRH analog. The modifications relevant to research:
+
+- **Drug Affinity Complex (DAC) form:** Binds albumin for extended half-life (~8 days)
+- **No-DAC form:** Native half-life (~30 minutes), pulsatile kinetics
+- **Mechanism:** Binds the GHRH receptor on anterior pituitary somatotrophs, increasing GH release
+
+The choice between DAC and no-DAC forms is the primary research design decision — DAC produces sustained elevation; no-DAC preserves natural pulse rhythm.
+
+## Ipamorelin: Ghrelin Receptor Research
+
+Ipamorelin is a selective GHS-R1a (ghrelin receptor) agonist. What makes it research-relevant:
+
+- **Selectivity:** Binds GHS-R1a without meaningful engagement of other ghrelin-sensitive receptors
+- **Lack of cortisol or prolactin elevation** — unlike earlier GHS-R agonists
+- **Short half-life (~2 hours):** Enables pulsatile protocol design
+
+The selectivity matters because first-generation ghrelin receptor compounds produced off-target endocrine effects that confounded GH-axis research.
+
+## Why Pulsatility Matters More Than Amplitude
+
+GH secretion is inherently pulsatile — and the downstream IGF-1 response depends on pulse architecture, not just cumulative GH concentration. Research that flattens the pulse pattern (through sustained GH elevation) produces a different IGF-1 and receptor-desensitization profile than research that preserves pulsatility.
+
+This is the reason most research uses no-DAC CJC-1295 with Ipamorelin — both compounds have half-lives compatible with pulsatile dosing rhythm.
+
+## Research Outcomes to Track
+
+- **GH pulse amplitude and frequency**
+- **IGF-1 levels** — the downstream integrated readout
+- **IGFBP-3** — the primary IGF-1 binding protein
+- **Secondary markers:** fat-free mass, recovery kinetics, sleep architecture
+
+## Timing and Cadence
+
+The most-studied protocol is twice- or thrice-daily dosing separated by at least 3–4 hours — spacing that respects pulse biology and avoids receptor desensitization.
+
+## Sourcing the Paired Stack
+
+Since the two compounds are nearly always studied together, a pre-paired format simplifies protocol logistics. See [CJC-1295 + Ipamorelin](/products/cjc1295-ipamorelin) for the paired research vial.
+    `.trim(),
+  },
+  {
+    slug: 'igf-1-lr3-research-guide',
+    title: 'IGF-1 LR3: The IGFBP-Resistant Research Analog',
+    seoTitle: 'IGF-1 LR3 Research Guide — LR3 Modification, IGFBP Resistance, IGF-1R',
+    seoDescription:
+      'IGF-1 LR3 research: the Long R3 modification, IGFBP resistance mechanism, IGF-1R downstream cascade, and research protocol windows.',
+    date: '2026-04-09',
+    excerpt:
+      'IGF-1 LR3 solves the native IGF-1 binding problem through a 13-amino-acid N-terminal extension. Here is why that matters for research.',
+    readTime: '7 min',
+    body: `
+## The Binding Problem LR3 Solves
+
+Native IGF-1 in circulation is approximately 99% bound to IGFBPs (IGF binding proteins). Free IGF-1 is what reaches and activates the IGF-1 receptor — which means the IGFBPs act as a buffer that damps signal amplitude. Research on IGF-1 pharmacology has to account for this buffer or bypass it.
+
+The LR3 modification bypasses it. The research-grade compound is available as [IGF-1 LR3 1mg](/products/igf-1lr3-1mg).
+
+## The Long R3 Modification
+
+IGF-1 LR3 carries two modifications vs native IGF-1:
+
+1. **13-amino-acid N-terminal extension** — disrupts IGFBP binding
+2. **Arg³ substitution** — further reduces IGFBP-3 affinity
+
+The net result is a compound that maintains IGF-1R affinity while reducing IGFBP binding by orders of magnitude. More of the dosed compound reaches the receptor.
+
+## Downstream IGF-1R Cascade
+
+IGF-1R is a tyrosine kinase receptor. Activation initiates two primary signaling branches:
+
+- **PI3K/Akt:** Protein synthesis, survival signaling, glucose uptake
+- **MAPK/Ras:** Cell proliferation, gene expression modulation
+
+The research-relevant outcome markers are:
+
+- Ribosomal S6 kinase activation (protein synthesis)
+- GLUT4 translocation (glucose handling)
+- Myogenic differentiation markers
+
+## Practical Implications for Research Protocols
+
+- **Half-life ~20–30 hours** — longer than native IGF-1 but shorter than albumin-bound compounds
+- **Systemic vs local:** Systemic dosing engages IGF-1R everywhere; site-specific research reduces systemic exposure
+- **Receptor desensitization:** Sustained activation can downregulate IGF-1R — cycling is a research design consideration
+
+## Research Context: The GH Axis
+
+IGF-1 LR3 research sits downstream of GH axis research. A complete GH axis protocol typically engages:
+
+1. **Upstream:** CJC-1295 or Sermorelin (GHRH receptor)
+2. **Middle:** Ipamorelin or similar (ghrelin receptor / GH secretagogue)
+3. **Downstream:** IGF-1 LR3 (IGF-1R direct activation)
+
+Isolating the IGF-1R contribution requires studying LR3 alone; isolating upstream GH biology requires studying CJC/Ipamorelin alone. Combined research asks how the axis behaves under full activation.
+
+## Sourcing IGF-1 LR3
+
+Research-grade IGF-1 LR3 requires higher QC standards than many smaller peptides because folding and disulfide bond integrity are critical to IGF-1R affinity. >98% HPLC purity and mass spec verification are the standard. See [IGF-1 LR3 1mg](/products/igf-1lr3-1mg) for the research-grade vial.
+    `.trim(),
+  },
+  {
+    slug: 'tb-500-research-guide',
+    title: 'TB-500: Thymosin Beta-4 Fragment Research',
+    seoTitle: 'TB-500 Research Guide — Thymosin Beta-4, G-Actin Binding, VEGF',
+    seoDescription:
+      'TB-500 research overview: synthetic fragment of thymosin beta-4, G-actin binding mechanism, VEGF and NF-κB interactions, and tissue-repair research.',
+    date: '2026-04-11',
+    excerpt:
+      'TB-500 is a synthetic fragment of thymosin beta-4 with a specific role in actin dynamics. The research profile spans multiple tissue systems.',
+    readTime: '8 min',
+    body: `
+## Thymosin Beta-4 and Its Fragment
+
+Thymosin beta-4 (Tβ4) is a 43-amino-acid protein present in essentially every cell in mammalian tissue. It is the most abundant G-actin sequestering protein in most cell types — a structural role that underlies much of its downstream effect profile.
+
+TB-500 is a synthetic fragment corresponding to the active region of Tβ4 — reproducing the core functional domain without the full-length protein. The research-grade compound is available as [TB-500 10mg](/products/tb-500-10mg).
+
+## G-Actin Binding — The Structural Mechanism
+
+G-actin is monomeric actin — the subunit that polymerizes into F-actin filaments. Cells maintain a reservoir of free G-actin that feeds polymerization during cytoskeletal remodeling. Tβ4 and TB-500:
+
+1. Bind G-actin in a 1:1 complex
+2. Sequester the monomer, buffering the free G-actin pool
+3. Modulate the rate of actin polymerization and depolymerization
+4. Indirectly influence cell migration, wound closure, and tissue remodeling
+
+The mechanism is structural rather than receptor-mediated — a meaningful distinction for research design.
+
+## VEGF and NF-κB Interactions
+
+Beyond actin dynamics, the published literature identifies additional interactions:
+
+- **VEGF pathway engagement** — angiogenesis during tissue repair
+- **NF-κB modulation** — inflammatory signaling regulation
+- **Stem cell migration** — particularly cardiac and dermal progenitors
+- **MMP-2 and MMP-9 regulation** — extracellular matrix remodeling
+
+The multi-pathway profile is why TB-500 research appears in such diverse tissue-repair contexts.
+
+## Tissue Systems Researched
+
+- **Cardiac:** Post-infarct tissue remodeling models
+- **Dermal:** Wound closure and scar formation research
+- **Tendon and ligament:** Injury-repair protocols
+- **Corneal:** Epithelial wound healing
+- **Neural:** Neuroprotection research
+
+## Half-Life and Protocol Design
+
+TB-500 has a relatively long duration of action for a research peptide — the sustained G-actin binding and downstream signaling effects extend beyond plasma clearance. Most protocols dose 1–2× per week.
+
+## Pairing in Repair Stacks
+
+TB-500 and BPC-157 are commonly paired. Mechanistically:
+
+- **TB-500:** G-actin dynamics + VEGF/NF-κB modulation
+- **BPC-157:** NO system + VEGFR2 + growth hormone receptor upregulation
+
+The overlap at VEGF level is complementary rather than redundant — one engages upstream VEGF signaling, the other engages the VEGFR2 receptor directly.
+
+## Sourcing
+
+TB-500 research requires standard QA — >98% HPLC, third-party testing. The synthetic fragment should match the published Tβ4 active region sequence. See [TB-500 10mg](/products/tb-500-10mg) for the standard research vial.
+    `.trim(),
+  },
+  {
+    slug: 'epithalon-research-guide',
+    title: 'Epithalon: Telomere-Associated Longevity Research',
+    seoTitle: 'Epithalon Research Guide — Telomerase, Khavinson Literature, Longevity',
+    seoDescription:
+      'Epithalon research: the Khavinson laboratory literature, telomerase activation, pineal gland context, and modern longevity research protocols.',
+    date: '2026-04-14',
+    excerpt:
+      'Epithalon is the most studied compound to emerge from the Khavinson laboratory. A look at the telomerase research, the pineal context, and how modern protocols frame it.',
+    readTime: '9 min',
+    body: `
+## The Khavinson Peptide Tradition
+
+Epithalon research originates from Vladimir Khavinson's laboratory at the St. Petersburg Institute of Bioregulation and Gerontology. Khavinson's broader research program produced a family of short bioregulator peptides derived from organ extracts — Epithalon is the best-known of these, derived from bovine pineal extracts.
+
+The research-grade synthetic peptide is available as [Epithalon 50mg](/products/epithalon-50mg).
+
+## Sequence: A Tetrapeptide
+
+Epithalon is a four-amino-acid sequence (Ala-Glu-Asp-Gly). At 390 Da molecular weight, it is one of the smallest research peptides — small enough that oral administration has been studied, though parenteral routes dominate the research literature.
+
+## Telomerase Activation Research
+
+The Khavinson literature reports that Epithalon induces telomerase activity in somatic cells — a property not shared by most short peptides. The proposed mechanism involves chromatin-level gene expression modulation rather than direct telomerase enzyme binding.
+
+Published research outcomes:
+
+- Telomerase activity increase in hematopoietic and somatic cells
+- Telomere length changes over extended study windows
+- Extension of cellular replicative lifespan in culture
+- Modulation of aging-associated gene expression
+
+The telomerase claim is the most cited and the most debated — modern replication studies outside the Khavinson group are limited, which is worth understanding when positioning Epithalon in a research protocol.
+
+## Pineal Gland Context
+
+The pineal extract origin is not incidental. The Khavinson group framed Epithalon research specifically around pineal-associated aging — melatonin rhythm, circadian regulation, and endocrine aging markers. This framing situates Epithalon in a broader neuroendocrine research context rather than as a purely telomerase-focused compound.
+
+## Russian Literature and Translation
+
+A significant portion of the Epithalon research literature is Russian-language and dates to the 1990s–2000s Khavinson era. Modern English-language research has built on this foundation but is not as voluminous. Researchers working with Epithalon benefit from awareness of both literature streams.
+
+## Modern Research Protocols
+
+Typical modern research protocols involve:
+
+1. **Daily or every-other-day subcutaneous dosing**
+2. **Cycled windows** — 10–20 day intensive periods separated by washout intervals
+3. **Outcome markers:** telomerase activity assays, telomere length measurement (qPCR-based), aging-associated transcript panels
+
+The cycled rhythm reflects the Khavinson-era protocols more than any pharmacokinetic constraint — Epithalon has a short plasma half-life.
+
+## Research Handling
+
+Standard lyophilized peptide handling applies: −20°C long-term storage, 2–8°C after reconstitution, 28-day reconstituted use window. Purity should be >98% HPLC verified. See [Epithalon 50mg](/products/epithalon-50mg) for the research-grade vial.
+    `.trim(),
+  },
 ]
 
 export function getAllGuideSlugs() {
