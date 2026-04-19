@@ -799,6 +799,626 @@ The cycled rhythm reflects the Khavinson-era protocols more than any pharmacokin
 Standard lyophilized peptide handling applies: −20°C long-term storage, 2–8°C after reconstitution, 28-day reconstituted use window. Purity should be >98% HPLC verified. See [Epithalon 50mg](/products/epithalon-50mg) for the research-grade vial.
     `.trim(),
   },
+  {
+    slug: 'hgh-fragment-176-191-research-guide',
+    title: 'HGH Fragment 176-191: Lipolytic Research Peptide',
+    seoTitle: 'HGH Fragment 176-191 Research Guide — Lipolytic Activity Without IGF-1',
+    seoDescription:
+      'HGH Fragment 176-191 research overview: C-terminal GH fragment, lipolytic mechanism, why it avoids IGF-1 and glucose effects, and protocol positioning.',
+    date: '2026-04-16',
+    excerpt:
+      'The C-terminal fragment of human growth hormone retains lipolytic activity without the full GH effects on IGF-1 or insulin. Here is why researchers care.',
+    readTime: '7 min',
+    body: `
+## Isolating One Function From a Multi-Function Hormone
+
+Full-length human growth hormone produces multiple overlapping effects: lipolysis, IGF-1 induction, insulin resistance, cellular proliferation. Research that wants to study one of these effects in isolation has to either use antagonists or use a fragment that retains only the target function.
+
+HGH Fragment 176-191 is the second approach. The research-grade peptide is available as [HGH Fragment 176-191 5mg](/products/hgh-frag-176-191-5mg).
+
+## The C-Terminal Region
+
+Human growth hormone is a 191-amino-acid protein. Structure-function research has mapped different regions to different effects:
+
+- **N-terminal / residues 1-15:** Insulin antagonism and glucose metabolism effects
+- **Middle region:** IGF-1 induction via hepatic GH receptor activation
+- **C-terminal / residues 177-191:** Lipolytic activity on adipose tissue
+
+The 176-191 fragment captures the lipolytic region without the segments driving IGF-1 or glucose effects.
+
+## Lipolytic Mechanism
+
+The fragment's mechanism involves:
+
+- **Beta-3 adrenergic activation** in adipose tissue
+- **Hormone-sensitive lipase upregulation**
+- **Triglyceride hydrolysis and fatty acid release**
+- **Reduced lipogenesis** via inhibition of acetyl-CoA carboxylase
+
+The net effect is accelerated fatty acid mobilization without the systemic metabolic effects of full GH.
+
+## Why This Matters for Research Design
+
+In full-GH research, teasing apart lipolysis vs IGF-1 vs insulin effects is difficult because all three occur simultaneously. The fragment approach asks: what happens when only the lipolytic axis is engaged?
+
+This enables:
+
+- Lipolysis dose-response studies without IGF-1 confounding
+- Adipose-specific research without systemic growth effects
+- Comparative research against full-length GH compounds
+
+## Handling Notes
+
+Lyophilized HGH Fragment is stable at −20°C long-term. Reconstitution with bacteriostatic water is standard. >98% HPLC purity is the research grade.
+
+For research protocols targeting the lipolytic axis specifically, see [HGH Fragment 176-191 5mg](/products/hgh-frag-176-191-5mg).
+    `.trim(),
+  },
+  {
+    slug: 'mgf-research-guide',
+    title: 'MGF: Mechano Growth Factor Research Overview',
+    seoTitle: 'MGF Research Guide — IGF-1Ec Splice Variant & Muscle Satellite Cells',
+    seoDescription:
+      'MGF (Mechano Growth Factor) research background: IGF-1Ec splice variant, mechanical loading response, satellite cell activation, and site-specific protocols.',
+    date: '2026-04-18',
+    excerpt:
+      'MGF is the IGF-1 splice variant muscle produces in response to mechanical loading. Here is why it operates on a different research timescale than standard IGF-1.',
+    readTime: '8 min',
+    body: `
+## A Splice Variant, Not a Separate Gene
+
+MGF (Mechano Growth Factor) is not a distinct gene product — it is the IGF-1Ec alternatively spliced variant of the IGF-1 gene, expressed preferentially by skeletal muscle in response to mechanical stress. Understanding MGF research requires understanding what distinguishes it from systemic IGF-1.
+
+The research-grade peptide is available as [MGF 2mg](/products/mgf-2mg).
+
+## The Mechanical Loading Response
+
+When skeletal muscle experiences mechanical loading, the IGF-1 gene undergoes alternative splicing that produces the IGF-1Ec (MGF) transcript. The protein product:
+
+- Has a 24-amino-acid C-terminal E-peptide extension
+- Acts locally at the site of production
+- Has a short half-life (minutes in circulation)
+- Produces biological effects distinct from mature IGF-1
+
+The localized, short-acting nature is the defining research property.
+
+## Satellite Cell Activation
+
+The primary MGF research target is the skeletal muscle satellite cell. MGF:
+
+1. Activates dormant satellite cells
+2. Promotes satellite cell proliferation
+3. Delays myogenic differentiation (keeping cells in the proliferative pool longer)
+4. Contributes to myofiber hypertrophy after injury or loading
+
+The satellite cell pool is the regenerative reserve of skeletal muscle — research into its regulation is foundational to muscle biology.
+
+## Native MGF vs PEG-MGF
+
+Two research peptides exist for MGF studies:
+
+- **Native MGF:** Short half-life, site-specific research
+- **PEG-MGF:** Polyethylene glycol-modified, extended systemic half-life
+
+The choice depends on the research question:
+
+| Research Goal | Compound |
+|---|---|
+| Local satellite cell response | Native MGF |
+| Systemic IGF-1Ec signaling | PEG-MGF |
+| Site-of-injection pharmacology | Native MGF |
+| Sustained circulating levels | PEG-MGF |
+
+## Research Protocol Design
+
+Native MGF's short half-life requires either:
+
+- Frequent site-specific administration
+- Acceptance that systemic effects are minimal
+- Combined protocols with other GH-axis compounds
+
+Combining native MGF with GH-releasing compounds (CJC/Ipamorelin) creates a research protocol that stimulates both systemic GH and local IGF-1Ec expression — a more complete GH-axis engagement.
+
+## Sourcing
+
+See [MGF 2mg](/products/mgf-2mg) for the standard research vial.
+    `.trim(),
+  },
+  {
+    slug: 'semax-research-guide',
+    title: 'Semax: Russian Heptapeptide Research Overview',
+    seoTitle: 'Semax Research Guide — ACTH(4-10) Fragment, BDNF, Nootropic Research',
+    seoDescription:
+      'Semax research: ACTH(4-10) heptapeptide structure, BDNF/NGF modulation, melanocortin receptor activity, and Russian neurological literature.',
+    date: '2026-04-20',
+    excerpt:
+      'Semax is a synthetic ACTH fragment from Russian neurological research. A look at the sequence, the neurotrophic findings, and modern protocol use.',
+    readTime: '7 min',
+    body: `
+## The ACTH Fragment Strategy
+
+Adrenocorticotropic hormone (ACTH) is a 39-amino-acid pituitary hormone with two distinct functional regions: residues 1-24 handle the adrenal stimulation of cortisol release, and residues 4-10 carry neurotropic activity. Isolating the neurotropic region without the adrenal region was the research premise behind Semax.
+
+The research-grade compound is available as [Semax 10mg](/products/semax-10mg).
+
+## Sequence: ACTH(4-10) With Modifications
+
+Semax is Met-Glu-His-Phe-Pro-Gly-Pro — a heptapeptide that:
+
+1. Retains the ACTH(4-7) neurotropic core
+2. Substitutes a terminal Pro-Gly-Pro for stability
+3. Eliminates the adrenal-activating portion of the parent hormone
+4. Gains resistance to peptidase cleavage
+
+The result is a research compound that engages neurotropic ACTH effects without triggering cortisol release.
+
+## Neurotrophic Factor Research
+
+The most characterized Semax effects involve endogenous neurotrophic factor modulation:
+
+- **BDNF (Brain-Derived Neurotrophic Factor):** Upregulation in hippocampal tissue
+- **NGF (Nerve Growth Factor):** Increased expression in cortical regions
+- **TrkB receptor signaling:** Downstream of BDNF effects
+
+Elevating endogenous neurotrophic signaling is the proposed mechanism behind the cognitive and neuroprotective findings in the Russian literature.
+
+## Melanocortin Receptor Interactions
+
+Semax retains the histidine-phenylalanine core of ACTH(4-10) — the region responsible for melanocortin receptor binding. Research suggests modest MC4R activity, which contributes to:
+
+- Cognitive enhancement observations
+- Modulation of stress-axis signaling (paradoxically, given the ACTH origin)
+- Interaction with dopaminergic systems
+
+## Russian Research Context
+
+Much of the foundational Semax literature is Russian-language, dating to the 1980s-1990s. The compound was developed at the Institute of Molecular Genetics and tested extensively in stroke recovery, cognitive enhancement, and optic nerve protection contexts. Western research builds on this foundation but is less extensive.
+
+## Plain Semax vs N-Acetyl Semax Amidate
+
+Two Semax research compounds exist:
+
+- **Plain Semax:** Original heptapeptide, shorter half-life
+- **N-Acetyl Semax Amidate (NA-Semax):** Modified for stability and intranasal delivery, longer duration
+
+Plain Semax matches the original Russian protocols; NA-Semax is the modern optimized research form. Choice depends on whether the research replicates foundational work or extends it with improved pharmacokinetics.
+
+See [Semax 10mg](/products/semax-10mg) for the standard research vial.
+    `.trim(),
+  },
+  {
+    slug: 'humanin-research-guide',
+    title: 'Humanin: Mitochondrial-Derived Peptide Research',
+    seoTitle: 'Humanin Research Guide — MDP, FPR2/gp130 Signaling, Neuroprotection',
+    seoDescription:
+      'Humanin research overview: 24-AA mitochondrial-derived peptide, FPR2 and gp130 receptor activity, neuroprotective mechanisms, and MDP family context.',
+    date: '2026-04-22',
+    excerpt:
+      'Humanin was the first mitochondrial-derived peptide discovered — encoded inside the mitochondrial genome itself. A look at the signaling and the research landscape.',
+    readTime: '8 min',
+    body: `
+## A Peptide Encoded Inside the Mitochondrial Genome
+
+Humanin is unusual for a peptide: it is encoded within the 16S rRNA gene of mitochondrial DNA, not by the nuclear genome. Its discovery launched the "mitochondrial-derived peptide" (MDP) category — a small but growing family that now includes MOTS-c and the SHLPs (small humanin-like peptides).
+
+The research-grade compound is available as [Humanin 10mg](/products/humanin-10mg).
+
+## Structure: A 24-Amino-Acid Peptide
+
+Humanin is a 24-amino-acid peptide. Analogs with modifications have been developed for improved stability — the most-studied is HNG (S14G humanin), though native humanin remains the reference research compound.
+
+## Receptor Signaling: Two Pathway Branches
+
+Humanin engages two distinct receptor systems:
+
+1. **FPR2/FPRL1:** Formyl peptide receptor 2 — activates anti-apoptotic signaling
+2. **CNTFR/WSX-1/gp130:** Heterotrimeric complex — activates STAT3 signaling
+
+Both pathways converge on cellular survival and anti-apoptotic outcomes. This dual-receptor profile gives humanin broader biological reach than most single-receptor peptides.
+
+## Research Domains
+
+Four research areas dominate the humanin literature:
+
+- **Neuroprotection:** Particularly against amyloid-beta toxicity in Alzheimer's models
+- **Metabolic regulation:** Insulin sensitivity and glucose handling research
+- **Cardioprotection:** Ischemia-reperfusion injury models
+- **Cellular aging:** Reduced humanin levels correlate with aging markers
+
+The breadth reflects both the dual-receptor signaling and the mitochondrial origin — mitochondrial health touches many aging-relevant pathways.
+
+## The MDP Family Context
+
+Since humanin's discovery, other MDPs have been identified:
+
+| Peptide | Source | Primary Target |
+|---|---|---|
+| Humanin | 16S rRNA | FPR2, gp130 |
+| MOTS-c | 12S rRNA | AMPK, folate cycle |
+| SHLP-1 | 16S rRNA | Cellular metabolism |
+| SHLP-2 | 16S rRNA | Neuroprotection |
+
+Humanin and MOTS-c are the two best-characterized; the SHLPs are earlier-stage research.
+
+## Handling
+
+Lyophilized humanin is stable at −20°C. Reconstituted solutions at 2–8°C should be used within 28 days. >98% HPLC purity is the research standard.
+
+For mitochondrial-derived peptide research, see [Humanin 10mg](/products/humanin-10mg).
+    `.trim(),
+  },
+  {
+    slug: 'liraglutide-research-guide',
+    title: 'Liraglutide: The First-Generation GLP-1 Reference',
+    seoTitle: 'Liraglutide Research Guide — C16 Fatty Acid, 13-Hour Half-Life, GLP-1R',
+    seoDescription:
+      'Liraglutide research: C16 fatty acid modification, 13-hour half-life, GLP-1R pharmacology, and positioning as the predecessor to semaglutide.',
+    date: '2026-04-24',
+    excerpt:
+      'Liraglutide is the GLP-1 analog semaglutide iterated on. Understanding liraglutide clarifies why the C18 → C16 change mattered and how the class evolved.',
+    readTime: '7 min',
+    body: `
+## Why First-Generation Compounds Still Matter in Research
+
+Liraglutide was the first daily-dosed GLP-1 analog to enter clinical research, and much of the foundational GLP-1R pharmacology literature uses it rather than semaglutide. Comparative research between generations benefits from access to the reference compound.
+
+The research-grade peptide is available as [Liraglutide 10mg](/products/liraglutide-10mg).
+
+## The C16 Fatty Acid Modification
+
+Native GLP-1 has a half-life of ~2 minutes. Liraglutide extends this to ~13 hours through a C16 palmitic acid side chain attached via a glutamic acid spacer. The palmitic acid binds circulating albumin:
+
+- Shielding from DPP-IV cleavage
+- Reducing renal clearance
+- Enabling once-daily dosing
+
+Semaglutide later extended this further with a C18 diacid — producing a 7-day half-life and once-weekly dosing.
+
+## Sequence Homology
+
+Liraglutide is 97% homologous with native human GLP-1 — a single amino acid substitution (Lys²⁶→Arg²⁶) plus the fatty acid attachment. The minimal sequence change preserves native-like receptor pharmacology while enabling the half-life extension.
+
+Semaglutide carries additional modifications (Aib substitution at position 8, the extended C18 diacid) that further alter the pharmacokinetic profile.
+
+## Research Positioning
+
+Liraglutide earns research utility in specific contexts:
+
+- **Daily-dosing research:** Where weekly kinetics would obscure dose-response
+- **Acute pharmacology:** The shorter half-life allows cleaner PK studies
+- **Historical comparison:** Matching the foundational GLP-1 clinical literature
+- **Generational comparison:** Vs semaglutide for structure-activity research
+
+## LEAD and SCALE Trial Context
+
+The LEAD (Liraglutide Effect and Action in Diabetes) and SCALE (Satiety and Clinical Adiposity Liraglutide Evidence) trials produced the foundational clinical literature. Peak weight effect in SCALE: approximately −8% at 56 weeks at the 3.0mg dose — substantially less than semaglutide's STEP-1 result of −14.9%.
+
+The delta between the two compounds is itself a research question: how much of the improvement comes from the longer half-life vs the sequence modifications?
+
+## Handling
+
+Standard lyophilized peptide handling — −20°C long-term, 2–8°C reconstituted, >98% HPLC purity.
+
+For reference-compound GLP-1R research, see [Liraglutide 10mg](/products/liraglutide-10mg).
+    `.trim(),
+  },
+  {
+    slug: 'exenatide-research-guide',
+    title: 'Exenatide: The Original GLP-1 Agonist Research Compound',
+    seoTitle: 'Exenatide Research Guide — Exendin-4, DPP-IV Resistance, GLP-1R',
+    seoDescription:
+      'Exenatide (Exendin-4) research: Gila monster venom origin, DPP-IV resistance via N-terminal glycine, and foundational GLP-1R pharmacology.',
+    date: '2026-04-26',
+    excerpt:
+      'Before liraglutide, before semaglutide, there was exenatide — a peptide isolated from Gila monster venom that opened the entire GLP-1 research field.',
+    readTime: '7 min',
+    body: `
+## A Peptide From Lizard Venom
+
+Exendin-4 was isolated from the saliva of the Gila monster (Heloderma suspectum) in the early 1990s. Its 53% sequence homology with mammalian GLP-1 and its resistance to DPP-IV cleavage made it the first viable GLP-1R agonist research compound — predating all the modified-analog approaches used in liraglutide and semaglutide.
+
+Exenatide is the synthetic reproduction of exendin-4. The research-grade peptide is available as [Exenatide 5mg](/products/exenatide-5mg).
+
+## Why DPP-IV Resistance Emerged Naturally
+
+Mammalian GLP-1 is cleaved at the Ala²-Glu³ bond by dipeptidyl peptidase-IV — the reason native GLP-1 has a 2-minute half-life. Exendin-4 has a glycine at position 2 instead of alanine, blocking DPP-IV cleavage as a byproduct of evolutionary divergence in the Gila monster lineage.
+
+The result: a peptide with inherent DPP-IV resistance, a 2-4 hour half-life, and GLP-1R agonist activity suitable for pharmacological research. No chemical modification was needed to achieve stability — the wild-type sequence already had it.
+
+## Research Significance
+
+Exenatide's research role has two angles:
+
+1. **Historical:** The compound that validated GLP-1R agonism as a viable research and pharmacological target
+2. **Contemporary:** A twice-daily-dosing compound distinct from the weekly-dosing modern analogs — useful for research where pulse architecture matters
+
+## Comparative Pharmacology
+
+| Compound | Half-Life | Dosing | Origin |
+|---|---|---|---|
+| Native GLP-1 | 2 min | — | Endogenous |
+| Exenatide | 2-4 hr | BID | Gila monster sequence |
+| Liraglutide | 13 hr | Daily | C16 fatty acid |
+| Semaglutide | 7 days | Weekly | C18 diacid + Aib |
+
+Exenatide occupies the short-acting position in the research lineup.
+
+## Cellular Biology
+
+Once bound to GLP-1R, exenatide and native GLP-1 produce indistinguishable downstream signaling: Gs coupling, adenylyl cyclase activation, cAMP elevation, PKA and EPAC2 activation. The receptor doesn't distinguish agonists based on origin — only affinity and duration.
+
+This makes exenatide a clean research tool for studying GLP-1R pharmacology without the complications of fatty acid modifications that affect tissue distribution.
+
+## Handling
+
+Lyophilized exenatide is stable at −20°C. Reconstituted handling follows standard research peptide protocols.
+
+For foundational GLP-1R research, see [Exenatide 5mg](/products/exenatide-5mg).
+    `.trim(),
+  },
+  {
+    slug: 'pramlintide-research-guide',
+    title: 'Pramlintide: The Amylin Analog Research Peptide',
+    seoTitle: 'Pramlintide Research Guide — Proline Substitutions, Amylin Receptor, CALCR/RAMP',
+    seoDescription:
+      'Pramlintide research: proline substitutions that prevent amyloidogenesis, amylin receptor pharmacology (CALCR/RAMP), and research vs cagrilintide.',
+    date: '2026-04-28',
+    excerpt:
+      'Native human amylin forms fibrils — a pharmacology dead-end. Pramlintide solves the aggregation problem with three proline substitutions. Here is the story.',
+    readTime: '8 min',
+    body: `
+## The Amyloidogenesis Problem
+
+Human amylin (also called islet amyloid polypeptide, IAPP) has a problem: at concentrations above physiological levels, it forms amyloid fibrils. This is not a research inconvenience — amylin fibrils are the pathological finding in type 2 diabetic pancreatic tissue. Using native human amylin as a research peptide is nearly impossible because of aggregation during handling.
+
+Pramlintide solves this through targeted amino acid substitutions. The research-grade peptide is available as [Pramlintide 5mg](/products/pramlintide-5mg).
+
+## The Rat-Sequence Inspiration
+
+Rat amylin does not form fibrils. Comparing rat and human amylin sequences reveals three key differences at positions 25, 28, and 29 — positions that happen to be in the aggregation-prone region of the peptide. In rat amylin, these positions are prolines; in human amylin, they are alanine and serines.
+
+Pramlintide swaps the human residues for the rat prolines:
+
+- **Position 25:** Ala → Pro
+- **Position 28:** Ser → Pro
+- **Position 29:** Ser → Pro
+
+The substitutions disrupt the beta-sheet architecture required for fibril formation while preserving receptor binding.
+
+## Amylin Receptor Pharmacology
+
+Amylin receptors are not standalone GPCRs — they are heterodimeric complexes of the calcitonin receptor (CALCR) with receptor activity-modifying proteins (RAMPs):
+
+- **AMY1 receptor:** CALCR + RAMP1
+- **AMY2 receptor:** CALCR + RAMP2
+- **AMY3 receptor:** CALCR + RAMP3
+
+Pramlintide binds all three complexes. Downstream signaling includes:
+
+- **Gastric emptying delay** — slowing nutrient delivery
+- **Glucagon suppression** — reducing hepatic glucose output
+- **Appetite suppression** — hypothalamic action
+
+## Pramlintide vs Cagrilintide in Research
+
+Both target amylin receptors:
+
+| Property | Pramlintide | Cagrilintide |
+|---|---|---|
+| Half-life | 48 min | ~7 days |
+| Dosing | Mealtime (TID) | Weekly |
+| Modification | Proline substitutions | C20 fatty acid + substitutions |
+| Research role | Acute pharmacology | Long-acting protocol research |
+
+The short half-life of pramlintide makes it suitable for mealtime-aligned research and acute dose-response studies. Cagrilintide is the long-acting research tool for sustained amylin receptor engagement.
+
+## Combined Research Context
+
+Amylin receptor agonists are commonly studied alongside GLP-1R agonists because the pathways are non-overlapping — the CagriSema combination (cagrilintide + semaglutide) is the modern example. Pramlintide + short-acting GLP-1R research is the equivalent acute pharmacology setup.
+
+## Handling
+
+Standard lyophilized peptide handling applies. >98% HPLC purity. See [Pramlintide 5mg](/products/pramlintide-5mg) for the research vial.
+    `.trim(),
+  },
+  {
+    slug: 'kisspeptin-54-research-guide',
+    title: 'Kisspeptin-54: HPG Axis Research Peptide',
+    seoTitle: 'Kisspeptin-54 Research Guide — KISS1R Signaling & Reproductive Endocrine',
+    seoDescription:
+      'Kisspeptin-54 research: full-length kisspeptin structure, KISS1R (GPR54) signaling, GnRH upstream regulation, and HPG axis research protocols.',
+    date: '2026-04-30',
+    excerpt:
+      'Kisspeptin is the upstream regulator of GnRH secretion — the gatekeeper of reproductive endocrine biology. A look at the 54-form and its research role.',
+    readTime: '8 min',
+    body: `
+## The Gatekeeper of the Reproductive Axis
+
+Before GnRH can initiate the LH/FSH cascade, hypothalamic GnRH neurons have to be activated. For decades, the upstream trigger for GnRH release was unclear. The 2003 discovery that kisspeptin and its receptor KISS1R (GPR54) are essential for pubertal onset — and that loss-of-function mutations in this system cause hypogonadotropic hypogonadism — established kisspeptin as the gatekeeper of the HPG axis.
+
+The research-grade peptide is available as [Kisspeptin-54 10mg](/products/kisspeptin-54-10mg).
+
+## Why Kisspeptin-54 Specifically
+
+The KISS1 gene encodes a 145-amino-acid prohormone that is cleaved into several active products:
+
+- **Kisspeptin-54:** Full-length circulating form
+- **Kisspeptin-14:** Internal fragment
+- **Kisspeptin-13:** Internal fragment
+- **Kisspeptin-10:** C-terminal decapeptide, minimal active fragment
+
+All four share the C-terminal RF-amide region required for KISS1R binding. Research differences:
+
+| Form | Half-life | LH Response | Research Use |
+|---|---|---|---|
+| Kisspeptin-54 | Longer | Sustained | Physiological protocols |
+| Kisspeptin-10 | Shorter | More acute | Dose-response pharmacology |
+
+Kisspeptin-54 is closest to the native circulating form.
+
+## KISS1R Signaling
+
+KISS1R (also called GPR54) is a Gq-coupled GPCR expressed on hypothalamic GnRH neurons. Activation produces:
+
+1. PLC activation and PIP2 hydrolysis
+2. IP3-mediated calcium release
+3. GnRH neuron depolarization
+4. GnRH release into the median eminence
+5. Downstream LH and FSH secretion from pituitary gonadotropes
+6. Gonadal steroidogenesis via LH/FSH
+
+The signaling is classical — what makes kisspeptin unique is the anatomical specificity to GnRH neurons.
+
+## Research Domains
+
+- **Puberty research:** KISS1R loss-of-function models
+- **Reproductive endocrinology:** GnRH pulsatility regulation
+- **Fertility research:** Ovulation induction pharmacology
+- **Metabolic-reproductive coupling:** Leptin-kisspeptin integration
+
+The metabolic-reproductive axis is a particularly active research area — kisspeptin appears to be one of the nodes where energy balance information reaches the HPG axis.
+
+## Pulsatility Matters Here Too
+
+Like GH, the HPG axis operates on pulsatile secretion. Continuous kisspeptin exposure eventually produces GnRH desensitization, while pulsatile exposure maintains responsiveness. Research protocols have to account for this when designing dosing rhythm.
+
+## Handling
+
+Standard lyophilized peptide handling — −20°C, 2–8°C reconstituted, >98% HPLC. See [Kisspeptin-54 10mg](/products/kisspeptin-54-10mg) for the research vial.
+    `.trim(),
+  },
+  {
+    slug: 'angiotensin-1-7-research-guide',
+    title: 'Angiotensin(1-7): The Counter-Regulatory RAS Peptide',
+    seoTitle: 'Angiotensin(1-7) Research Guide — Mas Receptor, ACE2 Axis, Cardioprotection',
+    seoDescription:
+      'Angiotensin(1-7) research: ACE2/Ang(1-7)/MasR counter-regulatory axis of the RAS, cardiovascular research, and anti-fibrotic mechanisms.',
+    date: '2026-05-02',
+    excerpt:
+      'The renin-angiotensin system has two arms. Most of the textbook biology covers the vasoconstrictor arm. Angiotensin(1-7) is the counter-regulatory one — and it is its own research field.',
+    readTime: '8 min',
+    body: `
+## Two Arms of a System Usually Taught as One
+
+Most textbook teaching of the renin-angiotensin system (RAS) focuses on the ACE → Angiotensin II → AT1 receptor axis — vasoconstriction, aldosterone release, fluid retention, inflammation. What the textbook treatment often underemphasizes is that this axis has a parallel counter-regulatory arm: ACE2 → Angiotensin(1-7) → Mas receptor, which produces the opposite effects.
+
+The research-grade peptide is available as [Angiotensin(1-7) 10mg](/products/angiotensin-1-7-10mg).
+
+## ACE2: The Counter-Regulatory Enzyme
+
+ACE2 (angiotensin-converting enzyme 2) shares ~40% homology with ACE but produces different products. Where ACE generates angiotensin II (vasoconstrictor), ACE2 cleaves angiotensin II into angiotensin(1-7) — converting the bad-arm mediator into the good-arm mediator.
+
+The same enzyme balance:
+
+- High ACE activity → Ang II accumulation → AT1R activation → vasoconstriction, inflammation
+- High ACE2 activity → Ang(1-7) accumulation → MasR activation → vasodilation, anti-inflammation
+
+## The Mas Receptor
+
+Mas (MAS1) is a GPCR with high specificity for Ang(1-7). Signaling includes:
+
+1. **Vasodilation** via NO release and prostaglandin signaling
+2. **Anti-fibrotic effects** through TGF-β pathway modulation
+3. **Anti-proliferative signaling** via MAPK pathway downregulation
+4. **Anti-inflammatory effects** on immune cells
+
+Each effect is the opposite of what AT1R activation produces — hence "counter-regulatory."
+
+## Research Domains
+
+Angiotensin(1-7) research spans:
+
+- **Cardiovascular:** Hypertension models, cardiac remodeling research
+- **Renal:** Anti-fibrotic kidney research
+- **Pulmonary:** ACE2/Ang(1-7) axis in lung injury models (heavily studied post-2020)
+- **Metabolic:** Insulin sensitivity and adipose research
+- **Oncology:** Anti-proliferative research in certain tumor models
+
+## The Short Half-Life Challenge
+
+Angiotensin(1-7) has a short plasma half-life (~30 seconds) in vivo due to rapid peptidase cleavage. Research protocols address this through:
+
+- **Continuous infusion** in acute pharmacology studies
+- **Oral cyclodextrin formulations** that extend exposure
+- **Analog development** with peptidase resistance
+
+Most research-grade Ang(1-7) work uses acute protocols that tolerate the short duration — the half-life is a research variable rather than a blocker.
+
+## Pairing With Repair Compounds
+
+Angiotensin(1-7) pairs cleanly with other repair-oriented research peptides (BPC-157, TB-500) because the anti-fibrotic and vasodilatory mechanisms are non-overlapping with NO/VEGF or actin-dynamics pathways.
+
+## Handling
+
+Standard lyophilized peptide handling — −20°C, bacteriostatic water reconstitution, >98% HPLC purity. See [Angiotensin(1-7) 10mg](/products/angiotensin-1-7-10mg) for the research vial.
+    `.trim(),
+  },
+  {
+    slug: 'orexin-a-research-guide',
+    title: 'Orexin-A: Hypocretin System Research Peptide',
+    seoTitle: 'Orexin-A Research Guide — OX1R/OX2R, Hypocretin-1, Wake Regulation',
+    seoDescription:
+      'Orexin-A research: 33-AA lateral hypothalamus neuropeptide, OX1R/OX2R signaling, wakefulness regulation, and narcolepsy/sleep research.',
+    date: '2026-05-04',
+    excerpt:
+      'Orexin-A is the wakefulness-driving neuropeptide whose absence causes narcolepsy. A look at the hypocretin system and its research applications.',
+    readTime: '7 min',
+    body: `
+## The Peptide Whose Absence Defines a Disease
+
+Narcolepsy with cataplexy — the classic autoimmune-mediated narcolepsy — is characterized by loss of orexin-producing neurons in the lateral hypothalamus. The absence of orexin signaling is literally the disease. This makes orexin-A one of the rare research peptides with a definitive clinical correlate for its loss-of-function state.
+
+The research-grade peptide is available as [Orexin-A 5mg](/products/orexin-a-5mg).
+
+## Two Discoveries, Two Names
+
+Orexin-A and Hypocretin-1 are the same peptide. In 1998, two research groups independently discovered the compound and published nearly simultaneously:
+
+- **Sakurai et al.:** Named it "orexin" (Greek *orexis*, appetite) based on initial feeding-behavior observations
+- **de Lecea et al.:** Named it "hypocretin" (hypothalamic + secretin-like) based on sequence homology
+
+Both names persist in the literature. Orexin is more common in metabolic and pharmacological research; hypocretin dominates sleep biology.
+
+## Structure: A 33-Amino-Acid Peptide
+
+Orexin-A has two intrachain disulfide bonds and N-terminal pyroglutamation — modifications that contribute to its stability and receptor affinity. It is produced from the preproorexin precursor alongside orexin-B (28 AA), though the two peptides have somewhat different receptor preferences.
+
+## Receptor Pharmacology
+
+The orexin system has two GPCR receptors:
+
+| Receptor | Affinity for Orexin-A | Affinity for Orexin-B |
+|---|---|---|
+| OX1R (HCRTR1) | High | Lower (~10× less) |
+| OX2R (HCRTR2) | High | High |
+
+Orexin-A binds both receptors with similar affinity — making it the "pan-orexin" research tool compared to orexin-B's OX2R preference.
+
+## Primary Research Functions
+
+**Wakefulness and arousal:**
+Orexin neurons in the lateral hypothalamus project widely — to monoaminergic nuclei (locus coeruleus, raphe, ventral tegmental area) and to the basal forebrain cholinergic system. Activation of these targets maintains cortical arousal.
+
+**Feeding and energy balance:**
+Orexin neurons sense glucose and leptin signals, producing integrated output that couples feeding drive to arousal state.
+
+**Reward and motivation:**
+OX1R signaling in the VTA modulates dopaminergic reward pathways, linking the orexin system to motivation research.
+
+## Research Applications
+
+- **Sleep biology:** Narcolepsy models, circadian research
+- **Neuropharmacology:** Dual orexin receptor antagonists (DORAs) are a major drug development area; research agonists provide the reverse pharmacology
+- **Metabolic research:** Feeding-arousal integration
+- **Addiction research:** OX1R role in drug-seeking behavior
+
+## Handling
+
+Lyophilized orexin-A requires careful handling — the disulfide bonds are sensitive to reducing conditions. Standard bacteriostatic water reconstitution is appropriate; avoid DTT or mercaptoethanol-containing buffers. >98% HPLC purity is the research standard.
+
+See [Orexin-A 5mg](/products/orexin-a-5mg) for the research vial.
+    `.trim(),
+  },
 ]
 
 export function getAllGuideSlugs() {
