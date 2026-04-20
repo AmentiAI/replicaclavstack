@@ -33,6 +33,11 @@ export async function generateMetadata({
       siteName: 'Claviculars Peptides',
       type: 'website',
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: cat.seoTitle,
+      description: cat.seoDescription,
+    },
   }
 }
 
@@ -57,20 +62,9 @@ export default async function CategoryPage({
     ],
   }
 
-  const faqJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: cat.faq.map((f) => ({
-      '@type': 'Question',
-      name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
-    })),
-  }
-
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <nav className="flex items-center gap-2 text-sm text-gray-600 mb-10" aria-label="Breadcrumb">

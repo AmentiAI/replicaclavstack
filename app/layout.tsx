@@ -27,15 +27,14 @@ const BASE_URL = 'https://clavicularspeptides.com'
 export const metadata: Metadata = {
   title: {
     default: 'Claviculars Peptides — Research-Grade Peptide Protocol 2026',
-    template: '%s | Claviculars Peptides',
+    template: '%s',
   },
   description:
     'Independent peptide research protocols. 10 compounds. 5 layers. GLP-3 R (Retatrutide) Phase 2: −28.7%. >98% HPLC purity. Full compound analysis and sourcing.',
   keywords: [
     'peptide stack', 'peptide protocol 2026', 'retatrutide research',
     'GLP-3 R peptide', 'research peptide protocol', 'BPC-157 stack',
-    'GHK-Cu research', 'peptide sourcing guide',
-    'Apollo peptide sciences', 'research peptide stack',
+    'GHK-Cu research', 'peptide sourcing guide', 'research peptide stack',
   ],
   metadataBase: new URL(BASE_URL),
   openGraph: {
@@ -52,7 +51,17 @@ export const metadata: Metadata = {
     description: '10 compounds. 5 layers. GLP-3 R Phase 2: −28.7%. Independent research protocols with full compound analysis.',
     images: [`${BASE_URL}/logo-512.png`],
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

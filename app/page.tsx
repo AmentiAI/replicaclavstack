@@ -59,9 +59,36 @@ const marqueeItems = [
   'CAS Numbers Verified · Research Use Only',
 ]
 
+const SITE = 'https://clavicularspeptides.com'
+
+const organizationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Claviculars Peptides',
+  url: SITE,
+  logo: `${SITE}/logo-512.png`,
+  description: '143 research-grade peptide compounds. ≥98% HPLC purity with lot CoA. Free US shipping over $200.',
+  slogan: 'The most complete peptide protocol guide online.',
+  sameAs: [SITE],
+}
+
+const websiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Claviculars Peptides',
+  url: SITE,
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: { '@type': 'EntryPoint', urlTemplate: `${SITE}/products?q={search_term_string}` },
+    'query-input': 'required name=search_term_string',
+  },
+}
+
 export default function HomePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
       {/* ── HERO ─────────────────────────────────────────────── */}
       <section className="relative min-h-screen flex items-center grid-pattern overflow-hidden">
         {/* Aurora orbs */}

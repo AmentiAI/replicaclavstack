@@ -20,16 +20,18 @@ const looksmaxxingSlugs = [
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const buildDate = new Date()
+
   const productPages = getAllProductSlugs().map((slug) => ({
     url: `${BASE_URL}/products/${slug}`,
-    lastModified: new Date('2026-04-01'),
+    lastModified: buildDate,
     changeFrequency: 'weekly' as const,
     priority: 0.8,
   }))
 
   const categoryPages = getAllCategorySlugs().map((slug) => ({
     url: `${BASE_URL}/peptides/${slug}`,
-    lastModified: new Date('2026-04-01'),
+    lastModified: buildDate,
     changeFrequency: 'weekly' as const,
     priority: 0.9,
   }))
