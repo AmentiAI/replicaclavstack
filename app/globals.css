@@ -445,7 +445,7 @@ header .btn-primary:hover {
 }
 
 /* ─── Prose ──────────────────────────────────────────────────── */
-.prose-peptide { color: #ffffff; line-height: 1.9; font-size: 1.0625rem; }
+.prose-peptide { color: #ffffff !important; line-height: 1.9; font-size: 1.0625rem; }
 .prose-peptide h2 {
   color: #ffffff; font-size: 1.5rem; font-weight: 700;
   margin-top: 2.5rem; margin-bottom: 1rem;
@@ -524,3 +524,38 @@ header .btn-primary:hover {
 [class*="text-[#00d4ff]"]    { color: #ff2a2a !important; }
 [class*="border-[#00d4ff]"]  { border-color: rgba(255,42,42,0.3) !important; }
 [class*="bg-[#00d4ff]"]      { background-color: #ff2a2a !important; }
+
+/* Article pages still ship a white inline background. Body copy is white, so it vanishes. */
+main[style*="background:#ffffff"],
+main[style*="background:#fff"],
+[style*="background:#ffffff"],
+[style*="background:#fffbeb"],
+[style*="background:#f8fafc"],
+[style*="background:#f1f5f9"],
+[style*="background:#f9fafb"] {
+  background: #000000 !important;
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+[style*="color:#4b5563"],
+[style*="color:#64748b"],
+[style*="color:#1f2937"],
+[style*="color:#374151"],
+[style*="color:#6b7280"],
+[style*="color:#111827"],
+[style*="color:#0f172a"],
+[style*="color:#1e293b"],
+[style*="color:#334155"],
+[style*="color:#475569"] {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+[class*="hover:bg-gray"]:hover,
+[class*="hover:bg-white"]:hover,
+[class*="hover:bg-amber"]:hover {
+  background-color: #1a0000 !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}

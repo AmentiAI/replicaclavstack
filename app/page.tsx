@@ -360,44 +360,44 @@ export default function HomePage() {
             <div className="w-8 h-px bg-amber-500" />
             <span className="text-amber-700 text-xs font-bold uppercase tracking-[0.2em]">The Science</span>
           </div>
-          <h2 className="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight mb-4">
+          <h2 className="text-4xl sm:text-5xl font-black tracking-tight mb-4" style={{ color: '#ffffff' }}>
             GLP-1 S vs GLP-2 T vs{' '}
-            <span className="gradient-text">GLP-3 R</span>
+            <span style={{ color: '#ff2a2a' }}>GLP-3 R</span>
           </h2>
-          <p className="text-gray-500 text-lg max-w-xl">Three receptor pathways. The data explains the 2× outcome gap.</p>
+          <p className="text-lg max-w-xl" style={{ color: '#ffffff' }}>Three receptor pathways. The data explains the 2× outcome gap.</p>
         </div>
 
-        <div className="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+        <div className="rounded-2xl overflow-hidden" style={{ border: '1px solid #3a0000' }}>
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
-                <tr className="border-b border-gray-200 bg-gray-50">
-                  <th className="px-6 py-5 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider w-44">Metric</th>
+                <tr style={{ borderBottom: '1px solid #3a0000', background: '#000000' }}>
+                  <th className="px-6 py-5 text-left text-xs font-semibold uppercase tracking-wider w-44" style={{ color: '#ffffff' }}>Metric</th>
                   <th className="px-6 py-5 text-left">
-                    <span className="text-xs font-bold text-gray-500 uppercase tracking-wider">GLP-1 S</span>
-                    <br /><span className="text-[11px] text-gray-400 font-normal normal-case">Semaglutide</span>
+                    <span className="text-xs font-bold uppercase tracking-wider" style={{ color: '#ffffff' }}>GLP-1 S</span>
+                    <br /><span className="text-[11px] font-normal normal-case" style={{ color: '#f3f3f3' }}>Semaglutide</span>
                   </th>
                   <th className="px-6 py-5 text-left">
-                    <span className="text-xs font-bold text-emerald-600 uppercase tracking-wider">GLP-2 T</span>
-                    <br /><span className="text-[11px] text-gray-400 font-normal normal-case">Tirzepatide</span>
+                    <span className="text-xs font-bold uppercase tracking-wider" style={{ color: '#ffffff' }}>GLP-2 T</span>
+                    <br /><span className="text-[11px] font-normal normal-case" style={{ color: '#f3f3f3' }}>Tirzepatide</span>
                   </th>
-                  <th className="px-6 py-5 text-left bg-amber-50">
+                  <th className="px-6 py-5 text-left" style={{ background: '#1a0000' }}>
                     <span className="flex items-center gap-1.5">
-                      <span className="text-xs font-bold text-amber-700 uppercase tracking-wider">GLP-3 R</span>
-                      <span className="text-[10px] px-1.5 py-0.5 rounded bg-amber-100 text-amber-700 font-bold">★ Best</span>
+                      <span className="text-xs font-bold uppercase tracking-wider" style={{ color: '#ffffff' }}>GLP-3 R</span>
+                      <span className="text-[10px] px-1.5 py-0.5 rounded font-bold" style={{ background: '#ff2a2a', color: '#ffffff' }}>★ Best</span>
                     </span>
-                    <span className="text-[11px] text-amber-600/70 font-normal normal-case">Retatrutide</span>
+                    <span className="text-[11px] font-normal normal-case" style={{ color: '#ffffff' }}>Retatrutide</span>
                   </th>
                 </tr>
               </thead>
               <tbody>
-                {comparison.map((row, i) => (
-                  <tr key={row.metric} className="border-b border-gray-100 last:border-0 hover:bg-gray-50 transition-colors">
-                    <td className="px-6 py-4 text-sm text-gray-700 font-medium">{row.metric}</td>
-                    <td className="px-6 py-4 text-sm text-gray-500">{row.glp1s}</td>
-                    <td className="px-6 py-4 text-sm text-gray-500">{row.glp2t}</td>
-                    <td className="px-6 py-4 bg-amber-50/50">
-                      <span className="text-sm font-bold text-amber-700">{row.glp3r}</span>
+                {comparison.map((row) => (
+                  <tr key={row.metric} style={{ borderBottom: '1px solid #3a0000', background: '#000000' }}>
+                    <td className="px-6 py-4 text-sm font-medium" style={{ color: '#ffffff' }}>{row.metric}</td>
+                    <td className="px-6 py-4 text-sm" style={{ color: '#ffffff' }}>{row.glp1s}</td>
+                    <td className="px-6 py-4 text-sm" style={{ color: '#ffffff' }}>{row.glp2t}</td>
+                    <td className="px-6 py-4" style={{ background: '#1a0000' }}>
+                      <span className="text-sm font-bold" style={{ color: '#ffffff' }}>{row.glp3r}</span>
                     </td>
                   </tr>
                 ))}
