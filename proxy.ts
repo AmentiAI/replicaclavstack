@@ -1,10 +1,9 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
-const CANONICAL_HOST = 'looksmaxxinghealth.com'
+const CANONICAL_HOST = 'www.looksmaxxinghealth.com'
 
 const ALIAS_HOSTS = new Set([
-  'www.looksmaxxinghealth.com',
   'clavicularspeptides.com',
   'www.clavicularspeptides.com',
 ])

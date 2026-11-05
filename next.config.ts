@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   async redirects() {
     const hosts = [
-      'www.looksmaxxinghealth.com',
       'clavicularspeptides.com',
       'www.clavicularspeptides.com',
     ]
@@ -13,13 +12,13 @@ const nextConfig: NextConfig = {
       {
         source: '/',
         has: [{ type: 'host' as const, value: host }],
-        destination: 'https://looksmaxxinghealth.com',
+        destination: 'https://www.looksmaxxinghealth.com',
         permanent: true,
       },
       {
         source: '/:path+',
         has: [{ type: 'host' as const, value: host }],
-        destination: 'https://looksmaxxinghealth.com/:path+',
+        destination: 'https://www.looksmaxxinghealth.com/:path+',
         permanent: true,
       },
     ])
