@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import SearchBar from './SearchBar'
+import { products } from '@/lib/products'
 
 const navLinks = [
   { href: '/protocol',      label: 'Protocol'       },
@@ -38,7 +39,7 @@ export default function Header() {
         <div className="marquee-track py-1.5 gap-12">
           {[
             'GLP-3 R Phase 2: −28.7%',
-            '143 Compounds · 5 Layers',
+            `${products.length} Compounds · 5 Layers`,
             '>98% HPLC All Vials',
             'Free Shipping $200+',
             'Third-Party Test Reports',
@@ -46,7 +47,7 @@ export default function Header() {
             'CAS Numbers Verified',
             'GHK-Cu: 4,000+ Genes',
             'GLP-3 R Phase 2: −28.7%',
-            '143 Compounds · 5 Layers',
+            `${products.length} Compounds · 5 Layers`,
             '>98% HPLC All Vials',
             'Free Shipping $200+',
             'Third-Party Test Reports',
@@ -65,21 +66,16 @@ export default function Header() {
       {/* Main nav */}
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center gap-4">
         {/* Logo */}
-        <Link href="/" className="group flex items-center gap-2.5 flex-shrink-0">
-          <div className="relative w-9 h-9 rounded-xl overflow-hidden flex-shrink-0">
-            <Image
-              src="/logo.png"
-              alt="Claviculars Peptides"
-              width={36}
-              height={36}
-              className="object-contain w-full h-full"
-              priority
-              unoptimized
-            />
-          </div>
-          <span className="font-black text-gray-900 text-[15px] tracking-tight group-hover:text-amber-700 transition-colors whitespace-nowrap">
-            Claviculars Peptides
-          </span>
+        <Link href="/" className="group flex items-center flex-shrink-0">
+          <Image
+            src="/logo.png"
+            alt="Looksmaxxing Health"
+            width={978}
+            height={645}
+            className="h-12 w-auto"
+            priority
+            unoptimized
+          />
         </Link>
 
         {/* Desktop links — centered, fills remaining space */}

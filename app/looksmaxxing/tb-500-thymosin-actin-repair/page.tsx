@@ -1,20 +1,21 @@
+import { SITE_URL as BASE_URL } from '@/lib/site'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-const BASE_URL = 'https://clavicularspeptides.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'TB-500 Peptide — Faster Injury Recovery, Muscle Repair & Healing | Claviculars Peptides' },
+  title: { absolute: 'TB-500 Peptide — Faster Injury Recovery, Muscle Repair & Healing | Looksmaxxing Health' },
   description:
     'Thymosin Beta-4 (43 AA, endogenous) — G-actin sequestration, VEGF upregulation, NF-κB suppression. Tissue repair research across 8+ tissue types including skin and cardiac models.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/tb-500-thymosin-actin-repair` },
   openGraph: {
-    title: 'TB-500 Peptide — Faster Injury Recovery, Muscle Repair & Healing | Claviculars Peptides',
+    title: 'TB-500 Peptide — Faster Injury Recovery, Muscle Repair & Healing | Looksmaxxing Health',
     description:
       'Thymosin Beta-4 (43 AA, endogenous) — G-actin sequestration, VEGF upregulation, NF-κB suppression. Tissue repair research across 8+ tissue types including skin and cardiac models.',
     url: `${BASE_URL}/looksmaxxing/tb-500-thymosin-actin-repair`,
-    siteName: 'Claviculars Peptides',
+    siteName: 'Looksmaxxing Health',
     type: 'article',
+    images: [{ url: `${BASE_URL}/logo.png`, alt: 'Looksmaxxing Health' }],
   },
 }
 
@@ -25,9 +26,9 @@ const articleJsonLd = {
   description:
     'Thymosin Beta-4 (43 AA, endogenous) — G-actin sequestration, VEGF upregulation, NF-κB suppression. Tissue repair research across 8+ tissue types including skin and cardiac models.',
   datePublished: '2026-04-09',
-  dateModified: '2026-04-09',
-  author: { '@type': 'Organization', name: 'Claviculars Peptides' },
-  publisher: { '@type': 'Organization', name: 'Claviculars Peptides', url: BASE_URL },
+  dateModified: '2026-05-04',
+  author: { '@type': 'Organization', name: 'Looksmaxxing Health Editorial', url: `${BASE_URL}/about` },
+  publisher: { '@type': 'Organization', name: 'Looksmaxxing Health', url: BASE_URL, logo: { '@type': 'ImageObject', url: `${BASE_URL}/logo.png`, width: 978, height: 645 } },
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE_URL}/looksmaxxing/tb-500-thymosin-actin-repair` },
 }
 

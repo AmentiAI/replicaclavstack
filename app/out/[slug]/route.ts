@@ -1,18 +1,17 @@
-import { NextRequest, NextResponse } from 'next/server'
-import { getProductBySlug } from '@/lib/products'
+import { NextResponse } from 'next/server'
+import { apolloShopUrl, getProductBySlug } from '@/lib/products'
 
-const PHIOGEN = 'https://phiogen.is'
-const FALLBACK = `${PHIOGEN}/products`
-
-export async function GET(
-  _req: NextRequest,
-  { params }: { params: Promise<{ slug: string }> }
-) {
-  const { slug } = await params
+export async function GET(_req: Request, ctx: { params: Promise<{ slug: string }> }) {
+  const { slug } = await ctx.params
   const product = getProductBySlug(slug)
-  const destination = product
-    ? `${PHIOGEN}/products/${product.apollo_path}`
-    : FALLBACK
-
-  return NextResponse.redirect(destination, { status: 302 })
+  if (!product) {
+    return new NextResponse('Not found', {
+      status: 404,
+      headers: { 'X-Robots-Tag': 'noindex, nofollow' },
+    })
+  }
+  return NextResponse.redirect(apolloShopUrl(product), {
+    status: 302,
+    headers: { 'X-Robots-Tag': 'noindex, nofollow' },
+  })
 }

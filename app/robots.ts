@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next'
+import { SITE_URL } from '@/lib/site'
 
 const AI_CRAWLERS = [
   'GPTBot',
@@ -33,7 +34,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/out/', '/api/'],
       })),
     ],
-    sitemap: 'https://clavicularspeptides.com/sitemap.xml',
-    host: 'https://clavicularspeptides.com',
+    sitemap: `${SITE_URL}/sitemap.xml`,
+    host: SITE_URL,
   }
 }

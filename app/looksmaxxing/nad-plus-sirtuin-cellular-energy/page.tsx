@@ -1,21 +1,22 @@
+import { SITE_URL as BASE_URL } from '@/lib/site'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-const BASE_URL = 'https://clavicularspeptides.com'
 
 
 export const metadata: Metadata = {
-  title: { absolute: 'NAD+ Peptide — Anti-Aging, Energy & Skin Longevity Benefits | Claviculars Peptides' },
+  title: { absolute: 'NAD+ Peptide — Anti-Aging, Energy & Skin Longevity Benefits | Looksmaxxing Health' },
   description:
     'NAD+ declines ~50% between ages 30-60. Research on SIRT1-7 activation, PARP1 DNA repair, CD38 accumulation, and mitochondrial function restoration.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/nad-plus-sirtuin-cellular-energy` },
   openGraph: {
-    title: 'NAD+ Peptide — Anti-Aging, Energy & Skin Longevity Benefits | Claviculars Peptides',
+    title: 'NAD+ Peptide — Anti-Aging, Energy & Skin Longevity Benefits | Looksmaxxing Health',
     description:
       'NAD+ declines ~50% between ages 30-60. Research on SIRT1-7 activation, PARP1 DNA repair, CD38 accumulation, and mitochondrial function restoration.',
     url: `${BASE_URL}/looksmaxxing/nad-plus-sirtuin-cellular-energy`,
-    siteName: 'Claviculars Peptides',
+    siteName: 'Looksmaxxing Health',
     type: 'article',
+    images: [{ url: `${BASE_URL}/logo.png`, alt: 'Looksmaxxing Health' }],
   },
 }
 
@@ -26,9 +27,9 @@ const articleJsonLd = {
   description:
     'NAD+ declines ~50% between ages 30-60. Research on SIRT1-7 activation, PARP1 DNA repair, CD38 accumulation, and mitochondrial function restoration.',
   datePublished: '2026-04-09',
-  dateModified: '2026-04-09',
-  author: { '@type': 'Organization', name: 'Claviculars Peptides' },
-  publisher: { '@type': 'Organization', name: 'Claviculars Peptides', url: BASE_URL },
+  dateModified: '2026-05-04',
+  author: { '@type': 'Organization', name: 'Looksmaxxing Health Editorial', url: `${BASE_URL}/about` },
+  publisher: { '@type': 'Organization', name: 'Looksmaxxing Health', url: BASE_URL, logo: { '@type': 'ImageObject', url: `${BASE_URL}/logo.png`, width: 978, height: 645 } },
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE_URL}/looksmaxxing/nad-plus-sirtuin-cellular-energy` },
 }
 

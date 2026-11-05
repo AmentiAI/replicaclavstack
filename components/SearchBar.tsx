@@ -156,7 +156,7 @@ export default function SearchBar() {
               {query ? `${results.length} result${results.length !== 1 ? 's' : ''}` : 'Popular'}
             </span>
             {!query && (
-              <span className="text-[10px] text-gray-400">143 compounds total</span>
+              <span className="text-[10px] text-gray-400">{products.length} compounds total</span>
             )}
           </div>
 
@@ -221,7 +221,7 @@ export default function SearchBar() {
                 className="w-full text-xs text-amber-700 font-semibold hover:text-amber-800 text-center transition-colors"
                 onMouseDown={e => { e.preventDefault(); router.push('/products'); setOpen(false); setQuery('') }}
               >
-                Browse all 143 compounds →
+                Browse all {products.length} compounds →
               </button>
             </div>
           )}

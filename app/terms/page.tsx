@@ -1,13 +1,13 @@
+import { SITE_URL as BASE_URL } from '@/lib/site'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-const BASE_URL = 'https://clavicularspeptides.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Terms of Use | Claviculars Peptides' },
-  description: 'Terms of use for Claviculars Peptides. Research-only disclaimer, affiliate disclosure, and site usage terms.',
+  title: { absolute: 'Terms of Use | Looksmaxxing Health' },
+  description: 'Terms of use for Looksmaxxing Health. Research-only disclaimer, affiliate disclosure, and site usage terms.',
   alternates: { canonical: `${BASE_URL}/terms` },
-  robots: { index: false, follow: false },
+  robots: { index: true, follow: true },
 }
 
 export default function TermsPage() {
@@ -32,7 +32,7 @@ export default function TermsPage() {
 
         <section>
           <h2>1. Acceptance of Terms</h2>
-          <p>By accessing Claviculars Peptides ("the Site"), you agree to be bound by these Terms of Use. If you do not agree, do not use this Site.</p>
+          <p>By accessing Looksmaxxing Health ("the Site"), you agree to be bound by these Terms of Use. If you do not agree, do not use this Site.</p>
         </section>
 
         <section>
@@ -42,7 +42,7 @@ export default function TermsPage() {
 
         <section>
           <h2>3. Affiliate Relationships</h2>
-          <p>Claviculars Peptides participates in affiliate programs. When you click product links and make purchases, we may earn a commission. This does not affect the price you pay. Affiliate relationships do not influence our editorial content or compound analysis.</p>
+          <p>Looksmaxxing Health participates in affiliate programs. When you click product links and make purchases, we may earn a commission. This does not affect the price you pay. Affiliate relationships do not influence our editorial content or compound analysis.</p>
         </section>
 
         <section>
@@ -52,7 +52,7 @@ export default function TermsPage() {
 
         <section>
           <h2>5. Limitation of Liability</h2>
-          <p>Claviculars Peptides provides information "as is" without warranty of any kind. We are not liable for any damages arising from use of information on this Site or from purchases made through affiliate links.</p>
+          <p>Looksmaxxing Health provides information "as is" without warranty of any kind. We are not liable for any damages arising from use of information on this Site or from purchases made through affiliate links.</p>
         </section>
 
         <section>

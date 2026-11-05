@@ -1,9 +1,9 @@
+import { SITE_URL as BASE_URL } from '@/lib/site'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { getAllBlogSlugs, getBlogPostBySlug } from '@/lib/blog'
 
-const BASE_URL = 'https://clavicularspeptides.com'
 
 export const dynamic = 'force-static'
 export const revalidate = 86400
@@ -28,13 +28,15 @@ export async function generateMetadata({
       title: post.seoTitle,
       description: post.seoDescription,
       url: `${BASE_URL}/blog/${slug}`,
-      siteName: 'Claviculars Peptides',
+      siteName: 'Looksmaxxing Health',
       type: 'article',
+      images: [{ url: `${BASE_URL}/logo.png`, alt: post.title }],
     },
     twitter: {
       card: 'summary_large_image',
       title: post.seoTitle,
       description: post.seoDescription.slice(0, 155),
+      images: [`${BASE_URL}/logo.png`],
     },
   }
 }
@@ -73,8 +75,19 @@ export default async function BlogPostPage({
     description: post.seoDescription,
     datePublished: post.date,
     dateModified: post.date,
-    author: { '@type': 'Organization', name: 'Claviculars Peptides' },
-    publisher: { '@type': 'Organization', name: 'Claviculars Peptides', url: BASE_URL },
+    author: {
+      '@type': 'Organization',
+      name: 'Looksmaxxing Health Editorial',
+      url: `${BASE_URL}/about`,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Looksmaxxing Health',
+      url: BASE_URL,
+      logo: { '@type': 'ImageObject', url: `${BASE_URL}/logo.png`, width: 978, height: 645 },
+    },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE_URL}/blog/${slug}` },
+    image: `${BASE_URL}/logo.png`,
   }
 
   const breadcrumbJsonLd = {
@@ -106,12 +119,13 @@ export default async function BlogPostPage({
 
         {/* Article header */}
         <div className="mb-10">
-          <div className="flex items-center gap-3 mb-5">
+          <div className="flex items-center gap-3 mb-5 flex-wrap">
             <span className="px-2.5 py-1 rounded-full bg-amber-100 text-amber-700 text-xs font-semibold">{post.category}</span>
             <span className="text-gray-600 text-sm">{post.readTime} read</span>
-            <span className="text-gray-700 text-sm">{post.date}</span>
+            <span className="text-gray-700 text-sm">Published {post.date}</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 leading-tight">{post.title}</h1>
+          <p className="text-gray-500 text-sm mb-3">By <Link href="/about" className="underline decoration-amber-300 underline-offset-2 hover:text-amber-700">Looksmaxxing Health Editorial</Link></p>
           <p className="text-gray-400 text-lg leading-relaxed">{post.excerpt}</p>
         </div>
 

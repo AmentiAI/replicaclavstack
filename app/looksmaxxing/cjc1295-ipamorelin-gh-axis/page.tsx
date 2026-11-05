@@ -1,20 +1,21 @@
+import { SITE_URL as BASE_URL } from '@/lib/site'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-const BASE_URL = 'https://clavicularspeptides.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'CJC-1295 + Ipamorelin — Best Peptides for Growth Hormone & Muscle | Claviculars Peptides' },
+  title: { absolute: 'CJC-1295 + Ipamorelin — Best Peptides for Growth Hormone & Muscle | Looksmaxxing Health' },
   description:
     'CJC-1295 (GHRH analog, ~8-day half-life via DAC) + Ipamorelin (GHS-R1a, no cortisol/prolactin). Synergistic GH pulse amplitude + frequency enhancement research.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/cjc1295-ipamorelin-gh-axis` },
   openGraph: {
-    title: 'CJC-1295 + Ipamorelin — Best Peptides for Growth Hormone & Muscle | Claviculars Peptides',
+    title: 'CJC-1295 + Ipamorelin — Best Peptides for Growth Hormone & Muscle | Looksmaxxing Health',
     description:
       'CJC-1295 (GHRH analog, ~8-day half-life via DAC) + Ipamorelin (GHS-R1a, no cortisol/prolactin). Synergistic GH pulse amplitude + frequency enhancement research.',
     url: `${BASE_URL}/looksmaxxing/cjc1295-ipamorelin-gh-axis`,
-    siteName: 'Claviculars Peptides',
+    siteName: 'Looksmaxxing Health',
     type: 'article',
+    images: [{ url: `${BASE_URL}/logo.png`, alt: 'Looksmaxxing Health' }],
   },
 }
 
@@ -25,9 +26,9 @@ const articleJsonLd = {
   description:
     'CJC-1295 (GHRH analog, ~8-day half-life via DAC) + Ipamorelin (GHS-R1a, no cortisol/prolactin). Synergistic GH pulse amplitude + frequency enhancement research.',
   datePublished: '2026-04-09',
-  dateModified: '2026-04-09',
-  author: { '@type': 'Organization', name: 'Claviculars Peptides' },
-  publisher: { '@type': 'Organization', name: 'Claviculars Peptides', url: BASE_URL },
+  dateModified: '2026-05-04',
+  author: { '@type': 'Organization', name: 'Looksmaxxing Health Editorial', url: `${BASE_URL}/about` },
+  publisher: { '@type': 'Organization', name: 'Looksmaxxing Health', url: BASE_URL, logo: { '@type': 'ImageObject', url: `${BASE_URL}/logo.png`, width: 978, height: 645 } },
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE_URL}/looksmaxxing/cjc1295-ipamorelin-gh-axis` },
 }
 

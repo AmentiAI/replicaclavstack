@@ -48,7 +48,14 @@
       "Bash(npx next:*)",
       "Bash(echo \"Exit: $?\")",
       "Bash(wait %1)",
-      "Bash(wc *)"
+      "Bash(wc *)",
+      "Bash(xxd \"/mnt/c/Users/Wilso/Downloads/Unconfirmed 624384.crdownload\")",
+      "Bash(unzip -l \"/mnt/c/Users/Wilso/Downloads/Unconfirmed 624384.crdownload\")",
+      "Bash(sed 's|/images/products/||')",
+      "Read(//tmp/**)",
+      "Bash(grep -r \"/out/\\\\|href=.*shopLink\\\\|href=.*\\\\`/out\" /mnt/c/Users/Wilso/replicaclavstack/app --include=\"*.tsx\" --include=\"*.ts\")",
+      "Bash(xargs grep *)",
+      "Bash(curl -s http://localhost:3137/products/glp-3-r-15mg)"
     ]
   }
 }

@@ -1,20 +1,29 @@
+import { SITE_URL as SITE } from '@/lib/site'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
-import { products } from '@/lib/products'
+import { getProductsByCategory, products } from '@/lib/products'
 import ProductCard from '@/components/ProductCard'
 import AnimatedCounter from '@/components/AnimatedCounter'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Best Peptides for Weight Loss, Anti-Aging & Looksmaxxing | Claviculars Peptides' },
-  description: 'The complete peptide stack: Retatrutide (−28.7%), Tirzepatide, Semaglutide, BPC-157, GHK-Cu, CJC-1295, IGF-1 LR3, Epithalon & more. Research-grade peptides for weight loss, skin, muscle & longevity.',
-  alternates: { canonical: 'https://clavicularspeptides.com' },
+  title: { absolute: 'Best Peptides for Weight Loss, Anti-Aging & Looksmaxxing | Looksmaxxing Health' },
+  description: `Independent protocols and per-compound research for Retatrutide, Tirzepatide, Semaglutide, BPC-157, GHK-Cu, CJC-1295 and ${products.length} research peptides.`,
+  alternates: { canonical: SITE },
   openGraph: {
-    title: 'Best Peptides for Weight Loss, Anti-Aging & Looksmaxxing | Claviculars Peptides',
-    description: '143 research-grade peptides for weight loss, anti-aging, skin glow, lean muscle, and longevity. Independent protocol guides for every compound.',
-    url: 'https://clavicularspeptides.com',
-    siteName: 'Claviculars Peptides',
+    title: 'Best Peptides for Weight Loss, Anti-Aging & Looksmaxxing | Looksmaxxing Health',
+    description: `Independent research-grade peptide protocols. Per-compound mechanism, trial data, and sourcing for ${products.length} research peptides.`,
+    url: SITE,
+    siteName: 'Looksmaxxing Health',
+    locale: 'en_US',
     type: 'website',
+    images: [{ url: `${SITE}/logo.png`, width: 978, height: 645, alt: 'Looksmaxxing Health' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Best Peptides for Weight Loss, Anti-Aging & Looksmaxxing | Looksmaxxing Health',
+    description: `Independent research-grade peptide protocols. Per-compound mechanism, trial data, and sourcing for ${products.length} research peptides.`,
+    images: [`${SITE}/logo.png`],
   },
 }
 
@@ -25,18 +34,18 @@ const heroProductSlugs = ['glp-3-r-15mg', 'glp-2-t-15mg', 'bpc-157-10mg', 'ghk-c
 const heroProducts = heroProductSlugs.map(s => products.find(p => p.slug === s)!).filter(Boolean)
 
 const heroStats = [
-  { value: '−28.7%', label: 'GLP-3 R Phase 2', color: '#c8870a' },
-  { value: '10', label: 'Core Compounds', color: '#7c3aed' },
-  { value: '>98%', label: 'HPLC Purity', color: '#10b981' },
-  { value: '5', label: 'Protocol Layers', color: '#d97706' },
+  { value: '−28.7%', label: 'GLP-3 R Phase 2', color: '#ff2a2a' },
+  { value: String(getProductsByCategory('core-protocol').length), label: 'Core Compounds', color: '#ffffff' },
+  { value: '>98%', label: 'HPLC Purity', color: '#ff2a2a' },
+  { value: '5', label: 'Protocol Layers', color: '#ffffff' },
 ]
 
 const layers = [
-  { n: '01', name: 'GLP Core', compound: 'Retatrutide (GLP-3 R)', stat: '−28.7%', statLabel: 'Phase 2', accent: '#c8870a', slug: 'glp-receptor-agonists', desc: 'Triple-receptor agonist. GLP-1R + GIPR + GcgR. The most data-rich compound in its class.' },
-  { n: '02', name: 'Gut Recovery', compound: 'BPC-157', stat: '40+', statLabel: 'studies', accent: '#10b981', slug: 'gut-recovery', desc: 'GI mucosal integrity during reduced-intake GLP protocols. BPC-157: NO system, VEGFR2, 40+ published studies.' },
-  { n: '03', name: 'Skin & Glow', compound: 'GHK-Cu + SNAP-8', stat: '4,000+', statLabel: 'genes', accent: '#d97706', slug: 'skin-and-glow', desc: 'GHK-Cu modulates 4,000+ human genes toward repair. SNAP-8 targets SNARE complex NMJ signaling.' },
-  { n: '04', name: 'Lean Mass', compound: 'CJC-1295 / Ipamorelin + IGF-1 LR3', stat: '~3×', statLabel: 'IGF-1 t½', accent: '#7c3aed', slug: 'lean-mass-longevity', desc: 'GH axis: GHRH receptor amplitude + GHS-R1a frequency. Synergistic pulsatile secretion pattern.' },
-  { n: '05', name: 'Longevity', compound: 'Epithalon + NAD+', stat: '7', statLabel: 'sirtuins', accent: '#db2777', slug: 'lean-mass-longevity', desc: 'Telomerase activation (Epithalon) and sirtuin/PARP substrate restoration (NAD+).' },
+  { n: '01', name: 'GLP Core', compound: 'Retatrutide (GLP-3 R)', stat: '−28.7%', statLabel: 'Phase 2', accent: '#ff2a2a', slug: 'glp-receptor-agonists', desc: 'Triple-receptor agonist. GLP-1R + GIPR + GcgR. The most data-rich compound in its class.' },
+  { n: '02', name: 'Gut Recovery', compound: 'BPC-157', stat: '40+', statLabel: 'studies', accent: '#ffffff', slug: 'gut-recovery', desc: 'GI mucosal integrity during reduced-intake GLP protocols. BPC-157: NO system, VEGFR2, 40+ published studies.' },
+  { n: '03', name: 'Skin & Glow', compound: 'GHK-Cu + SNAP-8', stat: '4,000+', statLabel: 'genes', accent: '#ff2a2a', slug: 'skin-and-glow', desc: 'GHK-Cu modulates 4,000+ human genes toward repair. SNAP-8 targets SNARE complex NMJ signaling.' },
+  { n: '04', name: 'Lean Mass', compound: 'CJC-1295 / Ipamorelin + IGF-1 LR3', stat: '~3×', statLabel: 'IGF-1 t½', accent: '#ffffff', slug: 'lean-mass-longevity', desc: 'GH axis: GHRH receptor amplitude + GHS-R1a frequency. Synergistic pulsatile secretion pattern.' },
+  { n: '05', name: 'Longevity', compound: 'Epithalon + NAD+', stat: '7', statLabel: 'sirtuins', accent: '#ff2a2a', slug: 'lean-mass-longevity', desc: 'Telomerase activation (Epithalon) and sirtuin/PARP substrate restoration (NAD+).' },
 ]
 
 const comparison = [
@@ -59,29 +68,46 @@ const marqueeItems = [
   'CAS Numbers Verified · Research Use Only',
 ]
 
-const SITE = 'https://clavicularspeptides.com'
 
 const organizationJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'Claviculars Peptides',
+  '@id': `${SITE}/#organization`,
+  name: 'Looksmaxxing Health',
+  alternateName: 'Looksmaxxing Health Editorial',
   url: SITE,
-  logo: `${SITE}/logo-512.png`,
-  description: '143 research-grade peptide compounds. ≥98% HPLC purity with lot CoA. Free US shipping over $200.',
-  slogan: 'The most complete peptide protocol guide online.',
-  sameAs: [SITE],
+  logo: {
+    '@type': 'ImageObject',
+    '@id': `${SITE}/#logo`,
+    url: `${SITE}/logo.png`,
+    contentUrl: `${SITE}/logo.png`,
+    width: 978,
+    height: 645,
+    caption: 'Looksmaxxing Health',
+  },
+  description: `Independent editorial resource covering ${products.length} research-grade peptide compounds with mechanism analysis, trial-data citations, and protocol documentation.`,
+  slogan: 'Independent peptide research, citation-backed.',
+  foundingDate: '2024',
+  knowsAbout: [
+    'Research peptides',
+    'GLP-1 receptor agonists',
+    'Triple receptor metabolic peptides',
+    'Tissue repair peptides',
+    'Skin and collagen peptides',
+    'Longevity peptides',
+    'Looksmaxxing',
+  ],
 }
 
 const websiteJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'Claviculars Peptides',
+  '@id': `${SITE}/#website`,
+  name: 'Looksmaxxing Health',
+  alternateName: 'Looksmaxxing Health',
   url: SITE,
-  potentialAction: {
-    '@type': 'SearchAction',
-    target: { '@type': 'EntryPoint', urlTemplate: `${SITE}/products?q={search_term_string}` },
-    'query-input': 'required name=search_term_string',
-  },
+  inLanguage: 'en-US',
+  publisher: { '@id': `${SITE}/#organization` },
 }
 
 export default function HomePage() {
@@ -97,7 +123,7 @@ export default function HomePage() {
         <div className="aurora-orb aurora-orb-3" />
 
         {/* Bottom fade */}
-        <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-white to-transparent pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-black to-transparent pointer-events-none" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-32 w-full">
           <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-center">
@@ -122,7 +148,7 @@ export default function HomePage() {
               </h2>
 
               <p className="text-lg text-gray-500 leading-relaxed mb-12 max-w-xl animate-slide-up delay-300">
-                143 research-grade peptides for weight loss, anti-aging, looksmaxxing, and longevity. The most complete peptide protocol guide online.
+                {products.length} research-grade peptides for weight loss, anti-aging, looksmaxxing, and longevity. The most complete peptide protocol guide online.
               </p>
 
               {/* CTA buttons */}
@@ -205,7 +231,7 @@ export default function HomePage() {
                   href="/products"
                   className="inline-flex items-center gap-1.5 text-xs text-gray-600 hover:text-amber-700 transition-colors font-medium"
                 >
-                  View all 143 compounds
+                  View all {products.length} compounds
                   <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                 </Link>
               </div>
@@ -305,7 +331,7 @@ export default function HomePage() {
               <p className="text-gray-500 text-lg">&gt;98% HPLC verified · Third-party tested</p>
             </div>
             <Link href="/products" className="hidden md:flex items-center gap-1.5 text-sm text-gray-600 hover:text-amber-700 transition-colors group whitespace-nowrap">
-              All 143 compounds
+              All {products.length} compounds
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
             </Link>
           </div>
@@ -320,7 +346,7 @@ export default function HomePage() {
 
           <div className="mt-8 text-center">
             <Link href="/products" className="btn-ghost inline-flex items-center gap-2 px-6 py-3 text-sm font-medium rounded-2xl">
-              View All 143 Research Compounds
+              View All {products.length} Research Compounds
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
             </Link>
           </div>
@@ -399,11 +425,11 @@ export default function HomePage() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {[
-            { slug: 'glp-receptor-agonists', name: 'GLP Receptor Agonists', desc: 'GLP-1 S, GLP-2 T, GLP-3 R. Mono, dual, and tri-receptor research.', count: 7, accent: '#c8870a', icon: '⚗️', stat: '−28.7%', statLabel: 'GLP-3 R Phase 2' },
-            { slug: 'gut-recovery', name: 'Gut Recovery', desc: 'BPC-157 and Teduglutide — mucosal integrity and GI repair.', count: 3, accent: '#10b981', icon: '🔬', stat: '40+', statLabel: 'BPC-157 studies' },
-            { slug: 'skin-and-glow', name: 'Skin & Glow', desc: 'GHK-Cu (4,000+ gene interactions) and SNAP-8 cosmetic research.', count: 3, accent: '#d97706', icon: '✨', stat: '4,000+', statLabel: 'gene targets' },
-            { slug: 'lean-mass-longevity', name: 'Lean Mass & Longevity', desc: 'GH axis, IGF-1, telomere biology, and cellular energy.', count: 5, accent: '#7c3aed', icon: '⚡', stat: '~3×', statLabel: 'IGF-1 LR3 t½' },
-            { slug: 'core-protocol', name: 'Core Protocol Stack', desc: 'The complete 5-layer 10-compound research stack.', count: 10, accent: '#c8870a', icon: '🧬', stat: '5', statLabel: 'layers' },
+            { slug: 'glp-receptor-agonists', name: 'GLP Receptor Agonists', desc: 'GLP-1 S, GLP-2 T, GLP-3 R. Mono, dual, and tri-receptor research.', count: getProductsByCategory('glp-receptor-agonists').length, accent: '#ff2a2a', icon: '⚗️', stat: '−28.7%', statLabel: 'GLP-3 R Phase 2' },
+            { slug: 'gut-recovery', name: 'Gut Recovery', desc: 'BPC-157 and KPV — mucosal integrity and GI repair.', count: getProductsByCategory('gut-recovery').length, accent: '#ffffff', icon: '🔬', stat: '40+', statLabel: 'BPC-157 studies' },
+            { slug: 'skin-and-glow', name: 'Skin & Glow', desc: 'GHK-Cu (4,000+ gene interactions) and SNAP-8 cosmetic research.', count: getProductsByCategory('skin-and-glow').length, accent: '#ff2a2a', icon: '✨', stat: '4,000+', statLabel: 'gene targets' },
+            { slug: 'lean-mass-longevity', name: 'Lean Mass & Longevity', desc: 'GH axis, IGF-1, telomere biology, and cellular energy.', count: getProductsByCategory('lean-mass-longevity').length, accent: '#ffffff', icon: '⚡', stat: '~3×', statLabel: 'IGF-1 LR3 t½' },
+            { slug: 'core-protocol', name: 'Core Protocol Stack', desc: 'The compounds that make up the core research stack.', count: getProductsByCategory('core-protocol').length, accent: '#ff2a2a', icon: '🧬', stat: '5', statLabel: 'layers' },
           ].map((cat, i) => (
             <Link
               key={cat.slug}
@@ -430,7 +456,7 @@ export default function HomePage() {
 
       {/* ── CTA ──────────────────────────────────────────────── */}
       <section className="py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-amber-50 via-white to-amber-50 border border-amber-200">
+        <div className="relative rounded-3xl overflow-hidden bg-black border border-red-900">
           <div className="relative py-20 px-8 sm:px-16 text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-100 border border-amber-200 text-amber-700 text-xs font-bold uppercase tracking-widest mb-6">
               <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" /> Ready to Source

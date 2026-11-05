@@ -1,20 +1,21 @@
+import { SITE_URL as BASE_URL } from '@/lib/site'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-const BASE_URL = 'https://clavicularspeptides.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'GHK-Cu Copper Peptide for Skin — Anti-Aging, Collagen & Glow Guide | Claviculars Peptides' },
+  title: { absolute: 'GHK-Cu Copper Peptide for Skin — Anti-Aging, Collagen & Glow Guide | Looksmaxxing Health' },
   description:
     'GHK-Cu (CAS 72957-37-0) modulates 4,177 human genes — 31% of the transcriptome. Research on collagen, elastin, VEGF, and skin aging mechanisms.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/ghk-cu-collagen-skin-research` },
   openGraph: {
-    title: 'GHK-Cu Copper Peptide for Skin — Anti-Aging, Collagen & Glow Guide | Claviculars Peptides',
+    title: 'GHK-Cu Copper Peptide for Skin — Anti-Aging, Collagen & Glow Guide | Looksmaxxing Health',
     description:
       'GHK-Cu (CAS 72957-37-0) modulates 4,177 human genes — 31% of the transcriptome. Research on collagen, elastin, VEGF, and skin aging mechanisms.',
     url: `${BASE_URL}/looksmaxxing/ghk-cu-collagen-skin-research`,
-    siteName: 'Claviculars Peptides',
+    siteName: 'Looksmaxxing Health',
     type: 'article',
+    images: [{ url: `${BASE_URL}/logo.png`, alt: 'Looksmaxxing Health' }],
   },
 }
 
@@ -25,9 +26,9 @@ const articleJsonLd = {
   description:
     'GHK-Cu (CAS 72957-37-0) modulates 4,177 human genes — 31% of the transcriptome. Research on collagen, elastin, VEGF, and skin aging mechanisms.',
   datePublished: '2026-04-09',
-  dateModified: '2026-04-09',
-  author: { '@type': 'Organization', name: 'Claviculars Peptides' },
-  publisher: { '@type': 'Organization', name: 'Claviculars Peptides', url: BASE_URL },
+  dateModified: '2026-05-04',
+  author: { '@type': 'Organization', name: 'Looksmaxxing Health Editorial', url: `${BASE_URL}/about` },
+  publisher: { '@type': 'Organization', name: 'Looksmaxxing Health', url: BASE_URL, logo: { '@type': 'ImageObject', url: `${BASE_URL}/logo.png`, width: 978, height: 645 } },
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE_URL}/looksmaxxing/ghk-cu-collagen-skin-research` },
 }
 

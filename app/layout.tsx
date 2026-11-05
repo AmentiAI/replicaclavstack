@@ -1,4 +1,5 @@
-import type { Metadata } from 'next'
+import { SITE_URL as BASE_URL } from '@/lib/site'
+import type { Metadata, Viewport } from 'next'
 import { Inter, Space_Grotesk, Montserrat } from 'next/font/google'
 import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/react'
@@ -22,11 +23,11 @@ const montserrat = Montserrat({
   display: 'swap',
 })
 
-const BASE_URL = 'https://clavicularspeptides.com'
+const allowIndex = process.env.VERCEL_ENV !== 'preview'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Claviculars Peptides — Research-Grade Peptide Protocol 2026',
+    default: 'Looksmaxxing Health — Research-Grade Peptide Protocol 2026',
     template: '%s',
   },
   description:
@@ -37,31 +38,55 @@ export const metadata: Metadata = {
     'GHK-Cu research', 'peptide sourcing guide', 'research peptide stack',
   ],
   metadataBase: new URL(BASE_URL),
+  applicationName: 'Looksmaxxing Health',
+  authors: [{ name: 'Looksmaxxing Health Editorial', url: `${BASE_URL}/about` }],
+  creator: 'Looksmaxxing Health Editorial',
+  publisher: 'Looksmaxxing Health',
+  category: 'Research',
   openGraph: {
-    title: 'Claviculars Peptides — Research-Grade Peptide Protocol 2026',
+    title: 'Looksmaxxing Health — Research-Grade Peptide Protocol 2026',
     description: '10 compounds. 5 layers. GLP-3 R Phase 2: −28.7%. Independent research protocols with full compound analysis.',
     type: 'website',
-    siteName: 'Claviculars Peptides',
+    siteName: 'Looksmaxxing Health',
+    locale: 'en_US',
     url: BASE_URL,
-    images: [{ url: `${BASE_URL}/logo-512.png`, width: 512, height: 512, alt: 'Claviculars Peptides' }],
+    images: [{ url: `${BASE_URL}/logo.png`, width: 978, height: 645, alt: 'Looksmaxxing Health' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Claviculars Peptides — Research-Grade Peptide Protocol 2026',
+    title: 'Looksmaxxing Health — Research-Grade Peptide Protocol 2026',
     description: '10 compounds. 5 layers. GLP-3 R Phase 2: −28.7%. Independent research protocols with full compound analysis.',
-    images: [`${BASE_URL}/logo-512.png`],
+    images: [`${BASE_URL}/logo.png`],
   },
   robots: {
-    index: true,
+    index: allowIndex,
     follow: true,
     googleBot: {
-      index: true,
+      index: allowIndex,
       follow: true,
       'max-image-preview': 'large',
       'max-snippet': -1,
       'max-video-preview': -1,
     },
   },
+  icons: {
+    icon: [
+      { url: '/favicon.png', sizes: '48x48', type: 'image/png' },
+      { url: '/logo-192.png', sizes: '192x192', type: 'image/png' },
+    ],
+    apple: [{ url: '/logo-192.png', sizes: '192x192', type: 'image/png' }],
+    shortcut: '/favicon.ico',
+  },
+  formatDetection: { telephone: false, email: false, address: false },
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#0f172a' },
+  ],
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

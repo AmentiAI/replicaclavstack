@@ -1,20 +1,21 @@
+import { SITE_URL as BASE_URL } from '@/lib/site'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { guides } from '@/lib/guides'
 
-const BASE_URL = 'https://clavicularspeptides.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Research Guides — Peptide Protocols & Education | Claviculars Peptides' },
+  title: { absolute: 'Research Guides — Peptide Protocols & Education | Looksmaxxing Health' },
   description:
     'Research guides for peptide protocols: beginner introduction, GLP-1 vs GLP-2 vs GLP-3 explained, protocol design, and reconstitution guides.',
   alternates: { canonical: `${BASE_URL}/guides` },
   openGraph: {
-    title: 'Research Guides | Claviculars Peptides',
+    title: 'Research Guides | Looksmaxxing Health',
     description: 'Complete peptide research education: beginner guides, GLP comparison, protocol design, reconstitution.',
     url: `${BASE_URL}/guides`,
-    siteName: 'Claviculars Peptides',
+    siteName: 'Looksmaxxing Health',
     type: 'website',
+    images: [{ url: `${BASE_URL}/logo.png`, alt: 'Looksmaxxing Health' }],
   },
 }
 

@@ -1,3 +1,4 @@
+import { SITE_URL as BASE_URL } from '@/lib/site'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
@@ -5,7 +6,6 @@ import { getAllCategorySlugs, getCategoryBySlug } from '@/lib/categories'
 import { getProductsByCategory } from '@/lib/products'
 import ProductCard from '@/components/ProductCard'
 
-const BASE_URL = 'https://clavicularspeptides.com'
 
 export const dynamic = 'force-static'
 export const revalidate = 86400
@@ -30,13 +30,15 @@ export async function generateMetadata({
       title: cat.seoTitle,
       description: cat.seoDescription,
       url: `${BASE_URL}/peptides/${category}`,
-      siteName: 'Claviculars Peptides',
+      siteName: 'Looksmaxxing Health',
       type: 'website',
+      images: [{ url: `${BASE_URL}/logo.png`, alt: cat.name }],
     },
     twitter: {
       card: 'summary_large_image',
       title: cat.seoTitle,
       description: cat.seoDescription,
+      images: [`${BASE_URL}/logo.png`],
     },
   }
 }
@@ -62,9 +64,24 @@ export default async function CategoryPage({
     ],
   }
 
+  const faqJsonLd = cat.faq.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: cat.faq.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      }
+    : null
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      {faqJsonLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      )}
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <nav className="flex items-center gap-2 text-sm text-gray-600 mb-10" aria-label="Breadcrumb">
@@ -103,7 +120,7 @@ export default async function CategoryPage({
 
         {/* Products */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">{cat.name} — Research Compounds</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Browse {catProducts.length} {cat.shortName} Compounds</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
             {catProducts.map((product) => (
               <ProductCard key={product.slug} product={product} />

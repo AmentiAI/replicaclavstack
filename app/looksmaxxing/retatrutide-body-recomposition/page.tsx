@@ -1,21 +1,22 @@
+import { SITE_URL as BASE_URL } from '@/lib/site'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-const BASE_URL = 'https://clavicularspeptides.com'
 
 
 export const metadata: Metadata = {
-  title: { absolute: 'Retatrutide — The Strongest Weight Loss Peptide (−28.7% in Trials) | Claviculars Peptides' },
+  title: { absolute: 'Retatrutide — The Strongest Weight Loss Peptide (−28.7% in Trials) | Looksmaxxing Health' },
   description:
     'Retatrutide (CAS 2381089-83-2) — GLP-1R + GIPR + GcgR triple agonist. Phase 2 NEJM 2023: −28.7% at 48 weeks. Body composition, facial structure, and recomposition research.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/retatrutide-body-recomposition` },
   openGraph: {
-    title: 'Retatrutide — The Strongest Weight Loss Peptide (−28.7% in Trials) | Claviculars Peptides',
+    title: 'Retatrutide — The Strongest Weight Loss Peptide (−28.7% in Trials) | Looksmaxxing Health',
     description:
       'Retatrutide (CAS 2381089-83-2) — GLP-1R + GIPR + GcgR triple agonist. Phase 2 NEJM 2023: −28.7% at 48 weeks. Body composition, facial structure, and recomposition research.',
     url: `${BASE_URL}/looksmaxxing/retatrutide-body-recomposition`,
-    siteName: 'Claviculars Peptides',
+    siteName: 'Looksmaxxing Health',
     type: 'article',
+    images: [{ url: `${BASE_URL}/logo.png`, alt: 'Looksmaxxing Health' }],
   },
 }
 
@@ -26,9 +27,9 @@ const articleJsonLd = {
   description:
     'Retatrutide (CAS 2381089-83-2) — GLP-1R + GIPR + GcgR triple agonist. Phase 2 NEJM 2023: −28.7% at 48 weeks. Body composition, facial structure, and recomposition research.',
   datePublished: '2026-04-09',
-  dateModified: '2026-04-09',
-  author: { '@type': 'Organization', name: 'Claviculars Peptides' },
-  publisher: { '@type': 'Organization', name: 'Claviculars Peptides', url: BASE_URL },
+  dateModified: '2026-05-04',
+  author: { '@type': 'Organization', name: 'Looksmaxxing Health Editorial', url: `${BASE_URL}/about` },
+  publisher: { '@type': 'Organization', name: 'Looksmaxxing Health', url: BASE_URL, logo: { '@type': 'ImageObject', url: `${BASE_URL}/logo.png`, width: 978, height: 645 } },
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE_URL}/looksmaxxing/retatrutide-body-recomposition` },
 }
 

@@ -1,20 +1,21 @@
+import { SITE_URL as BASE_URL } from '@/lib/site'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-const BASE_URL = 'https://clavicularspeptides.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'SNAP-8 Peptide — Natural Botox Alternative for Expression Lines | Claviculars Peptides' },
+  title: { absolute: 'SNAP-8 Peptide — Natural Botox Alternative for Expression Lines | Looksmaxxing Health' },
   description:
     'SNAP-8 (Acetyl Glutamyl Heptapeptide-3) competitively inhibits SNARE complex formation, reducing acetylcholine exocytosis. 16.1% wrinkle depth reduction in research.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/snap-8-snare-expression-lines` },
   openGraph: {
-    title: 'SNAP-8 Peptide — Natural Botox Alternative for Expression Lines | Claviculars Peptides',
+    title: 'SNAP-8 Peptide — Natural Botox Alternative for Expression Lines | Looksmaxxing Health',
     description:
       'SNAP-8 (Acetyl Glutamyl Heptapeptide-3) competitively inhibits SNARE complex formation, reducing acetylcholine exocytosis. 16.1% wrinkle depth reduction in research.',
     url: `${BASE_URL}/looksmaxxing/snap-8-snare-expression-lines`,
-    siteName: 'Claviculars Peptides',
+    siteName: 'Looksmaxxing Health',
     type: 'article',
+    images: [{ url: `${BASE_URL}/logo.png`, alt: 'Looksmaxxing Health' }],
   },
 }
 
@@ -25,9 +26,9 @@ const articleJsonLd = {
   description:
     'SNAP-8 (Acetyl Glutamyl Heptapeptide-3) competitively inhibits SNARE complex formation, reducing acetylcholine exocytosis. 16.1% wrinkle depth reduction in research.',
   datePublished: '2026-04-09',
-  dateModified: '2026-04-09',
-  author: { '@type': 'Organization', name: 'Claviculars Peptides' },
-  publisher: { '@type': 'Organization', name: 'Claviculars Peptides', url: BASE_URL },
+  dateModified: '2026-05-04',
+  author: { '@type': 'Organization', name: 'Looksmaxxing Health Editorial', url: `${BASE_URL}/about` },
+  publisher: { '@type': 'Organization', name: 'Looksmaxxing Health', url: BASE_URL, logo: { '@type': 'ImageObject', url: `${BASE_URL}/logo.png`, width: 978, height: 645 } },
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE_URL}/looksmaxxing/snap-8-snare-expression-lines` },
 }
 

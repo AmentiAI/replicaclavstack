@@ -1,24 +1,25 @@
+import { SITE_URL as BASE_URL } from '@/lib/site'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-const BASE_URL = 'https://clavicularspeptides.com'
 
 export const metadata: Metadata = {
   title: {
     absolute:
-      'Looksmaxxing with Peptides — The Ultimate Guide to Looking Your Best | Claviculars Peptides',
+      'Looksmaxxing with Peptides — Research Guide | Looksmaxxing Health',
   },
   description:
-    'The complete looksmaxxing peptide guide: GHK-Cu for skin, SNAP-8 for expression lines, Retatrutide for weight loss, CJC-1295 for muscle, Epithalon for anti-aging. 10 in-depth guides.',
+    '10 research guides on peptides for physical optimization: GHK-Cu, SNAP-8, BPC-157, Epithalon, Retatrutide, CJC-1295, IGF-1 LR3, TB-500.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing` },
   openGraph: {
     title:
-      'Looksmaxxing with Peptides — The Ultimate Guide to Looking Your Best | Claviculars Peptides',
+      'Looksmaxxing with Peptides — Research Guide | Looksmaxxing Health',
     description:
-      '10 in-depth research guides on peptides for physical optimization: GHK-Cu, SNAP-8, BPC-157, Epithalon, NAD+, Retatrutide, CJC-1295/Ipa, IGF-1 LR3, TB-500, and the full protocol.',
+      '10 research guides on peptides for physical optimization: GHK-Cu, SNAP-8, BPC-157, Epithalon, Retatrutide, CJC-1295, IGF-1 LR3, TB-500.',
     url: `${BASE_URL}/looksmaxxing`,
-    siteName: 'Claviculars Peptides',
+    siteName: 'Looksmaxxing Health',
     type: 'website',
+    images: [{ url: `${BASE_URL}/logo.png`, alt: 'Looksmaxxing Health' }],
   },
 }
 
@@ -458,7 +459,7 @@ export default function LooksmaxxingIndexPage() {
               }}
             >
               <strong style={{ color: '#64748b' }}>Research Use Only.</strong>{' '}
-              All compounds and protocols discussed on Claviculars Peptides are for laboratory research
+              All compounds and protocols discussed on Looksmaxxing Health are for laboratory research
               purposes only. Not for human consumption. No content on this site constitutes medical
               advice. Consult a qualified healthcare professional regarding any health-related
               decisions.

@@ -1,10 +1,9 @@
+import { SITE_URL as BASE_URL } from '@/lib/site'
 import type { MetadataRoute } from 'next'
-import { getAllProductSlugs } from '@/lib/products'
-import { getAllCategorySlugs } from '@/lib/categories'
-import { getAllBlogSlugs } from '@/lib/blog'
-import { getAllGuideSlugs } from '@/lib/guides'
-
-const BASE_URL = 'https://clavicularspeptides.com'
+import { products } from '@/lib/products'
+import { categories } from '@/lib/categories'
+import { blogPosts } from '@/lib/blog'
+import { guides } from '@/lib/guides'
 
 const looksmaxxingSlugs = [
   'ghk-cu-collagen-skin-research',
@@ -19,60 +18,68 @@ const looksmaxxingSlugs = [
   'peptide-looksmaxxing-full-protocol',
 ]
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const buildDate = new Date()
+const MIGRATED = new Date('2026-11-05')
 
-  const productPages = getAllProductSlugs().map((slug) => ({
-    url: `${BASE_URL}/products/${slug}`,
-    lastModified: buildDate,
+export default function sitemap(): MetadataRoute.Sitemap {
+  const productPages = products.map((product) => ({
+    url: `${BASE_URL}/products/${product.slug}`,
+    lastModified: MIGRATED,
     changeFrequency: 'weekly' as const,
     priority: 0.8,
+    images: product.image_url ? [product.image_url] : undefined,
   }))
 
-  const categoryPages = getAllCategorySlugs().map((slug) => ({
-    url: `${BASE_URL}/peptides/${slug}`,
-    lastModified: buildDate,
+  const categoryPages = categories.map((category) => ({
+    url: `${BASE_URL}/peptides/${category.slug}`,
+    lastModified: MIGRATED,
     changeFrequency: 'weekly' as const,
     priority: 0.9,
   }))
 
-  const blogPages = getAllBlogSlugs().map((slug) => ({
-    url: `${BASE_URL}/blog/${slug}`,
-    lastModified: new Date('2026-04-01'),
+  const blogPages = blogPosts.map((post) => ({
+    url: `${BASE_URL}/blog/${post.slug}`,
+    lastModified: new Date(post.date),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }))
 
-  const guidePages = getAllGuideSlugs().map((slug) => ({
-    url: `${BASE_URL}/guides/${slug}`,
-    lastModified: new Date('2026-04-01'),
+  const guidePages = guides.map((guide) => ({
+    url: `${BASE_URL}/guides/${guide.slug}`,
+    lastModified: new Date(guide.date),
     changeFrequency: 'monthly' as const,
     priority: 0.8,
   }))
 
   const looksmaxxingPages = looksmaxxingSlugs.map((slug) => ({
     url: `${BASE_URL}/looksmaxxing/${slug}`,
-    lastModified: new Date('2026-04-09'),
+    lastModified: MIGRATED,
     changeFrequency: 'monthly' as const,
     priority: 0.85,
   }))
 
-  return [
-    { url: BASE_URL,                          lastModified: new Date('2026-04-09'), changeFrequency: 'daily',   priority: 1 },
-    { url: `${BASE_URL}/protocol`,            lastModified: new Date('2026-04-09'), changeFrequency: 'weekly',  priority: 1 },
-    { url: `${BASE_URL}/products`,            lastModified: new Date('2026-04-11'), changeFrequency: 'daily',   priority: 0.9 },
-    { url: `${BASE_URL}/stacks`,             lastModified: new Date('2026-04-10'), changeFrequency: 'weekly',  priority: 0.95 },
-    { url: `${BASE_URL}/peptides`,            lastModified: new Date('2026-04-01'), changeFrequency: 'weekly',  priority: 0.8 },
-    { url: `${BASE_URL}/looksmaxxing`,        lastModified: new Date('2026-04-09'), changeFrequency: 'weekly',  priority: 0.9 },
-    { url: `${BASE_URL}/guides`,              lastModified: new Date('2026-04-01'), changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE_URL}/blog`,                lastModified: new Date('2026-04-09'), changeFrequency: 'weekly',  priority: 0.7 },
-    { url: `${BASE_URL}/about`,               lastModified: new Date('2026-03-20'), changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${BASE_URL}/terms`,               lastModified: new Date('2026-03-01'), changeFrequency: 'yearly',  priority: 0.3 },
-    { url: `${BASE_URL}/privacy`,             lastModified: new Date('2026-03-01'), changeFrequency: 'yearly',  priority: 0.3 },
+  const entries: MetadataRoute.Sitemap = [
+    { url: BASE_URL, lastModified: MIGRATED, changeFrequency: 'daily', priority: 1 },
+    { url: `${BASE_URL}/protocol`, lastModified: MIGRATED, changeFrequency: 'weekly', priority: 1 },
+    { url: `${BASE_URL}/products`, lastModified: MIGRATED, changeFrequency: 'daily', priority: 0.9 },
+    { url: `${BASE_URL}/stacks`, lastModified: MIGRATED, changeFrequency: 'weekly', priority: 0.95 },
+    { url: `${BASE_URL}/peptides`, lastModified: MIGRATED, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${BASE_URL}/looksmaxxing`, lastModified: MIGRATED, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${BASE_URL}/guides`, lastModified: MIGRATED, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/blog`, lastModified: MIGRATED, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${BASE_URL}/about`, lastModified: MIGRATED, changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${BASE_URL}/terms`, lastModified: new Date('2026-03-01'), changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${BASE_URL}/privacy`, lastModified: new Date('2026-03-01'), changeFrequency: 'yearly', priority: 0.3 },
     ...productPages,
     ...categoryPages,
     ...blogPages,
     ...guidePages,
     ...looksmaxxingPages,
   ]
+
+  const seen = new Set<string>()
+  return entries.filter((entry) => {
+    if (seen.has(entry.url)) return false
+    seen.add(entry.url)
+    return true
+  })
 }

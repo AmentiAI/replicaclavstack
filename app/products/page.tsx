@@ -1,20 +1,21 @@
+import { SITE_URL as BASE_URL } from '@/lib/site'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { products } from '@/lib/products'
 import ProductCard from '@/components/ProductCard'
 
-const BASE_URL = 'https://clavicularspeptides.com'
 export const metadata: Metadata = {
-  title: { absolute: 'Buy Research Peptides — Semaglutide, Retatrutide, BPC-157 & More | Claviculars Peptides' },
+  title: { absolute: `Research Peptides Catalog — ${products.length} Compounds | Looksmaxxing Health` },
   description:
-    'Complete catalog: Retatrutide, Tirzepatide, Semaglutide, CagriSema, BPC-157, GHK-Cu, SNAP-8, CJC-1295/Ipamorelin, IGF-1 LR3, Epithalon, NAD+. >98% HPLC purity.',
+    `${products.length} research peptides — Retatrutide, Tirzepatide, Semaglutide, BPC-157, GHK-Cu, CJC-1295, IGF-1 LR3, Epithalon, NAD+ and more. >98% HPLC purity.`,
   alternates: { canonical: `${BASE_URL}/products` },
   openGraph: {
-    title: 'Buy Research Peptides — Semaglutide, Retatrutide, BPC-157 & More | Claviculars Peptides',
-    description: '143 research peptides across 5 protocol layers. GLP agonists, gut recovery, skin, lean mass, longevity. >98% HPLC verified.',
+    title: `Research Peptides Catalog — ${products.length} Compounds | Looksmaxxing Health`,
+    description: `${products.length} research peptides across 5 protocol layers. GLP agonists, gut recovery, skin, lean mass, longevity. >98% HPLC verified.`,
     url: `${BASE_URL}/products`,
-    siteName: 'Claviculars Peptides',
+    siteName: 'Looksmaxxing Health',
     type: 'website',
+    images: [{ url: `${BASE_URL}/logo.png`, alt: 'Looksmaxxing Health' }],
   },
 }
 
@@ -111,9 +112,9 @@ export default function ProductsPage() {
         <h1 className="text-4xl sm:text-5xl font-black text-gray-900 tracking-tight mb-4">
           Shop Research Peptides
         </h1>
-        <p className="text-xl text-gray-500 mb-6">143 peptides for weight loss, anti-aging, skin &amp; muscle. Every vial &gt;98% HPLC purity.</p>
+        <p className="text-xl text-gray-500 mb-6">{products.length} peptides for weight loss, anti-aging, skin &amp; muscle. Every vial &gt;98% HPLC purity.</p>
         <div className="flex flex-wrap gap-2.5">
-          {['143 Compounds', '>98% HPLC Verified', 'Third-Party Test Reports', 'Free Shipping $200+'].map(tag => (
+          {[`${products.length} Compounds`, '>98% HPLC Verified', 'Third-Party Test Reports', 'Free Shipping $200+'].map(tag => (
             <span key={tag} className="px-3 py-1.5 bg-gray-100 border border-gray-200 text-gray-600 text-xs rounded-full">{tag}</span>
           ))}
         </div>
@@ -144,7 +145,7 @@ export default function ProductsPage() {
       <div className="mt-8 p-6 bg-amber-50 border border-amber-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
           <p className="text-gray-900 font-bold mb-1">Ready to build your stack?</p>
-          <p className="text-sm text-gray-500">Browse curated protocol stacks — all 143 compounds organized by research goal.</p>
+          <p className="text-sm text-gray-500">Browse curated protocol stacks — {products.length} compounds Apollo Peptide Sciences actually sells.</p>
         </div>
         <a href="/stacks" className="btn-primary px-6 py-3 rounded-xl text-sm font-bold whitespace-nowrap">
           View All Stacks →

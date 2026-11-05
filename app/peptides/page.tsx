@@ -1,20 +1,21 @@
+import { SITE_URL as BASE_URL } from '@/lib/site'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { categories } from '@/lib/categories'
 
-const BASE_URL = 'https://clavicularspeptides.com'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Peptide Research Classes — GLP, Gut Recovery, Skin, Lean Mass, Longevity | Claviculars Peptides' },
+  title: { absolute: 'Peptide Research Classes — 5 Categories | Looksmaxxing Health' },
   description:
-    'Browse research peptides by class: GLP receptor agonists, gut recovery compounds, skin peptides, lean mass and longevity. 5 categories, 17 compounds, full mechanism analysis.',
+    'Research peptides by class: GLP agonists, gut recovery, skin & glow, lean mass, and longevity. Per-compound mechanism analysis.',
   alternates: { canonical: `${BASE_URL}/peptides` },
   openGraph: {
-    title: 'Peptide Research Classes | Claviculars Peptides',
+    title: 'Peptide Research Classes | Looksmaxxing Health',
     description: '5 peptide research categories. GLP agonists, gut recovery, skin & glow, lean mass, longevity. Mechanism analysis for every compound.',
     url: `${BASE_URL}/peptides`,
-    siteName: 'Claviculars Peptides',
+    siteName: 'Looksmaxxing Health',
     type: 'website',
+    images: [{ url: `${BASE_URL}/logo.png`, alt: 'Looksmaxxing Health' }],
   },
 }
 

@@ -1,21 +1,22 @@
+import { SITE_URL as BASE_URL } from '@/lib/site'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-const BASE_URL = 'https://clavicularspeptides.com'
 
 
 export const metadata: Metadata = {
-  title: { absolute: 'Epithalon Peptide — Anti-Aging, Telomere Support & Longevity Guide | Claviculars Peptides' },
+  title: { absolute: 'Epithalon Peptide — Anti-Aging, Telomere Support & Longevity Guide | Looksmaxxing Health' },
   description:
     'Epithalon (Ala-Glu-Asp-Gly) — telomerase (TERT) upregulation research by Khavinson et al. 24% lifespan extension in SHR mice. Cellular anti-aging mechanisms.',
   alternates: { canonical: `${BASE_URL}/looksmaxxing/epithalon-telomere-longevity` },
   openGraph: {
-    title: 'Epithalon Peptide — Anti-Aging, Telomere Support & Longevity Guide | Claviculars Peptides',
+    title: 'Epithalon Peptide — Anti-Aging, Telomere Support & Longevity Guide | Looksmaxxing Health',
     description:
       'Epithalon (Ala-Glu-Asp-Gly) — telomerase (TERT) upregulation research by Khavinson et al. 24% lifespan extension in SHR mice. Cellular anti-aging mechanisms.',
     url: `${BASE_URL}/looksmaxxing/epithalon-telomere-longevity`,
-    siteName: 'Claviculars Peptides',
+    siteName: 'Looksmaxxing Health',
     type: 'article',
+    images: [{ url: `${BASE_URL}/logo.png`, alt: 'Looksmaxxing Health' }],
   },
 }
 
@@ -26,9 +27,9 @@ const articleJsonLd = {
   description:
     'Epithalon (Ala-Glu-Asp-Gly) — telomerase (TERT) upregulation research by Khavinson et al. 24% lifespan extension in SHR mice. Cellular anti-aging mechanisms.',
   datePublished: '2026-04-09',
-  dateModified: '2026-04-09',
-  author: { '@type': 'Organization', name: 'Claviculars Peptides' },
-  publisher: { '@type': 'Organization', name: 'Claviculars Peptides', url: BASE_URL },
+  dateModified: '2026-05-04',
+  author: { '@type': 'Organization', name: 'Looksmaxxing Health Editorial', url: `${BASE_URL}/about` },
+  publisher: { '@type': 'Organization', name: 'Looksmaxxing Health', url: BASE_URL, logo: { '@type': 'ImageObject', url: `${BASE_URL}/logo.png`, width: 978, height: 645 } },
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE_URL}/looksmaxxing/epithalon-telomere-longevity` },
 }
 
