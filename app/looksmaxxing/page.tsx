@@ -167,7 +167,7 @@ export default function LooksmaxxingIndexPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
-      <main style={{ background: '#ffffff', minHeight: '100vh' }}>
+      <main style={{ background: '#000000', color: '#ffffff', minHeight: '100vh' }}>
 
         {/* Hero section */}
         <section
@@ -196,7 +196,7 @@ export default function LooksmaxxingIndexPage() {
               style={{
                 marginBottom: '2rem',
                 fontSize: '0.82rem',
-                color: '#64748b',
+                color: '#ffffff',
                 display: 'flex',
                 gap: '0.4rem',
                 alignItems: 'center',
@@ -204,23 +204,23 @@ export default function LooksmaxxingIndexPage() {
                 flexWrap: 'wrap',
               }}
             >
-              <Link href="/" style={{ color: '#64748b', textDecoration: 'none' }}>
+              <Link href="/" style={{ color: '#ffffff', textDecoration: 'none' }}>
                 Home
               </Link>
               <span>›</span>
-              <span style={{ color: '#4b5563' }}>Looksmaxxing</span>
+              <span style={{ color: '#ff2a2a' }}>Looksmaxxing</span>
             </nav>
 
             {/* Category tag */}
             <div
               style={{
                 display: 'inline-block',
-                background: 'rgba(200,135,10,0.1)',
-                border: '1px solid rgba(200,135,10,0.3)',
+                background: '#1a0000',
+                border: '1px solid #ff2a2a',
                 borderRadius: '20px',
                 padding: '0.3rem 1rem',
                 fontSize: '0.75rem',
-                color: '#c8870a',
+                color: '#ff2a2a',
                 fontWeight: 600,
                 letterSpacing: '0.07em',
                 textTransform: 'uppercase',
@@ -231,12 +231,12 @@ export default function LooksmaxxingIndexPage() {
             </div>
 
             <h1
-              className="shimmer-text"
               style={{
                 fontSize: 'clamp(2rem, 5.5vw, 3.4rem)',
                 fontWeight: 800,
                 lineHeight: 1.15,
                 marginBottom: '1.25rem',
+                color: '#ffffff',
               }}
             >
               Looksmaxxing with Peptides
@@ -244,7 +244,7 @@ export default function LooksmaxxingIndexPage() {
 
             <p
               style={{
-                color: '#4b5563',
+                color: '#ffffff',
                 fontSize: 'clamp(1rem, 2vw, 1.15rem)',
                 lineHeight: 1.75,
                 maxWidth: '640px',
@@ -275,12 +275,12 @@ export default function LooksmaxxingIndexPage() {
                 <div
                   key={item.label}
                   style={{
-                    background: '#f1f5f9',
-                    border: '1px solid #e2e8f0',
+                    background: '#1a0000',
+                    border: '1px solid #ff2a2a',
                     borderRadius: '10px',
                     padding: '0.5rem 1rem',
                     fontSize: '0.78rem',
-                    color: '#374151',
+                    color: '#ffffff',
                     fontWeight: 500,
                     display: 'flex',
                     alignItems: 'center',
@@ -326,8 +326,8 @@ export default function LooksmaxxingIndexPage() {
                       flexDirection: 'column',
                       gap: '0.75rem',
                       cursor: 'pointer',
-                      background: '#ffffff',
-                      border: '1px solid #e2e8f0',
+                      background: '#000000',
+                      border: '1px solid #3a0000',
                       borderRadius: '1rem',
                       transition: 'border-color 0.2s ease, box-shadow 0.2s ease',
                     }}
@@ -337,13 +337,13 @@ export default function LooksmaxxingIndexPage() {
                       <span
                         style={{
                           display: 'inline-block',
-                          background: `${accentColor}14`,
-                          border: `1px solid ${accentColor}35`,
+                          background: '#1a0000',
+                          border: '1px solid #ff2a2a',
                           borderRadius: '9999px',
                           padding: '0.2rem 0.65rem',
                           fontSize: '0.7rem',
                           fontWeight: 700,
-                          color: accentColor,
+                          color: '#ff2a2a',
                           letterSpacing: '0.05em',
                           textTransform: 'uppercase',
                         }}
@@ -355,7 +355,7 @@ export default function LooksmaxxingIndexPage() {
                     {/* Title */}
                     <h2
                       style={{
-                        color: '#1f2937',
+                        color: '#ffffff',
                         fontSize: '1rem',
                         fontWeight: 700,
                         lineHeight: 1.45,
@@ -369,7 +369,7 @@ export default function LooksmaxxingIndexPage() {
                     {/* Excerpt — 2-line clamp */}
                     <p
                       style={{
-                        color: '#64748b',
+                        color: '#f3f3f3',
                         fontSize: '0.82rem',
                         lineHeight: 1.65,
                         margin: 0,
@@ -391,7 +391,7 @@ export default function LooksmaxxingIndexPage() {
                         justifyContent: 'space-between',
                         marginTop: 'auto',
                         paddingTop: '0.75rem',
-                        borderTop: '1px solid #e2e8f0',
+                        borderTop: '1px solid #3a0000',
                       }}
                     >
                       <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
@@ -400,7 +400,7 @@ export default function LooksmaxxingIndexPage() {
                           style={{
                             fontSize: '0.7rem',
                             fontWeight: 700,
-                            color: accentColor,
+                            color: '#ffffff',
                             padding: '0.2rem 0.55rem',
                             borderRadius: '6px',
                           }}
@@ -410,7 +410,7 @@ export default function LooksmaxxingIndexPage() {
                         <span
                           style={{
                             fontSize: '0.7rem',
-                            color: '#374151',
+                            color: '#ffffff',
                             display: 'flex',
                             alignItems: 'center',
                             gap: '0.25rem',
@@ -423,7 +423,7 @@ export default function LooksmaxxingIndexPage() {
                       <span
                         aria-hidden="true"
                         style={{
-                          color: accentColor,
+                          color: '#ff2a2a',
                           fontSize: '1rem',
                           lineHeight: 1,
                           opacity: 0.7,
@@ -442,8 +442,8 @@ export default function LooksmaxxingIndexPage() {
           {/* Bottom disclaimer */}
           <div
             style={{
-              background: '#fffbeb',
-              border: '1px solid #fde68a',
+              background: '#1a0000',
+              border: '1px solid #ff2a2a',
               borderRadius: '14px',
               padding: '1.25rem 1.5rem',
               marginTop: '3rem',
@@ -453,12 +453,12 @@ export default function LooksmaxxingIndexPage() {
             <p
               style={{
                 fontSize: '0.78rem',
-                color: '#374151',
+                color: '#ffffff',
                 margin: 0,
                 lineHeight: 1.65,
               }}
             >
-              <strong style={{ color: '#64748b' }}>Research Use Only.</strong>{' '}
+              <strong style={{ color: '#ff2a2a' }}>Research Use Only.</strong>{' '}
               All compounds and protocols discussed on Looksmaxxing Health are for laboratory research
               purposes only. Not for human consumption. No content on this site constitutes medical
               advice. Consult a qualified healthcare professional regarding any health-related

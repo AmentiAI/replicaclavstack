@@ -92,14 +92,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} ${montserrat.variable}`}>
-      <body
-        className="min-h-screen flex flex-col"
-        style={{
-          background: '#ffffff',
-          color: '#1f2937',
-          fontFamily: 'var(--font-montserrat), var(--font-inter), system-ui, sans-serif',
-        }}
-      >
+      <body className="min-h-screen flex flex-col bg-black text-white">
         <Header />
         <main className="flex-1 pt-[calc(1.875rem+60px)]">{children}</main>
         <Footer />

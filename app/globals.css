@@ -300,11 +300,9 @@ nav a, .text-xs a, footer a { min-height: unset; min-width: unset; }
 
 /* ─── Text effects ───────────────────────────────────────────── */
 .gradient-text {
-  background: linear-gradient(135deg, #ff2a2a 0%, #ffffff 50%, #ff2a2a 100%);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  background: none;
+  -webkit-text-fill-color: #ffffff;
+  color: #ffffff;
 }
 .gradient-text-amber {
   background: linear-gradient(135deg, #ff2a2a 0%, #ff4d4d 100%);
@@ -313,19 +311,10 @@ nav a, .text-xs a, footer a { min-height: unset; min-width: unset; }
   background-clip: text;
 }
 .shimmer-text {
-  background: linear-gradient(
-    90deg,
-    rgba(255,255,255,0.55) 0%,
-    #ffffff 40%,
-    rgba(255,42,42,0.95) 50%,
-    #ffffff 60%,
-    rgba(255,255,255,0.55) 100%
-  );
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: shimmer-text 4s linear infinite;
+  background: none;
+  -webkit-text-fill-color: #ffffff;
+  color: #ffffff;
+  animation: none;
 }
 .text-glow {
   text-shadow: 0 0 20px rgba(255,42,42,0.4), 0 0 40px rgba(255,42,42,0.2);
@@ -344,40 +333,49 @@ nav a, .text-xs a, footer a { min-height: unset; min-width: unset; }
 .pulse-glow-purple { animation: glow-pulse-amber 3s ease-in-out infinite; }
 
 /* ─── Button styles ──────────────────────────────────────────── */
-.btn-primary {
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
   position: relative;
-  background: linear-gradient(135deg, #ff2a2a 0%, #ff4d4d 100%);
+  background: #ff2a2a !important;
+  background-image: none !important;
   color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
   font-weight: 700;
   border-radius: 12px;
-  overflow: hidden;
-  transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+  border: 1px solid #ff2a2a !important;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
-.btn-primary::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 100%);
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(255,42,42,0.35); }
-.btn-primary:hover::after { opacity: 1; }
-.btn-primary:active { transform: translateY(0); }
+.btn-primary::after { content: none !important; }
+.btn-primary:hover { background: #c40000 !important; }
 
-.btn-ghost {
-  background: rgba(255,42,42,0.05);
-  border: 1px solid rgba(255,42,42,0.2);
-  color: #ff2a2a !important;
+.btn-ghost,
+.btn-ghost:hover,
+.btn-ghost:focus,
+.btn-ghost:active {
+  background: #000000 !important;
+  background-image: none !important;
+  border: 1px solid #ff2a2a !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
   border-radius: 12px;
-  transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
 }
-.btn-ghost:hover {
-  background: rgba(255,42,42,0.1);
-  border-color: rgba(255,42,42,0.5);
-  color: #ff4d4d !important;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(255,42,42,0.15);
+.btn-ghost:hover { background: #1a0000 !important; color: #ff2a2a !important; -webkit-text-fill-color: #ff2a2a !important; }
+
+/* Hover chips stay dark so the label stays readable */
+a:hover, button:hover, [role="button"]:hover {
+  text-shadow: none;
+}
+header a:hover, header button:hover {
+  background-color: #1a0000 !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+header .btn-primary:hover {
+  background-color: #c40000 !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
 }
 
 /* ─── Card hover effects ─────────────────────────────────────── */

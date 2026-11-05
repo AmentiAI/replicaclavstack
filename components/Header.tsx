@@ -11,7 +11,7 @@ const navLinks = [
   { href: '/products',      label: 'Products'        },
   { href: '/stacks',        label: 'Stacks'          },
   { href: '/peptides',      label: 'Peptide Classes' },
-  { href: '/looksmaxxing',  label: 'Looks Maxxing'  },
+  { href: '/looksmaxxing',  label: 'Looksmaxxing'  },
   { href: '/guides',        label: 'Guides'          },
   { href: '/blog',          label: 'Research'        },
 ]
@@ -84,7 +84,7 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="relative px-3 py-2 text-[13px] font-medium text-gray-600 hover:text-amber-700 transition-colors rounded-lg hover:bg-amber-50 group whitespace-nowrap"
+              className="relative px-3 py-2 text-[13px] font-medium text-white hover:text-white transition-colors rounded-lg hover:bg-red-950 group whitespace-nowrap"
             >
               {item.label}
               <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-px bg-amber-500 group-hover:w-4 transition-all duration-300" />
@@ -134,7 +134,7 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="px-4 py-3 text-sm text-gray-600 hover:text-amber-700 rounded-xl hover:bg-amber-50 transition-all"
+              className="px-4 py-3 text-sm text-white hover:text-white rounded-xl hover:bg-red-950 transition-all"
               onClick={() => setMenuOpen(false)}
             >
               {item.label}
