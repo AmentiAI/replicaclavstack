@@ -511,10 +511,10 @@ export default function EpithalonPage() {
               Epithalon has been studied in both continuous and cyclic administration protocols. The Khavinson
               Institute protocols involved periodic treatment cycles rather than continuous daily administration —
               a pattern that may relate to the epigenetic mechanism proposed, where chromatin modifications
-              established during a treatment cycle are maintained for a period before reapplication. Apollo
-              Peptide Sciences supplies{' '}
-              <a href="/stacks" target="_blank" rel="noopener noreferrer" style={{ color: '#c8870a', textDecoration: 'none' }}>
-                50 mg vials of lyophilized Epithalon
+              established during a treatment cycle are maintained for a period before reapplication. American
+              Peptides supplies{' '}
+              <a href="https://www.americanpeptides.us/products/epi?ref=01xjeP7mUu" target="_blank" rel="noopener noreferrer sponsored" style={{ color: '#ff2a2a', textDecoration: 'none' }}>
+                lyophilized Epithalon
               </a>{' '}
               for laboratory research applications.
             </p>

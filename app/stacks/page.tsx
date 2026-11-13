@@ -40,7 +40,7 @@ const stacks: Stack[] = [
       'One compound from each protocol layer — the core research stack. GLP receptor agonism, gut integrity, skin remodeling, GH axis, and longevity all addressed in a single coordinated protocol.',
     color: 'from-[#00d4ff]/10 to-[#7c3aed]/10',
     accent: '#00d4ff',
-    slugs: ['glp-3-r-15mg', 'bpc-157-10mg', 'ghk-cu-50mg', 'cjc1295-ipamorelin', 'epithalon-50mg'],
+    slugs: ['ap-rta-3', 'bpc-157', 'copper-binding-peptide-ghk-cu', 'cjc-1295-no-dac-ipamorelin', 'epi'],
     goals: ['Metabolic Research', 'Gut Repair', 'Skin Remodeling', 'GH Axis', 'Telomere Biology'],
   },
   {
@@ -51,7 +51,7 @@ const stacks: Stack[] = [
       'All three generations of GLP receptor research in a single stack. Retatrutide (GLP-1R+GIPR+GcgR), Tirzepatide (GLP-1R+GIPR), and Semaglutide (GLP-1R) — each with a distinct mechanism signature.',
     color: 'from-[#10b981]/10 to-[#00d4ff]/10',
     accent: '#10b981',
-    slugs: ['glp-3-r-15mg', 'glp-2-t-15mg', 'glp-1-s-5mg', 'bpc-157-10mg'],
+    slugs: ['ap-rta-3', 'ap-trz-2', 'ap-sem-1', 'bpc-157'],
     goals: ['GLP-1R Agonism', 'GIPR Co-Activation', 'GcgR Thermogenesis', 'GI Protection', 'Reconstitution'],
   },
   {
@@ -62,7 +62,7 @@ const stacks: Stack[] = [
       'The skin remodeling trifecta. GHK-Cu copper peptide modulates 4,177 genes in skin fibroblasts. SNAP-8 competitively inhibits the SNARE complex to reduce neuromuscular activity. BPC-157 drives angiogenesis and tissue repair at the dermal level.',
     color: 'from-[#f59e0b]/10 to-[#ec4899]/10',
     accent: '#f59e0b',
-    slugs: ['ghk-cu-50mg', 'snap-8-10mg', 'bpc-157-10mg'],
+    slugs: ['copper-binding-peptide-ghk-cu', 'snap-8', 'bpc-157'],
     goals: ['Collagen Synthesis', 'SNARE Inhibition', 'Wound Repair', 'Angiogenesis'],
   },
   {
@@ -73,7 +73,7 @@ const stacks: Stack[] = [
       'The anabolic research trio. CJC-1295 extends GH pulses over 6–8 days via DAC albumin binding. Ipamorelin selectively amplifies pulse frequency. IGF-1 LR3 bypasses binding protein interference for 20–30 hour active duration. TB-500 supports multi-tissue repair alongside.',
     color: 'from-[#7c3aed]/10 to-[#00d4ff]/10',
     accent: '#a78bfa',
-    slugs: ['cjc1295-ipamorelin', 'igf-1lr3-1mg', 'tb-500-10mg'],
+    slugs: ['cjc-1295-no-dac-ipamorelin', 'igf-1-lr3', 'tb-500'],
     goals: ['GH Pulse Amplitude', 'IGF-1 Axis', 'Satellite Cell Research', 'Multi-Tissue Repair'],
   },
   {
@@ -84,7 +84,7 @@ const stacks: Stack[] = [
       'Three independent longevity research pathways. Epithalon upregulates hTERT to maintain telomere length. NAD+ fuels sirtuin deacetylase activity (SIRT1–7) and PARP DNA repair. GHK-Cu drives antioxidant enzyme activation via copper chaperone function.',
     color: 'from-[#ec4899]/10 to-[#7c3aed]/10',
     accent: '#f472b6',
-    slugs: ['epithalon-50mg', 'nad-500mg', 'ghk-cu-50mg'],
+    slugs: ['epi', 'nad', 'copper-binding-peptide-ghk-cu'],
     goals: ['Telomerase Activation', 'Sirtuin Research', 'DNA Repair', 'Antioxidant Enzymes'],
   },
   {
@@ -95,7 +95,7 @@ const stacks: Stack[] = [
       'The repair stack. BPC-157\'s pentadecapeptide sequence drives VEGFR2-mediated angiogenesis across 40+ tissue models. TB-500\'s actin-binding sequence mobilizes cell migration and remyelination. GHK-Cu activates wound contraction and collagen organization.',
     color: 'from-[#10b981]/10 to-[#f59e0b]/10',
     accent: '#34d399',
-    slugs: ['bpc-157-10mg', 'tb-500-10mg', 'ghk-cu-50mg', 'cjc1295-ipamorelin'],
+    slugs: ['bpc-157', 'tb-500', 'copper-binding-peptide-ghk-cu', 'cjc-1295-no-dac-ipamorelin'],
     goals: ['Angiogenesis', 'Actin Dynamics', 'Collagen Remodeling', 'GH-Dependent Repair'],
   },
 ]

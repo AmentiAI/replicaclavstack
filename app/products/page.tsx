@@ -20,81 +20,16 @@ export const metadata: Metadata = {
 }
 
 const sections = [
-  {
-    title: 'The 5 Core Protocol Compounds',
-    subtitle: 'One from each layer — the essential research stack',
-    slugs: ['glp-3-r-15mg', 'bpc-157-10mg', 'ghk-cu-50mg', 'snap-8-10mg', 'cjc1295-ipamorelin'],
-  },
-  {
-    title: 'GLP-3 R — Retatrutide (Triple Receptor)',
-    subtitle: 'GLP-1R + GIPR + GcgR agonist · Phase 2: −28.7%',
-    slugs: ['glp-3-r-15mg', 'glp-3-r-10mg', 'glp-3-r-30mg', 'glp-3-r-60mg', 'retatrutide-20mg'],
-  },
-  {
-    title: 'GLP-2 T — Tirzepatide (Dual Receptor)',
-    subtitle: 'GLP-1R + GIPR dual agonist · Phase 3 (SURMOUNT-1): −22.5%',
-    slugs: ['glp-2-t-15mg', 'glp-2-t-30mg', 'glp-2-t-60mg', 'glp-2-t-15mg-4pack', 'glp-2-t-20mg-5pack', 'glp-2-t-15mg-10pack'],
-  },
-  {
-    title: 'GLP-1 S — Semaglutide (Single Receptor)',
-    subtitle: 'GLP-1R mono agonist · Phase 3 (STEP-1): −14.9%',
-    slugs: ['glp-1-s-5mg', 'glp-1-s-10mg', 'glp-1-s-15mg', 'semaglutide-3mg', 'semaglutide-30mg'],
-  },
-  {
-    title: 'Cagri-Sema, Cagri-Reta & Cagrilintide',
-    subtitle: 'Amylin receptor combinations — dual-pathway research blends',
-    slugs: ['glp-1-c-glp-1-s-5mg', 'cagri-reta-10mg', 'cagri-reta-5mg', 'reta-cagri-5mg', 'cagrilintide-10mg', 'cagrilintide-5mg'],
-  },
-  {
-    title: 'Fat Loss & Metabolic',
-    subtitle: 'AOD9604, SLU-PP-332, Mazdutide, Survodutide, Adipotide & more',
-    slugs: ['aod9604-10mg', 'aod9604-5mg', 'aod9604-2mg', 'mazdutide-6mg', 'survodutide-10mg', 'aicar-50mg', 'adipotide-fttp-10mg', 'adipotide-fttp-5mg', 'bam-15-30ml', 'bam-15-50ml', '5-amino-1mq-50mg', '5-amino-1mq-5mg', '5-amino-1mq-capsules', 'tesofensine-capsules', 'tesofensine-tablets', 'slu-pp-332-30caps', 'slu-pp-332-120caps', 'slu-pp-332-1mg-caps', 'slu-pp-332-1mg-solution', 'slu-pp-332-5mg-solution', 'l-carnitine-400mg-ml', 'l-carnitine-600mg-ml', 'l-carnitine-5pack', 'o-304-60caps'],
-  },
-  {
-    title: 'Gut Recovery & Repair',
-    subtitle: 'BPC-157, TB-500 — mucosal integrity and tissue healing',
-    slugs: ['bpc-157-10mg', 'bpc-157-capsules', 'tb-500-10mg', 'bpc-157-tb-500-blend-20mg', 'bpc-157-tb-500-10mg'],
-  },
-  {
-    title: 'Skin, Glow & Aesthetic',
-    subtitle: 'GHK-Cu, SNAP-8, Melanotan, PT-141, RU-58841',
-    slugs: ['ghk-cu-50mg', 'ghk-cu-100mg', 'snap-8-10mg', 'snap-8-2pack', 'glow-blend-50mg', 'glow-blend-70mg', 'klow-blend-80mg', 'melanotan-1-10mg', 'melanotan-2-10mg', 'pt-141-10mg', 'ru-58841-30ml', 'ru-58841-60ml'],
-  },
-  {
-    title: 'Growth Hormone Axis',
-    subtitle: 'CJC-1295, Ipamorelin, Sermorelin, Tesamorelin, GHRP-2/6, Hexarelin',
-    slugs: ['cjc1295-ipamorelin', 'ipamorelin-10mg', 'cjc-1295-no-dac-10mg', 'cjc-1295-no-dac-5mg', 'cjc-1295-with-dac-10mg', 'sermorelin-10mg', 'sermorelin-5mg', 'sermorelin-2mg', 'tesamorelin-10mg', 'tesamorelin-20mg', 'ghrp-2-10mg', 'ghrp-6-10mg', 'hexarelin-5mg', 'ipamorelin-cjc-1295-v2', 'ipa-tesa-blend-15mg', 'ipamorelin-tesamorelin-13mg'],
-  },
-  {
-    title: 'Lean Mass & IGF-1',
-    subtitle: 'IGF-1 LR3, PEG-MGF, ACE-031, Abaloparatide',
-    slugs: ['igf-1lr3-1mg', 'peg-mgf-2mg', 'ace-031-1mg', 'abaloparatide-3mg'],
-  },
-  {
-    title: 'Recovery & Immune',
-    subtitle: 'Thymosin Alpha-1, MOTS-c, SS-31, KPV, LL-37, VIP, TB-500',
-    slugs: ['thymosin-alpha-1-10mg', 'thymosin-alpha-1-5mg', 'mots-c-10mg', 'mots-c-20mg', 'mots-c-40mg', 'ss-31-10mg', 'ss-31-25mg', 'ss-31-50mg', 'kpv-10mg', 'kpv-5mg', 'ara-290-10mg', 'll-37-10mg', 'vip-10mg', 'vip-5mg', 'thymulin-10mg', 'gonadorelin-acetate', 'kisspeptin-10-10mg', 'kisspeptin-10-5mg'],
-  },
-  {
-    title: 'Longevity & Anti-Aging',
-    subtitle: 'Epithalon, NAD+, FOXO4-DRI, Glutathione, Methylene Blue',
-    slugs: ['epithalon-50mg', 'epitalon-10mg', 'nad-500mg', 'nad-1000mg', 'foxo4-dri-10mg', 'na-epitalon-10mg', 'glutathione-200mg', 'glutathione-600mg', 'glutathione-1500mg', 'methylene-blue-50ml', 'pnc-27-30mg'],
-  },
-  {
-    title: 'Cognitive & Mood',
-    subtitle: 'Selank, NA-Selank, DSIP, Semax, Oxytocin, P21, PE-22-28',
-    slugs: ['dsip-10mg', 'dsip-5mg', 'dsip-15mg', 'selank-10mg', 'na-selank-amidate-10mg', 'na-selank-amidate-30mg', 'n-acetyl-semax-amidate-30mg', 'oxytocin-10mg', 'oxytocin-8mg', 'adamax-10mg', 'pe-22-28-10mg', 'p21-10mg'],
-  },
-  {
-    title: 'Bioregulators',
-    subtitle: 'Khavinson peptides — organ-specific tissue regulation',
-    slugs: ['bronchogen-20mg', 'cardiogen-20mg', 'cartalax-20mg', 'chonluten-20mg', 'cortagen-20mg', 'crystagen-20mg', 'livagen-20mg', 'ovagen-20mg', 'pancragen-20mg', 'pinealon-10mg', 'pinealon-20mg', 'prostamax-20mg', 'testagen-20mg', 'thymogen-20mg', 'vesilute-20mg', 'vesugen-20mg', 'vilon-20mg'],
-  },
-  {
-    title: 'Reconstitution',
-    subtitle: 'Bacteriostatic water for peptide reconstitution',
-    slugs: ['bacteriostatic-water', 'usp-bacteriostatic-water'],
-  },
+  { title: 'AP Series', subtitle: 'House research reference peptides with lot-matched COAs', key: 'glp-receptor-agonists' },
+  { title: 'Gut Recovery', subtitle: 'BPC-157, TB-500, KPV', key: 'gut-recovery' },
+  { title: 'Skin & Glow', subtitle: 'GHK-Cu, SNAP-8, blends, and melanotan research', key: 'skin-and-glow' },
+  { title: 'Lean Mass & Longevity', subtitle: 'GH axis, IGF-1, NAD+, Epithalon, SS-31', key: 'lean-mass-longevity' },
+  { title: 'Cognitive', subtitle: 'Selank, Semax, Dihexa, sprays, and dissolving strips', key: 'cognitive' },
+  { title: 'Bioregulators', subtitle: 'Pinealon, Prostamax, Testagen, Thymalin, Vesugen, Vilon', key: 'bioregulator' },
+  { title: 'Metabolic', subtitle: '5-Amino-1MQ, AOD-9604, SLU-PP-332', key: 'fat_loss' },
+  { title: 'Research Bundles', subtitle: 'Multi-compound bundles from American Peptides', key: 'bundles' },
+  { title: 'Lab Supplies', subtitle: 'Reconstitution solution', key: 'reconstitution' },
+  { title: 'Merch', subtitle: 'American Peptides apparel', key: 'merch' },
 ]
 
 export default function ProductsPage() {
@@ -122,9 +57,7 @@ export default function ProductsPage() {
 
       {/* Sections */}
       {sections.map((section) => {
-        const sectionProducts = section.slugs
-          .map(s => products.find(p => p.slug === s))
-          .filter(Boolean) as typeof products
+        const sectionProducts = products.filter((p) => p.category[0] === section.key)
         if (!sectionProducts.length) return null
         return (
           <div key={section.title} className="mb-16">
@@ -145,7 +78,7 @@ export default function ProductsPage() {
       <div className="mt-8 p-6 bg-amber-50 border border-amber-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
           <p className="text-gray-900 font-bold mb-1">Ready to build your stack?</p>
-          <p className="text-sm text-gray-500">Browse curated protocol stacks — {products.length} compounds Apollo Peptide Sciences actually sells.</p>
+          <p className="text-sm text-gray-500">Browse curated protocol stacks — {products.length} compounds American Peptides sells.</p>
         </div>
         <a href="/stacks" className="btn-primary px-6 py-3 rounded-xl text-sm font-bold whitespace-nowrap">
           View All Stacks →

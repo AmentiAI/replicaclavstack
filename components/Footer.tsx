@@ -2,12 +2,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const stackLinks = [
-  { href: '/products/glp-3-r-15mg',       label: 'GLP-3 R — Retatrutide'   },
-  { href: '/products/bpc-157-10mg',        label: 'BPC-157 10mg'            },
-  { href: '/products/ghk-cu-50mg',         label: 'GHK-Cu 50mg'             },
-  { href: '/products/snap-8-10mg',         label: 'SNAP-8 10mg'             },
-  { href: '/products/cjc1295-ipamorelin',  label: 'CJC-1295 / Ipamorelin'  },
-  { href: '/products/epithalon-50mg',      label: 'Epithalon 50mg'          },
+  { href: '/products/ap-rta-3', label: 'AP-RTA-3' },
+  { href: '/products/bpc-157', label: 'BPC-157' },
+  { href: '/products/copper-binding-peptide-ghk-cu', label: 'GHK-Cu' },
+  { href: '/products/snap-8', label: 'SNAP-8' },
+  { href: '/products/cjc-1295-no-dac-ipamorelin', label: 'CJC-1295 / Ipamorelin' },
+  { href: '/products/epi', label: 'Epithalon' },
 ]
 
 const protocolLinks = [

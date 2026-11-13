@@ -478,7 +478,7 @@ export default function Tb500Page() {
             <p>
               In research and supplement communities, &ldquo;TB-500&rdquo; has sometimes been used to refer
               to a synthetic peptide fragment corresponding to the LKKTET active motif region
-              (Ac-SDKPDMAEIEKFDKSKLKKT-NH₂) rather than the full 43 amino acid protein. Apollo&apos;s
+              (Ac-SDKPDMAEIEKFDKSKLKKT-NH₂) rather than the full 43 amino acid protein. American Peptides
               TB-500 product is <strong>full-length synthetic Tβ4</strong> — the complete 43 amino acid
               sequence. This distinction matters: while the LKKTET motif (residues 17–23) is the primary
               G-actin binding site, full-length Tβ4 has additional functional domains:

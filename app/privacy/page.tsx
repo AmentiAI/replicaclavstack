@@ -30,7 +30,7 @@ export default function PrivacyPage() {
 
         <section>
           <h2>2. Affiliate Links and Third-Party Sites</h2>
-          <p>This Site contains affiliate links to Apollo Peptide Sciences. When you click these links and navigate to third-party sites, their privacy policies govern data collection. We do not control or have access to data collected by third-party sites.</p>
+          <p>This Site contains affiliate links to American Peptides. When you click these links and navigate to third-party sites, their privacy policies govern data collection. We do not control or have access to data collected by third-party sites.</p>
         </section>
 
         <section>

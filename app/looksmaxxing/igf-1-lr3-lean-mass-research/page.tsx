@@ -528,7 +528,7 @@ export default function Igf1Lr3Page() {
             <p>
               IGF-1 LR3 is one of the highest-potency compounds in the research peptide space. Biologically
               active concentrations are in the low nanomolar range (1–10 nM in cell culture; ~10–100 μg/kg
-              in rodent models). Reconstitution precision is critical: Apollo&apos;s IGF-1 LR3 (1 mg vials)
+              in rodent models). Reconstitution precision is critical: American Peptides IGF-1 LR3 (1 mg vials)
               should be reconstituted with bacteriostatic water or dilute acetic acid and stored at 4°C after
               reconstitution for up to 3 weeks, or at -20°C for up to 6 months. Repeated freeze-thaw cycles
               degrade the disulfide bonds essential for receptor binding.

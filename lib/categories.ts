@@ -24,7 +24,7 @@ export const categories: Category[] = [
     accentColor: '#00d4ff',
     headline: 'One, Two, Three Receptors. The Data Follows.',
     content:
-      'Apollo uses a tier-based naming convention for this class: GLP-1 S (Semaglutide, single GLP-1R), GLP-2 T (Tirzepatide, dual GLP-1R + GIPR), GLP-3 R (Retatrutide, triple GLP-1R + GIPR + GcgR). Each additional receptor axis adds measurable effect in published research — roughly 6–8% per receptor tier in Phase 2/3 data. CagriSema (GLP-1 C + GLP-1 S) adds an amylin receptor pathway alongside GLP-1R.',
+      'American Peptides sells this class as AP-SEM-1 (semaglutide, single GLP-1R), AP-TRZ-2 (tirzepatide, dual GLP-1R + GIPR), and AP-RTA-3 (retatrutide, triple GLP-1R + GIPR + GcgR). Each additional receptor axis adds measurable effect in published research — roughly 6–8% per receptor tier in Phase 2/3 data.',
     stats: [
       { label: 'GLP-3 R Phase 2 (Retatrutide)',        value: '−28.7%' },
       { label: 'GLP-2 T Phase 3 (Tirzepatide)',        value: '−22.5%' },
@@ -34,7 +34,7 @@ export const categories: Category[] = [
     faq: [
       {
         q: 'What does GLP-2 T mean — is it a GLP-2 receptor agonist?',
-        a: 'No. Apollo\'s naming convention uses the number to indicate receptor count/tier, not the GLP receptor subtype. GLP-2 T = second tier, Tirzepatide — a dual GLP-1R + GIPR agonist. The "2" refers to two receptors targeted, not the GLP-2 receptor (which is an intestinal trophic receptor, a completely different target).',
+        a: 'No. The number indicates receptor count, not the GLP receptor subtype. AP-TRZ-2 is tirzepatide, a dual GLP-1R + GIPR agonist. The "2" refers to two receptors targeted, not the GLP-2 receptor (which is an intestinal trophic receptor, a completely different target).',
       },
       {
         q: 'Why does each additional receptor axis increase the research effect?',

@@ -416,7 +416,7 @@ export default function GhkCuPage() {
 
             <h2>Research Protocol Considerations</h2>
             <p>
-              For research applications, GHK-Cu (Apollo 50 mg lyophilized vials) is typically reconstituted
+              For research applications, GHK-Cu from American Peptides is typically reconstituted
               with bacteriostatic water. Standard in vitro research concentrations range from 1–10 μM for
               cell culture studies examining fibroblast gene expression, collagen synthesis, and antioxidant
               enzyme activity. Topical formulation research uses significantly higher concentrations — typically

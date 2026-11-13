@@ -46,11 +46,11 @@ function search(q: string): Product[] {
 }
 
 const POPULAR = [
-  'glp-3-r-15mg',
-  'bpc-157-10mg',
-  'ghk-cu-50mg',
-  'cjc1295-ipamorelin',
-  'epithalon-50mg',
+  'ap-rta-3',
+  'bpc-157',
+  'copper-binding-peptide-ghk-cu',
+  'cjc-1295-no-dac-ipamorelin',
+  'epi',
   'snap-8-10mg',
 ]
 const popularProducts = POPULAR.map(s => products.find(p => p.slug === s)!).filter(Boolean)

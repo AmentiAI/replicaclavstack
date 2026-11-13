@@ -27,10 +27,10 @@ export const metadata: Metadata = {
   },
 }
 
-const coreStack = ['glp-3-r-15mg', 'bpc-157-10mg', 'ghk-cu-50mg', 'snap-8-10mg', 'cjc1295-ipamorelin']
+const coreStack = ['ap-rta-3', 'bpc-157', 'copper-binding-peptide-ghk-cu', 'snap-8', 'cjc-1295-no-dac-ipamorelin']
 const coreProducts = coreStack.map(s => products.find(p => p.slug === s)!).filter(Boolean)
 
-const heroProductSlugs = ['glp-3-r-15mg', 'glp-2-t-15mg', 'bpc-157-10mg', 'ghk-cu-50mg', 'cjc1295-ipamorelin', 'epithalon-50mg']
+const heroProductSlugs = ['ap-rta-3', 'ap-trz-2', 'bpc-157', 'copper-binding-peptide-ghk-cu', 'cjc-1295-no-dac-ipamorelin', 'epi']
 const heroProducts = heroProductSlugs.map(s => products.find(p => p.slug === s)!).filter(Boolean)
 
 const heroStats = [

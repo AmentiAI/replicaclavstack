@@ -97,7 +97,7 @@ export default function AboutPage() {
           <section className="bg-white border border-gray-200 rounded-2xl p-7">
             <h2 className="text-xl font-bold text-gray-900 mb-3">Affiliate Disclosure</h2>
             <p>
-              Looksmaxxing Health participates in an affiliate relationship with <strong>Apollo Peptide Sciences</strong>. Outbound product links labeled <em>&ldquo;Shop&rdquo;</em> or <em>&ldquo;Buy&rdquo;</em> are tracked affiliate links — when a researcher purchases through these links, we may earn a commission at no additional cost to the buyer. All such links are tagged with <code>rel=&quot;sponsored&quot;</code> and routed through our <code>/out/</code> redirect for transparency and analytics.
+              Looksmaxxing Health participates in an affiliate relationship with <strong>American Peptides</strong>. Outbound product links labeled <em>&ldquo;Shop&rdquo;</em> or <em>&ldquo;Buy&rdquo;</em> are tracked affiliate links — when a researcher purchases through these links, we may earn a commission at no additional cost to the buyer. All such links are tagged with <code>rel=&quot;sponsored&quot;</code> and include the referral code on americanpeptides.us.
             </p>
             <p className="mt-4">
               Affiliate commissions <strong>do not influence</strong> editorial coverage, mechanism analysis, or compound inclusion. Compounds are covered based on research relevance, mechanistic interest, and published-literature footprint — not commission rate. Compounds that earn no commission are covered with the same depth as those that do.

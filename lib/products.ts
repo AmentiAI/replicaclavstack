@@ -1,3 +1,5 @@
+import { americanProducts } from '@/lib/american-catalog'
+
 export interface Product {
   slug: string
   name: string
@@ -3624,20 +3626,36 @@ const APOLLO_LIVE: Record<string, { path: string; image: string }> = {
   '5-amino-1mq-5mg': { path: '/product/5-amino-5g/', image: 'https://apollopeptidesciences.com/wp-content/uploads/2026/06/5-amino_5mg.webp' },
 }
 
-export const products: Product[] = catalog
-  .filter((p) => APOLLO_LIVE[p.slug])
-  .map((p) => {
-    const live = APOLLO_LIVE[p.slug]
-    return {
-      ...p,
-      image_url: live.image,
-      apollo_path: `https://apollopeptidesciences.com${live.path}`,
-    }
-  })
+const SLUG_ALIASES: Record<string, string> = {
+  'glp-3-r-15mg': 'ap-rta-3',
+  'glp-3-r-10mg': 'ap-rta-3',
+  'glp-3-r-60mg': 'ap-rta-3',
+  'glp-2-t-15mg': 'ap-trz-2',
+  'glp-2-t-30mg': 'ap-trz-2',
+  'glp-2-t-60mg': 'ap-trz-2',
+  'glp-1-s-5mg': 'ap-sem-1',
+  'glp-1-s-10mg': 'ap-sem-1',
+  'glp-1-s-15mg': 'ap-sem-1',
+  'bpc-157-10mg': 'bpc-157',
+  'ghk-cu-50mg': 'copper-binding-peptide-ghk-cu',
+  'snap-8-10mg': 'snap-8',
+  'cjc1295-ipamorelin': 'cjc-1295-no-dac-ipamorelin',
+  'epithalon-50mg': 'epi',
+  'nad-500mg': 'nad',
+  'igf-1lr3-1mg': 'igf-1-lr3',
+  'tb-500-10mg': 'tb-500',
+  'kpv-10mg': 'kpv-10-mg-1',
+  'ss-31-10mg': 'ss-31',
+  '5-amino-1mq-5mg': '5-amino-1mq',
+  'tesamorelin-20mg': 'ap-tesa',
+  'bacteriostatic-water': 'bacteriostatic-water-30ml-bottle',
+}
+
+export const products: Product[] = americanProducts
 
 export function apolloShopUrl(product: Product) {
   const join = product.apollo_path.includes('?') ? '&' : '?'
-  return `${product.apollo_path}${join}rfsn=9016964.3f1b1e`
+  return `${product.apollo_path}${join}ref=01xjeP7mUu`
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────
@@ -3646,7 +3664,8 @@ export function getAllProductSlugs() {
 }
 
 export function getProductBySlug(slug: string): Product | undefined {
-  return products.find((p) => p.slug === slug)
+  const resolved = SLUG_ALIASES[slug] ?? slug
+  return products.find((p) => p.slug === resolved)
 }
 
 export function getProductsByCategory(category: string): Product[] {
